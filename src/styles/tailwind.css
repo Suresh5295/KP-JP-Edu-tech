@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+li:focus-visible {
+  outline: none;
+}
+li:hover {
+  cursor: pointer;
+}
+@layer base {
+  :root {
+    /*------Color variables------*/
+    --black_900: #06090a;
+    --black_900_01: #040a0e;
+    --black_900_02: #000000;
+    --black_900_68: #00000068;
+    --black_900_9e: #0000009e;
+    --black_900_a5: #000000a5;
+    --black_900_a8: #000000a8;
+    --black_900_b5: #000000b5;
+    --black_900_bc: #040a0ebc;
+    --black_900_bf: #000000bf;
+    --black_900_bf_01: #040a0ebf;
+    --black_900_d8: #000000d8;
+    --black_900_e0: #040a0ee0;
+    --black_900_f4: #040a0ef4;
+    --blue_gray_100: #d0d0d0;
+    --blue_gray_100_00: #d9d9d900;
+    --blue_gray_100_01: #d9d9d9;
+    --blue_gray_100_02: #cdcdcd;
+    --blue_gray_100_7c: #d1dfe67c;
+    --blue_gray_300: #83a2b3;
+    --blue_gray_400_9e: #8687889e;
+    --blue_gray_500: #6f7d90;
+    --blue_gray_800: #3a504d;
+    --blue_gray_800_01: #3a3f50;
+    --blue_gray_800_6b: #3a3f506b;
+    --blue_gray_900: #2c3248;
+    --blue_gray_900_01: #082a3d;
+    --blue_gray_900_44: #0f354a44;
+    --blue_gray_900_89: #0c2a3b89;
+    --blue_gray_900_ce: #082a3dce;
+    --cyan_400: #31c3cd;
+    --cyan_50_47: #e9fbf647;
+    --cyan_900: #1e5878;
+    --cyan_900_01: #146368;
+    --deep_orange_100: #ecc7a9;
+    --gray_100: #f0f2f6;
+    --gray_200: #efe6e6;
+    --gray_400: #bcbcbc;
+    --gray_50: #f9fdff;
+    --gray_500: #939599;
+    --gray_500_01: #8f9299;
+    --gray_50_01: #f7fdfd;
+    --gray_50_02: #f9fcff;
+    --gray_50_03: #f4fbff;
+    --gray_50_04: #f8fefd;
+    --gray_50_b7: #f0fffdb7;
+    --gray_600: #6b7479;
+    --gray_600_01: #6c7479;
+    --gray_700: #686868;
+    --gray_700_01: #595d67;
+    --gray_800: #424242;
+    --gray_800_16: #42424216;
+    --gray_900_47: #02271e47;
+    --gray_900_82: #071a2482;
+    --gray_900_bc: #0d2015bc;
+    --green_a700: #10cd5b;
+    --light_blue_900: #1b5c82;
+    --light_blue_900_1c: #1b5c821c;
+    --light_blue_900_28: #1b5c8228;
+    --light_blue_900_33: #1b5c8233;
+    --light_blue_900_35: #1b5c8235;
+    --light_blue_900_3f: #1b5c823f;
+    --light_blue_900_54: #1b5c8254;
+    --light_blue_900_7a: #1b5c827a;
+    --light_blue_900_7f: #1b5c827f;
+    --light_blue_900_cc: #1b5c82cc;
+    --teal_400: #319085;
+    --teal_400_30: #31918530;
+    --teal_50: #dfecec;
+    --teal_600_4f: #1b82824f;
+    --white_a700: #f9fffe;
+    --white_a700_01: #ffffff;
+
+    /*------Shadow variables------*/
+    --shadow-xs: 0 4px 17px 3px #1b5c821c;
+    --shadow-sm: 0 1px 6px 0 #1b5c8233;
+    --shadow-md: 0 4px 6px 0 #1b5c823f;
+    --shadow-lg: 0 4px 6px 0 #1b5c8228;
+    --shadow-xl: 0 1px 61px -7px #31918530;
+    --shadow-2xl: 0 2px 4px 0 #1b5c8235;
+    --shadow-3xl: 0 1px 8px 0 #1b5c8254;
+
+    /*------Border radius variables------*/
+    --radius-xs: 1px;
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+    --radius-xl: 10px;
+    --radius-2xl: 12px;
+    --radius-3xl: 16px;
+    --radius-4xl: 18px;
+    --radius-5xl: 22px;
+    --radius-6xl: 26px;
+    --radius-7xl: 28px;
+    --radius-8xl: 30px;
+    --radius-9xl: 32px;
+    --radius-10xl: 34px;
+    --radius-11xl: 36px;
+    --radius-12xl: 48px;
+    --radius-13xl: 64px;
+    --radius-14xl: 66px;
+    --radius-15xl: 128px;
+    --radius-16xl: 144px;
+    --radius-17xl: 154px;
+    --radius-18xl: 196px;
+    --radius-19xl: 210px;
+    --radius-20xl: 226px;
+    --radius-21xl: 376px;
+
+    /*------Spacing variables------*/
+    --space-xs: 4px;
+    --space-sm: 6px;
+    --space-md: 10px;
+    --space-lg: 14px;
+    --space-xl: 16px;
+    --space-2xl: 17px;
+    --space-3xl: 18px;
+    --space-4xl: 20px;
+    --space-5xl: 22px;
+    --space-6xl: 24px;
+    --space-7xl: 26px;
+    --space-8xl: 28px;
+    --space-9xl: 30px;
+    --space-10xl: 34px;
+    --space-11xl: 40px;
+    --space-12xl: 44px;
+    --space-13xl: 48px;
+    --space-14xl: 64px;
+    --space-15xl: 78px;
+    --space-16xl: 156px;
+  }
+}
+@layer components {
+  /*-------------------------------------
+  Container CSS
+--------------------------------------*/
+  .container-xs {
+    @apply w-full mx-auto max-w-[1676px];
+  }
+}
