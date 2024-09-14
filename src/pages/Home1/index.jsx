@@ -34,11 +34,11 @@ export default function Home1Page() {
         <div className="flex flex-col gap-[22px]">
           <div className="ml-8 md:ml-0">
             <div>
-              <header className="flex items-center md:flex-col">
+              <header className="flex items-center justify-between md:flex-col">
                 <Img
                   src="images/img_logos1_2.png"
                   alt="Logos1two"
-                  className="h-[116px] w-[14%] object-contain md:w-full"
+                  className="h-[116px] w-[14%] object-contain md:w-full md:mb-4"
                 />
                 <div className="mb-7 ml-[60px] flex w-[80%] items-start justify-between gap-5 self-end md:ml-0 md:w-full md:flex-col md:self-auto md:px-5">
                 <Input
@@ -530,20 +530,26 @@ export default function Home1Page() {
                 </div>
               </div>
               <div className="relative mt-[-46px] self-stretch">
-                <div className="flex flex-col items-center">
-                  <div className="container-xs relative z-[23] flex flex-col items-center px-14 lg:px-5 md:px-5">
-                    <div className="relative ml-1 h-[150px] w-[82%] bg-light_blue-900 px-[126px] lg:px-8 md:ml-0 md:px-5 sm:px-4">
-                      <div className="absolute bottom-[0.34px] left-0 right-0 m-auto flex w-[96%] flex-col">
-                        <div className="mr-[76px] flex gap-6 md:mr-0 md:flex-col">
-                          <UserProfile3 className="mt-1.5 w-[8%] bg-white-a700_01 md:mt-0 md:w-full" />
+                <div className="flex flex-col items-center ">
+                  <div className=" mb-8 container-xs relative z-[23] flex flex-col items-center px-14 lg:px-5 md:px-5">
+                    <div className="relative mt-2.5 ml-1 h-[150px] w-[82%] bg-light_blue-900 px-[126px] lg:px-8 md:ml-0 md:px-5 sm:px-4">
+                      <div className="mb-8 absolute bottom-[0.34px] left-0 right-0 m-auto flex w-[96%] flex-col">
+                      <div className="  absolute bottom-[0.34px] left-0 right-0 m-auto flex w-[96%] flex-col">
+                        <div className="mr-[76px] flex gap-6 md:mr-0 md:flex-col ">
+                          
+                          <UserProfile3 className="mt-2.5 w-[8%] bg-white-a700_01 md:mt-0 md:w-full" />
+                          
                           <Heading
                             size="headingmd"
                             as="h6"
-                            className="mb-[50px] mt-1.5 w-[18%] text-[17.6px] font-bold leading-6 text-white-a700_01 lg:w-[18%] lg:text-[14px] md:my-0 md:w-full"
+                            className="mb-[50px] mt-2.5 w-[18%] text-[17.6px] font-bold leading-6 text-white-a700_01 lg:w-[18%] lg:text-[14px] md:my-0 md:w-full"
                           >
                             Call Us Anytime
                           </Heading>
-                          <UserProfile3 className="mt-1.5 w-[40%] gap-6 md:mt-0 md:w-full" />
+                          
+                          <UserProfile3 className="mt-2.5  w-[8%] bg-white-a700_01 md:mt-0 md:w-full ml-28" />
+                          
+                          <UserProfile3 className="mt-2.5 w-[40%] gap-6 md:mt-0 md:w-full" />
                           <UserProfile3 className="w-[28%] gap-6 md:w-full" />
                         </div>
                         <Text
@@ -558,18 +564,57 @@ export default function Home1Page() {
                           </>
                         </Text>
                       </div>
+                          
+                      <Text
+                          size="textxs"
+                          as="p"
+                          className="relative ml-[520px] mt-[50px] text-[16px] font-normal leading-[30px] text-white-a700_01 lg:text-[13px] md:ml-0 "
+                        >
+                          
+                          <>
+                          
+                          <Heading
+                            size="headingmd"
+                            as="h6"
+                            className="mb-[22px] mt-2.5 w-[18%] text-[17.6px] font-bold leading-6 text-white-a700_01 lg:w-[18%] lg:text-[14px] md:my-0 md:w-full"
+                          >
+                            Email Us
+                            </Heading>
+                            <span className="leading-[2px]">jpedutechcs@gmail.com</span>
+                            </>
+                         
+                        </Text>
+                        </div>
+                                      
                       <Text
                         size="textxs"
                         as="p"
-                        className="absolute bottom-[11px] right-[10%] m-auto w-[22%] text-[16px] font-normal leading-[30px] text-white-a700_01 lg:text-[13px]"
+                        className="absolute bottom-[23px] right-[2%] m-auto w-[22%] text-[16px] font-normal leading-[30px] text-white-a700_01 lg:text-[13px]"
                       >
+                        
                         <>
+                        
+                        <Heading
+                        
+                            size="headingmd"
+                            as="h6"
+                            className="mb-[10px] mt-2.5 w-[50%] text-[17.6px] font-bold leading-6 text-white-a700_01 lg:w-[25%] lg:text-[14px] md:my-0 md:w-full "
+                          >
+                          
+                             Our Branch's
+                             
+                          </Heading>
+                          
+                         
                           Kurnool, Hyderabad, <br />
                           Guntur, Melbourne(Australia)
                         </>
+                        
                       </Text>
+                      <UserProfile3 className=" mt-8  w-[8%] bg-white-a700_01 md:mt-0 md:w-full "  style={{marginLeft:740 }} />
+                      </div>
                     </div>
-                  </div>
+                  
                   <Footer />
                 </div>
               </div>

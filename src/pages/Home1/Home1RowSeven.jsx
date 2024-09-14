@@ -49,7 +49,7 @@ export default function Home1RowSeven() {
                 type="text"
                 name="name"
                 placeholder={`Enter your name..`}
-                className="relative z-[22] mb-2.5 flex-grow self-end px-2.5 font-nunitosans font-semibold tracking-[0.40px] md:self-auto"
+                className="relative z-[22]  ml-5 mb-2.5 flex-grow self-end px-2.5 font-nunitosans font-semibold tracking-[0.40px] md:self-auto"
               />
               <Img
                 src="images/img_group_blue_gray_100_02_444x328.png"
