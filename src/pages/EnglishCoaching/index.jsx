@@ -17,9 +17,9 @@ export default function EnglishCoachingPage() {
       <div className="w-full bg-white-a700_01">
       <Header className="w-[90%] lg:w-full lg:px-5 md:w-full md:px-5" />
         <div>
-          <div className="relative h-[1706px]">
+          <div className="relative h-[1706px] ">
           
-            <div className="absolute bottom-0 left-0 right-0 top-0 m-auto h-max flex-1">
+            <div className="absolute bottom-0 left-0 right-0 top-0 m-auto h-max flex-1 mt-32">
               <div className="h-[964px] bg-[url(/public/images/img_group_278.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
                 <div className="h-[964px] bg-[url(/public/images/img_group_454.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
                   <div className="mb-[312px] flex flex-col items-center gap-[180px] lg:gap-[135px] md:gap-[135px] sm:gap-[90px]">
@@ -28,7 +28,7 @@ export default function EnglishCoachingPage() {
                         <Heading
                           size="heading9xl"
                           as="h1"
-                          className="text-center text-[96px] font-bold leading-[144px] text-white-a700_01 lg:text-[48px] md:text-[48px]"
+                          className="mt-24 text-center text-[96px] font-bold leading-[144px] text-white-a700_01 lg:text-[48px] md:text-[48px]"
                         >
                           <>
                             Unlock Your Potential with <br />
@@ -47,7 +47,7 @@ export default function EnglishCoachingPage() {
                 <div className="container-xs mt-[216px] flex flex-col items-center gap-[26px] px-[38px] lg:px-5 md:px-5">
                   <Text
                     as="p"
-                    className="w-[56%] self-end text-[20px] font-normal leading-[30px] tracking-[0.40px] text-white-a700_01 lg:w-full lg:text-[17px] md:w-full"
+                    className=" -mt-20 w-[56%] self-end text-[20px] font-normal leading-[30px] tracking-[0.40px] text-white-a700_01 lg:w-full lg:text-[17px] md:w-full"
                   >
                     <>
                       To make sure that overseas students have the English language comprehension and communication
@@ -245,7 +245,7 @@ export default function EnglishCoachingPage() {
               </div>
             </div>
             <footer className="relative mt-[-46px] flex flex-col self-stretch ">
-              <div className="relative h-[346px]">
+              <div className="relative h-[346px] ">
                 <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max flex-1 flex-col items-center">
                   <div className="container-xs relative z-[2] flex flex-col items-center px-14 lg:px-5 md:px-5">
                     <div className="relative ml-2.5 h-[150px] w-[82%] bg-light_blue-900 px-[126px] lg:px-8 md:ml-0 md:px-5 sm:px-4">
@@ -336,7 +336,7 @@ export default function EnglishCoachingPage() {
                 <div className="container-xs absolute bottom-[15px] left-0 right-0 z-[5] my-auto flex lg:px-5 md:px-5 ">
                   <div className="flex w-full flex-col items-end gap-[78px] py-3.5 pl-14 pr-[118px] lg:gap-[78px] lg:pr-8 md:gap-[58px] md:px-5 sm:gap-[39px] sm:px-4">
                     <div className="mr-5 mt-[104px] flex w-[72%] items-center justify-between gap-5 lg:w-full md:mr-0 md:w-full md:flex-col">
-                      <div className="flex w-[66%] flex-wrap justify-between gap-5 self-end md:w-full md:self-auto ">
+                      <div className="flex mr-16 w-[80%] flex-wrap justify-between gap-5 self-end md:w-full md:self-auto ">
                         <Text
                           as="p"
                           className="text-[20px] font-normal tracking-[1.20px] text-white-a700_01 lg:text-[17px]"

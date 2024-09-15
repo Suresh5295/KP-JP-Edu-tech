@@ -12,7 +12,7 @@ export default function EnquirepagePage() {
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
       
-      <div className="relative w-full content-center bg-white-a700_01 lg:h-auto md:h-auto">
+      <div className="relative mt-44  w-full content-center bg-white-a700_01 lg:h-auto md:h-auto">
       <Header className="self-stretch px-14 md:px-5 sm:px-4" />
         <div className="mx-auto flex-1">
           {/* Header Section */}
@@ -22,11 +22,11 @@ export default function EnquirepagePage() {
                 <div className="h-[966px] bg-[url(/public/images/img_group_149.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
                   <div className="flex flex-col items-center gap-[162px] bg-black-900_a5 lg:gap-[100px] md:gap-[100px] sm:gap-[80px]">
                     
-                    <div className="container-xs mb-[220px] flex flex-col items-center px-14 lg:px-5 md:px-5">
+                    <div className="mt-32 container-xs mb-[220px] flex flex-col items-center px-14 lg:px-5 md:px-5">
                       <Heading
                         size="heading9xl"
                         as="h1"
-                        className="text-[64px] font-bold text-white-a700_01 lg:text-[48px] md:text-[48px]"
+                        className="mt-96 text-[64px] font-bold text-white-a700_01 lg:text-[48px] md:text-[48px]"
                       >
                         Quick Enquire
                       </Heading>

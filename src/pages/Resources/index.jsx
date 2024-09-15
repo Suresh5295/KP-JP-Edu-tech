@@ -18,7 +18,7 @@ export default function ResourcesPage() {
         <title>JP Edu Tech</title>
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
-      <div className="w-full bg-white-a700_01">
+      <div className="w-full bg-white-a700_01 mt-40">
       <Header className="self-stretch px-14 md:px-5 sm:px-4" />
         <div className="flex flex-col items-center">
           <div className="relative h-[2466px] content-center self-stretch lg:h-auto md:h-auto">
@@ -30,7 +30,7 @@ export default function ResourcesPage() {
                     <Heading
                       size="heading9xl"
                       as="h1"
-                      className="text-[96px] font-bold text-white-a700_01 lg:text-[48px] md:text-[48px]"
+                      className="mt-64 text-[96px] font-bold text-white-a700_01 lg:text-[48px] md:text-[48px]"
                     >
                       Resources
                     </Heading>

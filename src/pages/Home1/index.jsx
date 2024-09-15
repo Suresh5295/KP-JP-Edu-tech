@@ -140,7 +140,7 @@ export default function Home1Page() {
                   </Button>
                   <Img src="images/img_group_9.svg" alt="Image" className="mt-4 h-[98px] w-[32%] object-contain" />
                 </div>
-                <a href="https://www.youtube.com/embed/bv8Fxk0sz7I" target="_blank">
+                <a href="" target="_blank">
                   <div className="absolute bottom-[7%] left-0 right-0 m-auto flex w-[86%] flex-col items-end">
                     <div className="w-[4%] rounded-[34px] border-2 border-solid border-light_blue-900 lg:w-full lg:px-5 md:w-full md:px-5">
                       <div className="relative h-[60px] content-center lg:h-auto md:h-auto">
@@ -245,7 +245,7 @@ export default function Home1Page() {
                             we are dedicated to helping you navigate the complexities of studying in a foreign country,
                             ensuring a smooth and successful international academic experience.
                           </Text>
-                          <a href="https://www.youtube.com/embed/bv8Fxk0sz7I" target="_blank">
+                          <a href="" target="_blank">
                             <Button
                               shape="square"
                               className="min-w-[198px] px-[34px] font-bold tracking-[1.20px] sm:px-4"
@@ -378,7 +378,7 @@ export default function Home1Page() {
                         />
                         <div className="absolute bottom-0 left-0 right-0 top-0  flex h-[952px] flex-1 flex-col items-center justify-end bg-gradient3 p-1">
                           <div className="mt-[512px] w-[46%] lg:w-full md:w-full">
-                            <a href="https://www.youtube.com/embed/bv8Fxk0sz7I" target="_blank">
+                            <a href="" target="_blank">
                               {/* <div className="flex flex-col items-start">
                                 <Img
                                   src="images/img_rectangle_4186.png"

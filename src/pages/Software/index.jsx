@@ -18,7 +18,7 @@ export default function SoftwarePage() {
         <title>JP Edu Tech</title>
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
-      <div className="w-full bg-white-a700_01">
+      <div className="w-full bg-white-a700_01 mt-24">
         <div>
           <div className="relative h-[1352px] content-center lg:h-auto md:h-auto">
             <div className="mx-auto flex-1">
@@ -152,16 +152,16 @@ export default function SoftwarePage() {
                     alt="Image"
                     className="absolute bottom-[0.66px] left-0 right-0 m-auto h-[278px] flex-1 object-cover"
                   />
-                  <div className="absolute bottom-0 left-0 top-0 my-auto mr-32 flex h-max flex-1 items-center lg:mr-0 md:relative md:mr-0 md:flex-col">
+                  <div className="absolute  bottom-0 left-0 top-0 my-auto mr-32 flex h-max flex-1 items-center lg:mr-0 md:relative md:mr-0 md:flex-col">
                     <Img
                       src="images/img_logos_white_1.png"
                       alt="Logoswhiteone"
                       className="h-[212px] w-[20%] object-contain md:w-full"
                     />
-                    <div className="container-xs lg:px-5 md:px-5">
-                      <div className="relative z-[5] ml-[334px] mr-[316px] h-[194px] bg-light_blue-900 md:mx-0">
-                        <div className="absolute bottom-0 left-0 top-0 my-auto mr-[92px] flex h-max flex-1 flex-col lg:mr-0 md:mr-0">
-                          <div className="relative z-[6] flex gap-6 md:flex-col">
+                    <div className="container-xs lg:px-5 md:px-5  ">
+                      <div className="relative w-[70%]  z-[5] ml-[334px] mr-[316px] h-[194px] bg-light_blue-900 md:mx-0">
+                        <div className="absolute  bottom-0 left-0 top-0 my-auto  flex h-max flex-1 flex-col lg:mr-0 md:mr-0">
+                          <div className="relative z-[6] ml-20 flex gap-6 md:flex-col w-[82%]">
                             <div className="mt-1.5 flex w-[8%] flex-col bg-white-a700_01 px-5 md:mt-0 md:w-full">
                               <Img src="images/img_icon.svg" alt="Call Us Anytime" className="h-[74px]" />
                             </div>
@@ -228,7 +228,7 @@ export default function SoftwarePage() {
                             </a>
                           </div>
                         </div>
-                        <Text
+                        {/* <Text
                           size="textxs"
                           as="p"
                           className="absolute right-px top-[15.34px] z-[7] m-auto w-[22%] text-[16px] font-normal leading-[30px] text-white-a700_01 lg:text-[13px]"
@@ -237,7 +237,7 @@ export default function SoftwarePage() {
                             Kurnool, Hyderabad, <br />
                             Guntur, Melbourne(Australia)
                           </>
-                        </Text>
+                        </Text> */}
                       </div>
                       <div className="relative mt-[-38px]">
                         <div className="flex flex-col items-end gap-[78px] lg:gap-[78px] md:gap-[58px] sm:gap-[39px]">

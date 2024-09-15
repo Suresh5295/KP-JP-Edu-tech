@@ -48,7 +48,7 @@ export default function AboutusStackiconOne() {
                                   className="h-[388px] w-[98%] object-contain"
                                 />
                               </div>
-                              <div className="absolute bottom-0 right-[-1px] top-0 my-auto ml-[122px] flex h-max flex-1 flex-col gap-5 lg:ml-0 md:ml-0">
+                              <div className="absolute mr-10 bottom-0 right-[-1px] top-0 my-auto ml-[122px] flex h-max flex-1 flex-col gap-5 lg:ml-0 md:ml-0">
                                 <Text
                                   as="p"
                                   className="text-center text-[20px] font-normal leading-[30px] tracking-[0.40px] text-black-900_02 lg:text-[17px]"
@@ -94,12 +94,12 @@ export default function AboutusStackiconOne() {
                       <Img
                         src="images/img_television_white_a700_01.svg"
                         alt="Television"
-                        className="relative z-[2] ml-40 h-[38px] md:ml-0"
+                        className="relative z-[2] ml-40 h-[38px] md:ml-0 "
                       />
                       <Img
                         src="images/img_vector_32.svg"
                         alt="Vectorthirtytwo"
-                        className="relative mt-[-14px] h-[472px] w-[80%] rounded-[66px] object-contain"
+                        className="relative mt-[-14px] h-[472px] w-[80%] rounded-[66px] object-contain "
                       />
                     </div>
                   </div>

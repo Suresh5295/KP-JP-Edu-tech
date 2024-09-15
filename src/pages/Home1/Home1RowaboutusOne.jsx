@@ -22,7 +22,7 @@ export default function Home1RowaboutusOne() {
         </div>
         <div className="container-xs absolute bottom-1 left-0 right-0 my-auto flex justify-center px-14 lg:px-5 md:px-5">
           <div className="flex h-[472px] w-[86%] items-end justify-center bg-[url(/public/images/img_group_898.svg)] bg-cover bg-no-repeat px-14 py-[178px] lg:h-auto lg:w-full lg:py-8 md:h-auto md:w-full md:p-5 sm:p-4">
-            <a href="https://www.youtube.com/embed/bv8Fxk0sz7I" target="_blank">
+            <a href="" target="_blank">
               <Button
                 shape="square"
                 className="mt-[50px] min-w-[200px] px-[34px] font-nunitosans font-bold tracking-[1.20px] sm:px-4"

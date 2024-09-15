@@ -35,13 +35,13 @@ export default function AboutusPage() {
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
       <div className="w-full bg-white-a700_01">
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center mt-32">
           <div className="self-stretch">
             <div className="h-[966px] bg-[url(/public/images/img_rectangle_4187.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
               <div className="flex flex-col items-center gap-44 bg-black-900_a5 lg:gap-[132px] md:gap-[132px] sm:gap-[88px]">
                 <Header className="self-stretch px-14 md:px-5 sm:px-4" />
                 <div className="container-xs mb-[340px] flex flex-col items-center px-14 lg:px-5 md:px-5">
-                  <div className="ml-2 flex w-[58%] flex-col items-center lg:w-full md:ml-0 md:w-full">
+                  <div className="mt-44  ml-2 flex w-[65%] flex-col items-center lg:w-full md:ml-0 md:w-full">
                     <Heading
                       size="heading9xl"
                       as="h1"

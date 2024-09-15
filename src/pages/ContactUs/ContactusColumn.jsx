@@ -9,9 +9,9 @@ const data = [
     contactHeading: "Contact Details",
     contactNumbers: (
       <>
-        +91 8247510882
+        +91  8247510882
         <br />
-        +91 9704428144
+        +91  9704428144
       </>
     ),
   },
@@ -24,12 +24,12 @@ const data = [
   {
     callIcon: "images/img_linkedin_light_blue_900.svg",
     contactImage: "images/img_rectangle_4433.png",
-    contactHeading: "Our Branche’s",
+    contactHeading: "Our Branch’s",
     contactNumbers: (
       <>
-        Kurnool, Hyderabad, Guntur
-        <br />
-        Melbourne (Australia)
+      Kurnool, Hyderabad, Guntur,
+        
+      Melbourne (Australia)
       </>
     ),
   },
@@ -37,8 +37,8 @@ const data = [
 
 export default function ContactusColumn() {
   return (
-    <div className="mt-[18px] flex flex-col items-center">
-      <div className="container-xs flex flex-col items-center px-14 lg:px-5 md:px-5">
+    <div className="mt-[18px] flex flex-col items-center ">
+      <div className="container-xs flex flex-col items-center  px-14 lg:px-5 md:px-5">
         <Heading
           size="heading7xl"
           as="h2"
@@ -54,7 +54,7 @@ export default function ContactusColumn() {
           Get in touch with us today! Our expert team will guide you through every step of the migration process. Start
           your journey today with confidence and support from Jp Edu Tech!i
         </Text>
-        <div className="ml-3 mt-[52px] flex w-[88%] gap-4 md:ml-0 md:w-full md:flex-col">
+        <div className="ml-2 mt-[52px] text-center flex  w-[88%] gap-4 md:ml-0 md:w-full md:flex-col">
           <Suspense fallback={<div>Loading feed...</div>}>
             {data.map((d, index) => (
               <ContactDetails {...d} key={"listcallone" + index} />

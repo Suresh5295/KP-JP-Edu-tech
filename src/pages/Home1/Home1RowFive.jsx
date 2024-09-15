@@ -39,7 +39,7 @@ export default function Home1RowFive() {
             to stay informed and make well-informed decisions.
           </Text>
           <div className="relative h-[276px] self-stretch">
-            <a href="https://www.youtube.com/embed/bv8Fxk0sz7I" target="_blank">
+            <a href="" target="_blank">
               <Button
                 shape="square"
                 className="absolute left-0 top-0 m-auto min-w-[200px] px-[34px] font-nunitosans font-bold tracking-[1.20px] sm:px-4"

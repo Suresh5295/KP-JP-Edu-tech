@@ -42,7 +42,7 @@ export default function ContactUsPage() {
                         <Heading
                           size="heading9xl"
                           as="h1"
-                          className="font-semibold text-white-a700_01 mt-80"
+                          className="font-semibold text-white-a700_01 mt-96"
                         >
                           How Can we Help You?
                         </Heading>
@@ -85,7 +85,7 @@ export default function ContactUsPage() {
                           type="text"
                           name="firstName"
                           placeholder="First name"
-                          className="w-[30%] px-[18px] font-semibold leading-[30px] tracking-[0.48px] md:w-full"
+                          className="w-[48%] px-[18px] font-semibold leading-[30px] tracking-[0.48px] md:w-full"
                         />
                         <Input
                           size="xl"
@@ -93,7 +93,7 @@ export default function ContactUsPage() {
                           type="text"
                           name="lastName"
                           placeholder="Last name"
-                          className="w-[30%] px-[18px] font-semibold leading-[30px] tracking-[0.48px] md:w-full"
+                          className="w-[48%] px-[18px] font-semibold leading-[30px] tracking-[0.48px] md:w-full"
                         />
                       </div>
 
@@ -153,14 +153,14 @@ export default function ContactUsPage() {
                 ))}
               </Suspense>
             </div>
-            <div className="ml-2 flex gap-[156px] md:ml-0 md:flex-col">
+            <div className="ml-2 flex gap-[156px] md:ml-0 md:flex-col ">
               <Suspense fallback={<div>Loading feed...</div>}>
                 {data1.map((d, index) => (
                   <Img
                     key={"listpng" + index}
                     src={d.png}
                     alt="Png"
-                    className="h-[40px] w-[16%] object-contain opacity-40 md:w-full"
+                    className="h-[40px] w-[16%] object-contain opacity-40 md:w-full mb-10"
                   />
                 ))}
               </Suspense>
@@ -173,14 +173,14 @@ export default function ContactUsPage() {
               <li>
                 <a href="#">
                   <div className="flex w-[94%] flex-col items-end gap-4 lg:w-full md:w-full">
-                    <div className="flex items-center justify-between gap-5 self-stretch md:flex-col">
-                      <div className="flex w-[76%] items-center justify-between gap-5 md:w-full md:flex-col">
+                    <div className="flex items-center justify-between gap-72 self-stretch md:flex-col">
+                      <div className="flex w-[96%] ml-14 items-center justify-between gap-10 md:w-full md:flex-col">
                         <Img
                           src="images/img_logos_white_1.png"
                           alt="Logoswhiteone"
                           className="h-[212px] w-[28%] object-contain md:w-full"
                         />
-                        <ul className="!mb-[60px] flex w-[60%] flex-wrap justify-between gap-5 self-end md:w-full md:self-auto">
+                        <ul className="!mb-[60px] flex w-[100%] flex-wrap justify-between gap-5 self-end md:w-full md:self-auto">
                           <li>
                             <Heading
                               as="p"
@@ -240,22 +240,22 @@ export default function ContactUsPage() {
                         <Heading
                           size="headingxs"
                           as="p"
-                          className="ml-1.5 font-nunitosans text-[14px] font-semibold tracking-[0.28px] text-white-a700_01 sm:ml-0"
+                          className="ml-10 font-nunitosans text-[14px] font-semibold tracking-[0.28px] text-white-a700_01 sm:ml-0"
                         >
                           @2024 JP EDU TECH Pvt Ltd. All rights reserved.
                         </Heading>
-                        <div className="flex w-[12%] flex-wrap justify-between gap-5 sm:w-full">
+                        <div className="flex  w-[12%] flex-wrap justify-between gap-5 sm:w-full">
                           <Heading
                             size="headingxs"
                             as="p"
-                            className="font-nunitosans text-[14px] font-semibold tracking-[0.28px] text-white-a700_01"
+                            className=" ml-5 font-nunitosans text-[14px] font-semibold tracking-[0.28px] text-white-a700_01"
                           >
                             Terms
                           </Heading>
                           <Heading
                             size="headingxs"
                             as="p"
-                            className="font-nunitosans text-[14px] font-semibold tracking-[0.28px] text-white-a700_01"
+                            className="ml-5 font-nunitosans text-[14px] font-semibold tracking-[0.28px] text-white-a700_01"
                           >
                             Privacy Policy
                           </Heading>

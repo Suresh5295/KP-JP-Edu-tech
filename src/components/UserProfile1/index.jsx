@@ -1,7 +1,8 @@
 import { Heading, Img } from "./..";
 import React from "react";
 
-export default function UserProfile1({ userHeading = "1", userSubHeading = "1", userLocation = "USA", ...props }) {
+export default function UserProfile1({ userHeading = "1", userSubHeading = "1", userLocation = "USA", ...props })
+ {
   return (
     <div {...props} className={`${props.className} h-[510px] w-[20%] md:w-full relative`}>
       <div className="flex flex-1 flex-col items-center">
@@ -42,3 +43,4 @@ export default function UserProfile1({ userHeading = "1", userSubHeading = "1", 
     </div>
   );
 }
+

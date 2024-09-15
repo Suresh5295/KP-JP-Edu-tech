@@ -16,7 +16,7 @@ export default function MigratePage() {
         <title>JP Edu Tech</title>
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
-      <div className="w-full bg-white-a700_01">
+      <div className="w-full bg-white-a700_01 mt-32">
         <div className="flex flex-col items-center">
           <div className="h-[966px] self-stretch bg-[url(/public/images/img_group_1285.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
             <div className="flex flex-col items-center gap-[212px] bg-black-900_a8 lg:gap-[159px] md:gap-[159px] sm:gap-[106px]">
@@ -26,7 +26,7 @@ export default function MigratePage() {
                   <Heading
                     size="heading9xl"
                     as="h1"
-                    className="text-center text-[96px] font-bold leading-[144px] text-white-a700_01 lg:text-[48px] md:text-[48px]"
+                    className="mt-20 text-center text-[96px] font-bold leading-[144px] text-white-a700_01 lg:text-[48px] md:text-[48px]"
                   >
                     <>
                       Connecting Dreams with

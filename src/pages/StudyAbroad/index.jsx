@@ -19,12 +19,12 @@ export default function StudyAbroadPage() {
         <title>JP Edu Tech</title>
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
-      <div className="w-full bg-white-a700_01">
-        <div className="flex flex-col items-center">
-          <div className="relative h-[2874px] content-center self-stretch lg:h-auto md:h-auto">
+      <div className="w-full bg-white-a700_01 mt-14">
+        <div className="flex flex-col items-center  ">
+          <div className="relative h-[2874px] content-center self-stretch lg:h-auto md:h-auto mt-7">
             <div className="mx-auto w-full">
               <div>
-                <div className="relative z-[1] mr-1 h-[966px] bg-[url(/public/images/img_group_1010.png)] bg-cover bg-no-repeat lg:h-auto md:mr-0 md:h-auto">
+                <div className="relative  z-[1] mr-1 h-[966px] bg-[url(/public/images/img_group_1010.png)] bg-cover bg-no-repeat lg:h-auto md:mr-0 md:h-auto">
                   <div className="h-[966px] bg-[url(/public/images/img_group_981.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
                     <div className="mb-[290px] flex flex-col items-center gap-[182px] lg:gap-[136px] md:gap-[136px] sm:gap-[91px]">
                       <Header className="w-[90%] lg:w-full lg:px-5 md:w-full md:px-5" />
@@ -32,7 +32,7 @@ export default function StudyAbroadPage() {
                         <Heading
                           size="heading9xl"
                           as="h1"
-                          className="text-center text-[96px] font-bold leading-[144px] text-white-a700_01 lg:text-[48px] md:text-[48px]"
+                          className="text-center text-[96px] font-bold leading-[144px] text-white-a700_01 lg:text-[48px] md:text-[48px] mt-40"
                         >
                           <>
                             Want to Study <br /> Abroad
@@ -40,7 +40,7 @@ export default function StudyAbroadPage() {
                         </Heading>
                         <Button
                           shape="square"
-                          className="min-w-[198px] pl-7 pr-[34px] font-nunitosans font-bold tracking-[1.20px] sm:px-4"
+                          className="min-w-[198px] pl-7 pr-[34px] font-nunitosans font-bold tracking-[1.20px] sm:px-4 "
                         >
                           Appointment
                         </Button>
@@ -316,6 +316,7 @@ export default function StudyAbroadPage() {
                     <>
                       Empower your Global aspirations with
                       <br />
+
                       JP EDU TECH
                     </>
                   </Heading>
