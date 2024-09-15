@@ -22,11 +22,11 @@ export default function MigratePage() {
             <div className="flex flex-col items-center gap-[212px] bg-black-900_a8 lg:gap-[159px] md:gap-[159px] sm:gap-[106px]">
               <Header className="self-stretch px-14 md:px-5 sm:px-4" />
               <div className="container-xs mb-[280px] flex flex-col items-center px-14 lg:px-5 md:px-5">
-                <div className="ml-3.5 flex w-[78%] flex-col items-center gap-[34px] lg:w-full md:ml-0 md:w-full">
+                <div className="ml-3.5 flex w-[85%] flex-col items-center gap-[34px] lg:w-full md:ml-0 md:w-full">
                   <Heading
                     size="heading9xl"
                     as="h1"
-                    className="mt-20 text-center text-[96px] font-bold leading-[144px] text-white-a700_01 lg:text-[48px] md:text-[48px]"
+                    className="mt-80 text-center text-[96px] font-bold leading-[144px] text-white-a700_01 lg:text-[48px] md:text-[48px]"
                   >
                     <>
                       Connecting Dreams with

@@ -42,7 +42,7 @@ export default function ResourcesRowTwo() {
                 type="email"
                 name="email"
                 placeholder={`Enter your email id..`}
-                className="relative mt-[-4px] w-[72%] px-2.5 font-semibold tracking-[0.40px]"
+                className="relative mt-[-4px] w-[74%] px-2.5 font-semibold tracking-[0.40px]"
               />
             </div>
             <div className="absolute left-0 right-0 top-[8%] m-auto flex flex-1 flex-col gap-6">
@@ -67,7 +67,7 @@ export default function ResourcesRowTwo() {
             shape="square"
             name="television_four"
             placeholder={`Message..`}
-            className="ml-14 flex w-[72%] gap-4 pl-3.5 pr-0.5 font-semibold tracking-[0.40px] text-light_blue-900 md:ml-0 md:py-5 sm:py-4"
+            className="ml-14 flex w-[70%] gap-4 pl-3.5 pr-0.5 font-semibold tracking-[0.40px] text-light_blue-900 md:ml-0 md:py-5 sm:py-4"
           />
           <Button
             size="9xl"

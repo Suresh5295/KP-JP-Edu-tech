@@ -59,7 +59,7 @@ export default function MigrateRowFive() {
                     type="email"
                     name="email"
                     placeholder={`Enter your email id..`}
-                    className="relative mt-[-4px] w-[72%] px-2.5 font-semibold tracking-[0.40px]"
+                    className="relative mt-[-4px] w-[73%] px-2.5 font-semibold tracking-[0.40px]"
                   />
                 </div>
               </div>

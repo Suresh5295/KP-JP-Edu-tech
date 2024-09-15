@@ -4,7 +4,7 @@ import React from "react";
 export default function SoftwareRowThree() {
   return (
     <div className="relative z-[11] h-[402px] bg-[url(/public/images/img_group_2267.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
-      <div className="flex justify-center bg-black-900_e0 px-14 py-[90px] lg:py-8 md:p-5 sm:p-4">
+      <div className=" -mt-14 flex justify-center bg-black-900_e0 px-14 py-[90px] lg:py-8 md:p-5 sm:p-4">
         <div className="flex w-[96%] flex-col gap-1.5 lg:w-full md:w-full">
           <div className="ml-[158px] mr-[114px] flex items-center justify-center gap-[26px] md:mx-0 md:flex-col">
             <Heading

@@ -58,7 +58,7 @@ export default function MigrateRowourclinet() {
                       ref={sliderRef}
                       items={[...Array(3)].map(() => (
                         <React.Fragment key={Math.random()}>
-                          <div className="relative h-[390px] content-center lg:h-auto md:h-auto">
+                          <div className="relative mt-14 h-[390px] content-center lg:h-auto md:h-auto">
                             <div className="mx-auto flex flex-1 rounded-[48px] bg-white-a700_01">
                               <Img
                                 src="images/img_group_898.svg"
@@ -66,7 +66,7 @@ export default function MigrateRowourclinet() {
                                 className="h-[388px] w-[98%] object-contain"
                               />
                             </div>
-                            <div className="absolute bottom-0 right-[-1px] top-0 my-auto ml-[122px] flex h-max flex-1 flex-col gap-5 lg:ml-0 md:ml-0">
+                            <div className="absolute mr-5 bottom-0 right-[-1px] top-0 my-auto ml-[122px] flex h-max flex-1 flex-col gap-5 lg:ml-0 md:ml-0">
                               <Text
                                 as="p"
                                 className="text-center text-[20px] font-normal leading-[30px] tracking-[0.40px] text-black-900_02 lg:text-[17px]"

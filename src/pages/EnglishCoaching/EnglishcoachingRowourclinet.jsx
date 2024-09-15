@@ -45,7 +45,7 @@ export default function EnglishcoachingRowourclinet() {
                             <div className="absolute bottom-0 left-0 top-0 my-auto mr-32 flex h-max flex-1 flex-col gap-5 lg:mr-0 md:mr-0">
                               <Text
                                 as="p"
-                                className="text-center text-[20px] font-normal leading-[30px] tracking-[0.40px] text-black-900_02 lg:text-[17px]"
+                                className="text-center ml-14 text-[20px] font-normal leading-[30px] tracking-[0.40px] text-black-900_02 lg:text-[17px]"
                               >
                                 &quot;I was overwhelmed by the visa application process until I found JP EDU TECH. Their
                                 expert guidance and support made the entire journey smooth. I highly recommend their

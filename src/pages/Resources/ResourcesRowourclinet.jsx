@@ -19,7 +19,7 @@ export default function ResourcesRowourclinet() {
           </div>
           <div className="relative mt-[-18px] h-[730px] self-stretch bg-[url(/public/images/img_group_428.png)] bg-cover bg-no-repeat px-[338px] py-8 lg:px-8 md:px-5 sm:p-4">
             <div className="absolute bottom-[12%] left-0 right-0 m-auto h-[512px] w-[65%]">
-              <div className="absolute bottom-0 left-0 right-0 top-0 m-auto w-full px-[46px] md:px-5 sm:px-4">
+              <div className="absolute mt-14 bottom-0 left-0 right-0 top-0 m-auto w-full px-[46px] md:px-5 sm:px-4">
                 <Slider
                   autoPlay
                   autoPlayInterval={2000}

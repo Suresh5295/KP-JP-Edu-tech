@@ -43,7 +43,7 @@ export default function SoftwareRowourclinet() {
                         <div className="absolute bottom-0 right-0 top-0 my-auto ml-[122px] flex h-max flex-1 flex-col gap-5 lg:ml-0 md:ml-0">
                           <Text
                             as="p"
-                            className="text-center text-[20px] font-normal leading-[30px] tracking-[0.40px] text-black-900_02 lg:text-[17px]"
+                            className=" mr-20 text-center text-[20px] font-normal leading-[30px] tracking-[0.40px] text-black-900_02 lg:text-[17px]"
                           >
                             &quot;We were impressed by Jp Edu Tech &#39;s ability to understand our specific business
                             needs and develop a customized software solution. Their after-sales support is

@@ -29,7 +29,7 @@ export default function SoftwarePage() {
                 </div>
               </div>
               <div className="relative mt-[-50px] flex justify-center bg-black-900 py-[78px] lg:py-8 md:py-5 sm:py-4">
-                <div className="container-xs mt-12 flex justify-center px-14 lg:px-5 md:px-5">
+                <div className="container-xs  flex justify-center px-14 lg:px-5 md:px-5">
                   <Text
                     size="textxl"
                     as="p"
@@ -58,7 +58,7 @@ export default function SoftwarePage() {
                 <Heading
                   size="heading7xl"
                   as="h2"
-                  className="text-[64px] font-bold text-light_blue-900 lg:text-[48px] md:text-[48px]"
+                  className="-mb-10 text-[64px] font-bold text-light_blue-900 lg:text-[48px] md:text-[48px]"
                 >
                   What we do
                 </Heading>
@@ -122,10 +122,10 @@ export default function SoftwarePage() {
                 <div className="absolute bottom-0 left-0 right-0 top-0 m-auto h-[770px] flex-1 content-end lg:h-auto md:h-auto">
                   <div className="ml-auto mr-2.5 h-[296px] w-[92%] bg-gradient4 lg:mr-0 md:mr-0" />
                   <div className="absolute bottom-0 left-0 right-0 top-0 mx-2.5 my-auto flex h-max flex-1 items-start justify-center lg:mx-0 md:relative md:mx-0 md:flex-col">
-                    <div className="relative z-[3] h-[770px] w-[26%] rotate-[90deg] self-center bg-gradient4" />
-                    <div className="relative ml-[-310px] h-[296px] w-[68%] bg-gradient4 md:ml-0" />
+                    {/* <div className="relative z-[3] h-[770px] w-[26%] rotate-[90deg] self-center bg-gradient4" /> */}
+                    {/* <div className="relative ml-[-310px] h-[296px] w-[68%] bg-gradient4 md:ml-0" /> */}
                   </div>
-                  <div className="absolute bottom-0 right-[-0.10px] top-0 my-auto h-[770px] w-[36%] rotate-[-90deg] bg-gradient4" />
+                  {/* <div className="absolute bottom-0 right-[-0.10px] top-0 my-auto h-[770px] w-[36%] rotate-[-90deg] bg-gradient4" /> */}
                 </div>
               </div>
             </div>
@@ -139,9 +139,9 @@ export default function SoftwarePage() {
                 <Img src="images/img_vector_white_a700_01_14x24.svg" alt="Vector" className="h-[14px]" />
               </div>
             </div>
-            <div className="relative mt-[-44px] self-stretch">
-              <footer className="flex">
-                <div className="relative mt-8 h-[314px] w-full">
+            <div className=" relative mt-[-44px] self-stretch">
+              <footer className="  flex">
+                <div className="  relative mt-8 h-[314px] w-full">
                   <Img
                     src="images/img_rectangle_4266.png"
                     alt="Image"
@@ -150,19 +150,19 @@ export default function SoftwarePage() {
                   <Img
                     src="images/img_rectangle_4267_blue_gray_900_01_278x1916.png"
                     alt="Image"
-                    className="absolute bottom-[0.66px] left-0 right-0 m-auto h-[278px] flex-1 object-cover"
+                    className=" absolute bottom-[0.66px] left-0 right-0 m-auto h-[278px] flex-1 object-cover"
                   />
-                  <div className="absolute  bottom-0 left-0 top-0 my-auto mr-32 flex h-max flex-1 items-center lg:mr-0 md:relative md:mr-0 md:flex-col">
+                  <div className="  absolute  bottom-0 left-0 top-0 my-auto mr-32 flex h-max flex-1 items-center lg:mr-0 md:relative md:mr-0 md:flex-col">
                     <Img
                       src="images/img_logos_white_1.png"
                       alt="Logoswhiteone"
                       className="h-[212px] w-[20%] object-contain md:w-full"
                     />
-                    <div className="container-xs lg:px-5 md:px-5  ">
-                      <div className="relative w-[70%]  z-[5] ml-[334px] mr-[316px] h-[194px] bg-light_blue-900 md:mx-0">
+                    <div className=" container-xs lg:px-5 md:px-5 m-20 ">
+                      <div className=" relative w-[70%]  z-[5] ml-[334px] mr-[316px] h-[194px] bg-light_blue-900 md:mx-0">
                         <div className="absolute  bottom-0 left-0 top-0 my-auto  flex h-max flex-1 flex-col lg:mr-0 md:mr-0">
-                          <div className="relative z-[6] ml-20 flex gap-6 md:flex-col w-[82%]">
-                            <div className="mt-1.5 flex w-[8%] flex-col bg-white-a700_01 px-5 md:mt-0 md:w-full">
+                          <div className=" relative z-[6] ml-20 flex gap-6 md:flex-col w-[82%]">
+                            <div className="mt-2.5 flex w-[8%] flex-col bg-white-a700_01 px-5 md:mt-0 md:w-full">
                               <Img src="images/img_icon.svg" alt="Call Us Anytime" className="h-[74px]" />
                             </div>
                             <Heading
@@ -221,14 +221,10 @@ export default function SoftwarePage() {
                                 +91 8247510882
                               </>
                             </Text>
-                            <a href="Home" target="_blank" rel="noreferrer" className="lg:text-[17px]">
-                              <Text as="p" className="text-[20px] font-normal tracking-[1.20px] text-white-a700_01">
-                                Home
-                              </Text>
-                            </a>
+                           
                           </div>
                         </div>
-                        {/* <Text
+                        <Text
                           size="textxs"
                           as="p"
                           className="absolute right-px top-[15.34px] z-[7] m-auto w-[22%] text-[16px] font-normal leading-[30px] text-white-a700_01 lg:text-[13px]"
@@ -237,13 +233,18 @@ export default function SoftwarePage() {
                             Kurnool, Hyderabad, <br />
                             Guntur, Melbourne(Australia)
                           </>
-                        </Text> */}
+                        </Text>
                       </div>
                       <div className="relative mt-[-38px]">
                         <div className="flex flex-col items-end gap-[78px] lg:gap-[78px] md:gap-[58px] sm:gap-[39px]">
-                          <div className="mr-3 flex w-[66%] items-center justify-between gap-5 lg:w-full md:mr-0 md:w-full md:flex-col">
-                            <div className="flex flex-wrap items-end self-end md:self-auto">
-                              <a href="#" className="mt-1 lg:text-[17px]">
+                          <div className="  flex w-[98%] items-center justify-between gap-5 lg:w-full md:mr-0 md:w-full md:flex-col">
+                            <div className=" w-full flex flex-wrap items-end self-end md:self-auto">
+                              <a href="Home" target="_blank" rel="noreferrer" className="ml-1  lg:text-[17px]">
+                              <Text as="p" className=" text-[20px] font-normal tracking-[1.20px] text-white-a700_01">
+                                  Home
+                              </Text>
+                              </a>
+                              <a href="#" className="ml-10 lg:text-[17px]">
                                 <Text as="p" className="text-[20px] font-normal tracking-[1.20px] text-white-a700_01">
                                   Study Abroad{" "}
                                 </Text>
@@ -264,7 +265,7 @@ export default function SoftwarePage() {
                                 </Text>
                               </a>
                             </div>
-                            <div className="flex w-[24%] items-center justify-between gap-5 md:w-full">
+                            <div className="ml-44 flex w-[24%] items-center justify-between gap-5 md:w-full">
                               <Img src="images/img_close_white_a700_01.svg" alt="Close" className="h-[40px] w-[40px]" />
                               <Img
                                 src="images/img_volume_white_a700_01.svg"
@@ -275,20 +276,20 @@ export default function SoftwarePage() {
                               <Img src="images/img_trash.svg" alt="Trash" className="h-[36px]" />
                             </div>
                           </div>
-                          <div className="flex items-center justify-between gap-5 self-stretch sm:flex-col">
+                          <div className=" flex items-center justify-between gap-5 self-stretch sm:flex-col">
                             <Heading
                               size="headingxs"
                               as="p"
-                              className="text-[14px] font-semibold tracking-[0.28px] text-white-a700_01"
+                              className=" -ml-96 text-[14px] font-semibold tracking-[0.28px] text-white-a700_01"
                             >
                               @2024 JP EDU TECH Pvt Ltd. All rights reserved.
                             </Heading>
-                            <div className="flex w-[12%] flex-wrap justify-between gap-5 sm:w-full">
+                            <div className=" flex w-[25%] flex-wrap justify-between  sm:w-full">
                               <a href="#">
                                 <Heading
                                   size="headingxs"
                                   as="p"
-                                  className="text-[14px] font-semibold tracking-[0.28px] text-white-a700_01"
+                                  className="  ml-36 text-[14px] font-semibold tracking-[0.28px] text-white-a700_01"
                                 >
                                   Terms{" "}
                                 </Heading>

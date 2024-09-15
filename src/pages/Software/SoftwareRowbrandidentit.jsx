@@ -34,7 +34,7 @@ export default function SoftwareRowbrandidentit() {
                 <Heading
                   size="heading6xl"
                   as="h1"
-                  className="w-[92%] text-[48px] font-semibold leading-[71px] text-white-a700_01 lg:w-full lg:text-[40px] md:w-full md:text-[32px] sm:text-[26px]"
+                  className="  w-[92%] text-[48px] font-semibold leading-[71px] text-white-a700_01 lg:w-full lg:text-[40px] md:w-full md:text-[32px] sm:text-[26px]"
                 >
                   Transforming Ideas into Exceptional Software
                 </Heading>
@@ -42,7 +42,7 @@ export default function SoftwareRowbrandidentit() {
             </div>
             <Text
               as="p"
-              className="mr-7 w-[88%] text-[20px] font-normal leading-[30px] tracking-[0.40px] text-white-a700_01 lg:w-full lg:text-[17px] md:mr-0 md:w-full"
+              className="mr-5 w-[88%] text-[20px] font-normal leading-[30px] tracking-[0.40px] text-white-a700_01 lg:w-full lg:text-[17px] md:mr-0 md:w-full"
             >
               <span>At&nbsp;</span>
               <span className="capitalize">
@@ -52,7 +52,7 @@ export default function SoftwareRowbrandidentit() {
                 educational institutions, educators, and learners.
               </span>
             </Text>
-            <div className="mr-[68px] mt-[58px] flex w-[86%] flex-col items-start lg:w-full md:mr-0 md:w-full">
+            <div className="mr-[32px] mt-[58px] flex w-[86%] flex-col items-start lg:w-full md:mr-0 md:w-full">
               <Heading
                 size="heading3xl"
                 as="h2"
@@ -100,7 +100,7 @@ export default function SoftwareRowbrandidentit() {
               className="absolute bottom-[1.17px] left-0 right-0 m-auto h-[296px] flex-1 object-cover"
             />
             <div className="mx-auto flex flex-1 items-start md:flex-col">
-              <div className="relative z-10 h-[770px] w-[28%] rotate-[90deg] self-center bg-gradient4" />
+              {/* <div className="relative z-10 h-[770px] w-[28%] rotate-[90deg] self-center bg-gradient4" /> */}
               <Img
                 src="images/img_rectangle_4466.png"
                 alt="Image"
