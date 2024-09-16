@@ -123,6 +123,11 @@ export default function EnglishCoachingPage() {
                   </Tab>
                 </TabList>
                 <Img
+                  src="images/te1.png"
+                  alt="Image"
+                  className="absolute ml-8 mb-10 bottom-0 left-0 right-0 m-auto h-[940px] flex-1 object-cover"
+                />
+                <Img
                   src="images/img_group_998.png"
                   alt="Image"
                   className="absolute bottom-0 left-0 right-0 m-auto h-[664px] flex-1 object-cover"
