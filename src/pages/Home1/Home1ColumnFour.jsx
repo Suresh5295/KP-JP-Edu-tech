@@ -17,13 +17,6 @@ export default function Home1ColumnFour() {
         <div className="relative h-[170px] w-[36%] content-center lg:h-auto md:h-auto">
           <Heading
             size="text6xl"
-            as="h6"
-            className="mx-auto font-playfairdisplay text-[128px] font-medium text-white-a700_01 lg:text-[48px] md:text-[48px]"
-          >
-            MIGRATE
-          </Heading>
-          <Heading
-            size="text6xl"
             as="p"
             className="absolute bottom-0 left-0 right-0 top-0 m-auto h-max w-max font-playfairdisplay text-[128px] font-medium text-white-a700_01 lg:text-[48px] md:text-[48px]"
           >

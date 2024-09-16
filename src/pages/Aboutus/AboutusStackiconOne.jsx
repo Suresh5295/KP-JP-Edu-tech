@@ -94,7 +94,7 @@ export default function AboutusStackiconOne() {
                       <Img
                         src="images/img_television_white_a700_01.svg"
                         alt="Television"
-                        className="relative z-[2] ml-40 h-[38px] md:ml-0 "
+                        className="relative z-[2] ml-40 h-[38px] md:ml-0"
                       />
                       <Img
                         src="images/img_vector_32.svg"

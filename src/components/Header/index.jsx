@@ -57,15 +57,17 @@
 // }
 
 import { Button, Img } from "./..";
-import React from "react";
+import React, { useState } from "react";
 
-export default function Header({ ...props }) {
+export default function Header(props) {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
     <header
       {...props}
-      className={`${props.className} fixed top-0 left-0 right-0 flex justify-center items-center bg-white  shadow-xs py-4 z-1000`} // <-- Added `fixed top-0 left-0 right-0` to fix the header at the top
+      className={`${props.className} w-full flex justify-center items-center bg-white shadow-xs py-4`}
     >
-      <div className="flex w-full items-center justify-between px-10 lg:px-5 md:px-4">
+      <div className="container mx-auto flex w-full items-center justify-between px-10 lg:px-5 md:px-4">
         {/* Logo Image */}
         <Img
           src="images/img_logos1_1.png"
@@ -73,30 +75,38 @@ export default function Header({ ...props }) {
           className="h-[86px] w-[8%] object-contain md:w-[20%] sm:w-[30%]"
         />
 
+        {/* Hamburger Icon for Mobile */}
+        <button className="md:hidden" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+          <Img src="images/img_hamburger.svg" alt="Menu" className="h-6 w-6" />
+        </button>
+
         {/* Main Navigation */}
-        <div className="flex w-[88%] items-center justify-between md:w-full md:flex-col gap-5">
+        <div className={`${
+          isMobileMenuOpen ? "flex" : "hidden"
+        } md:flex w-[88%] items-center justify-between md:w-full md:flex-col gap-5`}>
           <nav className="flex flex-1 items-center justify-center">
-            <ul className="flex items-center justify-center gap-10 lg:gap-6 md:gap-4 flex-wrap">
-              {[
-                "Home",
-                "Study Abroad",
-                "Software Consulting",
-                "Migrate",
-                "English Coaching",
-                "About Us",
-                "Resources",
-                "Contact Us",
-              ].map((item, index) => (
-                <li key={index}>
-                  <a
-                    href={item === "Contact Us" ? "/ContactUs" : "#"}
-                    className={`text-[16px] font-semibold text-blue_gray-800 hover:text-teal-400`}
-                  >
-                    {item}
-                  </a>
-                </li>
-              ))}
-            </ul>
+          <ul className="flex items-center justify-center gap-10 lg:gap-6 md:gap-4 flex-wrap">
+            {[
+              "Home", 
+              "Study Abroad", 
+              "Software Consulting", 
+              "Migrate", 
+              "English Coaching", 
+              "About Us", 
+              "Resources", 
+              "Contact Us"
+            ].map((item, index) => (
+              <li key={index}>
+                <a
+                  href={`/${item.replace(/\s+/g, '')}`} // Removing spaces for URL path
+                  className="text-[16px] font-semibold text-blue_gray-800 hover:text-teal-400"
+                >
+                  {item}
+                </a>
+              </li>
+            ))}
+          </ul>
+
             {/* Search Icon */}
             <a href="#" className="ml-6">
               <Img
@@ -106,8 +116,9 @@ export default function Header({ ...props }) {
               />
             </a>
           </nav>
-
+              <div>
           {/* Enquire Now Button */}
+          <a href="/enquirenow" className="no-underline"></a>
           <Button
             size="lg"
             shape="square"
@@ -115,8 +126,11 @@ export default function Header({ ...props }) {
           >
             Enquire Now
           </Button>
+          </div>
         </div>
       </div>
     </header>
   );
 }
+
+

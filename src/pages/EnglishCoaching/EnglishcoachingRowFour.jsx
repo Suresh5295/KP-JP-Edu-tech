@@ -48,6 +48,7 @@ export default function EnglishcoachingRowFour() {
                       type="text"
                       name="name"
                       placeholder={`Enter your name..`}
+                      style={{ border: 'none' }} 
                       className="relative z-[1] mb-[34px] flex-grow self-end px-2.5 font-semibold tracking-[0.40px] md:self-auto"
                     />
                     <Img
@@ -61,6 +62,7 @@ export default function EnglishcoachingRowFour() {
                     type="email"
                     name="email"
                     placeholder={`Enter your email id..`}
+                    style={{ border: 'none' }} 
                     className="relative mt-[-4px] w-[74%] px-2.5 font-semibold tracking-[0.40px]"
                   />
                 </div>
@@ -69,6 +71,7 @@ export default function EnglishcoachingRowFour() {
                 shape="square"
                 name="television_four"
                 placeholder={`Message..`}
+                style={{ border: 'none' }} 
                 className="ml-5 flex w-[72%] gap-4 pl-3.5 pr-0.5 font-semibold tracking-[0.40px] text-light_blue-900 md:ml-0 md:py-5 sm:py-4"
               />
             </div>

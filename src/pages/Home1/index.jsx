@@ -61,22 +61,22 @@ export default function Home1Page() {
                   style={{ border: 'none', outline: 'none' }}
                 />
 
-                  <div className="flex w-[24%] items-center justify-center gap-[30px] self-end md:w-full md:self-auto">
+                  <div className="flex w-[24%] items-center justify-center gap-[30px] self-end md:w-full md:self-auto z-10">
                     <div className="flex flex-1 items-center justify-between gap-5">
-                      <a href="#">
+                      <a href="https://www.facebook.com/share/XL5X5UrAG4VuFYuy/?mibextid=qi2Omg" target="_blank">
                         <Img src="images/img_facebook.svg" alt="Facebook" className="h-[24px] w-[24px]" />
                       </a>
-                      <a href="#">
+                      <a href="https://wa.me/message/2I52EUSWYTQBG1" target="_blank">
                         <Img src="images/img_volume.svg" alt="Volume" className="h-[24px] w-[24px]" />
                       </a>
-                      <a href="#">
+                      <a href="https://www.instagram.com/jpetcs?igsh=MW5xNjF3aDN5dTE3bw==" target="_blank">
                         <Img src="images/img_info.svg" alt="Info" className="h-[24px] w-[24px]" />
                       </a>
-                      <a href="#">
+                      <a href="https://x.com/jpedutech" target="_blank">
                         <Img src="images/img_vector.svg" alt="Vector" className="h-[22px]" />
                       </a>
                     </div>
-                    <a href="/Enquirepage" target="_blank">
+                    <a href="/Enquirepage" target="_self">
                     <Button
                       size="md"
                       shape="square"
@@ -234,9 +234,15 @@ export default function Home1Page() {
               <div className="absolute bottom-0 left-0 right-0 top-0 m-auto h-max flex-1">
                 <div className="relative z-[4]">
                   <div className="relative z-[11]">
-                    <div className="relative h-[942px] bg-gradient1">
+                    <div className="relative h-[942px]">
+                    <Img
+                            src="images/bg_tower.svg"
+                            alt="Close"
+                            
+                          /> 
                       <div className="absolute bottom-0 left-0 right-0 top-0 m-auto h-[940px] flex-1">
                         <div className="absolute bottom-[24%] left-0 right-0 mx-[126px] my-auto flex flex-1 flex-col items-start gap-[20px] lg:mx-0 md:mx-0">
+
                           <Text
                             as="p"
                             className="w-[34%] text-[20px] font-normal leading-[30px] tracking-[0.40px] text-black-900_02 lg:w-full lg:px-5 lg:text-[17px] md:w-full md:px-5"
@@ -255,11 +261,11 @@ export default function Home1Page() {
                           </a>
                         </div>
                         <div className="absolute left-0 right-0 top-[21%] mx-[126px] my-auto flex flex-1 flex-col gap-[34px] lg:mx-0 md:mx-0">
-                          <Img
+                          {/* <Img
                             src="images/img_close_light_blue_900.svg"
                             alt="Close"
                             className="ml-1.5 h-[40px] w-[40px] md:ml-0"
-                          />
+                          /> */}
                           <div className="flex flex-col items-start gap-10">
                             <Heading
                               as="h2"
@@ -270,10 +276,10 @@ export default function Home1Page() {
                                 Destionation
                               </>
                             </Heading>
-                            <div className="ml-[244px] h-[2px] w-[8%] bg-light_blue-900 md:ml-0" />
+                            <div className="h-[2px] w-[8%] bg-light_blue-900 md:ml-0" />
                           </div>
                         </div>
-                        <div className="absolute bottom-[0.98px] right-[0.34px] m-auto h-[780px] w-[56%] bg-[url(/public/images/img_group_877.png)] bg-cover bg-no-repeat py-[18px]">
+                        {/* <div className="absolute bottom-[0.98px] right-[0.34px] m-auto h-[780px] w-[56%] bg-[url(/public/images/img_group_877.png)] bg-cover bg-no-repeat py-[18px]">
                           <div className="absolute left-0 right-0 top-[17%] m-auto h-[44px] w-[48%] content-center lg:h-auto md:h-auto">
                             <div className="ml-auto mr-2.5 h-[24px] w-[24px] rounded-[12px] bg-light_blue-900 lg:mr-0 md:mr-0" />
                             <div className="absolute bottom-0 right-[0.66px] top-0 my-auto h-[44px] w-[44px] rounded-[22px] border border-dashed border-teal-600_4f" />
@@ -287,7 +293,7 @@ export default function Home1Page() {
                             alt="Image"
                             className="absolute bottom-[18.66px] right-[-0.34px] m-auto h-[192px] w-[24%] object-contain"
                           />
-                        </div>
+                        </div> */}
                         <div className="absolute  bottom-[18%] right-[10%] m-auto flex w-[48%] flex-col items-start bg-white-a700_01 px-[34px] py-[18px] shadow-xl sm:px-4">
                           <Heading
                             size="headinglg"
@@ -322,29 +328,20 @@ export default function Home1Page() {
                                 alt="Image"
                                 className="mx-auto h-[176px] flex-1 object-cover"
                               />
-                              <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max flex-1 justify-center bg-gray-900_bc px-14 py-[72px] lg:py-8 md:p-5 sm:p-4">
-                                <Heading
-                                  size="headinglg"
-                                  as="h4"
-                                  className="mb-1 font-nunitosans text-[20px] font-extrabold tracking-[1.20px] text-white-a700_01 lg:text-[17px]"
-                                >
-                                  +7
-                                </Heading>
-                              </div>
                             </div>
                           </div>
                         </div>
                         <div className="absolute left-0 right-0 top-0 m-auto flex flex-1 items-start pl-[660px] pr-14 lg:pl-8 md:px-5 sm:relative sm:flex-col sm:px-4">
-                          <Img
+                          {/* <Img
                             src="images/img_group.png"
                             alt="Image"
                             className="relative z-[12] h-[346px] w-[36%] self-center object-contain sm:w-full"
-                          />
-                          <Img
+                          /> */}
+                          {/* <Img
                             src="images/img_airplane.svg"
                             alt="Airplane"
                             className="relative ml-[-28px] mt-[60px] h-[70px] w-[6%] object-contain sm:ml-0 sm:w-full"
-                          />
+                          /> */}
                         </div>
                       </div>
                     </div>
@@ -433,11 +430,11 @@ export default function Home1Page() {
                   </div>
                 </div>
               </div>
-              <Img
+              {/* <Img
                 src="images/img_group_618x1920.png"
                 alt="Image Eleven"
                 className="absolute left-0 right-0 top-[6%] z-[14] m-auto h-[618px] w-full flex-1 object-cover"
-              />
+              /> */}
               <Heading
                 as="p"
                 className="absolute left-0 right-0 top-[21%] z-[15] m-auto w-max font-playfairdisplay text-[64px] font-medium text-blue_gray-800_01 lg:text-[48px] md:text-[48px]"
@@ -532,87 +529,9 @@ export default function Home1Page() {
               <div className="relative mt-[-46px] self-stretch">
                 <div className="flex flex-col items-center ">
                   <div className=" mb-8 container-xs relative z-[23] flex flex-col items-center px-14 lg:px-5 md:px-5">
-                    <div className="relative mt-2.5 ml-1 h-[150px] w-[82%] bg-light_blue-900 px-[126px] lg:px-8 md:ml-0 md:px-5 sm:px-4">
-                      <div className="mb-8 absolute bottom-[0.34px] left-0 right-0 m-auto flex w-[96%] flex-col">
-                      <div className="  absolute bottom-[0.34px] left-0 right-0 m-auto flex w-[96%] flex-col">
-                        <div className="mr-[76px] flex gap-6 md:mr-0 md:flex-col ">
-                          
-                          <UserProfile3 className="mt-2.5 w-[8%] bg-white-a700_01 md:mt-0 md:w-full" />
-                          
-                          <Heading
-                            size="headingmd"
-                            as="h6"
-                            className="mb-[50px] mt-2.5 w-[18%] text-[17.6px] font-bold leading-6 text-white-a700_01 lg:w-[18%] lg:text-[14px] md:my-0 md:w-full"
-                          >
-                            Call Us Anytime
-                          </Heading>
-                          
-                          <UserProfile3 className="mt-2.5  w-[8%] bg-white-a700_01 md:mt-0 md:w-full ml-28" />
-                          
-                          <UserProfile3 className="mt-2.5 w-[40%] gap-6 md:mt-0 md:w-full" />
-                          <UserProfile3 className="w-[28%] gap-6 md:w-full" />
-                        </div>
-                        <Text
-                          size="textxs"
-                          as="p"
-                          className="relative ml-[100px] mt-[-50px] text-[16px] font-normal leading-[30px] text-white-a700_01 lg:text-[13px] md:ml-0"
-                        >
-                          <>
-                            +91 9704428144
-                            <br />
-                            +91 8247510882
-                          </>
-                        </Text>
-                      </div>
-                          
-                      <Text
-                          size="textxs"
-                          as="p"
-                          className="relative ml-[520px] mt-[50px] text-[16px] font-normal leading-[30px] text-white-a700_01 lg:text-[13px] md:ml-0 "
-                        >
-                          
-                          <>
-                          
-                          <Heading
-                            size="headingmd"
-                            as="h6"
-                            className="mb-[22px] mt-2.5 w-[18%] text-[17.6px] font-bold leading-6 text-white-a700_01 lg:w-[18%] lg:text-[14px] md:my-0 md:w-full"
-                          >
-                            Email Us
-                            </Heading>
-                            <span className="leading-[2px]">jpedutechcs@gmail.com</span>
-                            </>
-                         
-                        </Text>
-                        </div>
-                                      
-                      <Text
-                        size="textxs"
-                        as="p"
-                        className="absolute bottom-[23px] right-[2%] m-auto w-[22%] text-[16px] font-normal leading-[30px] text-white-a700_01 lg:text-[13px]"
-                      >
-                        
-                        <>
-                        
-                        <Heading
-                        
-                            size="headingmd"
-                            as="h6"
-                            className="mb-[10px] mt-2.5 w-[50%] text-[17.6px] font-bold leading-6 text-white-a700_01 lg:w-[25%] lg:text-[14px] md:my-0 md:w-full "
-                          >
-                          
-                             Our Branch's
-                             
-                          </Heading>
-                          
-                         
-                          Kurnool, Hyderabad, <br />
-                          Guntur, Melbourne(Australia)
-                        </>
-                        
-                      </Text>
-                      <UserProfile3 className=" mt-8  w-[8%] bg-white-a700_01 md:mt-0 md:w-full "  style={{marginLeft:740 }} />
-                      </div>
+                  <div className="container-xs relative z-[4] flex flex-col items-center px-14 lg:px-5 md:px-5 ">
+                  <Img src="images/contact.png"></Img>
+                  </div>
                     </div>
                   
                   <Footer />

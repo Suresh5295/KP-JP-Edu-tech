@@ -35,39 +35,30 @@ export default function AboutusPage() {
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
       <div className="w-full bg-white-a700_01">
-        <div className="flex flex-col items-center mt-32">
+        <div className="flex flex-col items-center">
           <div className="self-stretch">
-            <div className="h-[966px] bg-[url(/public/images/img_rectangle_4187.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
-              <div className="flex flex-col items-center gap-44 bg-black-900_a5 lg:gap-[132px] md:gap-[132px] sm:gap-[88px]">
-                <Header className="self-stretch px-14 md:px-5 sm:px-4" />
-                <div className="container-xs mb-[340px] flex flex-col items-center px-14 lg:px-5 md:px-5">
-                  <div className="mt-44  ml-2 flex w-[65%] flex-col items-center lg:w-full md:ml-0 md:w-full">
+            {/* Background Section */}
+            <div className="h-[966px] bg-[url('/public/images/img_rectangle_4187.png')] bg-cover bg-no-repeat lg:h-auto md:h-auto">
+              <div className="flex flex-col items-center gap-12 lg:gap-32 md:gap-24 sm:gap-16 padding-bottom:5rem sm:py-16 bg-black-900_a5">
+                <Header className="self-stretch px-4 sm:px-5 lg:px-14 bg-white-a700" />
+                <div className="container-xs mb-[340px] flex flex-col items-center px-4 sm:px-5 lg:px-14">
+                  <div className="mt-44 ml-2 flex flex-col items-center w-[90%] md:w-full lg:w-[65%]">
                     <Heading
                       size="heading9xl"
                       as="h1"
-                      className="text-[96px] font-bold text-white-a700_01 lg:text-[48px] md:text-[48px]"
+                      className="text-[48px] lg:text-[96px] font-bold text-white-a700_01"
                     >
-                      <span>&nbsp;</span>
-                      <span>About&nbsp;</span>
-                      <span>Jp Edu Tech</span>
-                      <span>
-                        <>
-                          &nbsp;
-                          <br />
-                        </>
-                      </span>
+                      About JP Edu Tech
                     </Heading>
                     <Text
                       as="p"
-                      className="mt-3.5 self-stretch text-center text-[20px] font-normal leading-[30px] tracking-[0.40px] text-white-a700_01 lg:text-[17px]"
+                      className="mt-4 text-[17px] lg:text-[20px] leading-7 tracking-wide text-white-a700_01"
                     >
-                      At JP EDU TECH, we understand that navigating the complexities of visa and immigration processes
-                      can be daunting. That&#39;s why we&#39;re here—to simplify your journey and ensure your dreams of
-                      global mobility become a reality.
+                      At JP EDU TECH, we simplify your journey through visa and immigration processes, ensuring your global mobility dreams become a reality.
                     </Text>
                     <Button
                       shape="square"
-                      className="mt-[50px] min-w-[198px] pl-7 pr-[34px] font-nunitosans font-bold tracking-[1.20px] sm:px-4"
+                      className="mt-12 py-3 px-6 sm:px-4 min-w-[150px] lg:min-w-[198px] text-base font-bold tracking-wider"
                     >
                       Appointment
                     </Button>
@@ -75,10 +66,11 @@ export default function AboutusPage() {
                 </div>
               </div>
             </div>
-            <div className="relative mt-[-192px] h-[856px] bg-[url(/public/images/img_group_191.png)] bg-cover bg-no-repeat py-[76px] lg:h-auto lg:py-8 md:h-auto md:py-5 sm:py-4">
-              <AboutusColumnTwo />
-            </div>
           </div>
+          <div className="relative mt-[-192px] h-[856px] bg-[url(/public/images/img_group_191.png)] bg-cover bg-no-repeat py-[76px] lg:h-auto lg:py-8 md:h-auto md:py-5 sm:py-4">
+            <AboutusColumnTwo />
+          </div>
+        </div>
           <AboutusRow />
           <div className="relative h-[958px] content-center self-stretch bg-[url(/public/images/img_group_180.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
             <div className="relative mx-auto h-[940px] flex-1 px-[72px] lg:px-8 md:px-5 sm:px-4">
@@ -201,7 +193,6 @@ export default function AboutusPage() {
             </div>
           </div>
         </div>
-      </div>
     </>
   );
 }

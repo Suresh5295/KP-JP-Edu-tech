@@ -49,12 +49,13 @@ export default function Home1RowSeven() {
                 type="text"
                 name="name"
                 placeholder={`Enter your name..`}
-                className="relative z-[22]  ml-5 mb-2.5 flex-grow self-end px-2.5 font-nunitosans font-semibold tracking-[0.40px] md:self-auto"
+                style={{ border: 'none' }} 
+                className="relative z-[22] w-[73%]  ml-4 mb-2.5 flex-grow self-end px-2.5 font-nunitosans font-semibold tracking-[0.40px] md:self-auto"
               />
               <Img
                 src="images/img_group_blue_gray_100_02_444x328.png"
                 alt="Image Twenty"
-                className="relative ml-[-16px] h-[444px] w-[28%] object-contain md:ml-0 md:w-full"
+                className="relative ml-[-18px] h-[444px] w-[28%] object-contain md:ml-0 md:w-full"
               />
             </div>
           </div>
@@ -63,12 +64,14 @@ export default function Home1RowSeven() {
             type="email"
             name="email"
             placeholder={`Enter your email id..`}
-            className="ml-14 mt-[18px] w-[72%] px-2.5 font-nunitosans font-semibold tracking-[0.40px] md:ml-0"
+            style={{ border: 'none' }} 
+            className="ml-14 mt-[18px] w-[72%] px-2.5 font-nunitosans font-semibold tracking-[0.40px] md:ml-0 z-10"
           />
           <TextArea
             shape="square"
             name="television_four"
             placeholder={`Message..`}
+            style={{ border: 'none' }} 
             className="ml-14 mt-7 flex w-[72%] gap-4 pl-3.5 pr-0.5 font-nunitosans font-semibold tracking-[0.40px] text-light_blue-900 md:ml-0 md:py-5 sm:py-4"
           />
           <Button

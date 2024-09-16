@@ -16,35 +16,35 @@ export default function Footer({ ...props }) {
               <div className="mr-3 flex w-[74%] items-center justify-between gap-5 lg:w-full md:mr-0 md:w-full md:flex-col">
                 <ul className="flex w-[66%] flex-wrap justify-between gap-5 self-end md:w-full md:self-auto">
                   <li>
-                    <a href="Home" target="_blank" rel="noreferrer" className="lg:text-[17px]">
+                  <a href="/home1" target="_self" rel="noreferrer" className="lg:text-[17px]">
                       <Text as="p" className="text-[20px] font-normal tracking-[1.20px] text-white-a700_01">
                         Home
                       </Text>
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="self-end lg:text-[17px]">
+                    <a href="/studyabroad" target="_self" className="self-end lg:text-[17px]">
                       <Text as="p" className="text-[20px] font-normal tracking-[1.20px] text-white-a700_01">
                         Study Abroad{" "}
                       </Text>
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="self-end lg:text-[17px]">
+                    <a href="/software" target="_self" className="self-end lg:text-[17px]">
                       <Text as="p" className="text-[20px] font-normal tracking-[1.20px] text-white-a700_01">
                         Software Consulting
                       </Text>
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="lg:text-[17px]">
+                    <a href="/aboutus" target="_self" className="lg:text-[17px]">
                       <Text as="p" className="text-[20px] font-normal tracking-[1.20px] text-white-a700_01">
                         About Us{" "}
                       </Text>
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="self-start lg:text-[17px]">
+                    <a href="/contactus" target="_self" className="self-start lg:text-[17px]">
                       <Text as="p" className="text-[20px] font-normal tracking-[-0.38px] text-white-a700_01">
                         Contact Us
                       </Text>

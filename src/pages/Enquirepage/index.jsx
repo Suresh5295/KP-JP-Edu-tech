@@ -12,7 +12,7 @@ export default function EnquirepagePage() {
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
       
-      <div className="relative mt-44  w-full content-center bg-white-a700_01 lg:h-auto md:h-auto">
+      <div className="relative  w-full content-center bg-white-a700_01 lg:h-auto md:h-auto">
       <Header className="self-stretch px-14 md:px-5 sm:px-4" />
         <div className="mx-auto flex-1">
           {/* Header Section */}
@@ -36,14 +36,9 @@ export default function EnquirepagePage() {
                 
                 {/* Form Section */}
                 <div className="relative mt-[-50px] flex flex-col items-center bg-black-900_e0 backdrop-blur-[10px] backdrop-opacity-50">
+
                   <div className="container-xs mt-[50px] flex flex-col items-start gap-[40px] px-14 lg:px-5 md:px-5 sm:gap-[20px]">
-                    <Heading
-                      size="heading5xl"
-                      as="h2"
-                      className="text-[30px] font-semibold tracking-[0.80px] text-white-a700_01 lg:text-[26px] sm:text-[24px]"
-                    >
-                      Fill the form for enquire / Appointment..
-                    </Heading>
+
                     <div className="flex w-full justify-between gap-5 lg:flex-col">
                       <Input
                         size="lg"
@@ -78,31 +73,39 @@ export default function EnquirepagePage() {
                 <div className="flex w-full flex-col items-end gap-11">
                   <div className="flex w-[74%] items-center justify-between gap-5 lg:w-full md:w-full md:flex-col">
                     <div className="flex w-[66%] flex-wrap justify-between gap-5 md:w-full">
+                      <a href="/home1" target="_self" className="lg:text-[17px]">
                       <Text
                         as="p"
                         className="text-[20px] font-normal tracking-[1.20px] text-white-a700_01 lg:text-[17px]"
                       >
                         Home
                       </Text>
+                      </a>
+                      <a href="/studyabroad" target="_self" className="lg:text-[17px]">
                       <Text
                         as="p"
                         className="text-[20px] font-normal tracking-[1.20px] text-white-a700_01 lg:text-[17px]"
                       >
                         Study Abroad
                       </Text>
+                      </a>
+                      <a href="/software" target="_self" className="lg:text-[17px]">
                       <Text
                         as="p"
                         className="text-[20px] font-normal tracking-[1.20px] text-white-a700_01 lg:text-[17px]"
                       >
                         Software Consulting
                       </Text>
+                      </a>
+                      <a href="/aboutus" target="_self" className="lg:text-[17px]">
                       <Text
                         as="p"
                         className="text-[20px] font-normal tracking-[1.20px] text-white-a700_01 lg:text-[17px]"
                       >
                         About Us
                       </Text>
-                      <a href="../src/pages/ContactUs/index.jsx" className="lg:text-[17px]">
+                      </a>
+                      <a href="/ContactUs" target="_self" className="lg:text-[17px]">
                         <Text
                           as="p"
                           className="text-[20px] font-normal tracking-[-0.38px] text-white-a700_01"
@@ -113,11 +116,19 @@ export default function EnquirepagePage() {
                     </div>
 
                     {/* Social Icons */}
-                    <div className="flex w-[22%] items-center justify-between gap-5 md:w-full">
+                    <div className="flex w-[22%] items-center justify-between gap-5 md:w-full" >
+                      <a href="https://www.facebook.com/share/XL5X5UrAG4VuFYuy/?mibextid=qi2Omg" target="_blank">
                       <Img src="images/img_close_white_a700_01.svg" alt="Close" className="h-[40px] w-[40px]" />
-                      <Img src="images/img_volume_white_a700_01.svg" alt="Volume" className="h-[40px] w-[40px]" />
+                      </a>
+                      <a href="https://wa.me/message/2I52EUSWYTQBG1" target="_blank">
+                      <Img src="images/img_volume_white_a700_01.svg" alt="Volume" className="h-[40px] w-[40px]"  />
+                      </a>
+                      <a href="https://www.instagram.com/jpetcs?igsh=MW5xNjF3aDN5dTE3bw==" target="_blank">
                       <Img src="images/img_info_white_a700_01.svg" alt="Info" className="h-[40px] w-[40px]" />
-                      <Img src="images/img_trash.svg" alt="Trash" className="h-[36px]" />
+                      </a>
+                      <a href="https://x.com/jpedutech" target="_blank" >
+                      <Img src="images/img_trash.svg" alt="Trash" className="h-[36px]"  />
+                      </a>
                     </div>
                   </div>
 

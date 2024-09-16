@@ -7,18 +7,25 @@ export default function EnglishcoachingRowourclinet() {
 
   return (
     <div className="relative z-[8] mt-[-6px] h-[946px] bg-[url(/public/images/img_group_2371.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
-      <div className="relative mt-[130px] h-[814px] content-center lg:h-auto md:h-auto">
+      <div className="relative h-[814px] content-center lg:h-auto md:h-auto">
         <div className="mx-auto flex w-full flex-col items-center">
-          <div className="container-xs relative z-10 flex flex-col items-end pl-14 pr-[698px] lg:px-5 md:px-5">
+          <div className=" container-xs relative z-10 flex flex-col items-end pl-14 pr-[698px] lg:px-5 md:px-5">
             <Heading
               as="h5"
-              className="font-satisfy text-[64px] font-normal text-white-a700_01 lg:text-[48px] md:text-[48px]"
+              className=" mt-10 font-satisfy text-[64px] font-normal text-white-a700_01 lg:text-[48px] md:text-[48px]"
             >
               Our Clinet{" "}
             </Heading>
+            <Heading
+          size="heading10xl"
+          as="h1"
+          className="mt-24 absolute left-0 right-0 top-[6%] z-[11] m-auto w-max text-[128px] font-extrabold uppercase text-white-a700_01 lg:text-[48px] md:text-[48px]"
+        >
+          Testimonial
+        </Heading>
           </div>
-          <div className="relative mt-[-18px] flex justify-center self-stretch bg-gradient py-8 sm:py-4">
-            <div className="container-xs mt-24 flex justify-center px-14 lg:px-5 md:px-5">
+          <div className="relative mt-[-18px] flex justify-center self-stretch bg-gradient pt-8 sm:py-4">
+            <div className="container-xs mt-60 flex justify-center px-14 lg:px-5 md:px-5">
               <div className="flex w-[80%] flex-col items-center gap-5 lg:w-full md:w-full">
                 <div className="relative ml-3 h-[512px] content-center self-stretch lg:h-auto md:ml-0 md:h-auto">
                   <div className="mx-auto flex w-full px-[46px] md:px-5 sm:px-4">
@@ -98,18 +105,12 @@ export default function EnglishcoachingRowourclinet() {
                     />
                   </div>
                 </div>
-                <Img src="images/img_close.svg" alt="Close" className="h-[34px] w-[6%] object-contain" />
+                <Img src="images/img_close.svg" alt="Close" className="h-[34px] w-[6%] object-contain mb-4" />
               </div>
             </div>
           </div>
         </div>
-        <Heading
-          size="heading10xl"
-          as="h1"
-          className="absolute left-0 right-0 top-[6%] z-[11] m-auto w-max text-[128px] font-extrabold uppercase text-white-a700_01 lg:text-[48px] md:text-[48px]"
-        >
-          Testimonial
-        </Heading>
+
       </div>
     </div>
   );

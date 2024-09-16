@@ -19,7 +19,7 @@ export default function EnglishCoachingPage() {
         <div>
           <div className="relative h-[1706px] ">
           
-            <div className="absolute bottom-0 left-0 right-0 top-0 m-auto h-max flex-1 mt-32">
+            <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex-1 ">
               <div className="h-[964px] bg-[url(/public/images/img_group_278.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
                 <div className="h-[964px] bg-[url(/public/images/img_group_454.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
                   <div className="mb-[312px] flex flex-col items-center gap-[180px] lg:gap-[135px] md:gap-[135px] sm:gap-[90px]">
@@ -43,11 +43,11 @@ export default function EnglishCoachingPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative mt-[-40px] flex flex-col items-center justify-end bg-black-900_f4 py-[104px] lg:py-8 md:py-5 sm:py-4">
+              <div className="relative mt-[-40px] flex flex-col items-center justify-end bg-black-900_f4 py-[184px] lg:py-8 md:py-5 sm:py-4">
                 <div className="container-xs mt-[216px] flex flex-col items-center gap-[26px] px-[38px] lg:px-5 md:px-5">
                   <Text
                     as="p"
-                    className=" -mt-20 w-[56%] self-end text-[20px] font-normal leading-[30px] tracking-[0.40px] text-white-a700_01 lg:w-full lg:text-[17px] md:w-full"
+                    className=" -mt-20 w-[62%] self-end text-[20px] font-normal leading-[30px] tracking-[0.40px] text-white-a700_01 lg:w-full lg:text-[17px] md:w-full"
                   >
                     <>
                       To make sure that overseas students have the English language comprehension and communication
@@ -64,7 +64,7 @@ export default function EnglishCoachingPage() {
                   </Text>
                   <Button
                     shape="square"
-                    className="min-w-[198px] pl-7 pr-[34px] font-nunitosans font-bold tracking-[1.20px] sm:px-4"
+                    className="pl-7 pr-[34px] font-nunitosans font-bold tracking-[1.20px] sm:px-4"
                   >
                     Know More
                   </Button>
@@ -73,7 +73,7 @@ export default function EnglishCoachingPage() {
             </div>
             <div className="absolute bottom-[7%] left-0 right-0 m-auto flex flex-1 flex-col items-center">
               <div className="h-[314px] self-stretch bg-black-900_e0 blur-[24.00px] backdrop-opacity-[0.5]" />
-              <div className="container-xs relative mt-[-206px] flex flex-col items-start px-[52px] lg:px-5 md:px-5">
+              <div className="container-xs relative mt-[-200px] flex flex-col items-start px-[52px] lg:px-5 md:px-5">
                 <Img
                   src="images/img_rectangle_4363.png"
                   alt="Image"
@@ -151,7 +151,8 @@ export default function EnglishCoachingPage() {
                               shape="square"
                               type="text"
                               name="firstName"
-                              placeholder={`First name`}
+                              placeholder="First name"
+                              style={{ border: 'none' }} // Inline style to remove border
                               className="w-[44%] px-2 font-semibold tracking-[0.40px] sm:w-full"
                             />
                             <Input
@@ -159,7 +160,8 @@ export default function EnglishCoachingPage() {
                               shape="square"
                               type="text"
                               name="lastName"
-                              placeholder={`Last name`}
+                              placeholder="Last name"
+                              style={{ border: 'none' }} // Inline style to remove border
                               className="mr-[50px] w-[44%] px-2 font-semibold tracking-[0.40px] sm:mr-0 sm:w-full"
                             />
                           </div>
@@ -168,7 +170,8 @@ export default function EnglishCoachingPage() {
                             shape="square"
                             type="email"
                             name="email"
-                            placeholder={`Email address`}
+                            placeholder="Email address"
+                            style={{ border: 'none' }} // Inline style to remove border
                             className="mt-14 w-[90%] px-2 font-semibold tracking-[0.40px]"
                           />
                           <Input
@@ -176,28 +179,32 @@ export default function EnglishCoachingPage() {
                             shape="square"
                             type="number"
                             name="mobileNumber"
-                            placeholder={`Mobile number`}
+                            placeholder="Mobile number"
+                            style={{ border: 'none' }} // Inline style to remove border
                             className="mt-14 w-[90%] px-2 font-semibold tracking-[0.40px]"
                           />
                           <Input
                             size="md"
                             shape="square"
                             name="group463"
-                            placeholder={`Your preferred study destination`}
+                            placeholder="Your preferred study destination"
+                            style={{ border: 'none' }} // Inline style to remove border
                             className="mt-14 w-[90%] px-2 font-semibold tracking-[0.40px]"
                           />
                           <Input
                             size="md"
                             shape="square"
                             name="group462"
-                            placeholder={`When do you plan to study?`}
+                            placeholder="When do you plan to study?"
+                            style={{ border: 'none' }} // Inline style to remove border
                             className="mt-14 w-[90%] px-2 font-semibold tracking-[0.40px]"
                           />
                           <TextArea
                             size="md"
                             shape="square"
                             name="comments"
-                            placeholder={`Comments...`}
+                            placeholder="Comments..."
+                            style={{ border: 'none' }} // Inline style to remove border
                             className="mt-[38px] w-[90%] px-2.5 font-semibold tracking-[0.40px] text-light_blue-900"
                           />
                           <Button
@@ -240,15 +247,15 @@ export default function EnglishCoachingPage() {
           <EnglishcoachingRowFour />
           <div className="mt-[70px] flex flex-col items-center">
             <div className="container-xs relative z-[6] flex flex-col items-end lg:px-5 md:px-5">
-              <div className="flex rotate-[90deg] flex-col items-center justify-center rounded-[22px] bg-light_blue-900 px-2.5 py-3.5">
+              <div className="flex rotate-[0deg] flex-col items-center justify-center rounded-[22px] bg-light_blue-900 px-2.5 py-3.5">
                 <Img src="images/img_vector_white_a700_01_14x24.svg" alt="Vector" className="h-[14px]" />
               </div>
             </div>
-            <footer className="relative mt-[-46px] flex flex-col self-stretch ">
+            <footer className="relative mt-[46px] flex flex-col self-stretch ">
               <div className="relative h-[346px] ">
                 <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max flex-1 flex-col items-center">
-                  <div className="container-xs relative z-[2] flex flex-col items-center px-14 lg:px-5 md:px-5">
-                    <div className="relative ml-2.5 h-[150px] w-[82%] bg-light_blue-900 px-[126px] lg:px-8 md:ml-0 md:px-5 sm:px-4">
+                  {/* <div className="container-xs relative z-[4] flex flex-col items-center px-14 lg:px-5 md:px-5 ">
+                    <div className="relative ml-2.5 h-[150px] w-[82%] bg-light_blue-900 px-[126px] lg:px-8 md:ml-0 md:px-5 sm:px-4 ">
                       <div className="absolute bottom-[0.34px] left-[11%] m-auto flex w-[90%] flex-col">
                         <div className="flex gap-6 md:flex-col">
                           <div className="mt-1.5 flex w-[8%] flex-col bg-white-a700_01 px-5 md:mt-0 md:w-full">
@@ -321,6 +328,9 @@ export default function EnglishCoachingPage() {
                         </>
                       </Text>
                     </div>
+                  </div> */}
+                  <div className="container-xs relative z-[4] flex flex-col items-center px-14 lg:px-5 md:px-5 ">
+                  <Img src="images/contact.png"></Img>
                   </div>
                   <Img
                     src="images/img_rectangle_4266_276x1920.png"
@@ -377,7 +387,7 @@ export default function EnglishCoachingPage() {
                       <Heading
                         size="headingxs"
                         as="p"
-                        className="text-[14px] font-semibold tracking-[0.28px] text-white-a700_01"
+                        className="mr-20 text-[14px] font-semibold tracking-[0.28px] text-white-a700_01"
                       >
                         @2024 JP EDU TECH Pvt Ltd. All rights reserved.
                       </Heading>
