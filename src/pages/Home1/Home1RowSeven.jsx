@@ -15,7 +15,7 @@ export default function Home1RowSeven() {
         <div className="relative h-[922px] w-[38%] self-end md:w-full md:self-auto md:px-5">
           <div className="absolute bottom-0 left-0 right-0 top-0 m-auto h-[750px] w-[88%] bg-light_blue-900" />
           <Img
-            src="images/img_rectangle_4252.png"
+            src="images/img_rectangle_4252_922x646.png"
             alt="Imageteen"
             className="absolute bottom-0 left-0 top-0 my-auto h-[922px] w-[88%] object-contain"
           />

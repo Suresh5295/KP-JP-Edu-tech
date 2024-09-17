@@ -8,7 +8,7 @@ export default function Home1RowaboutusOne() {
         <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max w-[68%] flex-col items-start gap-[26px] bg-gray-50 py-[172px] pl-[412px] pr-14 lg:py-8 lg:pl-8 md:p-5 sm:p-4">
           <Heading
             as="p"
-            className="ml-[108px] font-playfairdisplay text-[64px] font-medium text-blue_gray-800_01 lg:text-[48px] md:ml-0 md:text-[48px]"
+            className="ml-[108px] font-playfairdisplay text-[64px] font-medium text-gray-800_01 lg:text-[48px] md:ml-0 md:text-[48px]"
           >
             About Us
           </Heading>
@@ -34,7 +34,7 @@ export default function Home1RowaboutusOne() {
         </div>
         <Text
   as="p"
-  className="absolute bottom-[28%] left-0 right-0 m-auto  w-[52%] text-center font-nunito text-[20px] font-medium leading-[30px] tracking-[0.40px] text-gray-800 lg:text-[17px]"  // added 'mt-8' for margin
+  className="absolute bottom-[28%] left-0 right-0 m-auto  w-[52%] text-center font-nunito text-[20px] font-medium leading-[30px] tracking-[0.40px] text-gray-800_01 lg:text-[17px]"  // added 'mt-8' for margin
 >
   <>
     At JP Edu Tech, we understand that navigating the complexities of visa and immigration processes can be daunting.
