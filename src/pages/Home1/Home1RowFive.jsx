@@ -39,13 +39,13 @@ export default function Home1RowFive() {
             to stay informed and make well-informed decisions.
           </Text>
           <div className="relative h-[276px] self-stretch">
-            <a href="" target="_blank">
-              <Button
+            <a href="/resources" target="_self">
+              <button
                 shape="square"
-                className="absolute left-0 top-0 m-auto min-w-[200px] px-[34px] font-nunitosans font-bold tracking-[1.20px] sm:px-4"
+                className="absolute left-0 top-0 m-auto min-w-[200px]  font-nunitosans font-bold tracking-[1.20px] sm:px-4"
               >
-                Know More
-              </Button>
+                <Img src="images/button_4.png" alt="Image" className=" mt-4 h-[98px] w-[60%] object-contain" />
+              </button>
             </a>
             <Img
               src="images/img_group_13.png"

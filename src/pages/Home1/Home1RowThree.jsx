@@ -6,7 +6,7 @@ export default function Home1RowThree() {
     <div className="relative mt-[-398px] h-[982px] self-stretch bg-[url(/public/images/img_group_2377.png)] bg-cover bg-no-repeat py-[108px] lg:h-auto lg:py-8 md:h-auto md:py-5 sm:py-4">
       <div>
         <div className="flex items-start md:flex-col">
-          <div className="mt-[100px] flex w-full flex-col items-start px-14 md:px-5">
+          <div className="mt-[100px] flex w-full flex-col items-start px-14 md:px-5 z-10">
             <Img
               src="images/img_close_light_blue_900.svg"
               alt="Close"
@@ -28,10 +28,11 @@ export default function Home1RowThree() {
               preparing for exams, applying for visas, or planning an international move.
             </Heading>
             <button
-                  className="mt-9 font-bold tracking-[1.20px] text-white md sm:px-4"
-                >
-                  <Img src="images/button_2.png" alt="Image" className="ml-64 mt-4 h-[98px] w-[40%] object-contain" onClick={() => window.open("/enquirepage", "_self", "noopener,noreferrer")} />
-                </button>
+              className="mt-9 font-bold tracking-[1.20px] text-white sm:px-4 relative z-10" // Added relative positioning for z-index to take effect
+              onClick={() => window.open("/englishcoaching", "_self")}
+            >
+              <img src="images/button_2.png" alt="Learn More" className="ml-64 mt-4 h-[98px] w-[40%] object-contain" />
+            </button>
           </div>
           <div className="h-[762px] w-full self-center bg-cyan-900_01 md:px-5" />
         </div>

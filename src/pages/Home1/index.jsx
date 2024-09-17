@@ -12,6 +12,13 @@ import Home1RowaboutusOne from "./Home1RowaboutusOne";
 import Home1Rowourclinet from "./Home1Rowourclinet";
 import React, { Suspense } from "react";
 
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'instant'  // This provides a smooth scroll effect.
+  });
+};
+
 const data = [
   { userImage: "images/img_rectangle_4186.png", hoverImage: "images/hover_img_rectangle_4186.png", userRole: "Visa & Immigration" },
   { userImage: "images/img_rectangle_4187.png", hoverImage: "images/hover_img_rectangle_4187.png", userRole: "Software Consulting" },
@@ -140,9 +147,9 @@ export default function Home1Page() {
                   <Img src="images/img_group_9.svg" alt="Image" className="mt-4 h-[98px] w-[32%] object-contain" />
                 </div>
                 <a href="" target="_blank">
-                  <div className="absolute bottom-[7%] left-0 right-0 m-auto flex w-[86%] flex-col items-end">
-                    <div className="w-[4%] rounded-[34px] border-2 border-solid border-light_blue-900 lg:w-full lg:px-5 md:w-full md:px-5">
-                      <div className="relative h-[60px] content-center lg:h-auto md:h-auto">
+                  <div className="absolute bottom-[4%] left-0 right-0 m-auto flex w-[86%] flex-col items-end">
+                    <div className=" w-[4%] rounded-[34px] border-2 border-solid border-light_blue-900 lg:w-full lg:px-5 md:w-full md:px-5">
+                      <div className="relative h-[60px] content-center lg:h-auto md:h-auto  ">
                         {/* chat bot  */}
                         <Img   
                           src="images/img_ellipse_67.png"
@@ -152,7 +159,7 @@ export default function Home1Page() {
                         <Heading
                           size="headingxl"
                           as="h4"
-                          className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max w-max items-center justify-center rounded-[30px] text-center text-[24px] font-bold tracking-[1.44px] text-gray-800 lg:text-[20px]"
+                          className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max w-max items-center justify-center rounded-[30px] text-center text-[24px] font-bold tracking-[1.44px] text-gray-800 lg:text-[20px]" s
                         >
                           JET
                         </Heading>
@@ -442,7 +449,7 @@ export default function Home1Page() {
               </Heading>
               <a href="" target="_blank">
               <button
-                className="absolute top-[26%]  mt-14 mr-10"
+                className="absolute top-[26%]  mt-14 mr-10 z-40"
                 style={{ width: 'auto', left: '45%', transform: 'translateX(-50%)' }}
                 onClick={() => window.open("/enquirepage", "_self")}
               >
@@ -490,32 +497,32 @@ export default function Home1Page() {
                 <Img
                   src="images/img_2_1_png.png"
                   alt="21png"
-                  className="h-[40px] w-[8%] object-contain opacity-40 md:w-full"
+                  className="h-[40px] w-[8%] object-contain  md:w-full"
                 />
                 <Img
                   src="images/img_1_1_png.png"
                   alt="11png"
-                  className="h-[40px] w-[8%] object-contain opacity-40 md:w-full"
+                  className="h-[40px] w-[8%] object-contain md:w-full"
                 />
                 <Img
                   src="images/img_2_1_png_40x136.png"
                   alt="21png"
-                  className="h-[40px] w-[8%] object-contain opacity-40 md:w-full"
+                  className="h-[40px] w-[8%] object-contain  md:w-full"
                 />
                 <Img
                   src="images/img_4_1_png.png"
                   alt="41png"
-                  className="h-[40px] w-[8%] object-contain opacity-40 md:w-full"
+                  className="h-[40px] w-[8%] object-contain  md:w-full"
                 />
                 <Img
                   src="images/img_1_1_png.png"
                   alt="11png"
-                  className="h-[40px] w-[8%] object-contain opacity-40 md:w-full"
+                  className="h-[40px] w-[8%] object-contain  md:w-full"
                 />
                 <Img
                   src="images/img_4_1_png.png"
                   alt="41png"
-                  className="h-[40px] w-[8%] object-contain opacity-40 md:w-full"
+                  className="h-[40px] w-[8%] object-contain  md:w-full"
                 />
               </div>
             </div>
@@ -523,9 +530,11 @@ export default function Home1Page() {
             <Home1RowSeven />
             <div className="mt-[86px] flex flex-col items-center self-stretch">
               <div className="container-xs relative z-[24] flex flex-col items-end lg:px-5 md:px-5">
-                <div className="flex rotate-[90deg] flex-col items-center justify-center rounded-[22px] bg-light_blue-900 px-2.5 py-3.5">
-                  <Img src="images/img_vector_white_a700_01_14x24.svg" alt="Vector Eleven" className="h-[14px]" />
-                </div>
+              <div className="flex rotate-[0deg] flex-col items-center justify-center rounded-[22px] bg-light_blue-900 px-2.5 py-3.5 cursor-pointer"
+                onClick={scrollToTop}>
+                <Img src="images/img_vector_white_a700_01_14x24.svg" alt="Vector Eleven" className="h-[14px]" />
+              </div>
+
               </div>
               <div className="relative mt-[-46px] self-stretch">
                 <div className="flex flex-col items-center ">

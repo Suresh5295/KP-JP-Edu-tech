@@ -17,7 +17,7 @@ export default function Home1Rowourclinet() {
               Our Clinet{" "}
             </Heading>
           </div>
-          <div className="relative mt-[-18px] flex justify-center self-stretch bg-gradient py-8 sm:py-4">
+          <div className="relative mt-[-18px] flex justify-center self-stretch  py-8 sm:py-4">
             <div className="container-xs mt-24 flex justify-center px-14 lg:px-5 md:px-5">
               <div className="flex w-[80%] flex-col items-center gap-5 lg:w-full md:w-full">
                 <div className="relative ml-3 h-[512px] content-center self-stretch lg:h-auto md:ml-0 md:h-auto">
@@ -108,7 +108,7 @@ export default function Home1Rowourclinet() {
                     onClick={() => {
                       sliderRef?.current?.slidePrev();
                     }}
-                    className="w-[34px] rounded-[16px] px-1.5"
+                    className="w-[34px] rounded-[16px] px-1.5 rotate-180"
                   >
                     <Img src="images/img_group_2396.svg" />
                   </Button>
@@ -119,7 +119,7 @@ export default function Home1Rowourclinet() {
                     onClick={() => {
                       sliderRef?.current?.slideNext();
                     }}
-                    className="w-[34px] rounded-[16px] px-1.5"
+                    className="w-[34px] rounded-[16px] px-1.5 rotate-180"
                   >
                     <Img src="images/img_group_2397.svg" />
                   </Button>

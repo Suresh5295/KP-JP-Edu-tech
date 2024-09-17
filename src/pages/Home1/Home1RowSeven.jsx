@@ -50,7 +50,7 @@ export default function Home1RowSeven() {
                 name="name"
                 placeholder={`Enter your name..`}
                 style={{ border: 'none' }} 
-                className="relative z-[22] w-[73%]  ml-4 mb-2.5 flex-grow self-end px-2.5 font-nunitosans font-semibold tracking-[0.40px] md:self-auto"
+                className="relative z-[22] w-[70%]  ml-4 mb-2.5 flex-grow self-end px-2.5 font-nunitosans font-semibold tracking-[0.40px] md:self-auto"
               />
               <Img
                 src="images/img_group_blue_gray_100_02_444x328.png"
@@ -65,14 +65,14 @@ export default function Home1RowSeven() {
             name="email"
             placeholder={`Enter your email id..`}
             style={{ border: 'none' }} 
-            className="ml-14 mt-[18px] w-[72%] px-2.5 font-nunitosans font-semibold tracking-[0.40px] md:ml-0 z-10"
+            className="ml-14 mt-[18px] w-[70%] px-2.5 font-nunitosans font-semibold tracking-[0.40px] md:ml-0 z-10"
           />
           <TextArea
             shape="square"
             name="television_four"
             placeholder={`Message..`}
             style={{ border: 'none' }} 
-            className="ml-14 mt-7 flex w-[72%] gap-4 pl-3.5 pr-0.5 font-nunitosans font-semibold tracking-[0.40px] text-light_blue-900 md:ml-0 md:py-5 sm:py-4"
+            className="ml-14 mt-7 flex w-[70%] gap-4 pl-3.5 pr-0.5 font-nunitosans font-semibold tracking-[0.40px] text-light_blue-900 md:ml-0 md:py-5 sm:py-4"
           />
           <button
             size="9xl"
