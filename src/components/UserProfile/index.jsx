@@ -14,7 +14,7 @@ export default function UserProfile({
           <Heading
             size="headingxl"
             as="h4"
-            className="mt-2 text-[24px] font-semibold tracking-[-0.46px] text-light_blue-900"
+            className="mt-2 text-base font-semibold tracking-[-0.46px] text-light_blue-900"
           >
             {userRole}
           </Heading>

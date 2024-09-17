@@ -34,11 +34,11 @@ export default function Home1RowaboutusOne() {
         </div>
         <Text
   as="p"
-  className="absolute bottom-[28%] left-0 right-0 m-auto  w-[52%] text-center font-nunito text-[20px] font-medium leading-[30px] tracking-[0.40px] text-gray-800_01 lg:text-[17px]"  // added 'mt-8' for margin
+  className="absolute bottom-[28%] left-0 right-0 m-auto  w-[52%] text-center font-nunito text-[20px] font-semibold leading-[30px] tracking-[0.40px] text-gray-800_01 lg:text-[17px]"  // added 'mt-8' for margin
 >
   <>
     At JP Edu Tech, we understand that navigating the complexities of visa and immigration processes can be daunting.
-    That&#39;s why we&#39;re here—to simplify your journey and ensure your dreams of global mobility become a reality. <br />
+    That&#39;s why we&#39;re here—to simplify your journey and ensure your dreams of global mobility become a reality. <br/>
     We specialize in providing comprehensive Visa and Immigration services tailored to meet your specific needs.
     Whether you&#39;re an individual seeking a Students who seek to study overseas, new adventure abroad, a family
     looking to reunite, or a business aiming to expand internationally, our team of experts is committed to guiding

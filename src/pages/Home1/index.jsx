@@ -20,12 +20,12 @@ const scrollToTop = () => {
 };
 
 const data = [
-  { userImage: "images/img_rectangle_4186.png", hoverImage: "images/hover_img_rectangle_4186.png", userRole: "Visa & Immigration" },
-  { userImage: "images/img_rectangle_4187.png", hoverImage: "images/hover_img_rectangle_4187.png", userRole: "Software Consulting" },
-  { userImage: "images/img_rectangle_4188.png", hoverImage: "images/hover_img_rectangle_4188.png", userRole: "Business Consulting" },
-  { userImage: "images/img_rectangle_4189.png", hoverImage: "images/hover_img_rectangle_4189.png", userRole: "Financial Consulting" },
-  { userImage: "images/img_rectangle_4190.png", hoverImage: "images/hover_img_rectangle_4190.png", userRole: "Career Counselling" },
-  { userImage: "images/img_rectangle_4191.png", hoverImage: "images/hover_img_rectangle_4191.png", userRole: "English Coaching Service" },
+  { userImage: "images/img_rectangle_4186.png", userRole: "Visa & Immigration" },
+  { userImage: "images/img_rectangle_4187.png", userRole: "Software Consulting" },
+  { userImage: "images/img_rectangle_4188.png", userRole: "Business Consulting" },
+  { userImage: "images/img_rectangle_4189.png", userRole: "Financial Consulting" },
+  { userImage: "images/img_rectangle_4190.png", userRole: "Career Counselling" },
+  { userImage: "images/img_rectangle_4191.png", userRole: "English Coaching Service" },
 ];
 
 
@@ -244,7 +244,7 @@ export default function Home1Page() {
                   <div className="relative z-[11]">
                     <div className="relative">
                     <Img
-                            src="images/bg_tower.svg"
+                            src="images/bg_tower.png"
                             alt="Close"
                             
                           /> 
