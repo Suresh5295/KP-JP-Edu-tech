@@ -151,3 +151,19 @@ li:hover {
     @apply w-full mx-auto max-w-[1676px];
   }
 }
+@media (max-width: 768px) {
+  .header-nav {
+    display: none;  /* Hidden by default */
+    flex-direction: column; /* Stack vertically */
+    width: 100%; /* Full width */
+    position: absolute; /* Positioning out of flow */
+    top: 100%; /* Just below the header */
+    left: 0; /* Align to the left */
+    background: white; /* Ensuring readability */
+    z-index: 1000; /* Above other content */
+  }
+
+  .header-nav.open {
+    display: flex; /* Show when open */
+  }
+}

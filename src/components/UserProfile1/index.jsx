@@ -1,17 +1,16 @@
-import { Heading, Img } from "./..";
+import { Heading, Img } from "./.."; // Make sure this path is correctly pointing to your components
 import React from "react";
 
-export default function UserProfile1({ userHeading = "1", userSubHeading = "1", userLocation = "USA", ...props })
- {
+export default function UserProfile1({ userHeading, userSubHeading, userLocation, imageSrc, ...props }) {
   return (
     <div {...props} className={`${props.className} h-[510px] w-[20%] md:w-full relative`}>
       <div className="flex flex-1 flex-col items-center">
         <Img
-          src="images/img_rectangle_4220.png"
-          alt="Image"
+          src={imageSrc}  // Use the image source passed via props
+          alt="User Image"
           className="h-[392px] w-full rounded-[128px] object-cover"
         />
-        <div className="relative mt-[-58px] flex w-[98px] flex-col items-center justify-center rounded-[48px] border-[5px] border-solid border-light_blue-900 bg-white-a700_01">
+        {/* <div className="relative mt-[-58px] flex w-[98px] flex-col items-center justify-center rounded-[48px] border-[5px] border-solid border-light_blue-900 bg-white-a700_01">
           <Heading
             size="heading4xl"
             as="h1"
@@ -19,14 +18,9 @@ export default function UserProfile1({ userHeading = "1", userSubHeading = "1", 
           >
             {userHeading}
           </Heading>
-        </div>
+        </div> */}
       </div>
       <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max flex-1 flex-col items-center">
-        <Img
-          src="images/img_rectangle_4219.png"
-          alt="Image"
-          className="h-[392px] w-full rounded-[128px] object-cover"
-        />
         <div className="relative mt-[-58px] flex w-[38%] flex-col items-center gap-[30px]">
           <Heading
             size="heading4xl"
@@ -43,4 +37,3 @@ export default function UserProfile1({ userHeading = "1", userSubHeading = "1", 
     </div>
   );
 }
-

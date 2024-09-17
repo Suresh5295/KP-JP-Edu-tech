@@ -27,14 +27,11 @@ export default function Home1RowThree() {
               offer personalized coaching designed to guide you through every step of your journey, whether you’re
               preparing for exams, applying for visas, or planning an international move.
             </Heading>
-            <a href="" target="_blank">
-              <Button
-                shape="square"
-                className="ml-[246px] mt-11 min-w-[198px] px-[34px] font-nunitosans font-bold tracking-[1.20px] md:ml-0 sm:px-4"
-              >
-                View More
-              </Button>
-            </a>
+            <button
+                  className="mt-9 font-bold tracking-[1.20px] text-white md sm:px-4"
+                >
+                  <Img src="images/button_2.png" alt="Image" className="ml-64 mt-4 h-[98px] w-[40%] object-contain" onClick={() => window.open("/enquirepage", "_self", "noopener,noreferrer")} />
+                </button>
           </div>
           <div className="h-[762px] w-full self-center bg-cyan-900_01 md:px-5" />
         </div>

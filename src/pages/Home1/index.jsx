@@ -13,13 +13,14 @@ import Home1Rowourclinet from "./Home1Rowourclinet";
 import React, { Suspense } from "react";
 
 const data = [
-  { userImage: "images/img_rectangle_4186.png", userRole: "Visa & Immigration" },
-  { userImage: "images/img_rectangle_4187.png", userRole: "Software Consulting" },
-  { userImage: "images/img_rectangle_4188.png", userRole: "Business Consulting" },
-  { userImage: "images/img_rectangle_4189.png", userRole: "Financial Consulting" },
-  { userImage: "images/img_rectangle_4190.png", userRole: "Career Counselling" },
-  { userImage: "images/img_rectangle_4191.png", userRole: "English Coaching Service" },
+  { userImage: "images/img_rectangle_4186.png", hoverImage: "images/hover_img_rectangle_4186.png", userRole: "Visa & Immigration" },
+  { userImage: "images/img_rectangle_4187.png", hoverImage: "images/hover_img_rectangle_4187.png", userRole: "Software Consulting" },
+  { userImage: "images/img_rectangle_4188.png", hoverImage: "images/hover_img_rectangle_4188.png", userRole: "Business Consulting" },
+  { userImage: "images/img_rectangle_4189.png", hoverImage: "images/hover_img_rectangle_4189.png", userRole: "Financial Consulting" },
+  { userImage: "images/img_rectangle_4190.png", hoverImage: "images/hover_img_rectangle_4190.png", userRole: "Career Counselling" },
+  { userImage: "images/img_rectangle_4191.png", hoverImage: "images/hover_img_rectangle_4191.png", userRole: "English Coaching Service" },
 ];
+
 
 export default function Home1Page() {
   const [searchBarValue, setSearchBarValue] = React.useState("");
@@ -61,12 +62,12 @@ export default function Home1Page() {
                   style={{ border: 'none', outline: 'none' }}
                 />
 
-                  <div className="flex w-[24%] items-center justify-center gap-[30px] self-end md:w-full md:self-auto z-10">
+                  <div className="mr-20 flex w-[24%] items-center justify-center gap-[30px] self-end md:w-full md:self-auto z-10">
                     <div className="flex flex-1 items-center justify-between gap-5">
-                      <a href="https://www.facebook.com/share/XL5X5UrAG4VuFYuy/?mibextid=qi2Omg" target="_blank">
+                      <a href="https://www.facebook.com/share/XL5X5UrAG4VuFYuy/?mibextid=qi2Omg">
                         <Img src="images/img_facebook.svg" alt="Facebook" className="h-[24px] w-[24px]" />
                       </a>
-                      <a href="https://wa.me/message/2I52EUSWYTQBG1" target="_blank">
+                      <a href="https://wa.me/message/2I52EUSWYTQBG1" >
                         <Img src="images/img_volume.svg" alt="Volume" className="h-[24px] w-[24px]" />
                       </a>
                       <a href="https://www.instagram.com/jpetcs?igsh=MW5xNjF3aDN5dTE3bw==" target="_blank">
@@ -96,7 +97,7 @@ export default function Home1Page() {
                   className="absolute right-[26%] top-0 m-auto h-[602px] w-[24%] object-contain z-20 -mt-24 "
                 />
                 <div className="absolute right-0 top-1 m-auto flex h-[776px] w-[56%] items-end justify-end bg-[url(/public/images/img_group_2364.png)] bg-cover bg-no-repeat py-[78px] pl-14 pr-[338px] lg:h-auto lg:py-8 lg:pr-8 md:h-auto md:p-5 sm:p-4">
-                  <Img src="images/img_close.svg" alt="Close" className="mt-[584px] h-[34px] w-[14%] object-contain" />
+                  {/* <Img src="images/img_close.svg" alt="Close" className="mt-[584px] h-[34px] w-[14%] object-contain" /> */}
                 </div>
                 <div className="absolute left-0 right-0 top-[5%] m-auto flex flex-1 flex-col items-start">
                 <Heading
@@ -130,14 +131,12 @@ export default function Home1Page() {
                     <span className="capitalize">JP Edu Tech</span>
                     <span> – We’re Here to Guide You!</span>
                   </Text>
+                  <button
+                  className="mt-9 font-bold tracking-[1.20px] text-white md:ml-0 sm:px-4"
+                >
+                  <Img src="images/button_1.svg" alt="Image" className="ml-5 mt-4 h-[98px] w-[60%] object-contain" onClick={() => window.open("/enquirepage", "_self", "noopener,noreferrer")} />
+                </button>
 
-                  <Button
-                    size="2xl"
-                    shape="square"
-                    className="ml-3 mt-9 min-w-[198px] px-[34px] font-bold tracking-[1.20px] bg-blue-600 text-white md:ml-0 sm:px-4"
-                  >
-                    Learn More
-                  </Button>
                   <Img src="images/img_group_9.svg" alt="Image" className="mt-4 h-[98px] w-[32%] object-contain" />
                 </div>
                 <a href="" target="_blank">
@@ -153,7 +152,7 @@ export default function Home1Page() {
                         <Heading
                           size="headingxl"
                           as="h4"
-                          className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max w-max items-center justify-center rounded-[30px] bg-black-900_bc text-center text-[24px] font-bold tracking-[1.44px] text-gray-800 lg:text-[20px]"
+                          className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max w-max items-center justify-center rounded-[30px] text-center text-[24px] font-bold tracking-[1.44px] text-gray-800 lg:text-[20px]"
                         >
                           JET
                         </Heading>
@@ -162,6 +161,8 @@ export default function Home1Page() {
                   </div>
                 </a>
                 <div className="container-xs absolute bottom-0 left-0.5 my-auto flex items-end justify-center px-14 lg:px-5 md:relative md:flex-col md:px-5">
+                <div className="flex flex-1 flex-wrap items-start justify-between gap-5 self-center px-8 md:self-stretch sm:px-4">
+                <a href="/studyabroad" target="_blank" className="hover:underline hover:text-blue_gray-800 focus:underline focus:text-blue_gray-800">
                   <Heading
                     size="text2xl"
                     as="h5"
@@ -169,6 +170,8 @@ export default function Home1Page() {
                   >
                     Study Abroad
                   </Heading>
+                </a>
+                  <a href="/software" target="_blank" className="hover:underline hover:text-blue_gray-800 focus:underline focus:text-blue_gray-800">
                   <Heading
                     size="text2xl"
                     as="h6"
@@ -176,8 +179,8 @@ export default function Home1Page() {
                   >
                     Software Consulting{" "}
                   </Heading>
-                  <div className="flex flex-1 flex-wrap items-start justify-between gap-5 self-center px-8 md:self-stretch sm:px-4">
-                    <a href="/Migrate" target="_blank">
+                  </a>
+                    <a href="/Migrate" target="_blank" className="hover:underline hover:text-blue_gray-800 focus:underline focus:text-blue_gray-800">
                       <Heading
                         size="text2xl"
                         as="p"
@@ -186,7 +189,7 @@ export default function Home1Page() {
                         Migrate
                       </Heading>
                     </a>
-                    <a href="/EnglishCoaching" target="_blank">
+                    <a href="/EnglishCoaching" target="_blank" className="hover:underline hover:text-blue_gray-800 focus:underline focus:text-blue_gray-800">
                       <Heading
                         size="text2xl"
                         as="p"
@@ -195,7 +198,7 @@ export default function Home1Page() {
                         English Coaching
                       </Heading>
                     </a>
-                    <a href="/Aboutus" target="_blank">
+                    <a href="/Aboutus" target="_blank" className="hover:underline hover:text-blue_gray-800 focus:underline focus:text-blue_gray-800">
                       <Heading
                         size="text2xl"
                         as="p"
@@ -204,9 +207,7 @@ export default function Home1Page() {
                         About Us{" "}
                       </Heading>
                     </a>
-                  </div>
-                  <div className="flex w-[22%] flex-wrap justify-between gap-5 self-start md:w-full md:self-auto">
-                    <a href="/Resources" target="_blank">
+                    <a href="/Resources" target="_blank" className="hover:underline hover:text-blue_gray-800 focus:underline focus:text-blue_gray-800">
                       <Heading
                         size="text2xl"
                         as="p"
@@ -215,7 +216,7 @@ export default function Home1Page() {
                         Resources
                       </Heading>
                     </a>
-                    <a href="/ContactUs" target="_blank">
+                    <a href="/ContactUs" target="_blank" className="hover:underline hover:text-blue_gray-800 focus:underline focus:text-blue_gray-800">
                       <Heading
                         size="text2xl"
                         as="p"
@@ -234,30 +235,29 @@ export default function Home1Page() {
               <div className="absolute bottom-0 left-0 right-0 top-0 m-auto h-max flex-1">
                 <div className="relative z-[4]">
                   <div className="relative z-[11]">
-                    <div className="relative h-[942px]">
+                    <div className="relative">
                     <Img
                             src="images/bg_tower.svg"
                             alt="Close"
                             
                           /> 
                       <div className="absolute bottom-0 left-0 right-0 top-0 m-auto h-[940px] flex-1">
-                        <div className="absolute bottom-[24%] left-0 right-0 mx-[126px] my-auto flex flex-1 flex-col items-start gap-[20px] lg:mx-0 md:mx-0">
+                        <div className="absolute bottom-[24%] left-0 right-0 mx-[126px] my-auto flex flex-1 flex-col items-start gap-[20px] lg:mx-0 md:mx-0" style={{top: '400px', marginTop: '60px'}}>
 
                           <Text
                             as="p"
-                            className="w-[34%] text-[20px] font-normal leading-[30px] tracking-[0.40px] text-black-900_02 lg:w-full lg:px-5 lg:text-[17px] md:w-full md:px-5"
+                            className="w-[34%] text-[20px] font-normal leading-[30px] tracking-[0.40px] text-black-900_02 lg:w-full lg:px-5 lg:text-[17px] md:w-full md:px-5 "
                           >
                             Studying abroad opens doors to new cultures, experiences, and opportunities. At Jp Edu Tech,
                             we are dedicated to helping you navigate the complexities of studying in a foreign country,
                             ensuring a smooth and successful international academic experience.
                           </Text>
-                          <a href="" target="_blank">
-                            <Button
-                              shape="square"
-                              className="min-w-[198px] px-[34px] font-bold tracking-[1.20px] sm:px-4"
-                            >
-                              Learn More
-                            </Button>
+                          <a href="/studyabroad" target="_self">
+                          <button
+                            className="mt-9 font-bold tracking-[1.20px] text-white md:ml-0 sm:px-4"
+                          >
+                            <Img src="images/button_1.svg" alt="Image" className="ml-5 mt-4 h-[98px] w-[60%] object-contain" onClick={() => window.open("/enquirepage", "_self", "noopener,noreferrer")} />
+                          </button>
                           </a>
                         </div>
                         <div className="absolute left-0 right-0 top-[21%] mx-[126px] my-auto flex flex-1 flex-col gap-[34px] lg:mx-0 md:mx-0">
@@ -266,10 +266,10 @@ export default function Home1Page() {
                             alt="Close"
                             className="ml-1.5 h-[40px] w-[40px] md:ml-0"
                           /> */}
-                          <div className="flex flex-col items-start gap-10">
+                          <div className="flex flex-col items-start gap-10 ">
                             <Heading
                               as="h2"
-                              className="font-playfairdisplay text-[64px] font-medium leading-[85px] text-blue_gray-800_01 lg:text-[48px] md:text-[48px]"
+                              className="font-playfairdisplay text-[64px] font-medium leading-[85px] text-blue_gray-800_01 lg:text-[48px] md:text-[48px] "
                             >
                               <>
                                 Choose Your own <br />
@@ -294,7 +294,7 @@ export default function Home1Page() {
                             className="absolute bottom-[18.66px] right-[-0.34px] m-auto h-[192px] w-[24%] object-contain"
                           />
                         </div> */}
-                        <div className="absolute  bottom-[18%] right-[10%] m-auto flex w-[48%] flex-col items-start bg-white-a700_01 px-[34px] py-[18px] shadow-xl sm:px-4">
+                        <div className="absolute  bottom-[18%] right-[15%] m-auto flex w-[40%] flex-col items-start bg-white-a700_01 px-[34px] py-[18px] shadow-xl sm:px-4">
                           <Heading
                             size="headinglg"
                             as="h3"
@@ -311,24 +311,23 @@ export default function Home1Page() {
                             The US Student Visa is a Non-Immigrant Visa that allows foreign nationals to pursue academic
                             studies, language training programs or other types of vocational or technical training. 
                           </Text>
-                          <div className="mb-2.5 ml-[18px] mr-[70px] mt-[84px] flex gap-4 self-stretch md:mx-0 md:flex-col">
+                          <div className="mb-2.5 ml-[18px] mr-[60px] mt-[84px] flex gap-4 self-stretch md:mx-0 md:flex-col">
                             <Img
                               src="images/img_rectangle_4178.png"
                               alt="Rectangle"
-                              className="h-[176px] w-[32%] object-contain md:w-full"
+                              className="h-[176px] w-[27%] object-contain md:w-full"
                             />
                             <Img
                               src="images/img_rectangle_4177.png"
                               alt="Rectangle"
-                              className="h-[176px] w-[32%] object-contain md:w-full"
+                              className="h-[176px] w-[27%] object-contain md:w-full"
                             />
-                            <div className="relative h-[180px] w-[34%] content-center lg:h-auto md:h-auto md:w-full">
-                              <Img
-                                src="images/img_rectangle_4179.png"
-                                alt="Image"
-                                className="mx-auto h-[176px] flex-1 object-cover"
-                              />
-                            </div>
+                            <Img
+                              src="images/img_rectangle_4179.png"
+                              alt="Rectangle"
+                              className="h-[176px] w-[27%] object-contain md:w-full"
+                            />
+
                           </div>
                         </div>
                         <div className="absolute left-0 right-0 top-0 m-auto flex flex-1 items-start pl-[660px] pr-14 lg:pl-8 md:px-5 sm:relative sm:flex-col sm:px-4">
@@ -405,7 +404,7 @@ export default function Home1Page() {
                       </div>
                     </div>
                     <div className="relative z-[6] mt-[-6px] h-[984px] bg-[url(/public/images/img_mask_group_984x1918.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
-                      <div className="bg-gradient2 py-11 md:py-5 sm:py-4">
+                      <div className="py-11 md:py-5 sm:py-4">
                         <Home1ColumnFour />
                       </div>
                     </div>
@@ -441,13 +440,15 @@ export default function Home1Page() {
               >
                 Our Services
               </Heading>
-              <Button
-                shape="square"
-                className="absolute top-[26%] z-[16] mt-20 mr-10 px-[34px] font-nunitosans font-bold tracking-[1.20px] sm:px-4 "
+              <a href="" target="_blank">
+              <button
+                className="absolute top-[26%]  mt-14 mr-10"
                 style={{ width: 'auto', left: '45%', transform: 'translateX(-50%)' }}
+                onClick={() => window.open("/enquirepage", "_self")}
               >
-                Learn More
-              </Button>
+                <img src="images/button_1.svg" alt="Learn More" className=" z-[16] mt-4 object-contain" />
+              </button>
+              </a>
               <div className="absolute bottom-[13%] left-0 right-0 z-[17] mx-[100px] my-auto flex flex-1 flex-col items-end lg:mx-0 md:mx-0">
                 <div className="relative z-[18] flex flex-col items-end self-stretch">
                   <Img

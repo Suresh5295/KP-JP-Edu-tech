@@ -5,7 +5,7 @@ import React, { Suspense } from "react";
 const data = [
   {
     callIcon: "images/img_call.svg",
-    contactImage: "images/img_rectangle_4439.png",
+    contactImage: "images/img_rectangle_4439.svg",
     contactHeading: "Contact Details",
     contactNumbers: (
       <>
@@ -17,18 +17,18 @@ const data = [
   },
   {
     callIcon: "images/img_lock.svg",
-    contactImage: "images/img_rectangle_4431.png",
+    contactImage: "images/img_rectangle_4431.svg",
     contactHeading: "Email Details",
     contactNumbers: "jpedutechcs@gmail.com  ",
   },
   {
     callIcon: "images/img_linkedin_light_blue_900.svg",
-    contactImage: "images/img_rectangle_4433.png",
+    contactImage: "images/img_rectangle_4433.svg",
     contactHeading: "Our Branch’s",
     contactNumbers: (
       <>
       Kurnool, Hyderabad, Guntur,
-        
+      <br />  
       Melbourne (Australia)
       </>
     ),

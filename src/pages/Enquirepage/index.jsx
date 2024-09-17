@@ -36,9 +36,7 @@ export default function EnquirepagePage() {
                 
                 {/* Form Section */}
                 <div className="relative mt-[-50px] flex flex-col items-center bg-black-900_e0 backdrop-blur-[10px] backdrop-opacity-50">
-
-                  <div className="container-xs mt-[50px] flex flex-col items-start gap-[40px] px-14 lg:px-5 md:px-5 sm:gap-[20px]">
-
+                  <div className="container-xs mt-[50px] flex flex-col items-start gap-[1.25rem] px-14 lg:px-5 md:px-5 sm:gap-[20px]">
                     <div className="flex w-full justify-between gap-5 lg:flex-col">
                       <Input
                         size="lg"
