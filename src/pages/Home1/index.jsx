@@ -48,7 +48,7 @@ export default function Home1Page() {
                   alt="Logos1two"
                   className="h-[116px] w-[14%] object-contain md:w-full md:mb-4"
                 />
-                <div className="mb-7 ml-[60px] flex w-[80%] items-start justify-between gap-5 self-end md:ml-0 md:w-full md:flex-col md:self-auto md:px-5">
+                <div className="mb-7 ml-[60px] flex w-[100%] items-start justify-between gap-5 self-end md:ml-0 md:w-full md:flex-col md:self-auto md:px-5">
                 <Input
                   size="xs"
                   shape="round"
@@ -97,7 +97,7 @@ export default function Home1Page() {
                 </div>
               </header>
               <div className="relative ml-20 h-[900px] content-center lg:h-auto md:ml-0 md:h-auto">
-                <Img src="images/img_mask_group.png" alt="Image" className="ml-auto h-[1020px] w-[56%] object-contain -mt-32" />
+                
                 <Img
                   src="images/img_group_7.png"
                   alt="Image"
@@ -322,17 +322,17 @@ export default function Home1Page() {
                             <Img
                               src="images/img_rectangle_4178.png"
                               alt="Rectangle"
-                              className="h-[176px] w-[27%] object-contain md:w-full"
+                              className="h-[176px] w-[27%] md:w-full"
                             />
                             <Img
                               src="images/img_rectangle_4177.png"
                               alt="Rectangle"
-                              className="h-[176px] w-[27%] object-contain md:w-full"
+                              className="h-[176px] w-[27%]  md:w-full"
                             />
                             <Img
-                              src="images/img_rectangle_4179.png"
+                              src="images/Rectangle 4185.png"
                               alt="Rectangle"
-                              className="h-[176px] w-[27%] object-contain md:w-full"
+                              className="h-[176px] w-[29%]  md:w-full"
                             />
 
                           </div>
@@ -375,11 +375,11 @@ export default function Home1Page() {
                     <div className="flex items-center md:flex-col">
                       <div className="relative h-[958px] w-[34%] md:w-full md:px-5">
                         <Img
-                          src="images/img_rectangle_4179.png"
+                          src="images/Rectangle 4185.png"
                           alt="Image"
                           className="absolute bottom-0 left-0 right-0 top-0 m-auto h-[952px] w-full flex-1 object-cover"
                         />
-                        <div className="absolute bottom-0 left-0 right-0 top-0  flex h-[952px] flex-1 flex-col items-center justify-end bg-gradient3 p-1">
+                        <div className="absolute bottom-0 left-0 right-0 top-0  flex h-[952px] flex-1 flex-col items-center justify-end p-1">
                           <div className="mt-[512px] w-[46%] lg:w-full md:w-full">
                             <a href="" target="_blank">
                               {/* <div className="flex flex-col items-start">

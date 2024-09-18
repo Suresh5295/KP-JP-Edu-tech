@@ -48,6 +48,7 @@ export default function StudyabroadRowThirteen() {
                   type="text"
                   name="name"
                   placeholder={`Enter your name..`}
+                  style={{ border: 'none' }} 
                   className="relative z-[8] mb-[34px] flex-grow self-end px-2.5 font-semibold tracking-[0.40px] md:self-auto"
                 />
                 <Img
@@ -61,7 +62,8 @@ export default function StudyabroadRowThirteen() {
                 type="email"
                 name="email"
                 placeholder={`Enter your email id..`}
-                className="relative mt-[-4px] w-[72%] px-2.5 font-semibold tracking-[0.40px]"
+                style={{ border: 'none' }} 
+                className="relative mt-[-4px] w-[74%] px-2.5 font-semibold tracking-[0.40px]"
               />
             </div>
           </div>
@@ -69,7 +71,8 @@ export default function StudyabroadRowThirteen() {
             shape="square"
             name="television_four"
             placeholder={`Message..`}
-            className="ml-14 flex w-[72%] gap-4 pl-3.5 pr-0.5 font-semibold tracking-[0.40px] text-light_blue-900 md:ml-0 md:py-5 sm:py-4"
+            style={{ border: 'none' }} 
+            className="ml-14 flex w-[70%] gap-4 pl-3.5 pr-0.5 font-semibold tracking-[0.40px] text-light_blue-900 md:ml-0 md:py-5 sm:py-4"
           />
           <Button
             size="9xl"

@@ -5,7 +5,7 @@ export default function Home1RowaboutusOne() {
   return (
     <div className="relative mt-[-34px] h-[1028px] self-stretch bg-[url(/public/images/img_group_2380.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
       <div className="relative h-[1028px] bg-blue_gray-900_44">
-        <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max w-[68%] flex-col items-start gap-[26px] bg-gray-50 py-[172px] pl-[412px] pr-14 lg:py-8 lg:pl-8 md:p-5 sm:p-4">
+        <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max w-[68%] flex-col items-start gap-[26px] bg-gray-50 py-[179px] pl-[412px] pr-14 lg:py-8 lg:pl-8 md:p-5 sm:p-4">
           <Heading
             as="p"
             className="ml-[108px] font-playfairdisplay text-[64px] font-medium text-gray-800_01 lg:text-[48px] md:ml-0 md:text-[48px]"

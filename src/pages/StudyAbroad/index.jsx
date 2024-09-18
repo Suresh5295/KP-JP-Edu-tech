@@ -13,6 +13,14 @@ export default function StudyAbroadPage() {
   const [sliderState, setSliderState] = React.useState(0);
   const sliderRef = React.useRef(null);
 
+  // Scroll to Top Function
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'  // This makes the scrolling behavior smooth
+    });
+  };
+
   return (
     <>
       <Helmet>
@@ -153,8 +161,7 @@ export default function StudyAbroadPage() {
                   >
                     <>
                       Empower your Global aspirations with
-                      <br />
-
+                      <br />&nbsp; <br/>
                       JP EDU TECH
                     </>
                   </Heading>
@@ -164,6 +171,7 @@ export default function StudyAbroadPage() {
                       type="text"
                       name="firstName"
                       placeholder={`First name`}
+                      style={{ border: 'none' }} 
                       className="w-[44%] px-2.5 font-semibold tracking-[0.40px] md:w-full"
                     />
                     <Input
@@ -171,6 +179,7 @@ export default function StudyAbroadPage() {
                       type="text"
                       name="lastName"
                       placeholder={`Last name`}
+                      style={{ border: 'none' }} 
                       className="mr-[38px] w-[44%] px-2.5 font-semibold tracking-[0.40px] md:mr-0 md:w-full"
                     />
                   </div>
@@ -179,6 +188,7 @@ export default function StudyAbroadPage() {
                     type="email"
                     name="email"
                     placeholder={`Email address`}
+                    style={{ border: 'none' }} 
                     className="mt-[52px] w-[94%] px-2.5 font-semibold tracking-[0.40px]"
                   />
                   <Input
@@ -186,18 +196,21 @@ export default function StudyAbroadPage() {
                     type="number"
                     name="mobileNumber"
                     placeholder={`Mobile number`}
+                    style={{ border: 'none' }} 
                     className="mt-[52px] w-[94%] px-2.5 font-semibold tracking-[0.40px]"
                   />
                   <Input
                     shape="square"
                     name="group971"
                     placeholder={`Your preferred study destination`}
+                    style={{ border: 'none' }} 
                     className="mt-[52px] w-[94%] px-2.5 font-semibold tracking-[0.40px]"
                   />
                   <Input
                     shape="square"
                     name="group970"
                     placeholder={`When do you plan to study?`}
+                    style={{ border: 'none' }} 
                     className="mt-[52px] w-[94%] px-2.5 font-semibold tracking-[0.40px]"
                   />
                   <TextArea
@@ -205,6 +218,7 @@ export default function StudyAbroadPage() {
                     shape="square"
                     name="comments"
                     placeholder={`Comments...`}
+                    style={{ border: 'none' }} 
                     className="mt-9 w-[94%] px-3.5 font-semibold tracking-[0.40px] text-light_blue-900"
                   />
                   <Button
@@ -274,7 +288,7 @@ export default function StudyAbroadPage() {
               />
             </div>
           </div>
-          <div className="relative mt-[120px] h-[1950px] self-stretch">
+          <div className="relative h-[1950px] self-stretch">
             <div className="absolute bottom-0 left-0 right-0 top-0 m-auto h-max w-full">
               <StudyabroadRowstudents />
               <Img
@@ -296,10 +310,10 @@ export default function StudyAbroadPage() {
               </div>
               <Footer />
             </div>
-            <div className="absolute right-[8%] top-[3px] z-10 m-auto flex rotate-[0deg] flex-col items-center justify-center rounded-[22px] bg-light_blue-900 px-2.5 py-3.5">
-              <Img src="images/img_vector_white_a700_01_14x24.svg" alt="Vector" className="h-[14px]" />
-            </div>
+            <div className="absolute right-[8%] top-[3px] z-50 m-auto flex rotate-[0deg] flex-col items-center justify-center rounded-[22px] bg-light_blue-900 px-2.5 py-3.5">
+              <Img src="images/img_vector_white_a700_01_14x24.svg" alt="Vector" className="h-[14px]" onClick={scrollToTop} />
           </div>
+        </div>
     </>
   );
 }

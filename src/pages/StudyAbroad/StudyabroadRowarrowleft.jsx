@@ -40,35 +40,35 @@ export default function StudyabroadRowarrowleft() {
                     <Text
                       size="textxl"
                       as="p"
-                      className="ml-11 mt-9 text-[24px] font-normal leading-[30px] tracking-[0.48px] text-gray-800 lg:text-[20px] md:ml-0"
+                      className="ml-11 mt-8 text-[24px] font-normal leading-[30px] tracking-[0.48px] text-gray-800 lg:text-[20px] md:ml-0"
                     >
                       Competitive Interest Rates
                     </Text>
                     <Text
                       size="textxl"
                       as="p"
-                      className="ml-11 text-[24px] font-normal leading-[30px] tracking-[0.48px] text-gray-800 lg:text-[20px] md:ml-0"
+                      className="ml-11 mt-4 text-[24px] font-normal leading-[30px] tracking-[0.48px] text-gray-800 lg:text-[20px] md:ml-0"
                     >
                       Flexible Repayment Options
                     </Text>
                     <Text
                       size="textxl"
                       as="p"
-                      className="ml-11 text-[24px] font-normal leading-[30px] tracking-[0.48px] text-gray-800 lg:text-[20px] md:ml-0"
+                      className="ml-11 mt-6 text-[24px] font-normal leading-[30px] tracking-[0.48px] text-gray-800 lg:text-[20px] md:ml-0"
                     >
                       Minimal Documentation
                     </Text>
                     <Text
                       size="textxl"
                       as="p"
-                      className="ml-11 text-[24px] font-normal leading-[30px] tracking-[0.48px] text-gray-800 lg:text-[20px] md:ml-0"
+                      className="ml-11 mt-5 text-[24px] font-normal leading-[30px] tracking-[0.48px] text-gray-800 lg:text-[20px] md:ml-0"
                     >
                       Fast Approval Process
                     </Text>
                     <Text
                       size="textxl"
                       as="p"
-                      className="ml-11 text-[24px] font-normal leading-[30px] tracking-[0.48px] text-gray-800 lg:text-[20px] md:ml-0"
+                      className="ml-11 mt-5 text-[24px] font-normal leading-[30px] tracking-[0.48px] text-gray-800 lg:text-[20px] md:ml-0"
                     >
                       Comprehensive Coverage
                     </Text>
@@ -82,7 +82,7 @@ export default function StudyabroadRowarrowleft() {
                   <Img
                     src="images/img_graduation_cap.png"
                     alt="Graduationcap"
-                    className="h-[446px] w-[28%] self-end rounded-bl-[16px] object-contain md:w-full md:self-auto"
+                    className="h-[444px] w-[28%] self-end rounded-bl-[16px] object-contain md:w-full md:self-auto z-40"
                   />
                 </div>
               </div>

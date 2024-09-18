@@ -43,7 +43,7 @@ export default function Home1RowSeven() {
                 </Text>
               </div>
             </div>
-            <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max flex-1 items-center md:relative md:flex-col">
+            <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max flex-1 items-center md:relative md:flex-col ">
               <Input
                 shape="square"
                 type="text"

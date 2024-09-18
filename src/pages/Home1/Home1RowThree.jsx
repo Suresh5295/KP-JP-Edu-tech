@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Home1RowThree() {
   return (
-    <div className="relative mt-[-398px] h-[982px] self-stretch bg-[url(/public/images/img_group_2377.png)] bg-cover bg-no-repeat py-[108px] lg:h-auto lg:py-8 md:h-auto md:py-5 sm:py-4">
+    <div className="relative mt-[-398px] h-[980px] self-stretch bg-[url(/public/images/img_group_2377.png)] bg-cover bg-no-repeat py-[108px] lg:h-auto lg:py-8 md:h-auto md:py-5 sm:py-4 ">
       <div>
         <div className="flex items-start md:flex-col">
           <div className="mt-[100px] flex w-full flex-col items-start px-14 md:px-5 z-10">
