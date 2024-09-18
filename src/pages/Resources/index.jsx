@@ -12,19 +12,27 @@ export default function ResourcesPage() {
   const [sliderState, setSliderState] = React.useState(0);
   const sliderRef = React.useRef(null);
 
+  // Scroll to Top Function
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'  // This makes the scrolling behavior smooth
+    });
+  };
+
   return (
     <>
       <Helmet>
         <title>JP Edu Tech</title>
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
-      <div className="w-full bg-white-a700_01 mt-40">
+      <div className="w-full bg-white-a700_01">
       <Header className="self-stretch px-14 md:px-5 sm:px-4" />
         <div className="flex flex-col items-center">
           <div className="relative h-[2466px] content-center self-stretch lg:h-auto md:h-auto">
             <div className="mx-auto flex-1">
               <div className="h-[966px] bg-[url(/public/images/img_group_1465.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
-                <div className="flex flex-col items-center gap-[254px] bg-black-900_a5 lg:gap-[190px] md:gap-[190px] sm:gap-[127px] mb-80">
+                <div className="flex flex-col items-center gap-[254px] lg:gap-[190px] md:gap-[190px] sm:gap-[127px] mb-80">
                   
                   <div className="container-xs mb-[480px] flex flex-col items-center px-14 lg:px-5 md:px-5">
                     <Heading
@@ -97,10 +105,10 @@ export default function ResourcesPage() {
                       </div>
                     </div>
                     <div className="flex w-[5%] justify-center gap-[18px] lg:w-full md:w-full">
-                      <div className="flex w-full flex-col items-center justify-center rounded-[16px] bg-white-a700_01 p-1.5">
+                      <div className="rotate-180 flex w-full flex-col items-center justify-center rounded-[16px] bg-white-a700_01 p-1.5">
                         <Img src="images/img_group_2396.svg" alt="Vector" className="h-[18px]" />
                       </div>
-                      <div className="flex w-full flex-col items-center justify-center rounded-[16px] bg-white-a700_01 p-1.5">
+                      <div className="rotate-180 flex w-full flex-col items-center justify-center rounded-[16px] bg-white-a700_01 p-1.5">
                         <Img src="images/img_group_2397.svg" alt="Vector" className="h-[18px]" />
                       </div>
                     </div>
@@ -110,35 +118,54 @@ export default function ResourcesPage() {
               </div>
             </div>
             <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max w-full flex-col items-center">
-              <div className="h-[314px] self-stretch bg-black-900_e0 blur-[24.00px] backdrop-opacity-[0.5]" />
-              <div className="container-xs relative mt-[-176px] px-[46px] lg:px-5 md:px-5">
-                <div className="mx-auto flex w-full gap-5 md:mx-0 md:flex-col">
-                  <Slider
-                    autoPlay
-                    autoPlayInterval={2000}
-                    responsive={{ 0: { items: 1 }, 551: { items: 1 }, 1051: { items: 2 }, 1441: { items: 3 } }}
-                    disableDotsControls
-                    activeIndex={sliderState}
-                    onSlideChanged={(e) => {
-                      setSliderState(e?.item);
-                    }}
-                    ref={sliderRef}
-                    items={[...Array(9)].map(() => (
-                      <React.Fragment key={Math.random()}>
-                        <div className="px-2.5">
-                          <div className="relative h-[454px] content-center lg:h-auto md:h-auto">
-                            <Img
-                              src="images/img_rectangle_4253.png"
-                              alt="Image"
-                              className="mx-auto h-[454px] w-full flex-1 object-cover"
-                            />
-                            <div className="absolute bottom-[-1px] left-0 right-0 m-auto h-[160px] flex-1 bg-gradient4" />
-                          </div>
-                        </div>
-                      </React.Fragment>
-                    ))}
-                  />
-                </div>
+              <div className="self-stretch bg-black-900_e0 blur-[24.00px] backdrop-opacity-[0.5]" />
+              <div className="container-xs relative mt-[-110px] px-[46px] lg:px-5 md:px-5">
+              <div className=" mx-auto flex w-full gap-5 md:mx-0 md:flex-col">
+              <Slider
+                autoPlay
+                autoPlayInterval={2000}
+                responsive={{ 0: { items: 1 }, 551: { items: 1 }, 1051: { items: 2 }, 1441: { items: 3 } }} // This can be adjusted if you want to show more items at certain breakpoints
+                disableDotsControls
+                activeIndex={sliderState}
+                onSlideChanged={(e) => {
+                  setSliderState(e?.item);
+                }}
+                ref={sliderRef}
+                items={[
+                  <div className="px-2.5" key="image1">
+                    <div className="relative h-[454px] content-center lg:h-auto md:h-auto">
+                      <Img
+                        src="images/img_rectangle_4253.png" // Your existing image
+                        alt="First Image"
+                        className="mx-auto h-[454px] w-full flex-1 object-cover"
+                      />
+                      <div className="absolute bottom-[-1px] left-0 right-0 m-auto h-[160px] flex-1 bg-gradient4" />
+                    </div>
+                  </div>,
+                  <div className="px-2.5" key="image2">
+                    <div className="relative h-[454px] content-center lg:h-auto md:h-auto">
+                      <Img
+                        src="images/img_rectangle_4254.png" // New image
+                        alt="Second Image"
+                        className="mx-auto h-[454px] w-full flex-1 object-cover"
+                      />
+                      <div className="absolute bottom-[-1px] left-0 right-0 m-auto h-[160px] flex-1 bg-gradient4" />
+                    </div>
+                  </div>,
+                  <div className="px-2.5" key="image3">
+                    <div className="relative h-[454px] content-center lg:h-auto md:h-auto">
+                      <Img
+                        src="images/img_rectangle_4255.png" // Another new image
+                        alt="Third Image"
+                        className="mx-auto h-[454px] w-full flex-1 object-cover"
+                      />
+                      <div className="absolute bottom-[-1px] left-0 right-0 m-auto h-[160px] flex-1 bg-gradient4" />
+                    </div>
+                  </div>
+                ]}
+              />
+            </div>
+
               </div>
             </div>
           </div>
@@ -186,6 +213,7 @@ export default function ResourcesPage() {
                     type="text"
                     name="firstName"
                     placeholder={`First name`}
+                    style={{ border: 'none' }} 
                     className="w-[20%] px-2.5 font-semibold tracking-[0.40px] md:w-full md:px-5"
                   />
                   <Input
@@ -193,7 +221,8 @@ export default function ResourcesPage() {
                     type="text"
                     name="lastName"
                     placeholder={`Last name`}
-                    className="w-[20%] px-2.5 font-semibold tracking-[0.40px] md:w-full md:px-5"
+                    style={{ border: 'none' }} 
+                    className="w-[22%] px-2.5 font-semibold tracking-[0.40px] md:w-full md:px-5"
                   />
                 </div>
                 <Input
@@ -201,6 +230,7 @@ export default function ResourcesPage() {
                   type="email"
                   name="email"
                   placeholder={`Email address`}
+                  style={{ border: 'none' }} 
                   className="ml-2.5 mt-[50px] w-[42%] px-2.5 font-semibold tracking-[0.40px] md:ml-0"
                 />
                 <Input
@@ -208,18 +238,21 @@ export default function ResourcesPage() {
                   type="number"
                   name="mobileNumber"
                   placeholder={`Mobile number`}
+                  style={{ border: 'none' }} 
                   className="ml-2.5 mt-[50px] w-[42%] px-2.5 font-semibold tracking-[0.40px] md:ml-0"
                 />
                 <Input
                   shape="square"
                   name="skills"
                   placeholder={`Skills`}
+                  style={{ border: 'none' }} 
                   className="ml-2.5 mt-[50px] w-[42%] px-2.5 font-semibold tracking-[0.40px] md:ml-0"
                 />
                 <TextArea
                   shape="square"
                   name="comments"
                   placeholder={`Comments...`}
+                  style={{ border: 'none' }} 
                   className="ml-2.5 mt-9 w-[42%] px-3.5 font-semibold tracking-[0.40px] text-light_blue-900 md:ml-0"
                 />
                 <div className="mx-2.5 mt-[38px] flex gap-[31px] self-stretch md:mx-0">
@@ -238,13 +271,13 @@ export default function ResourcesPage() {
                     No file Choosen{" "}
                   </Heading>
                 </div>
-                <Button
+                <button
                   size="lg"
                   shape="square"
-                  className="ml-2.5 mt-[26px] min-w-[142px] px-[34px] font-nunitosans font-bold tracking-[0.96px] md:ml-0 sm:px-4"
+                  className=" mt-[26px] min-w-[142px] font-nunitosans font-bold tracking-[0.96px] md:ml-0 sm:px-4"
                 >
-                  Send
-                </Button>
+                  <Img src="images/button_3.png" alt="Image" className="ml-5 mt-4 h-[85px] w-[60%] object-contain" onClick={() => window.open("/enquirepage", "_self", "noopener,noreferrer")} />
+                </button>
               </div>
             </div>
             <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max w-full flex-col items-end">
@@ -295,35 +328,14 @@ export default function ResourcesPage() {
           <ResourcesRowourclinet />
           <ResourcesRowTwo />
           <div className="mt-[76px] flex flex-col items-end self-stretch">
-            <div className="relative z-[6] mr-[114px] flex rotate-[90deg] flex-col items-center justify-center rounded-[22px] bg-light_blue-900 px-2.5 py-3.5 md:mr-0">
-              <Img src="images/img_vector_white_a700_01_14x24.svg" alt="Vector" className="h-[14px]" />
+            <div className="relative z-[6] mr-[114px] flex rotate-[0deg] flex-col items-center justify-center rounded-[22px] bg-light_blue-900 px-2.5 py-3.5 md:mr-0">
+              <Img src="images/img_vector_white_a700_01_14x24.svg" alt="Vector" className="h-[14px]" onClick={scrollToTop} />
             </div>
             <div className="relative mt-[-44px] self-stretch">
               <div className="flex flex-col items-center">
                 <div className="container-xs relative z-[5] flex flex-col items-center px-14 lg:px-5 md:px-5">
-                  <div className="relative ml-3 h-[150px] w-[84%] bg-light_blue-900 px-[116px] py-3 lg:px-8 md:ml-0 md:px-5 sm:px-4">
-                    <div className="absolute bottom-0 left-[12%] top-0 my-auto flex w-[90%] gap-6 md:relative md:flex-col">
-                      <UserProfile3 className="mt-1.5 w-[8%] bg-white-a700_01 md:mt-0 md:w-full" />
-                      <Heading
-                        size="headingmd"
-                        as="h2"
-                        className="mb-[50px] mt-1.5 w-[18%] text-[17.6px] font-bold leading-6 text-white-a700_01 lg:w-[18%] lg:text-[14px] md:my-0 md:w-full"
-                      >
-                        Call Us Anytime
-                      </Heading>
-                      <UserProfile3 className="mt-1.5 w-[40%] gap-6 md:mt-0 md:w-full" />
-                      <UserProfile3 className="w-[28%] gap-6 md:w-full" />
-                    </div>
-                    <Text
-                      size="textxs"
-                      as="p"
-                      className="absolute bottom-[11px] right-[9%] m-auto w-[22%] text-[16px] font-normal leading-[30px] text-white-a700_01 lg:text-[13px]"
-                    >
-                      <>
-                        Kurnool, Hyderabad, <br />
-                        Guntur, Melbourne(Australia)
-                      </>
-                    </Text>
+                  <div className="relative ml-3 h-[150px] w-[84%] px-[116px] py-3 lg:px-8 md:ml-0 md:px-5 sm:px-4">
+                  <Img src="images/contact.png"></Img>
                   </div>
                 </div>
                 <footer className="relative mt-[-82px] flex self-stretch">
@@ -336,52 +348,56 @@ export default function ResourcesPage() {
                     <div className="container-xs absolute bottom-4 left-0 right-0 my-auto flex justify-center lg:px-5 md:px-5">
                       <div className="flex w-full flex-col items-end gap-[78px] lg:gap-[78px] md:gap-[58px] sm:gap-[39px]">
                         <div className="mr-3 flex w-[74%] items-center justify-between gap-5 lg:w-full md:mr-0 md:w-full md:flex-col">
-                          <ul className="flex w-[66%] flex-wrap justify-between gap-5 self-end md:w-full md:self-auto">
-                            <li>
-                              <a href="#" className="lg:text-[17px]">
-                                <Text as="p" className="text-[20px] font-normal tracking-[1.20px] text-white-a700_01">
-                                  Home
-                                </Text>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#" className="self-end lg:text-[17px]">
-                                <Text as="p" className="text-[20px] font-normal tracking-[1.20px] text-white-a700_01">
-                                  Study Abroad{" "}
-                                </Text>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#" className="self-end lg:text-[17px]">
-                                <Text as="p" className="text-[20px] font-normal tracking-[1.20px] text-white-a700_01">
-                                  Software Consulting
-                                </Text>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#" className="lg:text-[17px]">
-                                <Text as="p" className="text-[20px] font-normal tracking-[1.20px] text-white-a700_01">
-                                  About Us{" "}
-                                </Text>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#" className="self-start lg:text-[17px]">
-                                <Text as="p" className="text-[20px] font-normal tracking-[-0.38px] text-white-a700_01">
-                                  Contact Us
-                                </Text>
-                              </a>
-                            </li>
-                          </ul>
+                        <ul className="flex w-[66%] flex-wrap justify-between gap-5 self-end md:w-full md:self-auto">
+                  <li>
+                  <a href="/home1" target="_self" rel="noreferrer" className="lg:text-[17px]">
+                      <Text as="p" className="text-[20px] font-normal tracking-[1.20px] text-white-a700_01">
+                        Home
+                      </Text>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/studyabroad" target="_self" className="self-end lg:text-[17px]">
+                      <Text as="p" className="text-[20px] font-normal tracking-[1.20px] text-white-a700_01">
+                        Study Abroad{" "}
+                      </Text>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/software" target="_self" className="self-end lg:text-[17px]">
+                      <Text as="p" className="text-[20px] font-normal tracking-[1.20px] text-white-a700_01">
+                        Software Consulting
+                      </Text>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/aboutus" target="_self" className="lg:text-[17px]">
+                      <Text as="p" className="text-[20px] font-normal tracking-[1.20px] text-white-a700_01">
+                        About Us{" "}
+                      </Text>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/contactus" target="_self" className="self-start lg:text-[17px]">
+                      <Text as="p" className="text-[20px] font-normal tracking-[-0.38px] text-white-a700_01">
+                        Contact Us
+                      </Text>
+                    </a>
+                  </li>
+                </ul>
                           <div className="flex w-[22%] items-center justify-between gap-5 md:w-full">
-                            <Img
-                              src="images/img_close_white_a700_01.svg"
-                              alt="Close Eleven"
-                              className="h-[40px] w-[40px]"
-                            />
-                            <Img src="images/img_volume_white_a700_01.svg" alt="Volume" className="h-[40px] w-[40px]" />
-                            <Img src="images/img_info_white_a700_01.svg" alt="Info" className="h-[40px] w-[40px]" />
-                            <Img src="images/img_trash.svg" alt="Trash" className="h-[36px]" />
+                          <a href="https://www.facebook.com/share/XL5X5UrAG4VuFYuy/?mibextid=qi2Omg" target="_blank">
+                      <Img src="images/img_close_white_a700_01.svg" alt="Close" className="h-[40px] w-[40px]" />
+                      </a>
+                      <a href="https://wa.me/message/2I52EUSWYTQBG1" target="_blank">
+                      <Img src="images/img_volume_white_a700_01.svg" alt="Volume" className="h-[40px] w-[40px]"  />
+                      </a>
+                      <a href="https://www.instagram.com/jpetcs?igsh=MW5xNjF3aDN5dTE3bw==" target="_blank">
+                      <Img src="images/img_info_white_a700_01.svg" alt="Info" className="h-[40px] w-[40px]" />
+                      </a>
+                      <a href="https://x.com/jpedutech" target="_blank" >
+                      <Img src="images/img_trash.svg" alt="Trash" className="h-[36px]"  />
+                      </a>
                           </div>
                         </div>
                         <div className="flex items-center justify-between gap-5 self-stretch sm:flex-col">

@@ -23,7 +23,7 @@ export default function MigrateStackstudentvis() {
             </Heading>
           </div>
         </div>
-        <div className="relative mt-[-10px] flex h-[646px] items-end justify-center self-stretch bg-[url(/public/images/img_group_998.png)] bg-cover bg-no-repeat py-5 lg:h-auto md:h-auto">
+        <div className="relative mt-[-150px] flex h-[646px] items-end justify-center self-stretch bg-[url(/public/images/img_group_998.png)] bg-cover bg-no-repeat py-5 lg:h-auto md:h-auto">
           <div className="container-xs mt-12 flex justify-center lg:px-5 md:px-5">
             <div className="w-full">
               <div className="flex flex-col items-start">
@@ -98,12 +98,12 @@ export default function MigrateStackstudentvis() {
                     Lifestyle Preferences: Finding a better quality of life or new cultural experiences.
                   </Text>
                 </div>
-                <Button
-                  shape="square"
-                  className="mt-[30px] min-w-[198px] px-[34px] font-nunitosans font-bold tracking-[1.20px] sm:px-4"
-                >
-                  Know More
-                </Button>
+                <button
+                      shape="square"
+                      className="mr-[450px] min-w-[198px] pl-7 pr-[34px] font-nunitosans font-bold tracking-[1.20px] md:mr-0 sm:px-4"
+                    >
+                      <Img src="images/button_4.png" alt="Image" className=" mt-4 h-[98px] w-[60%] object-contain" />
+                  </button>
               </div>
             </div>
           </div>
@@ -113,11 +113,6 @@ export default function MigrateStackstudentvis() {
         src="images/img_rectangle_4381_598x594.png"
         alt="Image"
         className="absolute bottom-0 right-[7%] top-0 my-auto h-[598px] w-[32%] rounded-[10px] object-contain"
-      />
-      <Img
-        src="images/img_rectangle_4382.png"
-        alt="Image"
-        className="absolute bottom-[10%] right-[14%] m-auto h-[446px] w-[28%] rounded-bl-[16px] object-contain"
       />
     </div>
   );

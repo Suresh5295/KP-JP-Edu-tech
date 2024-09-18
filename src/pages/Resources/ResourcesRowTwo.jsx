@@ -29,6 +29,7 @@ export default function ResourcesRowTwo() {
                   type="text"
                   name="name"
                   placeholder={`Enter your name..`}
+                  style={{ border: 'none' }} 
                   className="relative z-[4] mb-[34px] flex-grow self-end px-2.5 font-semibold tracking-[0.40px] md:self-auto"
                 />
                 <Img
@@ -42,6 +43,7 @@ export default function ResourcesRowTwo() {
                 type="email"
                 name="email"
                 placeholder={`Enter your email id..`}
+                style={{ border: 'none' }} 
                 className="relative mt-[-4px] w-[74%] px-2.5 font-semibold tracking-[0.40px]"
               />
             </div>
@@ -67,15 +69,16 @@ export default function ResourcesRowTwo() {
             shape="square"
             name="television_four"
             placeholder={`Message..`}
-            className="ml-14 flex w-[70%] gap-4 pl-3.5 pr-0.5 font-semibold tracking-[0.40px] text-light_blue-900 md:ml-0 md:py-5 sm:py-4"
+            style={{ border: 'none' }} 
+            className="ml-14 flex w-[71%] gap-4 pl-3.5 pr-0.5 font-semibold tracking-[0.40px] text-light_blue-900 md:ml-0 md:py-5 sm:py-4"
           />
-          <Button
+          <button
             size="9xl"
             shape="square"
-            className="ml-14 min-w-[206px] px-[34px] font-nunitosans uppercase tracking-[0.64px] md:ml-0 sm:px-4"
+            className="ml-5 min-w-[206px] px-[34px] font-nunitosans uppercase tracking-[0.64px] md:ml-0 sm:px-4"
           >
-            Send
-          </Button>
+            <Img src="images/button_3.png" alt="Image" className=" mt-4 h-[85px] w-[60%] object-contain" onClick={() => window.open("/enquirepage", "_self", "noopener,noreferrer")} />
+          </button>
           <div className="ml-[54px] flex gap-4 self-stretch md:ml-0 md:flex-col">
             <Suspense fallback={<div>Loading feed...</div>}>
               {data.map((d, index) => (

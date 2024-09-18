@@ -46,44 +46,75 @@ export default function ResourcesRowOne() {
               <TabPanel key={`tab-panel${index}`} className="absolute items-center px-12 lg:px-5 md:px-5">
                 <div className="container-xs w-full">
                   <div className="ml-3 flex flex-col items-center gap-14 md:ml-0 sm:gap-7">
-                    <div className="mx-auto flex w-full gap-5 self-stretch md:mx-0 md:flex-col">
-                      <Slider
-                        autoPlay
-                        autoPlayInterval={2000}
-                        responsive={{ 0: { items: 1 }, 551: { items: 1 }, 1051: { items: 2 }, 1441: { items: 3 } }}
-                        disableDotsControls
-                        activeIndex={sliderState}
-                        onSlideChanged={(e) => {
-                          setSliderState(e?.item);
-                        }}
-                        ref={sliderRef}
-                        items={[...Array(9)].map(() => (
-                          <React.Fragment key={Math.random()}>
-                            <div className="px-2.5">
-                              <div className="relative h-[454px] content-center lg:h-auto md:h-auto">
-                                <Img
-                                  src="images/img_rectangle_4253.png"
-                                  alt="Image"
-                                  className="mx-auto h-[454px] w-full flex-1 object-cover"
-                                />
-                                <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max flex-1 justify-center bg-black-900_9e px-14 py-[196px] lg:py-8 md:p-5 sm:p-4">
-                                  <Img
-                                    src="images/img_overflow_menu_white_a700_01.svg"
-                                    alt="Overflowmenu"
-                                    className="mt-4 h-[42px] w-[42px]"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </React.Fragment>
-                        ))}
-                      />
-                    </div>
-                    <Img
-                      src="images/img_close_light_blue_900_34x86.svg"
-                      alt="Close"
-                      className="h-[34px] w-[6%] object-contain"
-                    />
+                  <div className="mx-auto flex w-full gap-5 self-stretch md:mx-0 md:flex-col">
+                  <Slider
+                    autoPlay
+                    autoPlayInterval={2000}
+                    responsive={{ 0: { items: 1 }, 551: { items: 1 }, 1051: { items: 2 }, 1441: { items: 3 } }}
+                    disableDotsControls
+                    activeIndex={sliderState}
+                    onSlideChanged={(e) => {
+                      setSliderState(e?.item);
+                    }}
+                    ref={sliderRef}
+                    items={[
+                      <div className="px-2.5" key="image1">
+                        <div className="relative h-[454px] content-center lg:h-auto md:h-auto">
+                          <Img
+                            src="images/img_rectangle_4253.png" // Existing image
+                            alt="First Image"
+                            className="mx-auto h-[454px] w-full flex-1 object-cover"
+                          />
+                          <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max flex-1 justify-center bg-black-900_9e px-14 py-[196px] lg:py-8 md:p-5 sm:p-4">
+                            <Img
+                              src="images/img_overflow_menu_white_a700_01.svg"
+                              alt="Overflow Menu"
+                              className="mt-4 h-[42px] w-[42px]"
+                            />
+                          </div>
+                        </div>
+                      </div>,
+                      <div className="px-2.5" key="image2">
+                        <div className="relative h-[454px] content-center lg:h-auto md:h-auto">
+                          <Img
+                            src="images/img_rectangle_4254.png" // New image
+                            alt="Second Image"
+                            className="mx-auto h-[454px] w-full flex-1 object-cover"
+                          />
+                          <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max flex-1 justify-center bg-black-900_9e px-14 py-[196px] lg:py-8 md:p-5 sm:p-4">
+                            <Img
+                              src="images/img_overflow_menu_white_a700_01.svg"
+                              alt="Overflow Menu"
+                              className="mt-4 h-[42px] w-[42px]"
+                            />
+                          </div>
+                        </div>
+                      </div>,
+                      <div className="px-2.5" key="image3">
+                        <div className="relative h-[454px] content-center lg:h-auto md:h-auto">
+                          <Img
+                            src="images/img_rectangle_4255.png" // Another new image
+                            alt="Third Image"
+                            className="mx-auto h-[454px] w-full flex-1 object-cover"
+                          />
+                          <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max flex-1 justify-center bg-black-900_9e px-14 py-[196px] lg:py-8 md:p-5 sm:p-4">
+                            <Img
+                              src="images/img_overflow_menu_white_a700_01.svg"
+                              alt="Overflow Menu"
+                              className="mt-4 h-[42px] w-[42px]"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    ]}
+                  />
+                </div>
+                <Img
+                    src="images/img_close_light_blue_900_36x86.png"
+                    alt="Close"
+                    className="h-[34px] w-[6%] object-contain"
+                    style={{ transform: 'scaleX(-1)' }} // This will flip the image horizontally
+                  />
                   </div>
                 </div>
               </TabPanel>

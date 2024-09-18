@@ -40,46 +40,20 @@ export default function ResourcesRow() {
         </div>
         <div className="flex w-[44%] justify-center self-center md:w-full md:flex-col">
           <div className="flex flex-1 flex-col gap-2.5 md:self-stretch">
-            <div className="relative h-[298px]">
+            <div className="relative h-[298px] mt-4">
               <Img
                 src="images/img_rectangle_4403.png"
                 alt="Image"
                 className="absolute bottom-0 right-[-0.50px] top-0 my-auto h-[298px] w-[74%] object-contain"
               />
-              <div className="absolute bottom-0 right-[-0.50px] top-0 my-auto flex h-max w-[74%] flex-col items-start gap-[60px] bg-gradient4 sm:gap-[30px]">
-                <Text
-                  as="p"
-                  className="mt-[84px] w-[98%] text-[20px] font-normal leading-[30px] tracking-[0.40px] text-white-a700_01 lg:w-full lg:px-5 lg:text-[17px] md:w-full md:px-5"
-                >
-                  Recent policy changes in the UK, Canada, and Australia are affecting international student mobility.
-                  Students are exploring alternative study destinations.
-                </Text>
-                <Text as="p" className="text-[20px] font-medium text-light_blue-900 lg:text-[17px]">
-                  Read More..
-                </Text>
-              </div>
             </div>
             <div className="relative h-[322px]">
               <Img
                 src="images/img_rectangle_4188.png"
                 alt="Image"
-                className="absolute right-0 top-0 m-auto h-[298px] w-[74%] object-contain"
+                className="absolute right-0 top-0 m-auto h-[288px] w-[74%] object-contain"
               />
-              <div className="absolute right-2.5 top-0 m-auto h-[298px] w-[76%] bg-gradient4" />
-              <div className="absolute bottom-0 left-0 right-0 mx-2 my-auto h-[184px] flex-1 content-center lg:mx-0 lg:h-auto md:mx-0 md:h-auto">
-                <Text
-                  as="p"
-                  className="ml-auto w-[74%] text-[20px] font-normal leading-[30px] tracking-[0.40px] text-white-a700_01 lg:text-[17px]"
-                >
-                  Government initiatives to promote digital transformation and software adoption.
-                </Text>
-                <Text
-                  as="p"
-                  className="absolute bottom-[30px] left-1/4 m-auto text-[20px] font-medium text-light_blue-900 lg:text-[17px]"
-                >
-                  Read More..
-                </Text>
-              </div>
+              <div className="absolute right-2.5 top-0 m-auto h-[298px] w-[76%]" />
             </div>
           </div>
           <div className="relative h-[630px] w-[44%] md:w-full">
@@ -87,24 +61,9 @@ export default function ResourcesRow() {
               <Img
                 src="images/img_rectangle_4403_606x320.png"
                 alt="Image"
-                className="mx-auto h-[606px] flex-1 object-cover"
+                className="mx-auto h-[590px] flex-1 object-cover"
               />
-              <div className="absolute bottom-[-1px] left-0 right-0 m-auto h-[298px] flex-1 bg-gradient4" />
-            </div>
-            <div className="absolute bottom-[-1px] left-0 right-0 m-auto h-[184px] flex-1 content-center px-2.5 lg:h-auto md:h-auto">
-              <Text
-                as="p"
-                className="ml-auto w-[96%] text-[20px] font-normal leading-[30px] tracking-[0.40px] text-white-a700_01 lg:text-[17px]"
-              >
-                Countries are offering extended work permits to attract international students and boost their
-                economies.
-              </Text>
-              <Text
-                as="p"
-                className="absolute bottom-[30px] left-[18px] m-auto text-[20px] font-medium text-light_blue-900 lg:text-[17px]"
-              >
-                Read More..
-              </Text>
+              <div className="absolute bottom-[-1px] left-0 right-0 m-auto h-[298px] flex-1" />
             </div>
           </div>
         </div>
