@@ -13,7 +13,7 @@ export default function UserProfile4({
         <Heading
           size="heading2xl"
           as="h4"
-          className="self-end text-[26px] font-bold leading-[150%] tracking-[-0.49px] text-white-a700_01"
+          className=" text-center self-end text-[26px] font-bold leading-[150%] tracking-[-0.49px] text-white-a700_01"
         >
           {userBrandIdentity}
         </Heading>

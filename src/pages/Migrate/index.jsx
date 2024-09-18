@@ -155,32 +155,32 @@ export default function MigratePage() {
               <Img
                 src="images/img_2_1_png.png"
                 alt="21png"
-                className="h-[40px] w-[8%] object-contain opacity-40 md:w-full"
+                className="h-[40px] w-[8%] object-contain  md:w-full"
               />
               <Img
                 src="images/img_1_1_png.png"
                 alt="11png"
-                className="h-[40px] w-[8%] object-contain opacity-40 md:w-full"
+                className="h-[40px] w-[8%] object-contain  md:w-full"
               />
               <Img
                 src="images/img_2_1_png_40x136.png"
                 alt="21png"
-                className="h-[40px] w-[8%] object-contain opacity-40 md:w-full"
+                className="h-[40px] w-[8%] object-contain  md:w-full"
               />
               <Img
                 src="images/img_4_1_png.png"
                 alt="41png"
-                className="h-[40px] w-[8%] object-contain opacity-40 md:w-full"
+                className="h-[40px] w-[8%] object-contain  md:w-full"
               />
               <Img
                 src="images/img_1_1_png.png"
                 alt="11png"
-                className="h-[40px] w-[8%] object-contain opacity-40 md:w-full"
+                className="h-[40px] w-[8%] object-contain  md:w-full"
               />
               <Img
                 src="images/img_4_1_png.png"
                 alt="41png"
-                className="h-[40px] w-[8%] object-contain opacity-40 md:w-full"
+                className="h-[40px] w-[8%] object-contain  md:w-full"
               />
             </div>
           </div>

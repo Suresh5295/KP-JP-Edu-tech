@@ -77,7 +77,7 @@ export default function MigrateRowFive() {
                 shape="square"
                 className=" mt-7 min-w-[206px] px-[34px] font-nunitosans uppercase tracking-[0.64px] md:ml-0 sm:px-4"
               >
-              <Img src="images/button_3.png" alt="Image" className="ml-5 mt-4 h-[98px] w-[60%] object-contain" onClick={() => window.open("/enquirepage", "_self", "noopener,noreferrer")} />
+              <Img src="images/button_3.png" alt="Image" className=" -ml-4 h-[98px] w-[60%] object-contain" onClick={() => window.open("/enquirepage", "_self", "noopener,noreferrer")} />
               </button>
             </div>
           </div>

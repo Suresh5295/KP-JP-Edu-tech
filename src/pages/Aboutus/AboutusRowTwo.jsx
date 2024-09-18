@@ -69,13 +69,13 @@ export default function AboutusRowTwo() {
                 placeholder={`Message..`}
                 className="ml-5 flex w-[72%] gap-4 pl-3.5 pr-0.5 font-semibold tracking-[0.40px] text-light_blue-900 md:ml-0 md:py-5 sm:py-4"
               />
-              <Button
-                size="9xl"
-                shape="square"
-                className="ml-5 min-w-[206px] px-[34px] font-nunitosans uppercase tracking-[0.64px] md:ml-0 sm:px-4"
-              >
-                Send
-              </Button>
+              <button
+            size="9xl"
+            shape="square"
+            className="ml-5 min-w-[206px] font-nunitosans uppercase tracking-[0.64px] md:ml-0 sm:px-4"
+          >
+           <Img src="images/button_3.png" alt="Image" className=" mt-4 h-[98px] w-[60%] object-contain" onClick={() => window.open("/enquirepage", "_self", "noopener,noreferrer")} />
+          </button>
             </div>
           </div>
           <div className="ml-[54px] flex gap-4 md:ml-0 md:flex-col">

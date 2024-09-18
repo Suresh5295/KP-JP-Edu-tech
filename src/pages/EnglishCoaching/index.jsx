@@ -28,7 +28,7 @@ export default function EnglishCoachingPage() {
                         <Heading
                           size="heading9xl"
                           as="h1"
-                          className="mt-24 text-center text-[96px] font-bold leading-[144px] text-white-a700_01 lg:text-[48px] md:text-[48px]"
+                          className="mt-40 text-center text-[96px] font-bold leading-[144px] text-white-a700_01 lg:text-[48px] md:text-[48px]"
                         >
                           <>
                             Unlock Your Potential with <br />
@@ -53,21 +53,23 @@ export default function EnglishCoachingPage() {
                       To make sure that overseas students have the English language comprehension and communication
                       abilities needed to succeed in their chosen program, the majority of educational institutions
                       worldwide employ standardized English examinations.
+                      <br /> 
                       <br />
                       At JPEDU TECH, we understand how each of the industry-recognized English tests is conducted and
                       what’s required of applicants.
+                      <br /> 
                       <br />
                       Because of this, we provide students with the greatest exam preparation guidance available in JP
                       EDU TECH so they can get the score they want.
                       <br />
                     </>
                   </Text>
-                  <Button
-                    shape="square"
-                    className="pl-7 pr-[34px] font-nunitosans font-bold tracking-[1.20px] sm:px-4"
-                  >
-                    Know More
-                  </Button>
+                   <button
+                      shape="square"
+                      className="mr-20 min-w-[198px] pl-7 pr-[34px] font-nunitosans font-bold tracking-[1.20px] md:mr-0 sm:px-4"
+                    >
+                      <Img src="images/button_4.png" alt="Image" className=" mt-4 h-[98px] w-[60%] object-contain" />
+                    </button>
                 </div>
               </div>
             </div>
@@ -250,13 +252,13 @@ export default function EnglishCoachingPage() {
             </div>
           </div>
           <EnglishcoachingRowFour />
-          <div className="mt-[70px] flex flex-col items-center">
+          <div className="mt-[40px] flex flex-col items-center">
             <div className="container-xs relative z-[6] flex flex-col items-end lg:px-5 md:px-5">
-              <div className="flex rotate-[0deg] flex-col items-center justify-center rounded-[22px] bg-light_blue-900 px-2.5 py-3.5">
+              <div className=" -mb-4 flex rotate-[0deg] flex-col items-center justify-center rounded-[22px] bg-light_blue-900 px-2.5 py-3.5">
                 <Img src="images/img_vector_white_a700_01_14x24.svg" alt="Vector" className="h-[14px]" />
               </div>
             </div>
-            <footer className="relative mt-[46px] flex flex-col self-stretch ">
+            <footer className="relative  flex flex-col self-stretch ">
               <div className="relative h-[346px] ">
                 <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max flex-1 flex-col items-center">
                   {/* <div className="container-xs relative z-[4] flex flex-col items-center px-14 lg:px-5 md:px-5 ">

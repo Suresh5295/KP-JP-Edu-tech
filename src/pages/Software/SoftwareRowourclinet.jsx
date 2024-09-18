@@ -12,12 +12,12 @@ export default function SoftwareRowourclinet() {
           <div className="container-xs relative z-20 flex flex-col items-end pl-14 pr-[696px] lg:px-5 md:px-5">
             <Heading
               as="h2"
-              className="font-satisfy text-[64px] font-normal text-white-a700_01 lg:text-[48px] md:text-[48px]"
+              className=" mt-16 font-satisfy text-[64px] font-normal text-white-a700_01 lg:text-[48px] md:text-[48px]"
             >
               Our Clinet{" "}
             </Heading>
           </div>
-          <div className="relative mt-[125px] h-[730px] self-stretch bg-[url(/public/images/img_group_240.png)] bg-cover bg-no-repeat px-[338px] py-8 lg:px-8 md:px-5 sm:p-4">
+          <div className="relative  h-[790px] self-stretch bg-[url(/public/images/img_group_240.png)] bg-cover bg-no-repeat px-[338px] py-8 lg:px-8 md:px-5 sm:p-4">
             <div className="absolute bottom-[12%] left-0 right-0 m-auto h-[512px] w-[65%] content-center lg:h-auto md:h-auto">
               <div className="mx-auto flex w-full px-[46px] md:px-5 sm:px-4">
                 <Slider
@@ -125,7 +125,7 @@ export default function SoftwareRowourclinet() {
         <Heading
           size="heading10xl"
           as="h4"
-          className="absolute left-0 right-0 top-[6%] z-[21] m-auto w-max text-[128px] font-extrabold uppercase text-white-a700_01 lg:text-[48px] md:text-[48px]"
+          className="absolute mt-20 left-0 right-0 top-[6%] z-[21] m-auto w-max text-[128px] font-extrabold uppercase text-white-a700_01 lg:text-[48px] md:text-[48px]"
         >
           Testimonial
         </Heading>

@@ -17,7 +17,7 @@ export default function MigrateStackstudentvis() {
             <Heading
               size="heading6xl"
               as="h3"
-              className="relative mt-[-6px] text-[48px] font-bold tracking-[-0.91px] text-light_blue-900 lg:text-[40px] md:text-[32px] sm:text-[26px]"
+              className="relative mb-20  mt-[-6px] text-[48px] font-bold tracking-[-0.91px] text-light_blue-900 lg:text-[40px] md:text-[32px] sm:text-[26px]"
             >
               Why do People Migrate?
             </Heading>
@@ -44,59 +44,97 @@ export default function MigrateStackstudentvis() {
                     </span>
                   </Text>
                 </div>
-                <div className="mx-1 flex items-start gap-[17px] self-stretch md:mx-0 md:flex-col">
-                  <Img src="images/img_arrow_left.svg" alt="Arrowleft" className="h-[22px] md:w-full" />
+                <div className="mx-1 mt-4 flex items-start gap-[17px] self-stretch md:mx-0 md:flex-col">
+                  <Img src="images/img_arrow_left.svg" alt="Arrowleft" className="mt-1 h-[22px] md:w-full" />
                   <Text
                     size="textxl"
                     as="p"
                     className="w-[56%] self-center text-[24px] font-normal leading-[30px] tracking-[0.48px] text-gray-800 lg:w-[56%] lg:text-[20px] md:w-full"
                   >
-                    Education: Pursuing advanced studies or specialized training.
+                    <span className="font-semibold">Education:</span>
+                    <span>&nbsp;</span>
+                    <span>Pursuing advanced studies or specialized training</span>
+                    <span>
+                      <>
+                        .<br />
+                      </>
+                    </span>
                   </Text>
                 </div>
-                <div className="mx-1 mt-3 flex items-center gap-[17px] self-stretch md:mx-0 md:flex-col">
+                <div className="mx-1 mt-4 flex items-center gap-[17px] self-stretch md:mx-0 md:flex-col">
                   <Img
                     src="images/img_arrow_left.svg"
                     alt="Arrowleft"
-                    className="h-[22px] self-end md:w-full md:self-auto"
+                    className=" h-[22px] self-end md:w-full md:self-auto"
                   />
-                  <Text
+                   <Text
                     size="textxl"
                     as="p"
-                    className="w-[56%] text-[24px] font-normal leading-[30px] tracking-[0.48px] text-gray-800 lg:w-[56%] lg:text-[20px] md:w-full"
+                    className=" w-[56%] self-center text-[24px] font-normal leading-[30px] tracking-[0.48px] text-gray-800 lg:w-[56%] lg:text-[20px] md:w-full"
                   >
-                    Safety and Security: Escaping conflict, political instability, or persecution.
+                    <span className="font-semibold">Safety and Security:</span>
+                    <span>&nbsp;</span>
+                    <span>Escaping conflict, political instability, or persecution</span>
+                    <span>
+                      <>
+                        .<br />
+                      </>
+                    </span>
                   </Text>
+                  
                 </div>
-                <div className="mx-1 mt-[30px] flex items-start gap-[17px] self-stretch md:mx-0 md:flex-col">
+                <div className="mx-1 mt-4 flex items-start gap-[17px] self-stretch md:mx-0 md:flex-col">
                   <Img src="images/img_arrow_left.svg" alt="Arrowleft" className="mt-1 h-[22px] md:mt-0 md:w-full" />
                   <Text
                     size="textxl"
                     as="p"
                     className="w-[56%] self-center text-[24px] font-normal leading-[30px] tracking-[0.48px] text-gray-800 lg:w-[56%] lg:text-[20px] md:w-full"
                   >
-                    Family Reunification: Joining relatives who have already settled elsewhere.
+                    <span className="font-semibold">Family Reunification:</span>
+                    <span>&nbsp;</span>
+                    <span>Joining relatives who have already settled elsewhere.</span>
+                    <span>
+                      <>
+                        <br />
+                      </>
+                    </span>
                   </Text>
                 </div>
-                <div className="mx-1 flex items-start gap-[17px] self-stretch md:mx-0 md:flex-col">
-                  <Img src="images/img_arrow_left.svg" alt="Arrowleft" className="h-[22px] md:w-full" />
+                <div className="mx-1 mt-4 flex items-start gap-[17px] self-stretch md:mx-0 md:flex-col">
+                  <Img src="images/img_arrow_left.svg" alt="Arrowleft" className="mt-1 h-[22px] md:w-full" />
                   <Text
                     size="textxl"
                     as="p"
                     className="w-[56%] self-center text-[24px] font-normal leading-[30px] tracking-[0.48px] text-gray-800 lg:w-[56%] lg:text-[20px] md:w-full"
                   >
-                    Environmental Factors: Moving away from natural disasters or adverse climate conditions.
+                    <span className="font-semibold">Environmental Factors:</span>
+                    <span>&nbsp;</span>
+                    <span>Moving away from natural disasters or adverse climate conditions.</span>
+                    <span>
+                      <>
+                        <br />
+                      </>
+                    </span>
                   </Text>
+                  
                 </div>
-                <div className="mx-1 flex items-start gap-[17px] self-stretch md:mx-0 md:flex-col">
-                  <Img src="images/img_arrow_left.svg" alt="Arrowleft" className="h-[22px] md:w-full" />
+                <div className="mx-1 mt-4 flex items-start gap-[17px] self-stretch md:mx-0 md:flex-col">
+                  <Img src="images/img_arrow_left.svg" alt="Arrowleft" className="mt-1 h-[22px] md:w-full" />
                   <Text
                     size="textxl"
                     as="p"
                     className="w-[56%] self-center text-[24px] font-normal leading-[30px] tracking-[0.48px] text-gray-800 lg:w-[56%] lg:text-[20px] md:w-full"
                   >
-                    Lifestyle Preferences: Finding a better quality of life or new cultural experiences.
+                    <span className="font-semibold">Lifestyle Preferences:</span>
+                    <span>&nbsp;</span>
+                    <span>Finding a better quality of life or new cultural experiences.</span>
+                    <span>
+                      <>
+                        <br />
+                      </>
+                    </span>
                   </Text>
+                  
                 </div>
                 <button
                       shape="square"

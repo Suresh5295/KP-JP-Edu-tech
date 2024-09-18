@@ -31,9 +31,9 @@ export default function SoftwarePage() {
       <div className="w-full bg-white-a700_01">
       <Header className="px-14 md:px-5 sm:px-4" />
         <div>
-          <div className="relative content-center lg:h-auto md:h-auto">
+          <div className="relative content-center lg:h-auto md:h-auto ">
             <div className="mx-auto flex-1">
-              <div className="relative z-[1] h-[966px] bg-[url(/public/images/img_rectangle_4187.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
+              <div className="  relative z-[1] h-[966px] bg-[url(/public/images/img_rectangle_4187_1.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
                 <div className="flex flex-col gap-[194px] lg:gap-[145px] md:gap-[145px] sm:gap-[97px]">
                  
                   <SoftwareColumn />
@@ -169,11 +169,13 @@ export default function SoftwarePage() {
                       alt="Logoswhiteone"
                       className="h-[212px] w-[20%] object-contain md:w-full"
                     />
-                    <div className="container-xs relative z-[4] flex flex-col items-center lg:px-5 md:px-5 ">
-                    <Img src="images/contact.png" className="mb-10"></Img>
+                                        
+                    <div >
+                    <Img src="images/contact.png" className="mb-16"></Img>
                       <div className="relative mt-[-38px]">
-                        <div className="flex flex-col items-end gap-[78px] lg:gap-[78px] md:gap-[58px] sm:gap-[39px]">
+                        <div className=" ml-48 flex flex-col items-end gap-[78px] lg:gap-[78px] md:gap-[58px] sm:gap-[39px]">
                           <div className="  flex w-[100%] items-center justify-between gap-5 lg:w-full md:mr-0 md:w-full md:flex-col">
+                            
                             <div className=" w-full flex flex-wrap items-end self-end md:self-auto">
                               <a href="Home" target="_blank" rel="noreferrer" className="ml-1  lg:text-[17px]">
                               <Text as="p" className=" text-[20px] font-normal tracking-[1.20px] text-white-a700_01">
@@ -201,15 +203,20 @@ export default function SoftwarePage() {
                                 </Text>
                               </a>
                             </div>
-                            <div className="ml-44 flex w-[24%] items-center justify-between gap-5 md:w-full">
-                              <Img src="images/img_close_white_a700_01.svg" alt="Close" className="h-[40px] w-[40px]" />
-                              <Img
-                                src="images/img_volume_white_a700_01.svg"
-                                alt="Volume"
-                                className="h-[40px] w-[40px]"
-                              />
-                              <Img src="images/img_info_white_a700_01.svg" alt="Info" className="h-[40px] w-[40px]" />
-                              <Img src="images/img_trash.svg" alt="Trash" className="h-[36px]" />
+                            
+                            <div className="ml-44 flex w-[24%] items-center justify-between gap-5 md:w-full  ">
+                            <a href="https://www.facebook.com/share/XL5X5UrAG4VuFYuy/?mibextid=qi2Omg" target="_blank">
+                      <Img src="images/img_close_white_a700_01.svg" alt="Close" className="h-[40px] w-[40px]" />
+                      </a>
+                      <a href="https://wa.me/message/2I52EUSWYTQBG1" target="_blank">
+                      <Img src="images/img_volume_white_a700_01.svg" alt="Volume" className="h-[40px] w-[40px]"  />
+                      </a>
+                      <a href="https://www.instagram.com/jpetcs?igsh=MW5xNjF3aDN5dTE3bw==" target="_blank">
+                      <Img src="images/img_info_white_a700_01.svg" alt="Info" className="h-[40px] w-[40px]" />
+                      </a>
+                      <a href="https://x.com/jpedutech" target="_blank" >
+                      <Img src="images/img_trash.svg" alt="Trash" className="h-[36px]"  />
+                      </a>
                             </div>
                           </div>
                           <div className=" flex items-center justify-between gap-5 self-stretch sm:flex-col">

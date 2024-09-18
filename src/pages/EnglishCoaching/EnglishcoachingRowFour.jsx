@@ -75,14 +75,15 @@ export default function EnglishcoachingRowFour() {
                 className="ml-5 flex w-[72%] gap-4 pl-3.5 pr-0.5 font-semibold tracking-[0.40px] text-light_blue-900 md:ml-0 md:py-5 sm:py-4"
               />
             </div>
+            <button
+                size="9xl"
+                shape="square"
+                className=" ml-8 mt-7  min-w-[206px]  font-nunitosans uppercase tracking-[0.64px] md:ml-0 sm:px-4"
+              >
+              <Img src="images/button_3.png" alt="Image" className=" -ml-4 h-[98px] w-[60%] object-contain" onClick={() => window.open("/enquirepage", "_self", "noopener,noreferrer")} />
+          </button>
           </div>
-          <Button
-            size="9xl"
-            shape="square"
-            className="ml-14 min-w-[206px] self-start px-[34px] font-nunitosans uppercase tracking-[0.64px] md:ml-0 sm:px-4"
-          >
-            Send
-          </Button>
+          
           <div className="ml-[54px] mr-1.5 flex gap-4 self-stretch md:mx-0 md:flex-col">
             <Suspense fallback={<div>Loading feed...</div>}>
               {data.map((d, index) => (

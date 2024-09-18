@@ -28,6 +28,17 @@ const data1 = [
 ];
 
 export default function AboutusPage() {
+
+  const [sliderState, setSliderState] = React.useState(0);
+  const sliderRef = React.useRef(null);
+
+  // Scroll to Top Function
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'  // This makes the scrolling behavior smooth
+    });
+  };
   return (
     <>
       <Helmet>
@@ -38,8 +49,8 @@ export default function AboutusPage() {
         <div className="flex flex-col items-center">
           <div className="self-stretch">
             {/* Background Section */}
-            <div className="h-[966px] bg-[url('/public/images/img_rectangle_4187.png')] bg-cover bg-no-repeat lg:h-auto md:h-auto">
-              <div className="flex flex-col items-center gap-12 lg:gap-32 md:gap-24 sm:gap-16 padding-bottom:5rem sm:py-16 bg-black-900_a5">
+            <div className="h-[966px] bg-[url('/public/images/img_rectangle_4187_1.png')] bg-cover bg-no-repeat lg:h-auto md:h-auto">
+              <div className="flex flex-col items-center gap-12 lg:gap-32 md:gap-24 sm:gap-16 padding-bottom:5rem sm:py-16">
                 <Header className="self-stretch px-4 sm:px-5 lg:px-14 bg-white-a700" />
                 <div className="container-xs mb-[340px] flex flex-col items-center px-4 sm:px-5 lg:px-14">
                   <div className="mt-44 ml-2 flex flex-col items-center w-[90%] md:w-full lg:w-[65%]">
@@ -52,9 +63,9 @@ export default function AboutusPage() {
                     </Heading>
                     <Text
                       as="p"
-                      className="mt-4 text-[17px] lg:text-[20px] leading-7 tracking-wide text-white-a700_01"
+                      className="mt-4 text-[17px] lg:text-[20px] leading-7 tracking-wide text-white-a700_01 text-center"
                     >
-                      At JP EDU TECH, we simplify your journey through visa and immigration processes, ensuring your global mobility dreams become a reality.
+                      At JP EDU TECH, we understand that navigating the complexities of visa and<br/>immigration processes can be daunting. That's why we're here—to simplify your<br/>journey and ensure your dreams of global mobility become a reality.
                     </Text>
                     <Button
                       shape="square"
@@ -67,13 +78,13 @@ export default function AboutusPage() {
               </div>
             </div>
           </div>
-          <div className="relative mt-[-192px] h-[856px] bg-[url(/public/images/img_group_191.png)] bg-cover bg-no-repeat py-[76px] lg:h-auto lg:py-8 md:h-auto md:py-5 sm:py-4">
+          <div className="self-stretch relative mt-[-192px] h-[856px] bg-[url(/public/images/img_group_191.png)] bg-cover bg-no-repeat py-[76px] lg:h-auto lg:py-8 md:h-auto md:py-5 sm:py-4">
             <AboutusColumnTwo />
           </div>
         </div>
           <AboutusRow />
-          <div className="relative h-[958px] content-center self-stretch bg-[url(/public/images/img_group_180.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
-            <div className="relative mx-auto h-[940px] flex-1 px-[72px] lg:px-8 md:px-5 sm:px-4">
+          <div className=" relative h-[958px] content-center self-stretch bg-[url(/public/images/img_group_180.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
+            <div className=" ml-10 relative mx-auto h-[940px] flex-1 px-[72px] lg:px-8 md:px-5 sm:px-4">
               <Img
                 src="images/img_group_4.png"
                 alt="Image"
@@ -99,7 +110,7 @@ export default function AboutusPage() {
               <Heading
                 size="heading6xl"
                 as="h2"
-                className="absolute left-[8%] top-[21%] m-auto text-[48px] font-bold text-black-900_01 lg:text-[40px] md:text-[32px] sm:text-[26px]"
+                className="absolute  top-[23%] m-auto text-[48px] font-bold text-black-900_01 lg:text-[40px] md:text-[32px] sm:text-[26px]"
               >
                 Services at Jp Edu Tech
               </Heading>
@@ -135,7 +146,7 @@ export default function AboutusPage() {
                     key={"listpng" + index}
                     src={d.png}
                     alt="Png"
-                    className="h-[40px] w-[16%] object-contain opacity-40 md:w-full"
+                    className="h-[40px] w-[16%] object-contain  md:w-full"
                   />
                 ))}
               </Suspense>
@@ -143,54 +154,17 @@ export default function AboutusPage() {
           </div>
           <AboutusStackiconOne />
           <AboutusRowTwo />
-          <div className="mt-[84px] flex flex-col items-end self-stretch">
-            <div className="relative z-[7] mr-[116px] flex rotate-[90deg] flex-col items-center justify-center rounded-[22px] bg-light_blue-900 px-2.5 py-3.5 md:mr-0">
-              <Img src="images/img_vector_white_a700_01_14x24.svg" alt="Vector" className="h-[14px]" />
-            </div>
-            <div className="relative mt-[-44px] self-stretch">
-              <div className="flex flex-col items-center">
+          <div className="mt-[30px] flex flex-col items-end">
+          <div className="mr-32  flex rotate-[0deg] flex-col items-center justify-center rounded-[22px] bg-light_blue-900 px-2.5 py-3.5">
+              <Img src="images/img_vector_white_a700_01_14x24.svg" alt="Vector" className="h-[14px]" onClick={scrollToTop} />
+              </div>
+
+
                 <div className="container-xs relative z-[6] flex flex-col items-center px-14 lg:px-5 md:px-5">
-                  <div className="relative ml-2 h-[150px] w-[82%] bg-light_blue-900 px-[126px] lg:px-8 md:ml-0 md:px-5 sm:px-4">
-                    <div className="absolute bottom-[0.34px] left-0 right-0 m-auto flex w-[96%] flex-col">
-                      <div className="mr-[76px] flex gap-6 md:mr-0 md:flex-col">
-                        <UserProfile3 className="mt-1.5 w-[8%] bg-white-a700_01 md:mt-0 md:w-full" />
-                        <Heading
-                          size="headingmd"
-                          as="h2"
-                          className="mb-[50px] mt-1.5 w-[18%] text-[17.6px] font-bold leading-6 text-white-a700_01 lg:w-[18%] lg:text-[14px] md:my-0 md:w-full"
-                        >
-                          Call Us Anytime
-                        </Heading>
-                        <UserProfile3 className="mt-1.5 w-[40%] gap-6 md:mt-0 md:w-full" />
-                        <UserProfile3 className="w-[28%] gap-6 md:w-full" />
-                      </div>
-                      <Text
-                        size="textxs"
-                        as="p"
-                        className="relative ml-[100px] mt-[-50px] text-[16px] font-normal leading-[30px] text-white-a700_01 lg:text-[13px] md:ml-0"
-                      >
-                        <>
-                          +91 9704428144
-                          <br />
-                          +91 8247510882
-                        </>
-                      </Text>
-                    </div>
-                    <Text
-                      size="textxs"
-                      as="p"
-                      className="absolute bottom-[11px] right-[10%] m-auto w-[22%] text-[16px] font-normal leading-[30px] text-white-a700_01 lg:text-[13px]"
-                    >
-                      <>
-                        Kurnool, Hyderabad, <br />
-                        Guntur, Melbourne(Australia)
-                      </>
-                    </Text>
-                  </div>
+                <Img src="images/contact.png" className=""></Img>
                 </div>
                 <Footer />
-              </div>
-            </div>
+
           </div>
         </div>
     </>

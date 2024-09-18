@@ -5,7 +5,7 @@ import React, { Suspense } from "react";
 const data = [
   { userImage: "images/img_computer_screen.png", userDescription: "Website Design and Development" },
   { userImage: "images/img_mobile_phone_ta.png", userDescription: "Responsive Design" },
-  { userImage: "images/img_3d_character_em.png", userDescription: "User Experience (UX) Design" },
+  { userImage: "images/img_3d_character_em.png", userDescription: " User Experience (UX) Design" },
   { userImage: "images/img_man_is_looking.png", userDescription: "SEO and Performance Optimization" },
 ];
 
