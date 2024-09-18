@@ -49,7 +49,7 @@ export default function ResourcesRow() {
             </div>
             <div className="relative h-[322px]">
               <Img
-                src="images/img_rectangle_4188.png"
+                src="images/img_rectangle_4188_1.png"
                 alt="Image"
                 className="absolute right-0 top-0 m-auto h-[288px] w-[74%] object-contain"
               />

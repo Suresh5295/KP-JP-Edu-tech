@@ -42,7 +42,7 @@ export default function ContactusColumn() {
         <Heading
           size="heading7xl"
           as="h2"
-          className="text-[64px] font-semibold text-white-a700_01 lg:text-[48px] md:text-[48px]"
+          className=" text-center text-[64px] font-semibold text-white-a700_01 lg:text-[48px] md:text-[48px]"
         >
           Contact Details
         </Heading>

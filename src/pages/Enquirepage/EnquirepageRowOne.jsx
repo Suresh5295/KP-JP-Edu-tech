@@ -17,6 +17,27 @@ export default function EnquirepageRowOne() {
                     >
                       Fill the form for enquire / Appointment..
                     </Heading>
+                    <div className="flex-col" >
+                    <Input
+              size="lg"
+              shape="square"
+              type=" Name"
+              name="Name"
+              placeholder="First Name"
+              style={{ border: 'none' }} 
+              className="  px-4 self-stretch  font-semibold tracking-[0.40px] w-[1150px] "
+            />
+            
+               <Input
+              size="lg"
+              shape="square"
+              type="Name"
+              name=" Name"
+              placeholder="Last Name"
+              style={{ border: 'none' }} 
+              className="mt-[32px] self-stretch  px-4 font-semibold tracking-[0.40px] "
+            />
+            </div>
           <Input
               size="lg"
               shape="square"
@@ -24,7 +45,7 @@ export default function EnquirepageRowOne() {
               name="email"
               placeholder="Email address"
               style={{ border: 'none' }} 
-              className="self-stretch px-4 font-semibold tracking-[0.40px]"
+              className="mt-[32px]  self-stretch px-4 font-semibold tracking-[0.40px] "
             />
             <Input
               size="lg"

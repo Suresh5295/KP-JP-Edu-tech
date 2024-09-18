@@ -38,22 +38,24 @@ export default function EnquirepagePage() {
                 <div className="relative mt-[-50px] flex flex-col items-center bg-black-900_e0 backdrop-blur-[10px] backdrop-opacity-50">
                   <div className="container-xs mt-[50px] flex flex-col items-start gap-[1.25rem] px-14 lg:px-5 md:px-5 sm:gap-[20px]">
                     <div className="flex w-full justify-between gap-5 lg:flex-col">
-                      <Input
-                        size="lg"
-                        shape="square"
-                        type="text"
-                        name="firstName"
-                        placeholder="First name"
-                        className="w-[48%] px-4 font-semibold tracking-[0.40px] lg:w-full"
-                      />
-                      <Input
-                        size="lg"
-                        shape="square"
-                        type="text"
-                        name="lastName"
-                        placeholder="Last name"
-                        className="w-[48%] px-4 font-semibold tracking-[0.40px] lg:w-full"
-                      />
+                      <div className="mx-2.5 mt-[18px] flex gap-[11px] self-stretch md:mx-0 md:flex-col">
+                  {/* <Input
+                    shape="square"
+                    type="text"
+                    name="firstName"
+                    placeholder={`First name`}
+                    style={{ border: 'none' }} 
+                    className="w-[20%] px-2.5 font-semibold tracking-[0.40px] md:w-full md:px-5"
+                  />
+                  <Input
+                    shape="square"
+                    type="text"
+                    name="lastName"
+                    placeholder={`Last name`}
+                    style={{ border: 'none' }} 
+                    className="w-[22%] px-2.5 font-semibold tracking-[0.40px] md:w-full md:px-5"
+                  /> */}
+                </div>
                     </div>
                   </div>
                 </div>

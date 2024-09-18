@@ -26,14 +26,14 @@ export default function ContactDetails({
             alt="Contact Details"
             className="mx-auto  h-[348px] w-full flex-1 rounded-[10px] object-cover"
           />
-          <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max flex-1 flex-col items-start gap-5 rounded-[10px] py-[50px] pl-[94px] pr-14 md:p-5">
-            <Heading size="heading3xl" as="h2" className="-ml-3 mt-[86px] text-[32px] font-semibold text-white-a700_01">
+          <div className=" absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max flex-1 flex-col items-start gap-5 rounded-[10px] py-[50px] pl-[94px] pr-14 md:p-5">
+            <Heading size="heading3xl" as="h2" className=" mt-[86px] text-[32px] font-semibold text-white-a700_01">
               {contactHeading}
             </Heading>
             <Text
               size="textxl"
               as="p"
-              className="-ml-6 text-center text-[24px] font-medium leading-[45px] text-white-a700_01"
+              className="text-center text-[24px] font-medium leading-[45px] text-white-a700_01"
             >
               {contactNumbers}
             </Text>

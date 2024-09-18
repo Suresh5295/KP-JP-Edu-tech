@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet";
-import { Heading, Img, Button, TextArea, Input } from "../../components";
+import { Heading, Img, Button, TextArea, Input, Text } from "../../components";
 import Header from "../../components/Header";
 import UserProfile6 from "../../components/UserProfile6";
 import ContactusColumn from "./ContactusColumn";
@@ -130,13 +130,13 @@ export default function ContactUsPage() {
                         style={{ border: 'none' }}
                         className="mt-[40px] w-[60%] px-5 font-semibold leading-[30px] tracking-[0.48px] text-light_blue-900 md:w-full"
                       />
-                      <Button
-                        size="7xl"
-                        shape="square"
-                        className="mt-[40px] min-w-[200px] px-[34px] font-nunitosans font-bold tracking-[0.96px] sm:px-4"
-                      >
-                        Send
-                      </Button>
+                      <button
+            size="9xl"
+            shape="square"
+            className=" min-w-[206px] font-nunitosans uppercase tracking-[0.64px] md:ml-0 sm:px-4"
+          >
+           <Img src="images/button_3.png" alt="Image" className=" mt-4 h-[98px] w-[60%] object-contain" onClick={() => window.open("/enquirepage", "_self", "noopener,noreferrer")} />
+          </button>
                     </div>
                   </div>
                 </div>
@@ -144,11 +144,11 @@ export default function ContactUsPage() {
             </div>
 
             {/* Right Side Column */}
-            <div className="absolute bottom-0 left-0 right-0 m-auto h-[1060px] flex-1">
+            <div className="absolute bottom-0 left-0 right-0 m-auto h-[860px]  flex-1">
               <Img
                 src="images/img_rectangle_4252.png"
                 alt="Image"
-                className="absolute bottom-0 right-0 top-0 my-auto h-[1060px] w-[34%] object-contain"
+                className="absolute bottom-0 right-0 top-0 my-auto h-[860px] w-[28%] object-contain"
               />
               <ContactusColumnThree />
             </div>
@@ -170,7 +170,7 @@ export default function ContactUsPage() {
                     key={"listpng" + index}
                     src={d.png}
                     alt="Png"
-                    className="h-[40px] w-[16%] object-contain opacity-40 md:w-full mb-10"
+                    className="h-[40px] w-[16%] object-contain  md:w-full mb-10"
                   />
                 ))}
               </Suspense>
@@ -181,63 +181,55 @@ export default function ContactUsPage() {
           <div className=" h-[270px] self-stretch bg-[url(/public/images/img_group_2023.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
             <ul className="flex h-[270px] items-center bg-[url(/public/images/img_group_2402.png)] bg-cover bg-no-repeat px-2 py-1.5 lg:h-auto md:h-auto">
               <li>
-                  <div className="flex w-[94%] flex-col items-end gap-4 lg:w-full md:w-full">
-                    <div className="flex items-center justify-between gap-72 self-stretch md:flex-col">
-                      <div className="flex w-[96%] ml-14 items-center justify-between gap-10 md:w-full md:flex-col">
+                  <div className="flex flex-col items-end lg:w-full md:w-full">
+                    <div className="flex items-center justify-between  self-stretch md:flex-col">
+                      <div className="flex w-full gap-20 self-stretch justify-center  ">
                         <Img
                           src="images/img_logos_white_1.png"
                           alt="Logoswhiteone"
                           className="h-[212px] w-[28%] object-contain md:w-full"
                         />
-                        <ul className="!mb-[60px] flex w-[100%] flex-wrap justify-between gap-5 self-end md:w-full md:self-auto">
-                          <li>
-                            <Heading
-                              as="p"
-                              size="headingxs"
-                              className="text-[20px] font-normal tracking-[1.20px] text-white-a700_01 lg:text-[17px]"
-                            >
-                              Home
-                            </Heading>
-                          </li>
-                          <li>
-                            <Heading
-                              as="p"
-                              size="headingxs"
-                              className="self-end text-[20px] font-normal tracking-[1.20px] text-white-a700_01 lg:text-[17px]"
-                            >
-                              Study Abroad
-                            </Heading>
-                          </li>
-                          <li>
-                            <Heading
-                              as="p"
-                              size="headingxs"
-                              className="self-end text-[20px] font-normal tracking-[1.20px] text-white-a700_01 lg:text-[17px]"
-                            >
-                              Software Consulting
-                            </Heading>
-                          </li>
-                          <li>
-                            <Heading
-                              as="p"
-                              size="headingxs"
-                              className="text-[20px] font-normal tracking-[1.20px] text-white-a700_01 lg:text-[17px]"
-                            >
-                              About Us
-                            </Heading>
-                          </li>
-                          <li>
-                            <Heading
-                              as="p"
-                              size="headingxs"
-                              className="self-start text-[20px] font-normal tracking-[-0.38px] text-white-a700_01 lg:text-[17px]"
-                            >
-                              Contact Us
-                            </Heading>
-                          </li>
-                        </ul>
+                        <ul className="mb-20 flex w-[66%] flex-wrap justify-between gap-5 self-end md:w-full md:self-auto">
+                  <li>
+                  <a href="/home1" target="_self" rel="noreferrer" className="lg:text-[17px]">
+                      <Text as="p" className="text-[20px] font-normal tracking-[1.20px] text-white-a700_01">
+                        Home
+                      </Text>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/studyabroad" target="_self" className="self-end lg:text-[17px]">
+                      <Text as="p" className="text-[20px] font-normal tracking-[1.20px] text-white-a700_01">
+                        Study Abroad{" "}
+                      </Text>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/software" target="_self" className="self-end lg:text-[17px]">
+                      <Text as="p" className="text-[20px] font-normal tracking-[1.20px] text-white-a700_01">
+                        Software Consulting
+                      </Text>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/aboutus" target="_self" className="lg:text-[17px]">
+                      <Text as="p" className="text-[20px] font-normal tracking-[1.20px] text-white-a700_01">
+                        About Us{" "}
+                      </Text>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/contactus" target="_self" className="self-start lg:text-[17px]">
+                      <Text as="p" className="text-[20px] font-normal tracking-[-0.38px] text-white-a700_01">
+                        Contact Us
+                      </Text>
+                    </a>
+                  </li>
+                </ul>
+                       
+              
                       </div>
-                      <div className="flex w-[22%] items-center justify-between gap-5 md:w-full" >
+                      <div className="ml-48 flex w-[22%] items-center justify-between gap-5 md:w-full" >
                       <a href="https://www.facebook.com/share/XL5X5UrAG4VuFYuy/?mibextid=qi2Omg" target="_blank">
                       <Img src="images/img_close_white_a700_01.svg" alt="Close" className="h-[40px] w-[40px]" />
                       </a>
@@ -252,10 +244,10 @@ export default function ContactUsPage() {
                       </a>
                     </div>
                     </div>
-                    <div className="self-stretch">
+                    <div className="self-stretch ">
                     <div className="flex gap-4 self-center ml-10" >
                     <div className="h-px bg-white-a700_01" />
-                    <div className="flex justify-between gap-5 sm:flex-col">
+                    <div className="flex justify-between  sm:flex-col">
                         <Heading
                           size="headingxs"
                           as="p"
@@ -263,7 +255,7 @@ export default function ContactUsPage() {
                         >
                           @2024 JP EDU TECH Pvt Ltd. All rights reserved.
                         </Heading>
-                        <div className="flex w-[12%] justify-between gap-5 sm:w-full">
+                        <div className=" ml-[1000px] flex  justify-between gap-5 sm:w-full">
                         <a href="#">
                             <Heading
                               size="headingxs"
@@ -276,7 +268,7 @@ export default function ContactUsPage() {
                           <Heading
                             size="headingxs"
                             as="p"
-                            className="text-[14px] font-semibold tracking-[0.28px] text-white-a700_01"
+                            className="text-[14px]  font-semibold tracking-[0.28px] text-white-a700_01"
                           >
                             Privacy Policy
                           </Heading>

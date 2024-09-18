@@ -274,9 +274,9 @@ export default function ResourcesPage() {
                 <button
                   size="lg"
                   shape="square"
-                  className=" mt-[26px] min-w-[142px] font-nunitosans font-bold tracking-[0.96px] md:ml-0 sm:px-4"
+                  className="min-w-[142px] font-nunitosans font-bold tracking-[0.96px] md:ml-0 sm:px-4"
                 >
-                  <Img src="images/button_3.png" alt="Image" className="ml-5 mt-4 h-[85px] w-[60%] object-contain" onClick={() => window.open("/enquirepage", "_self", "noopener,noreferrer")} />
+                  <Img src="images/button_3.png" alt="Image" className="px-2 h-[85px] w-[60%] object-contain" onClick={() => window.open("/enquirepage", "_self", "noopener,noreferrer")} />
                 </button>
               </div>
             </div>
@@ -296,32 +296,32 @@ export default function ResourcesPage() {
               <Img
                 src="images/img_2_1_png.png"
                 alt="21png"
-                className="h-[40px] w-[8%] object-contain opacity-40 md:w-full"
+                className="h-[40px] w-[8%] object-contain md:w-full"
               />
               <Img
                 src="images/img_1_1_png.png"
                 alt="11png"
-                className="h-[40px] w-[8%] object-contain opacity-40 md:w-full"
+                className="h-[40px] w-[8%] object-contain md:w-full"
               />
               <Img
                 src="images/img_2_1_png_40x136.png"
                 alt="21png"
-                className="h-[40px] w-[8%] object-contain opacity-40 md:w-full"
+                className="h-[40px] w-[8%] object-contain  md:w-full"
               />
               <Img
                 src="images/img_4_1_png.png"
                 alt="41png"
-                className="h-[40px] w-[8%] object-contain opacity-40 md:w-full"
+                className="h-[40px] w-[8%] object-contain  md:w-full"
               />
               <Img
                 src="images/img_1_1_png.png"
                 alt="11png"
-                className="h-[40px] w-[8%] object-contain opacity-40 md:w-full"
+                className="h-[40px] w-[8%] object-contain  md:w-full"
               />
               <Img
                 src="images/img_4_1_png.png"
                 alt="41png"
-                className="h-[40px] w-[8%] object-contain opacity-40 md:w-full"
+                className="h-[40px] w-[8%] object-contain  md:w-full"
               />
             </div>
           </div>

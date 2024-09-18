@@ -29,14 +29,14 @@ export default function ResourcesRowOne() {
               laoreet maximus quis libero, odio nulla, elementum dui laoreet ipsum enim. felis, vehicula, urna.
               tincidunt
             </Text>
-            <TabList className="flex flex-wrap gap-[74px] self-stretch pl-[76px] pr-14 lg:gap-5 lg:pl-8 md:gap-5 md:px-5 sm:px-4">
-              <Tab className="px-[34px] py-4 text-[20px] font-bold tracking-[-0.38px] text-light_blue-900 lg:text-[17px] sm:px-4">
+            <TabList className=" flex flex-wrap gap-[74px] self-stretch  pr-14 lg:gap-5 lg:pl-8 md:gap-5 md:px-5 sm:px-4">
+              <Tab className="text-center w-64 px-[34px] py-4 text-[20px] font-bold tracking-[-0.38px] text-light_blue-900 lg:text-[17px] sm:px-4">
                 All
               </Tab>
-              <Tab className="px-[34px] py-4 text-[20px] font-bold tracking-[-0.38px] text-light_blue-900 lg:text-[17px] sm:px-4">
+              <Tab className="text-center w-64 px-[34px] py-4 text-[20px] font-bold tracking-[-0.38px] text-light_blue-900 lg:text-[17px] sm:px-4">
                 Up Coming Event
               </Tab>
-              <Tab className="px-[34px] py-4 text-[20px] font-bold tracking-[-0.38px] text-light_blue-900 lg:text-[17px] sm:px-4">
+              <Tab className="text-center w-64 px-[34px] py-4 text-[20px] font-bold tracking-[-0.38px] text-light_blue-900 lg:text-[17px] sm:px-4">
                 Past Events
               </Tab>
             </TabList>
