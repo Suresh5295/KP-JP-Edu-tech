@@ -38,11 +38,11 @@ export default function Home1RowaboutusOne() {
 >
   <>
     At JP Edu Tech, we understand that navigating the complexities of visa and immigration processes can be daunting.
-    That&#39;s why we&#39;re here—to simplify your journey and ensure your dreams of global mobility become a reality. <br/>
+    That&#39;s why we&#39;re here—to simplify your journey and ensure your dreams of global mobility become a reality. <br/>&nbsp;<br/>
     We specialize in providing comprehensive Visa and Immigration services tailored to meet your specific needs.
     Whether you&#39;re an individual seeking a Students who seek to study overseas, new adventure abroad, a family
     looking to reunite, or a business aiming to expand internationally, our team of experts is committed to guiding
-    you through every step of the process. We are here to help you achieve your goals effectively and efficiently.
+    you through every step of the process. We are here to help you achieve your goals effectively and efficiently.&nbsp;<br/>
     <br />
     Our mission is simple: To empower our clients with the knowledge and support they need to achieve their immigration
     goals efficiently and effectively. We prioritize transparency, integrity, and personalized service, ensuring that

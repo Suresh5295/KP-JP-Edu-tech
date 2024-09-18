@@ -6,8 +6,8 @@ export default function StudyabroadRowstudents() {
   const sliderRef = React.useRef(null);
 
   return (
-    <div className="relative z-[4] h-[946px] bg-[url(/public/images/img_group_2371.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
-      <div className="relative mt-[130px] h-[814px] content-center lg:h-auto md:h-auto">
+    <div className="relative z-[4] h-[800px] bg-[url(/public/images/img_group_2371.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
+      <div className="relative -mt-[50px] h-[814px] content-center lg:h-auto md:h-auto">
         <div className="mx-auto flex w-full flex-col items-center">
           <div className="container-xs relative z-[6] flex flex-col items-end pl-14 pr-[728px] lg:px-5 md:px-5">
             <Heading

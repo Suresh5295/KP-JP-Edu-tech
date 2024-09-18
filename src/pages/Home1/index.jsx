@@ -430,7 +430,7 @@ export default function Home1Page() {
                     <Img
                       src="images/img_group_blue_gray_100_02_342x364.png"
                       alt="Image Ten"
-                      className="relative z-[1] h-[342px] w-[18%] object-contain"
+                      className="relative z-[7] h-[342px] w-[18%] object-contain"
                     />
                     <Home1RowaboutusOne />
                   </div>

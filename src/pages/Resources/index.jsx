@@ -385,8 +385,8 @@ export default function ResourcesPage() {
                     </a>
                   </li>
                 </ul>
-                          <div className="flex w-[22%] items-center justify-between gap-5 md:w-full">
-                          <a href="https://www.facebook.com/share/XL5X5UrAG4VuFYuy/?mibextid=qi2Omg" target="_blank">
+                      <div className="flex w-[22%] items-center justify-between gap-5 md:w-full">
+                      <a href="https://www.facebook.com/share/XL5X5UrAG4VuFYuy/?mibextid=qi2Omg" target="_blank">
                       <Img src="images/img_close_white_a700_01.svg" alt="Close" className="h-[40px] w-[40px]" />
                       </a>
                       <a href="https://wa.me/message/2I52EUSWYTQBG1" target="_blank">

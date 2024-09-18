@@ -259,32 +259,32 @@ export default function StudyAbroadPage() {
               <Img
                 src="images/img_2_1_png.png"
                 alt="21png"
-                className="h-[40px] w-[8%] object-contain opacity-40 md:w-full"
+                className="h-[40px] w-[8%] object-contain  md:w-full"
               />
               <Img
                 src="images/img_1_1_png.png"
                 alt="11png"
-                className="h-[40px] w-[8%] object-contain opacity-40 md:w-full"
+                className="h-[40px] w-[8%] object-contain  md:w-full"
               />
               <Img
                 src="images/img_2_1_png_40x136.png"
                 alt="21png"
-                className="h-[40px] w-[8%] object-contain opacity-40 md:w-full"
+                className="h-[40px] w-[8%] object-contain  md:w-full"
               />
               <Img
                 src="images/img_4_1_png.png"
                 alt="41png"
-                className="h-[40px] w-[8%] object-contain opacity-40 md:w-full"
+                className="h-[40px] w-[8%] object-contain md:w-full"
               />
               <Img
                 src="images/img_1_1_png.png"
                 alt="11png"
-                className="h-[40px] w-[8%] object-contain opacity-40 md:w-full"
+                className="h-[40px] w-[8%] object-contain  md:w-full"
               />
               <Img
                 src="images/img_4_1_png.png"
                 alt="41png"
-                className="h-[40px] w-[8%] object-contain opacity-40 md:w-full"
+                className="h-[40px] w-[8%] object-contain  md:w-full"
               />
             </div>
           </div>
@@ -294,16 +294,16 @@ export default function StudyAbroadPage() {
               <Img
                 src="images/img_rectangle_4251.png"
                 alt="Image"
-                className="relative mt-[-100px] h-[1028px] w-full object-cover lg:h-auto md:h-auto"
+                className="relative mt-[-170px] h-[1028px] w-full object-cover lg:h-auto md:h-auto"
               />
             </div>
             <StudyabroadRowThirteen />
           </div>
           <div className="relative mt-[68px] h-[348px] content-center self-stretch lg:h-auto md:h-auto">
-            <div className="mx-auto flex flex-1 flex-col items-center">
+            <div className="mt-8 mx-auto flex flex-1 flex-col items-center">
               <div className="container-xs relative z-[9] flex flex-col items-center px-14 lg:px-5 md:px-5">
-                <div className="ml-2 flex w-[82%] justify-center bg-light_blue-900 px-14 lg:w-full md:ml-0 md:w-full md:px-5 sm:px-4">
-                <div className="container-xs relative z-[4] flex flex-col items-center px-14 lg:px-5 md:px-5 ">
+                <div className="ml-2 flex w-[82%] justify-center  px-14 lg:w-full md:ml-0 md:w-full md:px-5 sm:px-4">
+                <div className=" mb-5 container-xs relative z-[4] flex flex-col items-center px-14 lg:px-5 md:px-5 ">
                   <Img src="images/contact.png"></Img>
                   </div>
                 </div>
