@@ -7,7 +7,7 @@ export default function SoftwareRowourclinet() {
 
   return (
     <div className="relative z-[18] mt-[-4px] h-[946px] bg-[url(/public/images/img_group_256.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
-      <div className="relative mt-[130px] h-[814px] content-center lg:h-auto md:h-auto">
+      <div className="relative h-[814px] content-center lg:h-auto md:h-auto">
         <div className="mx-auto flex w-full flex-col items-center">
           <div className="container-xs relative z-20 flex flex-col items-end pl-14 pr-[696px] lg:px-5 md:px-5">
             <Heading
@@ -17,7 +17,7 @@ export default function SoftwareRowourclinet() {
               Our Clinet{" "}
             </Heading>
           </div>
-          <div className="relative mt-[-18px] h-[730px] self-stretch bg-[url(/public/images/img_group_240.png)] bg-cover bg-no-repeat px-[338px] py-8 lg:px-8 md:px-5 sm:p-4">
+          <div className="relative mt-[125px] h-[730px] self-stretch bg-[url(/public/images/img_group_240.png)] bg-cover bg-no-repeat px-[338px] py-8 lg:px-8 md:px-5 sm:p-4">
             <div className="absolute bottom-[12%] left-0 right-0 m-auto h-[512px] w-[65%] content-center lg:h-auto md:h-auto">
               <div className="mx-auto flex w-full px-[46px] md:px-5 sm:px-4">
                 <Slider

@@ -23,18 +23,18 @@ export default function SoftwareRowbrandidentit() {
               >
                 01
               </Heading>
-              <div className="absolute bottom-[0.87px] left-0 right-0 m-auto flex flex-1 flex-col items-start pl-[118px] pr-14 lg:pl-8 md:px-5 sm:px-4">
+              <div className="absolute bottom-[0.87px] left-0 right-0 m-auto flex flex-1 flex-col items-start pr-14 lg:pl-8 md:px-5 sm:px-4">
                 <Heading
                   size="heading3xl"
                   as="h6"
-                  className="ml-24 text-[32px] font-bold leading-[150%] tracking-[-0.61px] text-light_blue-900 lg:text-[27px] md:ml-0 md:text-[26px] sm:text-[24px]"
+                  className="ml-56 text-[32px] font-bold leading-[150%] tracking-[-0.61px] text-light_blue-900 lg:text-[27px] md:ml-0 md:text-[26px] sm:text-[24px]"
                 >
                   Software Designing
                 </Heading>
                 <Heading
                   size="heading6xl"
                   as="h1"
-                  className="  w-[92%] text-[48px] font-semibold leading-[71px] text-white-a700_01 lg:w-full lg:text-[40px] md:w-full md:text-[32px] sm:text-[26px]"
+                  className="ml-24  w-[92%] text-[48px] font-semibold leading-[71px] text-white-a700_01 lg:w-full lg:text-[40px] md:w-full md:text-[32px] sm:text-[26px]"
                 >
                   Transforming Ideas into Exceptional Software
                 </Heading>

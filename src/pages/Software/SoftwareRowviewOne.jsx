@@ -6,16 +6,16 @@ export default function SoftwareRowviewOne() {
     <div className="mb-[30px] flex items-start gap-4 px-1.5 md:flex-col">
       <div className="relative h-[770px] w-[42%] self-center md:w-full">
         <div className="absolute bottom-0 left-0 right-0 top-0 m-auto h-max flex-1">
-          <div className="relative z-[13] mr-2.5 h-[296px] bg-gradient4 md:mr-0" />
+          <div className="relative z-[13] mr-2.5 h-[296px] md:mr-0" />
           <Img
-            src="images/img_software_developers_office.png"
+            src="images/img_software_developers_office_192x488_1.png"
             alt="Software"
             className="relative mt-[-296px] h-[770px] w-full object-cover lg:h-auto md:h-auto"
           />
         </div>
         {/* <div className=" absolute bottom-[0.17px] left-0 right-0 m-auto h-[296px] flex-1 bg-gradient4" /> */}
         <div className=" absolute bottom-0 left-0 right-0 top-0 z-[14] m-auto flex h-max flex-1 items-center md:relative md:flex-col">
-          <div className="h-[770px] w-[32%] rotate-[90deg] bg-gradient4" />
+          <div className="h-[770px] w-[32%] rotate-[90deg]" />
           <Img
             src="images/img_software_developers_office_192x488.png"
             alt="Software"

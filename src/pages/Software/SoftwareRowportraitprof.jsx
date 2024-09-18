@@ -5,22 +5,13 @@ export default function SoftwareRowportraitprof() {
   return (
     <div className="relative z-[16] mt-[-2px] flex h-[944px] items-center bg-[url(/public/images/img_group_2299.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto md:flex-col">
       <div className="flex w-full flex-col md:px-5">
-        <Img
-          src="images/img_rectangle_4388.png"
-          alt="Image"
-          className="relative z-[17] h-[320px] w-[92%] object-contain"
-        />
-        <div className="relative mt-[-306px] h-[930px]">
+        <div className="relative mt-[-35px] h-[930px]">
           <Img
             src="images/img_portrait_profes.png"
             alt="Portraitprofes"
             className="absolute bottom-0 left-0 top-0 my-auto h-[930px] w-[92%] object-contain"
           />
-          <Img
-            src="images/img_rectangle_4388.png"
-            alt="Image"
-            className="absolute bottom-[-1px] left-0 m-auto h-[320px] w-[92%] object-contain"
-          />
+
         </div>
       </div>
       <div className="flex w-full flex-col items-start gap-1.5 md:px-5">

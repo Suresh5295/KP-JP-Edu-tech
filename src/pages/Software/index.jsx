@@ -12,19 +12,30 @@ import SoftwareRowviewOne from "./SoftwareRowviewOne";
 import React from "react";
 
 export default function SoftwarePage() {
+  const [sliderState, setSliderState] = React.useState(0);
+  const sliderRef = React.useRef(null);
+
+  // Scroll to Top Function
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'  // This makes the scrolling behavior smooth
+    });
+  };
   return (
     <>
       <Helmet>
         <title>JP Edu Tech</title>
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
-      <div className="w-full bg-white-a700_01 mt-24">
+      <div className="w-full bg-white-a700_01">
+      <Header className="px-14 md:px-5 sm:px-4" />
         <div>
-          <div className="relative h-[1352px] content-center lg:h-auto md:h-auto">
+          <div className="relative content-center lg:h-auto md:h-auto">
             <div className="mx-auto flex-1">
               <div className="relative z-[1] h-[966px] bg-[url(/public/images/img_rectangle_4187.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
-                <div className="flex flex-col gap-[194px] bg-black-900_a5 lg:gap-[145px] md:gap-[145px] sm:gap-[97px]">
-                  <Header className="px-14 md:px-5 sm:px-4" />
+                <div className="flex flex-col gap-[194px] lg:gap-[145px] md:gap-[145px] sm:gap-[97px]">
+                 
                   <SoftwareColumn />
                 </div>
               </div>
@@ -90,14 +101,14 @@ export default function SoftwarePage() {
                     <Heading
                       size="heading3xl"
                       as="h3"
-                      className="ml-[234px] text-[32px] font-bold leading-[150%] tracking-[-0.61px] text-light_blue-900 lg:text-[27px] md:ml-0 md:text-[26px] sm:text-[24px]"
+                      className="ml-[250px] text-[32px] font-bold leading-[150%] tracking-[-0.61px] text-light_blue-900 lg:text-[27px] md:ml-0 md:text-[26px] sm:text-[24px]"
                     >
                       Software Testing
                     </Heading>
                     <Heading
                       size="heading6xl"
                       as="h4"
-                      className="w-[84%] self-end text-[48px] font-semibold leading-[71px] text-white-a700_01 lg:w-full lg:text-[40px] md:w-full md:text-[32px] sm:text-[26px]"
+                      className="w-[90%] self-end text-[48px] font-semibold leading-[71px] text-white-a700_01 lg:w-full lg:text-[40px] md:w-full md:text-[32px] sm:text-[26px]"
                     >
                       Ensure Software Excellence with Our Expertise
                     </Heading>
@@ -135,8 +146,8 @@ export default function SoftwarePage() {
           <SoftwareRowSix />
           <div className="mt-[84px] flex flex-col items-center">
             <div className="container-xs relative z-[8] flex flex-col items-end px-1.5 lg:px-5 md:px-5">
-              <div className="flex rotate-[90deg] flex-col items-center justify-center rounded-[22px] bg-light_blue-900 px-2.5 py-3.5">
-                <Img src="images/img_vector_white_a700_01_14x24.svg" alt="Vector" className="h-[14px]" />
+              <div className="flex rotate-[0deg] flex-col items-center justify-center rounded-[22px] bg-light_blue-900 px-2.5 py-3.5">
+              <Img src="images/img_vector_white_a700_01_14x24.svg" alt="Vector" className="h-[14px]" onClick={scrollToTop} />
               </div>
             </div>
             <div className=" relative mt-[-44px] self-stretch">
@@ -152,92 +163,17 @@ export default function SoftwarePage() {
                     alt="Image"
                     className=" absolute bottom-[0.66px] left-0 right-0 m-auto h-[278px] flex-1 object-cover"
                   />
-                  <div className="  absolute  bottom-0 left-0 top-0 my-auto mr-32 flex h-max flex-1 items-center lg:mr-0 md:relative md:mr-0 md:flex-col">
+                  <div className="absolute  bottom-0 left-0 top-0 my-auto flex h-max flex-1 items-center lg:mr-0 md:relative md:flex-col">
                     <Img
                       src="images/img_logos_white_1.png"
                       alt="Logoswhiteone"
                       className="h-[212px] w-[20%] object-contain md:w-full"
                     />
-                    <div className=" container-xs lg:px-5 md:px-5 m-20 ">
-                      <div className=" relative w-[70%]  z-[5] ml-[334px] mr-[316px] h-[194px] bg-light_blue-900 md:mx-0">
-                        <div className="absolute  bottom-0 left-0 top-0 my-auto  flex h-max flex-1 flex-col lg:mr-0 md:mr-0">
-                          <div className=" relative z-[6] ml-20 flex gap-6 md:flex-col w-[82%]">
-                            <div className="mt-2.5 flex w-[8%] flex-col bg-white-a700_01 px-5 md:mt-0 md:w-full">
-                              <Img src="images/img_icon.svg" alt="Call Us Anytime" className="h-[74px]" />
-                            </div>
-                            <Heading
-                              size="headingmd"
-                              as="h6"
-                              className="mb-[50px] mt-1.5 w-[18%] text-[17.6px] font-bold leading-6 text-white-a700_01 lg:w-[18%] lg:text-[14px] md:my-0 md:w-full"
-                            >
-                              Call Us Anytime
-                            </Heading>
-                            <div className="mt-1.5 flex w-[40%] items-center gap-6 md:mt-0 md:w-full">
-                              <div className="w-[24%] bg-white-a700_01 px-5">
-                                <Img
-                                  src="images/img_icon_light_blue_900.svg"
-                                  alt="Icon"
-                                  className="h-[74px] w-full lg:h-auto md:h-auto"
-                                />
-                              </div>
-                              <div className="flex flex-1 flex-col items-start gap-0.5">
-                                <Heading
-                                  size="headingmd"
-                                  as="h6"
-                                  className="text-[17.6px] font-bold leading-6 text-white-a700_01 lg:text-[14px]"
-                                >
-                                  Send Mail
-                                </Heading>
-                                <Text
-                                  as="p"
-                                  className="text-[20px] font-light tracking-[-0.38px] text-white-a700_01 lg:text-[17px]"
-                                >
-                                  jpedutechcs@gmail.com  
-                                </Text>
-                              </div>
-                            </div>
-                            <div className="flex w-[28%] items-start gap-6 md:w-full">
-                              <div className="mt-1.5 flex w-[34%] flex-col items-center self-end bg-white-a700_01 p-5">
-                                <Img src="images/img_linkedin.svg" alt="Linkedin" className="h-[32px]" />
-                              </div>
-                              <Heading
-                                size="headingmd"
-                                as="h6"
-                                className="text-[17.6px] font-bold leading-6 text-white-a700_01 lg:text-[14px]"
-                              >
-                                Our Branche&#39;s
-                              </Heading>
-                            </div>
-                          </div>
-                          <div className="relative ml-[88px] mt-[-50px] flex w-[20%] flex-col items-start gap-11 lg:w-full md:ml-0 md:w-full">
-                            <Text
-                              size="textxs"
-                              as="p"
-                              className="self-end text-[16px] font-normal leading-[30px] text-white-a700_01 lg:text-[13px]"
-                            >
-                              <>
-                                +91 9704428144
-                                <br />
-                                +91 8247510882
-                              </>
-                            </Text>
-                           
-                          </div>
-                        </div>
-                        <Text
-                          size="textxs"
-                          as="p"
-                          className="absolute right-px top-[15.34px] z-[7] m-auto w-[22%] text-[16px] font-normal leading-[30px] text-white-a700_01 lg:text-[13px]"
-                        >
-                          <>
-                            Kurnool, Hyderabad, <br />
-                            Guntur, Melbourne(Australia)
-                          </>
-                        </Text>
-                      </div>
+                    <div className="container-xs relative z-[4] flex flex-col items-center lg:px-5 md:px-5 ">
+                    <Img src="images/contact.png" className="mb-10"></Img>
                       <div className="relative mt-[-38px]">
                         <div className="flex flex-col items-end gap-[78px] lg:gap-[78px] md:gap-[58px] sm:gap-[39px]">
-                          <div className="  flex w-[98%] items-center justify-between gap-5 lg:w-full md:mr-0 md:w-full md:flex-col">
+                          <div className="  flex w-[100%] items-center justify-between gap-5 lg:w-full md:mr-0 md:w-full md:flex-col">
                             <div className=" w-full flex flex-wrap items-end self-end md:self-auto">
                               <a href="Home" target="_blank" rel="noreferrer" className="ml-1  lg:text-[17px]">
                               <Text as="p" className=" text-[20px] font-normal tracking-[1.20px] text-white-a700_01">
