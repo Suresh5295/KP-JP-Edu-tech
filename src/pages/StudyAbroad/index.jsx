@@ -92,29 +92,56 @@ export default function StudyAbroadPage() {
                           setSliderState(e?.item);
                         }}
                         ref={sliderRef}
-                        items={[...Array(15)].map(() => (
-                          <React.Fragment key={Math.random()}>
+                        items={[
+                          {
+                            imgSrc: "images/img_rectangle_4219.png",
+                            number: 1,
+                            country: "USA",
+                          },
+                          {
+                            imgSrc: "images/img_rectangle_4220.png",
+                            number: 2,
+                            country: "Canada",
+                          },
+                          {
+                            imgSrc: "images/img_rectangle_4221.png",
+                            number: 3,
+                            country: "Germany",
+                          },
+                          {
+                            imgSrc: "images/img_rectangle_4222.png",
+                            number: 4,
+                            country: "France",
+                          },
+                          {
+                            imgSrc: "images/img_rectangle_4223.png",
+                            number: 5,
+                            country: "UK",
+                          },
+                          // Add more countries if needed
+                        ].map((item, index) => (
+                          <React.Fragment key={index}>
                             <div className="flex flex-col px-3.5">
                               <div className="flex flex-col items-start">
                                 <Img
-                                  src="images/img_rectangle_4219.png"
-                                  alt="Image"
-                                  className="mr-[18px] h-[392px] w-full rounded-[128px] object-cover lg:h-auto md:mr-0 md:h-auto"
+                                  src={item.imgSrc}
+                                  alt={item.country}
+                                  className=" h-[392px] w-full rounded-[128px] object-cover lg:h-auto md:mr-0 md:h-auto"
                                 />
                                 <div className="relative mt-[-58px] flex w-[42%] flex-col items-start gap-[30px] self-center lg:w-full md:w-full">
                                   <Heading
                                     size="heading4xl"
                                     as="h3"
-                                    className="flex h-[98px] w-[98px] items-center justify-center rounded-[48px] border-[5px] border-solid border-light_blue-900 bg-white-a700_01 text-center font-nunitosans text-[36px] font-semibold tracking-[0.72px] text-light_blue-900 lg:text-[30px] md:text-[30px] sm:text-[28px]"
+                                    className="text-center flex h-[98px] w-[98px] items-center justify-center rounded-[48px] border-[5px] border-solid border-light_blue-900 bg-white-a700_01 font-nunitosans text-[36px] font-semibold tracking-[0.72px] text-light_blue-900 lg:text-[30px] md:text-[30px] sm:text-[28px]"
                                   >
-                                    1
+                                    {item.number}
                                   </Heading>
                                   <Heading
                                     size="heading3xl"
                                     as="h4"
                                     className="ml-4 text-[32px] font-bold tracking-[-0.61px] text-light_blue-900 lg:text-[27px] md:ml-0 md:text-[26px] sm:text-[24px]"
                                   >
-                                    USA
+                                    {item.country}
                                   </Heading>
                                 </div>
                               </div>
@@ -124,6 +151,7 @@ export default function StudyAbroadPage() {
                       />
                     </div>
                   </div>
+
                 </div>
               </div>
               <div className="relative z-[2] mt-[-76px] bg-gray-50_01">
