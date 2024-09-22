@@ -45,7 +45,7 @@ export default function EnquirepagePage() {
                     name="firstName"
                     placeholder={`First name`}
                     style={{ border: 'none' }} 
-                    className="w-[20%] px-2.5 font-semibold tracking-[0.40px] md:w-full md:px-5"
+                    className="w-[40%] px-2.5 font-semibold tracking-[0.40px] md:w-full md:px-5"
                   />
                   <Input
                     shape="square"

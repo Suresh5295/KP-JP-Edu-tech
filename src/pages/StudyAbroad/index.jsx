@@ -272,7 +272,7 @@ export default function StudyAbroadPage() {
                       name="firstName"
                       placeholder={`First name`}
                       style={{ border: 'none' }} 
-                      className="w-[44%] px-2.5 font-semibold tracking-[0.40px] md:w-full"
+                      className="w-[60%] px-2.5 font-semibold tracking-[0.40px] md:w-full"
                     />
                     <Input
                       shape="square"
@@ -280,7 +280,7 @@ export default function StudyAbroadPage() {
                       name="lastName"
                       placeholder={`Last name`}
                       style={{ border: 'none' }} 
-                      className="mr-[38px] w-[44%] px-2.5 font-semibold tracking-[0.40px] md:mr-0 md:w-full"
+                      className="mr-[38px] w-[60%] px-2.5 font-semibold tracking-[0.40px] md:mr-0 md:w-full"
                     />
                   </div>
                   <Input
