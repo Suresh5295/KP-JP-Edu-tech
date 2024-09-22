@@ -60,7 +60,7 @@ export default function Header(props) {
           </nav>
 
           {/* Enquire Now Button */}
-          <a href="/enquirenow" className="no-underline">
+          <a href="/enquirepage" className="no-underline">
             <Button
               size="lg"
               shape="square"
