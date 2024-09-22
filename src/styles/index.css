@@ -50,3 +50,22 @@ input:focus {
 .alice-carousel__dots-item {
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-icons {
+    justify-content: space-evenly;
+  }
+
+  .img-container {
+    width: 100%;
+  }
+
+  .text-container {
+    text-align: center;
+    padding: 10px;
+  }
+}

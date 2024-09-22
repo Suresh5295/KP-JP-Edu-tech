@@ -1,6 +1,8 @@
+import React, { useState, Suspense } from 'react';
 import { Helmet } from "react-helmet";
 import { Text, Heading, Img, Button, Input } from "../../components";
 import Footer from "../../components/Footer";
+import ChatModal from "../../components/ChatModal"; // Correctly importing the default export
 import { CloseSVG } from "../../components/Input/close.jsx";
 import UserProfile from "../../components/UserProfile";
 import UserProfile3 from "../../components/UserProfile3";
@@ -10,12 +12,12 @@ import Home1RowSeven from "./Home1RowSeven";
 import Home1RowThree from "./Home1RowThree";
 import Home1RowaboutusOne from "./Home1RowaboutusOne";
 import Home1Rowourclinet from "./Home1Rowourclinet";
-import React, { Suspense } from "react";
+
 
 const scrollToTop = () => {
   window.scrollTo({
     top: 0,
-    behavior: 'instant'  // This provides a smooth scroll effect.
+    behavior: "smooth", // Smooth scroll effect
   });
 };
 
@@ -28,56 +30,143 @@ const data = [
   { userImage: "images/img_rectangle_4191.png", userRole: "English Coaching Service" },
 ];
 
-
 export default function Home1Page() {
   const [searchBarValue, setSearchBarValue] = React.useState("");
+  const handleMouseEnter = () => {
+    const element = document.querySelector(".vector-animate");
+    element.classList.add("vector-animate-right");
+    element.classList.remove("vector-animate-left");
+  };
+
+  const handleMouseLeave = () => {
+    const element = document.querySelector(".vector-animate");
+    element.classList.add("vector-animate-left");
+    element.classList.remove("vector-animate-right");
+  };
+  const [isChatOpen, setChatOpen] = useState(false);
+
+  const toggleChat = () => {
+      setChatOpen(!isChatOpen); // Correctly toggles the visibility of the ChatModal
+  };
+  
 
   return (
     <>
       <Helmet>
         <title>JP Edu Tech</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
+      <style>
+        {`
+          @keyframes slideRight {
+            from {
+              transform: translateX(0);
+            }
+            to {
+              transform: translateX(calc(100% + 375px));
+            }
+          }
+
+          @keyframes slideLeft {
+            from {
+              transform: translateX(calc(100% + 375px));
+            }
+            to {
+              transform: translateX(0);
+            }
+          }
+
+          .vector-animate-right {
+            animation: slideRight 5s forwards;
+          }
+
+          .vector-animate-left {
+            animation: slideLeft 5s forwards;
+          }
+
+          .chat-modal-backdrop {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5); /* Dim the background to focus on the chat modal */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1050; /* High enough to be above most other content */
+          }
+
+          .chat-modal {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            height: 50%;
+            max-width: 25%; /* Adjust width as needed */
+            z-index: 10000; /* Even higher to ensure the modal itself is above the backdrop */
+            position: absolute; /* This will position the modal fixed within the viewport */
+            bottom: 10%; /* Raise it slightly from the bottom */
+            transform: translateX(-50%); /* Center it horizontally relative to the button */
+            
+            margin-left:96%;
+          }
+        `}
+      </style>
       <div className="w-full bg-white-a700_01">
         <div className="flex flex-col gap-[22px]">
           <div className="ml-8 md:ml-0">
             <div>
-              <header className="flex items-center justify-between md:flex-col">
+              {/* Header Section */}
+              <header className="header-container flex items-center justify-between md:flex-col">
                 <Img
                   src="images/img_logos1_2.png"
                   alt="Logos1two"
-                  className="h-[116px] w-[14%] object-contain md:w-full md:mb-4"
+                  className="h-[116px] w-[14vw] object-contain md:w-full"
                 />
                 <div className="mb-7 ml-[60px] flex w-[100%] items-start justify-between gap-5 self-end md:ml-0 md:w-full md:flex-col md:self-auto md:px-5">
-                <Input
-                  size="xs"
-                  shape="round"
-                  name="search"
-                  placeholder="Search your destination..."
-                  value={searchBarValue}
-                  onChange={(e) => setSearchBarValue(e.target.value)}
-                  suffix={
-                    <div className="flex h-[18px] w-[18px] items-center justify-center">
-                      {searchBarValue?.length > 0 ? (
-                        <CloseSVG onClick={() => setSearchBarValue("")} height={18} width={18} />
-                      ) : (
-                        <Img src="images/img_rewind.svg" alt="Rewind" className="my-1.5 h-[18px] w-[18px]" />
-                      )}
-                    </div>
-                  }
-                  className="mb-1.5 w-[34%] gap-4 rounded-[22px] font-light tracking-[1.20px] text-blue_gray-300 shadow-md md:w-full"
-                  style={{ border: 'none', outline: 'none' }}
-                />
+                  <Input
+                    size="xs"
+                    shape="round"
+                    name="search"
+                    placeholder="Search your destination..."
+                    value={searchBarValue}
+                    onChange={(e) => setSearchBarValue(e.target.value)}
+                    suffix={
+                      <div className="flex h-[18px] w-[18px] items-center justify-center">
+                        {searchBarValue?.length > 0 ? (
+                          <CloseSVG onClick={() => setSearchBarValue("")} height={18} width={18} />
+                        ) : (
+                          <Img
+                            src="images/img_rewind.svg"
+                            alt="Rewind"
+                            className="my-1.5 h-[18px] w-[18px]"
+                          />
+                        )}
+                      </div>
+                    }
+                    className="mb-1.5 w-[34%] gap-4 rounded-[22px] font-light tracking-[1.20px] text-blue_gray-300 shadow-md md:w-full"
+                    style={{ border: "none", outline: "none" }}
+                  />
 
                   <div className="mr-20 flex w-[24%] items-center justify-center gap-[30px] self-end md:w-full md:self-auto z-10">
                     <div className="flex flex-1 items-center justify-between gap-5">
                       <a href="https://www.facebook.com/share/XL5X5UrAG4VuFYuy/?mibextid=qi2Omg">
-                        <Img src="images/img_facebook.svg" alt="Facebook" className="h-[24px] w-[24px]" />
+                        <Img
+                          src="images/img_facebook.svg"
+                          alt="Facebook"
+                          className="h-[24px] w-[24px]"
+                        />
                       </a>
-                      <a href="https://wa.me/message/2I52EUSWYTQBG1" >
+                      <a href="https://wa.me/message/2I52EUSWYTQBG1">
                         <Img src="images/img_volume.svg" alt="Volume" className="h-[24px] w-[24px]" />
                       </a>
-                      <a href="https://www.instagram.com/jpetcs?igsh=MW5xNjF3aDN5dTE3bw==" target="_blank">
+                      <a
+                        href="https://www.instagram.com/jpetcs?igsh=MW5xNjF3aDN5dTE3bw=="
+                        target="_blank"
+                      >
                         <Img src="images/img_info.svg" alt="Info" className="h-[24px] w-[24px]" />
                       </a>
                       <a href="https://x.com/jpedutech" target="_blank">
@@ -85,13 +174,13 @@ export default function Home1Page() {
                       </a>
                     </div>
                     <a href="/Enquirepage" target="_self">
-                    <Button
-                      size="md"
-                      shape="square"
-                      className="min-w-[144px] font-bold leading-[22px] tracking-[0.90px] text-white bg-blue-600"
-                    >
-                      Enquire Now
-                    </Button>
+                      <Button
+                        size="md"
+                        shape="square"
+                        className="min-w-[144px] font-bold leading-[22px] tracking-[0.90px] text-white bg-blue-600"
+                      >
+                        Enquire Now
+                      </Button>
                     </a>
                   </div>
                 </div>
@@ -101,7 +190,7 @@ export default function Home1Page() {
                 <Img
                   src="images/img_group_7.png"
                   alt="Image"
-                  className="absolute right-[26%] top-0 m-auto h-[602px] w-[24%] object-contain z-20 -mt-24 "
+                  className="absolute right-[26%] top-0 m-auto h-[602px] w-[24%] object-contain z-10 -mt-24 "
                 />
                 <div className="absolute right-0 top-1 m-auto flex h-[776px] w-[56%] items-end justify-end bg-[url(/public/images/img_group_2364.png)] bg-cover bg-no-repeat py-[78px] pl-14 pr-[338px] lg:h-auto lg:py-8 lg:pr-8 md:h-auto md:p-5 sm:p-4">
                   {/* <Img src="images/img_close.svg" alt="Close" className="mt-[584px] h-[34px] w-[14%] object-contain" /> */}
@@ -141,33 +230,40 @@ export default function Home1Page() {
                   <button
                   className="mt-9 font-bold tracking-[1.20px] text-white md:ml-0 sm:px-4"
                 >
-                  <Img src="images/button_1.svg" alt="Image" className="ml-5 mt-4 h-[98px] w-[60%] object-contain" onClick={() => window.open("/enquirepage", "_self", "noopener,noreferrer")} />
+                  <Img src="images/button_1.svg" alt="Image" className="ml-5 h-[98px] w-[60%] object-contain" onClick={() => window.open("/enquirepage", "_self", "noopener,noreferrer")} />
                 </button>
 
-                  <Img src="images/img_group_9.svg" alt="Image" className="mt-4 h-[98px] w-[32%] object-contain" />
+                <div className="relative mt-4 h-[58px] w-[25%]" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                  <Img src="images/Vector-2.png" alt="Base Image" className="mt-10 absolute top-0 left-0 h-full w-full object-contain" />
+                  <Img src="images/Vector-1.png" alt="Sliding Image" className=" absolute top-0 left-0 h-[50px] w-[10%] object-contain vector-animate" />
                 </div>
-                <a href="" target="_blank">
-                  <div className="absolute bottom-[4%] left-0 right-0 m-auto flex w-[86%] flex-col items-end">
-                    <div className=" w-[4%] rounded-[34px] border-2 border-solid border-light_blue-900 lg:w-full lg:px-5 md:w-full md:px-5">
-                      <div className="relative h-[60px] content-center lg:h-auto md:h-auto  ">
-                        {/* chat bot  */}
-                        <Img   
-                          src="images/img_ellipse_67.png"
-                          alt="Image"
-                          className="mx-auto h-[58px] w-[58px] rounded-[28px] object-cover"
-                        />
-                        <Heading
-                          size="headingxl"
-                          as="h4"
-                          className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max w-max items-center justify-center rounded-[30px] text-center text-[24px] font-bold tracking-[1.44px] text-gray-800 lg:text-[20px]" s
-                        >
-                          JET
-                        </Heading>
+                </div>
+                <div className="absolute bottom-5 left-0 right-0 m-auto flex w-11/12 flex-col items-end">
+                  <div className="w-1/12 rounded-2xl border-2 border-solid border-light_blue-900 lg:w-full md:w-full md:px-5">
+                    {/* Use a div or button here for non-navigation action */}
+                    <div className="relative h-15 lg:h-auto md:h-auto cursor-pointer" onClick={toggleChat}>
+                      <img
+                        src="images/img_ellipse_67.png"
+                        alt="Chatbot Trigger"
+                        className="mx-auto h-14 w-14 rounded-full object-cover" // Tailwind classes for round image
+                      />
+                      <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max w-max items-center justify-center rounded-full text-center text-lg font-bold tracking-wider text-gray-800 lg:text-sm">
+                        JET
                       </div>
                     </div>
                   </div>
-                </a>
-                <div className="container-xs absolute bottom-0 left-0.5 my-auto flex items-end justify-center px-14 lg:px-5 md:relative md:flex-col md:px-5">
+                </div>
+
+                {/* Modal should be conditionally rendered outside of any <a> or similar tag */}
+                {isChatOpen && (
+                  <div className="chat-modal-backdrop">
+                    <div className="chat-modal">
+                      <ChatModal isOpen={isChatOpen} onClose={() => setChatOpen(false)} />
+                    </div>
+                  </div>
+                )}
+
+                <div className=" container-xs absolute bottom-0 left-0.5 my-auto flex items-end justify-center px-14 lg:px-5 md:relative md:flex-col md:px-5">
                 <div className="flex flex-1 flex-wrap items-start justify-between gap-5 self-center px-8 md:self-stretch sm:px-4">
                 <a href="/studyabroad" target="_blank" className="hover:underline hover:text-blue_gray-800 focus:underline focus:text-blue_gray-800">
                   <Heading
