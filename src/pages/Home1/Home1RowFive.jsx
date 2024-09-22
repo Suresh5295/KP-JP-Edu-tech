@@ -14,15 +14,15 @@ export default function Home1RowFive() {
           <Img
             src="images/img_rectangle_4249.png"
             alt="Imageteen"
-            className="absolute bottom-0 left-[21%] top-0 my-auto h-[686px] w-[58%] rounded-[226px] object-contain"
+            className="absolute bottom-0 left-[21%] top-0 my-auto h-[686px] w-[58%] rounded-[226px] object-contain animate-slideDown"
           />
           <Img
             src="images/img_rectangle_4250.png"
             alt="Imageteen"
-            className="absolute bottom-[-1px] right-[23%] m-auto h-[472px] w-[42%] rounded-[154px] object-contain"
+            className="absolute bottom-[-1px] right-[18%] m-auto h-[472px] w-[42%] rounded-[154px] object-contain animate-slideUp"
           />
         </div>
-        <div className="mb-10 flex w-[46%] flex-col items-start gap-4 self-end md:w-full md:self-auto">
+        <div className="mb-10 flex w-[46%] flex-col items-start gap-4 self-end md:w-full md:self-auto animate-RightToleft">
           <Img src="images/img_close_light_blue_900.svg" alt="Close" className="h-[40px] w-[40px]" />
           <Heading
             as="p"

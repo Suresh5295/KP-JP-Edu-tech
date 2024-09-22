@@ -13,11 +13,11 @@ export default function Home1RowSeven() {
     <div className="relative mt-[-4px] self-stretch">
       <div className="flex items-center md:flex-col">
         <div className="relative h-[922px] w-[38%] self-end md:w-full md:self-auto md:px-5">
-          <div className="absolute bottom-0 left-0 right-0 top-0 m-auto h-[750px] w-[88%] bg-light_blue-900" />
+          <div className="absolute bottom-0 left-0 right-0 top-0 m-auto h-[750px] w-[88%] bg-light_blue-900 " />
           <Img
             src="images/img_rectangle_4252_922x646.png"
             alt="Imageteen"
-            className="absolute bottom-0 left-0 top-0 my-auto h-[922px] w-[88%] object-contain"
+            className="absolute bottom-0 left-0 top-0 my-auto h-[922px] w-[88%] object-contain animate-leftToRight"
           />
         </div>
         <div className="flex flex-1 flex-col items-start md:self-stretch md:px-5">
@@ -81,7 +81,7 @@ export default function Home1RowSeven() {
           >
            <Img src="images/button_3.png" alt="Image" className=" mt-4 h-[98px] w-[60%] object-contain" onClick={() => window.open("/enquirepage", "_self", "noopener,noreferrer")} />
           </button>
-          <div className="ml-[54px] mt-[22px] flex gap-4 self-stretch md:ml-0 md:flex-col">
+          <div className="ml-[54px] mt-[22px] flex gap-4 self-stretch md:ml-0 md:flex-col animate-RightToleft">
             <Suspense fallback={<div>Loading feed...</div>}>
               {data.map((d, index) => (
                 <UserProfile2 {...d} key={"listvectorone" + index} />

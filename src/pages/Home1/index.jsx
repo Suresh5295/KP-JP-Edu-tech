@@ -113,6 +113,79 @@ export default function Home1Page() {
             
             margin-left:96%;
           }
+            @keyframes slideDown {
+              0% {
+                transform: translateY(-100%); /* Starts off-screen from the top */
+                opacity: 0;
+              }
+              100% {
+                transform: translateY(0); /* Ends in its original position */
+                opacity: 1;
+              }
+            }
+
+            .animate-slideDown {
+              animation: slideDown 1.5s ease-in-out forwards; /* Adjust duration and timing function as needed */
+            }
+
+            @keyframes slideUp {
+              0% {
+                transform: translateY(100%); /* Starts off-screen from the top */
+                opacity: 0;
+              }
+              100% {
+                transform: translateY(0); /* Ends in its original position */
+                opacity: 1;
+              }
+            }
+
+            .animate-slideUp {
+              animation: slideUp 1.5s ease-in-out forwards; /* Adjust duration and timing function as needed */
+            }
+
+            @keyframes leftToRight {
+              0% {
+                transform: translateX(-100%); /* Starts off-screen to the left */
+                opacity: 0;
+              }
+              100% {
+                transform: translateX(0); /* Ends in its original position */
+                opacity: 1;
+              }
+            }
+
+            .animate-leftToRight {
+              animation: leftToRight 2s ease-in-out forwards; /* Adjust the duration as needed */
+            }
+               @keyframes RightToleft {
+              0% {
+                transform: translateX(100%); /* Starts off-screen to the left */
+                opacity: 0;
+              }
+              100% {
+                transform: translateX(0); /* Ends in its original position */
+                opacity: 1;
+              }
+            }
+             .animate-RightToleft{
+             animation: RightToleft 2s ease-in-out backwards;
+             } 
+          @keyframes zoomInOut {
+            0% {
+              transform: scale(0.3); /* Normal size */
+            }
+            100% {
+              transform: scale(1.1); /* Zoomed in */
+            }
+           
+          }
+
+          .animate-zoomInOut {
+            animation: zoomInOut 3s ease-in-out forwards; /* No infinite, and forwards to keep final state */
+          }
+
+
+
         `}
       </style>
       <div className="w-full bg-white-a700_01">
@@ -190,35 +263,35 @@ export default function Home1Page() {
                 <Img
                   src="images/img_group_7.png"
                   alt="Image"
-                  className="absolute right-[26%] top-0 m-auto h-[602px] w-[24%] object-contain z-10 -mt-24 "
+                  className="absolute right-[26%] top-0 m-auto h-[602px] w-[24%] object-contain z-10 -mt-24 animate-slideDown"
                 />
                 <div className="absolute right-0 top-1 m-auto flex h-[776px] w-[56%] items-end justify-end bg-[url(/public/images/img_group_2364.png)] bg-cover bg-no-repeat py-[78px] pl-14 pr-[338px] lg:h-auto lg:py-8 lg:pr-8 md:h-auto md:p-5 sm:p-4">
                   {/* <Img src="images/img_close.svg" alt="Close" className="mt-[584px] h-[34px] w-[14%] object-contain" /> */}
                 </div>
-                <div className="absolute left-0 right-0 top-[5%] m-auto flex flex-1 flex-col items-start">
+                <div className="absolute left-0 right-0 top-[5%] m-auto flex flex-1 flex-col items-start ">
                 <Heading
                   size="heading8xl"
                   as="h1"
-                  className="font-playfairdisplay text-[90px] font-black text-blue-gray-800 lg:text-[48px] md:text-[48px]"
+                  className="font-playfairdisplay text-[90px] font-black text-blue-gray-800 lg:text-[48px] md:text-[48px] animate-leftToRight"
                 >
                   Expert Guidance
                 </Heading>
                   <Heading
                     as="h2"
-                    className="ml-3.5 mt-[38px] font-satisfy text-[64px] font-normal tracking-[3.84px] text-light_blue-900 lg:text-[48px] md:ml-0 md:text-[48px]"
+                    className="ml-3.5 mt-[38px] font-satisfy text-[64px] font-normal tracking-[3.84px] text-light_blue-900 lg:text-[48px] md:ml-0 md:text-[48px] animate-leftToRight"
                   >
                     For Your Journey Ahead
                   </Heading>
                   <Heading
                     size="heading6xl"
                     as="h3"
-                    className="ml-3 mt-[18px] text-[48px] font-bold tracking-[2.88px] text-blue_gray-800 lg:text-[40px] md:ml-0 md:text-[32px] sm:text-[26px]"
+                    className="ml-3 mt-[18px] text-[48px] font-bold tracking-[2.88px] text-blue_gray-800 lg:text-[40px] md:ml-0 md:text-[32px] sm:text-[26px] animate-leftToRight"
                   >
                     Let’go!
                   </Heading>
                   <Text
                     as="p"
-                    className="ml-3 mt-5 w-[36%] text-[20px] font-normal leading-[31px] tracking-[0.40px] text-black-900_02 lg:w-full lg:px-5 lg:text-[17px] md:ml-0 md:w-full md:px-5"
+                    className="ml-3 mt-5 w-[36%] text-[20px] font-normal leading-[31px] tracking-[0.40px] text-black-900_02 lg:w-full lg:px-5 lg:text-[17px] md:ml-0 md:w-full md:px-5 animate-leftToRight"
                   >
                     <span>Welcome to JP Edu Tech! Let’s Discover Your Path Together. Find Your Destination with JP Edu Tech</span>
                     <span> – Your Adventure Awaits! Hey There! Ready to Explore New Horizons with JP Edu Tech? Let’s Go! Join Us at </span>
@@ -349,7 +422,7 @@ export default function Home1Page() {
 
                           <Text
                             as="p"
-                            className="w-[34%] text-[20px] font-normal leading-[30px] tracking-[0.40px] text-black-900_02 lg:w-full lg:px-5 lg:text-[17px] md:w-full md:px-5 "
+                            className="w-[34%] text-[20px] font-normal leading-[30px] tracking-[0.40px] text-black-900_02 lg:w-full lg:px-5 lg:text-[17px] md:w-full md:px-5 animate-leftToRight "
                           >
                             Studying abroad opens doors to new cultures, experiences, and opportunities. At Jp Edu Tech,
                             we are dedicated to helping you navigate the complexities of studying in a foreign country,
@@ -372,14 +445,14 @@ export default function Home1Page() {
                           <div className="flex flex-col items-start gap-10 ">
                             <Heading
                               as="h2"
-                              className="font-playfairdisplay text-[64px] font-medium leading-[85px] text-blue_gray-800_01 lg:text-[48px] md:text-[48px] "
+                              className="font-playfairdisplay text-[64px] font-medium leading-[85px] text-blue_gray-800_01 lg:text-[48px] md:text-[48px] animate-leftToRight "
                             >
                               <>
                                 Choose Your own <br />
                                 Destionation
                               </>
                             </Heading>
-                            <div className="h-[2px] w-[8%] bg-light_blue-900 md:ml-0" />
+                            <div className="h-[2px] w-[8%] bg-light_blue-900 md:ml-0 animate-leftToRight" />
                           </div>
                         </div>
                         {/* <div className="absolute bottom-[0.98px] right-[0.34px] m-auto h-[780px] w-[56%] bg-[url(/public/images/img_group_877.png)] bg-cover bg-no-repeat py-[18px]">
@@ -397,7 +470,7 @@ export default function Home1Page() {
                             className="absolute bottom-[18.66px] right-[-0.34px] m-auto h-[192px] w-[24%] object-contain"
                           />
                         </div> */}
-                        <div className="absolute  bottom-[18%] right-[15%] m-auto flex w-[40%] flex-col items-start bg-white-a700_01 px-[34px] py-[18px] shadow-xl sm:px-4">
+                        <div className="absolute  bottom-[18%] right-[15%] m-auto flex w-[40%] flex-col items-start bg-white-a700_01 px-[34px] py-[18px] shadow-xl sm:px-4 animate-zoomInOut">
                           <Heading
                             size="headinglg"
                             as="h3"
