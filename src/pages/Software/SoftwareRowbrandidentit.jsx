@@ -14,7 +14,7 @@ export default function SoftwareRowbrandidentit() {
     <div className="flex justify-end">
       <div className="flex w-[94%] flex-col gap-[38px] lg:w-full lg:px-5 md:w-full md:px-5">
         <div className="flex items-center md:flex-col">
-          <div className="flex flex-1 flex-col items-end md:self-stretch">
+          <div className="flex flex-1 flex-col items-end md:self-stretch animate-leftToRight">
             <div className="relative h-[312px] self-stretch">
               <Heading
                 size="heading11xl"

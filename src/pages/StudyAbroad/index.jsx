@@ -2,7 +2,6 @@ import { Helmet } from "react-helmet";
 import { Img, Text, Heading, Button, TextArea, Input, Slider } from "../../components";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
-import UserProfile3 from "../../components/UserProfile3";
 import StudyabroadRowFour from "./StudyabroadRowFour";
 import StudyabroadRowThirteen from "./StudyabroadRowThirteen";
 import StudyabroadRowarrowleft from "./StudyabroadRowarrowleft";
@@ -27,6 +26,79 @@ export default function StudyAbroadPage() {
         <title>JP Edu Tech</title>
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
+      <style>{`
+      @keyframes slideDown {
+              0% {
+                transform: translateY(-100%); /* Starts off-screen from the top */
+                opacity: 0;
+              }
+              100% {
+                transform: translateY(0); /* Ends in its original position */
+                opacity: 1;
+              }
+            }
+
+            .animate-slideDown {
+              animation: slideDown 1.5s ease-in-out forwards; /* Adjust duration and timing function as needed */
+            }
+
+            @keyframes slideUp {
+              0% {
+                transform: translateY(100%); /* Starts off-screen from the top */
+                opacity: 0;
+              }
+              100% {
+                transform: translateY(0); /* Ends in its original position */
+                opacity: 1;
+              }
+            }
+
+            .animate-slideUp {
+              animation: slideUp 1.5s ease-in-out forwards; /* Adjust duration and timing function as needed */
+            }
+
+            @keyframes leftToRight {
+              0% {
+                transform: translateX(-100%); /* Starts off-screen to the left */
+                opacity: 0;
+              }
+              100% {
+                transform: translateX(0); /* Ends in its original position */
+                opacity: 1;
+              }
+            }
+
+            .animate-leftToRight {
+              animation: leftToRight 2s ease-in-out forwards; /* Adjust the duration as needed */
+            }
+               @keyframes RightToleft {
+              0% {
+                transform: translateX(100%); /* Starts off-screen to the left */
+                opacity: 0;
+              }
+              100% {
+                transform: translateX(0); /* Ends in its original position */
+                opacity: 1;
+              }
+            }
+             .animate-RightToleft{
+             animation: RightToleft 2s ease-in-out backwards;
+             } 
+          @keyframes zoomInOut {
+            0% {
+              transform: scale(0.3); /* Normal size */
+            }
+            100% {
+              transform: scale(1.1); /* Zoomed in */
+            }
+           
+          }
+
+          .animate-zoomInOut {
+            animation: zoomInOut 3s ease-in-out forwards; /* No infinite, and forwards to keep final state */
+          }
+      `}
+      </style>
         <div className="relative  w-full content-center bg-white-a700_01 lg:h-auto md:h-auto">
           <div className="mx-auto flex-1">
               <div>
@@ -39,7 +111,7 @@ export default function StudyAbroadPage() {
                         <Heading
                           size="heading9xl"
                           as="h1"
-                          className="text-center text-[96px] font-bold leading-[144px] text-white-a700_01 lg:text-[48px] md:text-[48px] mt-40"
+                          className="text-center text-[96px] font-bold leading-[144px] text-white-a700_01 lg:text-[48px] md:text-[48px] mt-40 animate-zoomInOut"
                         >
                           <>
                             Want to Study <br /> Abroad

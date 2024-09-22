@@ -5,7 +5,7 @@ export default function AboutusColumnTwo() {
   return (
     <div className="mb-14 flex flex-col items-center">
       <div className="container-xs flex flex-col items-center gap-12 px-14 lg:px-5 md:px-5">
-        <div className="mx-[98px] flex w-[72%] flex-col items-center gap-3.5 lg:w-full md:mx-0 md:w-full">
+        <div className="mx-[98px] flex w-[72%] flex-col items-center gap-3.5 lg:w-full md:mx-0 md:w-full animate-zoomInOut">
           <Heading
             size="heading7xl"
             as="h2"
@@ -24,7 +24,7 @@ export default function AboutusColumnTwo() {
             efficiently.
           </Text>
         </div>
-        <div className="ml-2 flex w-[76%] flex-col items-center gap-2.5 lg:w-full md:ml-0 md:w-full">
+        <div className="ml-2 flex w-[76%] flex-col items-center gap-2.5 lg:w-full md:ml-0 md:w-full animate-zoomInOut">
           <Heading
             size="heading7xl"
             as="h3"

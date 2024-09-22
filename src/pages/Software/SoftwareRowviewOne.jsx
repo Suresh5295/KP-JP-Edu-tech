@@ -26,7 +26,7 @@ export default function SoftwareRowviewOne() {
       </div>
       <div className="mt-[52px] flex flex-1 px-4 md:self-stretch">
         <div className="flex w-[86%] flex-col items-end lg:w-full md:w-full">
-          <div className="relative h-[322px] self-stretch">
+          <div className="relative h-[322px] self-stretch animate-RightToleft">
             <Heading
               size="heading11xl"
               as="h2"
@@ -53,7 +53,7 @@ export default function SoftwareRowviewOne() {
           </div>
           <Text
             as="p"
-            className="w-[84%] text-[20px] font-normal leading-[30px] tracking-[0.40px] text-white-a700_01 lg:w-full lg:text-[17px] md:w-full"
+            className="w-[84%] text-[20px] font-normal leading-[30px] tracking-[0.40px] text-white-a700_01 lg:w-full lg:text-[17px] md:w-full animate-RightToleft"
           >
             <>
               Elevate your technology initiatives with JP Edu Tech&#39;s expert software development consulting. We

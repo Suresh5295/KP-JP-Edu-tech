@@ -17,7 +17,7 @@ export default function AboutusRowTwo() {
           <Img
             src="images/img_rectangle_4323.png"
             alt="Image"
-            className="absolute bottom-0 left-0 top-0 my-auto h-[922px] w-[88%] object-contain"
+            className="absolute bottom-0 left-0 top-0 my-auto h-[922px] w-[88%] object-contain animate-leftToRight"
           />
         </div>
         <div className="flex flex-1 flex-col gap-[22px] md:self-stretch md:px-5">
@@ -78,7 +78,7 @@ export default function AboutusRowTwo() {
           </button>
             </div>
           </div>
-          <div className="ml-[54px] flex gap-4 md:ml-0 md:flex-col">
+          <div className="ml-[54px] flex gap-4 md:ml-0 md:flex-col animate-RightToleft">
             <Suspense fallback={<div>Loading feed...</div>}>
               {data.map((d, index) => (
                 <UserProfile2 {...d} key={"listvectorone" + index} />

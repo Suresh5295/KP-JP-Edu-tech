@@ -6,7 +6,7 @@ export default function ResourcesRow() {
     <div className="flex justify-center self-stretch px-14 md:px-5 sm:px-4">
       <div className="flex w-[96%] items-start justify-center lg:w-full md:w-full md:flex-col">
         <div className="mt-[100px] flex w-[54%] flex-col gap-3.5 md:w-full">
-          <div className="flex items-center gap-[35px]">
+          <div className="flex items-center gap-[35px] animate-leftToRight">
             <Heading
               size="heading6xl"
               as="h5"
@@ -23,7 +23,7 @@ export default function ResourcesRow() {
           <div className="flex flex-col items-start gap-5">
             <Text
               as="p"
-              className="w-[90%] text-[20px] font-normal leading-[30px] tracking-[0.40px] text-white-a700_01 lg:w-full lg:text-[17px] md:w-full"
+              className="w-[90%] text-[20px] font-normal leading-[30px] tracking-[0.40px] text-white-a700_01 lg:w-full lg:text-[17px] md:w-full animate-leftToRight"
             >
               Stay updated with the latest news and announcements from Jp Edu Tech. We bring you valuable insights on
               migration, education, and career opportunities. Our news section keeps you informed about new developments

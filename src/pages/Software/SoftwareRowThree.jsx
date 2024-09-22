@@ -34,7 +34,7 @@ export default function SoftwareRowThree() {
           <div className="ml-[34px] flex flex-wrap items-start justify-between gap-5 md:ml-0 md:flex-col">
             <Text
               as="p"
-              className="w-[28%] self-center text-center text-[20px] font-normal leading-[30px] tracking-[0.40px] text-white-a700_01 lg:w-[28%] lg:text-[17px] md:w-full"
+              className="w-[28%] text-center text-[20px] font-normal leading-[30px] tracking-[0.40px] text-white-a700_01 lg:w-[28%] lg:text-[17px] md:w-full"
             >
               Our Software Design consulting services focus on creating innovative and user-centric digital experiences.
               We combine strategic thinking with design expertise to deliver solutions that drive business growth.

@@ -27,6 +27,80 @@ export default function MigratePage() {
         <title>JP Edu Tech</title>
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
+      <style>
+        {`
+        @keyframes slideDown {
+              0% {
+                transform: translateY(-100%); /* Starts off-screen from the top */
+                opacity: 0;
+              }
+              100% {
+                transform: translateY(0); /* Ends in its original position */
+                opacity: 1;
+              }
+            }
+
+            .animate-slideDown {
+              animation: slideDown 1.5s ease-in-out forwards; /* Adjust duration and timing function as needed */
+            }
+
+            @keyframes slideUp {
+              0% {
+                transform: translateY(100%); /* Starts off-screen from the top */
+                opacity: 0;
+              }
+              100% {
+                transform: translateY(0); /* Ends in its original position */
+                opacity: 1;
+              }
+            }
+
+            .animate-slideUp {
+              animation: slideUp 1.5s ease-in-out forwards; /* Adjust duration and timing function as needed */
+            }
+
+            @keyframes leftToRight {
+              0% {
+                transform: translateX(-100%); /* Starts off-screen to the left */
+                opacity: 0;
+              }
+              100% {
+                transform: translateX(0); /* Ends in its original position */
+                opacity: 1;
+              }
+            }
+
+            .animate-leftToRight {
+              animation: leftToRight 2s ease-in-out forwards; /* Adjust the duration as needed */
+            }
+               @keyframes RightToleft {
+              0% {
+                transform: translateX(100%); /* Starts off-screen to the left */
+                opacity: 0;
+              }
+              100% {
+                transform: translateX(0); /* Ends in its original position */
+                opacity: 1;
+              }
+            }
+             .animate-RightToleft{
+             animation: RightToleft 2s ease-in-out backwards;
+             } 
+          @keyframes zoomInOut {
+            0% {
+              transform: scale(0.3); /* Normal size */
+            }
+            100% {
+              transform: scale(1.1); /* Zoomed in */
+            }
+           
+          }
+
+          .animate-zoomInOut {
+            animation: zoomInOut 3s ease-in-out forwards; /* No infinite, and forwards to keep final state */
+          }
+        `}
+        </style>
       <div className="w-full bg-white-a700_01">
       <Header className="self-stretch px-14 md:px-5 sm:px-4" />
         <div className="flex flex-col items-center">
@@ -38,7 +112,7 @@ export default function MigratePage() {
                   <Heading
                     size="heading9xl"
                     as="h1"
-                    className="mt-80 text-center text-[96px] font-bold leading-[144px] text-white-a700_01 lg:text-[48px] md:text-[48px]"
+                    className="mt-80 text-center text-[96px] font-bold leading-[144px] text-white-a700_01 lg:text-[48px] md:text-[48px] animate-zoomInOut"
                   >
                     <>
                       Connecting Dreams with

@@ -26,6 +26,93 @@ export default function ResourcesPage() {
         <title>JP Edu Tech</title>
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
+      <style>
+        {`
+        @keyframes slideDown {
+              0% {
+                transform: translateY(-100%); /* Starts off-screen from the top */
+                opacity: 0;
+              }
+              100% {
+                transform: translateY(0); /* Ends in its original position */
+                opacity: 1;
+              }
+            }
+
+            .animate-slideDown {
+              animation: slideDown 1.5s ease-in-out forwards; /* Adjust duration and timing function as needed */
+            }
+
+            @keyframes slideUp {
+              0% {
+                transform: translateY(100%); /* Starts off-screen from the top */
+                opacity: 0;
+              }
+              100% {
+                transform: translateY(0); /* Ends in its original position */
+                opacity: 1;
+              }
+            }
+
+            .animate-slideUp {
+              animation: slideUp 1.5s ease-in-out forwards; /* Adjust duration and timing function as needed */
+            }
+
+            @keyframes leftToRight {
+              0% {
+                transform: translateX(-100%); /* Starts off-screen to the left */
+                opacity: 0;
+              }
+              100% {
+                transform: translateX(0); /* Ends in its original position */
+                opacity: 1;
+              }
+            }
+
+            .animate-leftToRight {
+              animation: leftToRight 2s ease-in-out forwards; /* Adjust the duration as needed */
+            }
+               @keyframes RightToleft {
+              0% {
+                transform: translateX(100%); /* Starts off-screen to the left */
+                opacity: 0;
+              }
+              100% {
+                transform: translateX(0); /* Ends in its original position */
+                opacity: 1;
+              }
+            }
+             .animate-RightToleft{
+             animation: RightToleft 2s ease-in-out backwards;
+             } 
+          @keyframes zoomInOut {
+            0% {
+              transform: scale(0.3); /* Normal size */
+            }
+            100% {
+              transform: scale(1.1); /* Zoomed in */
+            }
+           
+          }
+
+          .animate-zoomInOut {
+            animation: zoomInOut 3s ease-in-out forwards; /* No infinite, and forwards to keep final state */
+          }
+        @keyframes zoomInOut1 {
+          0% {
+            transform: scale(0.1); /* Smaller starting size */
+          }
+          100% {
+            transform: scale(1.0); /* Reduced zoom-in size */
+          }
+        }
+
+        .animate-zoomInOut1 {
+          animation: zoomInOut1 3s ease-in-out forwards; /* Adjusted to zoomInOut1 */
+        }
+
+        `}
+        </style>
       <div className="w-full bg-white-a700_01">
       <Header className="self-stretch px-14 md:px-5 sm:px-4" />
         <div className="flex flex-col items-center">
@@ -38,18 +125,25 @@ export default function ResourcesPage() {
                     <Heading
                       size="heading9xl"
                       as="h1"
-                      className="mt-64 text-[96px] font-bold text-white-a700_01 lg:text-[48px] md:text-[48px]"
+                      className="mt-64 text-[96px] font-bold text-white-a700_01 lg:text-[48px] md:text-[48px] animate-zoomInOut"
                     >
                       Resources
                     </Heading>
+                    <Button
+                      shape="square"
+                      className="mt-12 py-3 px-6 sm:px-4 min-w-[150px] lg:min-w-[198px] text-base font-bold tracking-wider"
+                    >
+                      Appointment
+                    </Button>
                   </div>
+                
                 </div>
               </div>
-              <div className="relative mt-[-40px] bg-black-900_f4 py-[18px]">
+              <div className="relative mt-[-40px] bg-black-900_f4 py-[18px] ">
                 <div className="mt-[492px] flex flex-col items-center gap-[72px] lg:gap-[72px] md:gap-[54px] sm:gap-9">
-                  <div className="container-xs flex flex-col items-center gap-[26px] px-[46px] lg:px-5 md:px-5">
-                    <div className="ml-[18px] flex gap-5 self-stretch md:ml-0 md:flex-col">
-                      <div className="flex w-full flex-col items-start">
+                  <div className="container-xs flex flex-col items-center gap-[26px] px-[46px] lg:px-5 md:px-5 ">
+                    <div className="ml-[18px] flex gap-5 self-stretch md:ml-0 md:flex-col animate-zoomInOut">
+                      <div className="ml-20 flex w-full flex-col items-start">
                         <Text
                           as="p"
                           className="w-full text-[20px] font-normal leading-[30px] tracking-[0.40px] text-white-a700_01 lg:text-[17px]"
@@ -67,7 +161,7 @@ export default function ResourcesPage() {
                           Read More..
                         </Heading>
                       </div>
-                      <div className="flex w-full flex-col items-start">
+                      <div className=" mr-5 flex w-full flex-col items-start">
                         <Text
                           as="p"
                           className="w-full text-[20px] font-normal leading-[30px] tracking-[0.40px] text-white-a700_01 lg:text-[17px]"
@@ -85,7 +179,7 @@ export default function ResourcesPage() {
                           Read More..
                         </Heading>
                       </div>
-                      <div className="flex w-full flex-col items-start">
+                      <div className=" mr-20 flex w-full flex-col items-start">
                         <Text
                           as="p"
                           className="w-full text-[20px] font-normal leading-[30px] tracking-[0.40px] text-white-a700_01 lg:text-[17px]"
@@ -120,7 +214,7 @@ export default function ResourcesPage() {
             <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max w-full flex-col items-center">
               <div className="self-stretch bg-black-900_e0 blur-[24.00px] backdrop-opacity-[0.5]" />
               <div className="container-xs relative mt-[-110px] px-[46px] lg:px-5 md:px-5">
-              <div className=" mx-auto flex w-full gap-5 md:mx-0 md:flex-col">
+              <div className=" mx-auto flex w-full gap-5 md:mx-0 md:flex-col ">
               <Slider
                 autoPlay
                 autoPlayInterval={2000}
@@ -170,7 +264,7 @@ export default function ResourcesPage() {
             </div>
           </div>
           <div className="relative h-[1934px] self-stretch lg:h-auto md:h-auto">
-            <div className="mx-[136px] mt-5 flex-1 lg:mx-0 md:mx-0">
+            <div className="mx-[136px] mt-24 flex-1 lg:mx-0 md:mx-0">
               <div className="flex flex-col items-start">
                 <div className="flex items-center gap-[46px] self-stretch">
                   <a
@@ -280,12 +374,12 @@ export default function ResourcesPage() {
                 </button>
               </div>
             </div>
-            <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max w-full flex-col items-end">
+            <div className="absolute bottom-0 left-0 right-0 top-8 m-auto flex h-max w-full flex-col items-end">
               <div className="w-[40%] bg-light_blue-900 px-3.5 py-24 lg:w-full lg:py-8 md:w-full md:py-5 sm:py-4">
                 <Img
                   src="images/img_ellipse_53.png"
                   alt="Image"
-                  className="mt-[26px] h-[754px] w-[754px] rounded-[376px] object-cover"
+                  className="mt-[26px] h-[754px] w-[754px] rounded-[376px] object-cover animate-zoomInOut1"
                 />
               </div>
               <ResourcesRowOne />

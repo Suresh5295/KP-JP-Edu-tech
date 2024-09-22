@@ -17,7 +17,7 @@ export default function EnglishcoachingRowFour() {
           <Img
             src="images/img_rectangle_4292.png"
             alt="Image"
-            className="absolute bottom-0 left-0 top-0 my-auto h-[922px] w-[88%] object-contain"
+            className="absolute bottom-0 left-0 top-0 my-auto h-[922px] w-[88%] object-contain animate-leftToRight"
           />
         </div>
         <div className="flex flex-1 flex-col items-center gap-[26px] md:self-stretch md:px-5">
@@ -84,7 +84,7 @@ export default function EnglishcoachingRowFour() {
           </button>
           </div>
           
-          <div className="ml-[54px] mr-1.5 flex gap-4 self-stretch md:mx-0 md:flex-col">
+          <div className="ml-[54px] mr-1.5 flex gap-4 self-stretch md:mx-0 md:flex-col animate-RightToleft">
             <Suspense fallback={<div>Loading feed...</div>}>
               {data.map((d, index) => (
                 <UserProfile2 {...d} key={"listvectorone" + index} />

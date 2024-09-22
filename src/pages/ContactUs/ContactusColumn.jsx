@@ -38,7 +38,7 @@ const data = [
 export default function ContactusColumn() {
   return (
     <div className="mt-[18px] flex flex-col items-center ">
-      <div className="container-xs flex flex-col items-center  px-14 lg:px-5 md:px-5">
+      <div className="container-xs flex flex-col items-center  px-14 lg:px-5 md:px-5 animate-zoomInOut">
         <Heading
           size="heading7xl"
           as="h2"

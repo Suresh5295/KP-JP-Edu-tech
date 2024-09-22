@@ -8,7 +8,7 @@ export default function SoftwareColumn() {
         <Heading
           size="heading9xl"
           as="h1"
-          className="self-stretch mt-56 text-center text-[96px] font-bold leading-[144px] text-white-a700_01 lg:text-[48px] md:text-[48px]"
+          className="self-stretch mt-56 text-center text-[96px] font-bold leading-[144px] text-white-a700_01 lg:text-[48px] md:text-[48px] animate-zoomInOut"
         >
            Find a Perfect Solution Through our Software Consulting.
         </Heading>

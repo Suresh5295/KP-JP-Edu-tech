@@ -28,6 +28,80 @@ export default function SoftwarePage() {
         <title>JP Edu Tech</title>
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
+      <style>
+        {`
+        @keyframes slideDown {
+              0% {
+                transform: translateY(-100%); /* Starts off-screen from the top */
+                opacity: 0;
+              }
+              100% {
+                transform: translateY(0); /* Ends in its original position */
+                opacity: 1;
+              }
+            }
+
+            .animate-slideDown {
+              animation: slideDown 1.5s ease-in-out forwards; /* Adjust duration and timing function as needed */
+            }
+
+            @keyframes slideUp {
+              0% {
+                transform: translateY(100%); /* Starts off-screen from the top */
+                opacity: 0;
+              }
+              100% {
+                transform: translateY(0); /* Ends in its original position */
+                opacity: 1;
+              }
+            }
+
+            .animate-slideUp {
+              animation: slideUp 1.5s ease-in-out forwards; /* Adjust duration and timing function as needed */
+            }
+
+            @keyframes leftToRight {
+              0% {
+                transform: translateX(-100%); /* Starts off-screen to the left */
+                opacity: 0;
+              }
+              100% {
+                transform: translateX(0); /* Ends in its original position */
+                opacity: 1;
+              }
+            }
+
+            .animate-leftToRight {
+              animation: leftToRight 2s ease-in-out forwards; /* Adjust the duration as needed */
+            }
+               @keyframes RightToleft {
+              0% {
+                transform: translateX(100%); /* Starts off-screen to the left */
+                opacity: 0;
+              }
+              100% {
+                transform: translateX(0); /* Ends in its original position */
+                opacity: 1;
+              }
+            }
+             .animate-RightToleft{
+             animation: RightToleft 2s ease-in-out backwards;
+             } 
+          @keyframes zoomInOut {
+            0% {
+              transform: scale(0.3); /* Normal size */
+            }
+            100% {
+              transform: scale(1.1); /* Zoomed in */
+            }
+           
+          }
+
+          .animate-zoomInOut {
+            animation: zoomInOut 3s ease-in-out forwards; /* No infinite, and forwards to keep final state */
+          }
+        `}
+        </style>
       <div className="w-full bg-white-a700_01">
       <Header className="px-14 md:px-5 sm:px-4" />
         <div>
@@ -89,7 +163,7 @@ export default function SoftwarePage() {
           <div className="bg-black-900 py-1.5">
             <div className="mb-[132px] flex items-start md:flex-col">
               <div className="mt-[92px] flex flex-1 flex-col items-end pl-14 pr-[58px] md:self-stretch md:px-5">
-                <div className="relative h-[332px] w-[94%]">
+                <div className="relative h-[332px] w-[94%] animate-leftToRight ">
                   <Heading
                     size="heading11xl"
                     as="h2"
@@ -116,7 +190,7 @@ export default function SoftwarePage() {
                 </div>
                 <Text
                   as="p"
-                  className="mr-11 w-[80%] text-[20px] font-normal leading-[34px] tracking-[0.40px] text-white-a700_01 lg:w-full lg:text-[17px] md:mr-0 md:w-full"
+                  className="mr-11 w-[80%] text-[20px] font-normal leading-[34px] tracking-[0.40px] text-white-a700_01 lg:w-full lg:text-[17px] md:mr-0 md:w-full animate-leftToRight"
                 >
                   Ensure software excellence with our expert testing services. We develop robust test strategies, design
                   effective test cases, and implement automation for efficiency. Our focus on performance, security, and
