@@ -1,4 +1,5 @@
-import React from "react";
+import React  from "react";
+import NotFound from "./NotFound"; // Import NotFound from its own file
 import { Link } from "react-router-dom";
 const Home = () => {
   return (

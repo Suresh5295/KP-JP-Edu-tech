@@ -1,6 +1,6 @@
 import React from "react";
 import { useRoutes } from "react-router-dom";
-import Home from "pages/Home";
+import Home from "pages/Home1";
 import NotFound from "pages/NotFound";
 import Home1 from "pages/Home1";
 import StudyAbroad from "pages/StudyAbroad";

@@ -12,6 +12,7 @@ import Home1RowSeven from "./Home1RowSeven";
 import Home1RowThree from "./Home1RowThree";
 import Home1RowaboutusOne from "./Home1RowaboutusOne";
 import Home1Rowourclinet from "./Home1Rowourclinet";
+import ProjectRoutes from 'Routes';
 
 
 const scrollToTop = () => {
