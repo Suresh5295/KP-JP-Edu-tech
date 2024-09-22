@@ -7,7 +7,7 @@ const Home = () => {
       <h1 style={{ fontSize: "48px", marginBottom: "20px" }}>Homepage</h1>
       <ul style={{ listStyle: "none", padding: "0" }}>
         <li style={{ marginBottom: "10px" }}>
-          <Link to="/home1" style={{ color: "#87CEFA", textDecoration: "none" }}>
+          <Link to="/home" style={{ color: "#87CEFA", textDecoration: "none" }}>
             Home1
           </Link>
         </li>
