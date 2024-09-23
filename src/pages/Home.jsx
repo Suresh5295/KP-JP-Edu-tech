@@ -17,7 +17,7 @@ const Home = () => {
           </Link>
         </li>
         <li style={{ marginBottom: "10px" }}>
-          <Link to="/softwareconsulting" style={{ color: "#87CEFA", textDecoration: "none" }}>
+          <Link to="/software" style={{ color: "#87CEFA", textDecoration: "none" }}>
             Software
           </Link>
         </li>
