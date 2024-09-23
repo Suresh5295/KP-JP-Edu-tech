@@ -28,25 +28,70 @@ export default function Header(props) {
         } md:flex w-[88%] items-center justify-between md:w-full md:flex-col gap-5`}>
           <nav className="flex flex-1 items-center justify-center">
             <ul className="flex items-center justify-center gap-10 lg:gap-6 md:gap-4 flex-wrap">
-              {[
-                "Home", 
-                "Study Abroad", 
-                "Software Consulting", 
-                "Migrate", 
-                "English Coaching", 
-                "About Us", 
-                "Resources", 
-                "Contact Us"
-              ].map((item, index) => (
-                <li key={index}>
-                  <a
-                    href={`/${item.replace(/\s+/g, '')}`} // Creating dynamic URLs
-                    className="text-[16px] font-semibold text-blue_gray-800 hover:text-teal-400"
-                  >
-                    {item}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <a
+                  href="/home" // Specific URL for "Home"
+                  className="text-[16px] font-semibold text-blue_gray-800 hover:text-teal-400"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/studyabroad" // Specific URL for "Study Abroad"
+                  className="text-[16px] font-semibold text-blue_gray-800 hover:text-teal-400"
+                >
+                  Study Abroad
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/softwareconsulting" // Specific URL for "Software Consulting"
+                  className="text-[16px] font-semibold text-blue_gray-800 hover:text-teal-400"
+                >
+                  Software Consulting
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/migrate" // Specific URL for "Migrate"
+                  className="text-[16px] font-semibold text-blue_gray-800 hover:text-teal-400"
+                >
+                  Migrate
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/englishcoaching" // Specific URL for "English Coaching"
+                  className="text-[16px] font-semibold text-blue_gray-800 hover:text-teal-400"
+                >
+                  English Coaching
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/aboutus" // Specific URL for "About Us"
+                  className="text-[16px] font-semibold text-blue_gray-800 hover:text-teal-400"
+                >
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/resources" // Specific URL for "Resources"
+                  className="text-[16px] font-semibold text-blue_gray-800 hover:text-teal-400"
+                >
+                  Resources
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/contactus" // Specific URL for "Contact Us"
+                  className="text-[16px] font-semibold text-blue_gray-800 hover:text-teal-400"
+                >
+                  Contact Us
+                </a>
+              </li>
             </ul>
 
             {/* Search Icon */}

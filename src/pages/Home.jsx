@@ -7,8 +7,8 @@ const Home = () => {
       <h1 style={{ fontSize: "48px", marginBottom: "20px" }}>Homepage</h1>
       <ul style={{ listStyle: "none", padding: "0" }}>
         <li style={{ marginBottom: "10px" }}>
-          <Link to="/home1" style={{ color: "#87CEFA", textDecoration: "none" }}>
-            Home1
+          <Link to="/home" style={{ color: "#87CEFA", textDecoration: "none" }}>
+            Home
           </Link>
         </li>
         <li style={{ marginBottom: "10px" }}>
@@ -17,7 +17,7 @@ const Home = () => {
           </Link>
         </li>
         <li style={{ marginBottom: "10px" }}>
-          <Link to="/software" style={{ color: "#87CEFA", textDecoration: "none" }}>
+          <Link to="/softwareconsulting" style={{ color: "#87CEFA", textDecoration: "none" }}>
             Software
           </Link>
         </li>
@@ -34,11 +34,6 @@ const Home = () => {
         <li style={{ marginBottom: "10px" }}>
           <Link to="/aboutus" style={{ color: "#87CEFA", textDecoration: "none" }}>
             Aboutus
-          </Link>
-        </li>
-        <li style={{ marginBottom: "10px" }}>
-          <Link to="/homeone" style={{ color: "#87CEFA", textDecoration: "none" }}>
-            HomeOne
           </Link>
         </li>
         <li style={{ marginBottom: "10px" }}>
