@@ -3,7 +3,7 @@ import React from "react";
 
 export default function EnquirepageRowOne() {
   return (
-    <div className="relative mt-[-200px] h-auto bg-[url('/images/img_group_1465.png')] bg-cover bg-no-repeat lg:h-auto md:h-auto">
+    <div className="relative mt-[-200px] h-auto bg-[url('/public/images/img_group_1465.png')] bg-cover bg-no-repeat lg:h-auto md:h-auto">
       <div className="flex justify-center bg-black-900_e0 py-[52px] md:py-5 sm:py-4">
         <div className="container-xs mt-[200px] flex justify-center px-14 lg:px-5 md:px-5">
           <div className="flex w-[74%] flex-col items-start lg:w-full md:w-full">
