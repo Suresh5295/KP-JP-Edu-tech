@@ -46,7 +46,7 @@ export default function Header(props) {
               </li>
               <li>
                 <a
-                  href="/softwareconsulting" // Specific URL for "Software Consulting"
+                  href="/software" // Specific URL for "Software Consulting"
                   className="text-[16px] font-semibold text-blue_gray-800 hover:text-teal-400"
                 >
                   Software Consulting
