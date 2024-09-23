@@ -312,31 +312,6 @@ export default function Home1Page() {
                   <Img src="images/Vector-1.png" alt="Sliding Image" className=" absolute top-0 left-0 h-[50px] w-[10%] object-contain vector-animate" />
                 </div>
                 </div>
-                <div className="absolute bottom-5 left-0 right-0 m-auto flex w-11/12 flex-col items-end">
-                  <div className="w-1/12 rounded-2xl border-2 border-solid border-light_blue-900 lg:w-full md:w-full md:px-5">
-                    {/* Use a div or button here for non-navigation action */}
-                    <div className="relative h-15 lg:h-auto md:h-auto cursor-pointer" onClick={toggleChat}>
-                      <img
-                        src="images/img_ellipse_67.png"
-                        alt="Chatbot Trigger"
-                        className="mx-auto h-14 w-14 rounded-full object-cover" // Tailwind classes for round image
-                      />
-                      <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max w-max items-center justify-center rounded-full text-center text-lg font-bold tracking-wider text-gray-800 lg:text-sm">
-                        JET
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Modal should be conditionally rendered outside of any <a> or similar tag */}
-                {isChatOpen && (
-                  <div className="chat-modal-backdrop">
-                    <div className="chat-modal">
-                      <ChatModal isOpen={isChatOpen} onClose={() => setChatOpen(false)} />
-                    </div>
-                  </div>
-                )}
-
                 <div className=" container-xs absolute bottom-0 left-0.5 my-auto flex items-end justify-center px-14 lg:px-5 md:relative md:flex-col md:px-5">
                 <div className="flex flex-1 flex-wrap items-start justify-between gap-5 self-center px-8 md:self-stretch sm:px-4">
                 <a href="/studyabroad" target="_blank" className="hover:underline hover:text-blue_gray-800 focus:underline focus:text-blue_gray-800">
@@ -404,6 +379,32 @@ export default function Home1Page() {
                     </a>
                   </div>
                 </div>
+                <div className="absolute bottom-5 left-0 right-0 m-auto flex w-11/12 flex-col items-end">
+                  <div className="rounded-full border-2 border-solid border-light_blue-900 lg:w-full md:w-full md:px-5">
+                    {/* Use a div or button here for non-navigation action */}
+                    <div className="relative h-15 lg:h-auto md:h-auto cursor-pointer" onClick={toggleChat}>
+                      <img
+                        src="images/img_ellipse_67.png"
+                        alt="Chatbot Trigger"
+                        className="mx-auto h-14 w-14 rounded-full object-cover" // Tailwind classes for round image
+                      />
+                      <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max w-max items-center justify-center rounded-full text-center text-lg font-bold tracking-wider text-white lg:text-sm z-20">
+                        JET
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Modal should be conditionally rendered outside of any <a> or similar tag */}
+                {isChatOpen && (
+                  <div className="chat-modal-backdrop">
+                    <div className="chat-modal">
+                      <ChatModal isOpen={isChatOpen} onClose={() => setChatOpen(false)} />
+                    </div>
+                  </div>
+                )}
+
+
               </div>
             </div>
           </div>
