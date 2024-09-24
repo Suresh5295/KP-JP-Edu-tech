@@ -658,7 +658,7 @@ export default function Home1Page() {
               <div className="absolute bottom-[13%] left-0 right-0 z-[17] mx-[100px] my-auto flex flex-1 flex-col items-end lg:mx-0 md:mx-0">
                 <div className="relative z-[18] flex flex-col items-end self-stretch">
                   <Img
-                    src="images/img_rectangle_4190.png"
+                    src="images/img_rectangle_4190_1.png"
                     alt="Image Twelve"
                     className="relative z-[19] h-[1004px] w-[42%] object-contain"
                   />
