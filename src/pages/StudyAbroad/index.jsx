@@ -1,3 +1,4 @@
+import React, { useState } from "react";  // Import useState from React
 import { Helmet } from "react-helmet";
 import { Img, Text, Heading, Button, TextArea, Input, Slider } from "../../components";
 import Footer from "../../components/Footer";
@@ -6,10 +7,11 @@ import StudyabroadRowFour from "./StudyabroadRowFour";
 import StudyabroadRowThirteen from "./StudyabroadRowThirteen";
 import StudyabroadRowarrowleft from "./StudyabroadRowarrowleft";
 import StudyabroadRowstudents from "./StudyabroadRowstudents";
-import React from "react";
+
 
 export default function StudyAbroadPage() {
   const [sliderState, setSliderState] = React.useState(0);
+  const [hoveredIndex, setHoveredIndex] = useState(null); // Track the hovered image
   const sliderRef = React.useRef(null);
 
   // Scroll to Top Function
@@ -19,6 +21,30 @@ export default function StudyAbroadPage() {
       behavior: 'smooth'  // This makes the scrolling behavior smooth
     });
   };
+
+  const items = [
+    {
+      defaultImage: "images/img_rectangle_4219_1_1.png",
+      hoverImage: "images/hover_img_rectangle_4219_1_1.png",
+    },
+    {
+      defaultImage: "images/img_rectangle_4220_1_1.png",
+      hoverImage: "images/hover_img_rectangle_4220_1_1.png",
+    },
+    {
+      defaultImage: "images/img_rectangle_4221_1_1.png",
+      hoverImage: "images/hover_img_rectangle_4221_1_1.png",
+    },
+    {
+      defaultImage: "images/img_rectangle_4222_1_1.png",
+      hoverImage: "images/hover_img_rectangle_4222_1_1.png",
+    },
+    {
+      defaultImage: "images/img_rectangle_4223_1_1.png",
+      hoverImage: "images/hover_img_rectangle_4223_1_1.png",
+    },
+    // Add more countries if needed
+  ];
 
   return (
     <>
@@ -97,6 +123,28 @@ export default function StudyAbroadPage() {
           .animate-zoomInOut {
             animation: zoomInOut 3s ease-in-out forwards; /* No infinite, and forwards to keep final state */
           }
+
+          @keyframes spinFadeIn {
+          0% {
+            transform: rotateY(0);
+          }
+          50% {
+            transform: rotateY(90deg);
+          }
+          100% {
+            transform: rotateY(0);
+          }
+          }
+
+          .hover-image {
+            transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+            
+          }
+
+          .hover-image:hover {
+            animation: spinFadeIn 0.6s ease-in-out forwards;
+          }
+
       `}
       </style>
         <div className="relative  w-full content-center bg-white-a700_01 lg:h-auto md:h-auto">
@@ -154,78 +202,43 @@ export default function StudyAbroadPage() {
                       </div>
                     </div>
                     <div className="container-xs absolute left-0 right-0 top-0 m-auto w-full px-[54px] lg:px-5 md:relative md:flex-col md:px-5">
-                      <Slider
-                        autoPlay
-                        autoPlayInterval={2000}
-                        responsive={{ 0: { items: 1 }, 551: { items: 1 }, 1051: { items: 3 }, 1441: { items: 5 } }}
-                        disableDotsControls
-                        activeIndex={sliderState}
-                        onSlideChanged={(e) => {
-                          setSliderState(e?.item);
-                        }}
-                        ref={sliderRef}
-                        items={[
-                          {
-                            imgSrc: "images/img_rectangle_4219.png",
-                            number: 1,
-                            country: "USA",
-                          },
-                          {
-                            imgSrc: "images/img_rectangle_4220.png",
-                            number: 2,
-                            country: "Canada",
-                          },
-                          {
-                            imgSrc: "images/img_rectangle_4221.png",
-                            number: 3,
-                            country: "Germany",
-                          },
-                          {
-                            imgSrc: "images/img_rectangle_4222.png",
-                            number: 4,
-                            country: "France",
-                          },
-                          {
-                            imgSrc: "images/img_rectangle_4223.png",
-                            number: 5,
-                            country: "UK",
-                          },
-                          // Add more countries if needed
-                        ].map((item, index) => (
-                          <React.Fragment key={index}>
-                            <div className="flex flex-col px-3.5">
-                              <div className="flex flex-col items-start">
-                                <Img
-                                  src={item.imgSrc}
-                                  alt={item.country}
-                                  className=" h-[392px] w-full rounded-[128px] object-cover lg:h-auto md:mr-0 md:h-auto"
-                                />
-                                <div className="relative mt-[-58px] flex w-[42%] flex-col items-start gap-[30px] self-center lg:w-full md:w-full">
-                                  <Heading
-                                    size="heading4xl"
-                                    as="h3"
-                                    className="text-center flex h-[98px] w-[98px] items-center justify-center rounded-[48px] border-[5px] border-solid border-light_blue-900 bg-white-a700_01 font-nunitosans text-[36px] font-semibold tracking-[0.72px] text-light_blue-900 lg:text-[30px] md:text-[30px] sm:text-[28px]"
-                                  >
-                                    {item.number}
-                                  </Heading>
-                                  <Heading
-                                    size="heading3xl"
-                                    as="h4"
-                                    className="ml-4 text-[32px] font-bold tracking-[-0.61px] text-light_blue-900 lg:text-[27px] md:ml-0 md:text-[26px] sm:text-[24px]"
-                                  >
-                                    {item.country}
-                                  </Heading>
-                                </div>
-                              </div>
-                            </div>
-                          </React.Fragment>
-                        ))}
-                      />
-                    </div>
-                  </div>
-
+                  <Slider
+                    autoPlay
+                    autoPlayInterval={2000}
+                    responsive={{
+                      0: { items: 1 },
+                      551: { items: 1 },
+                      1051: { items: 3 },
+                      1441: { items: 5 },
+                    }}
+                    disableDotsControls
+                    activeIndex={sliderState}
+                    onSlideChanged={(e) => {
+                      setSliderState(e?.item);
+                    }}
+                    ref={sliderRef}
+                    items={items.map((item, index) => (
+                      <React.Fragment key={index}>
+                        <div
+                          className="flex flex-col px-3.5"
+                          onMouseEnter={() => setHoveredIndex(index)} // Set hover state on enter
+                          onMouseLeave={() => setHoveredIndex(null)} // Reset hover state on leave
+                        >
+                          <div className="flex flex-col items-start">
+                            <Img
+                              src={hoveredIndex === index ? item.hoverImage : item.defaultImage}
+                              alt="Study Abroad Destination"
+                              className="w-full hover-image rounded-[100px] object-cover lg:h-auto md:mr-0 md:h-auto"
+                            />
+                          </div>
+                        </div>
+                      </React.Fragment>
+                    ))}
+                  />
                 </div>
               </div>
+            </div>
+          </div>
               <div className="relative z-[2] mt-[-76px] bg-gray-50_01">
                 <StudyabroadRowFour />
               </div>
