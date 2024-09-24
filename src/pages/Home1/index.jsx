@@ -346,7 +346,7 @@ export default function Home1Page() {
                   <Heading
                     size="text2xl"
                     as="h6"
-                    className="ml-[60px] text-[25px] font-medium tracking-[1.50px] text-blue_gray-800 lg:text-[21px] md:ml-0"
+                    className="text-[25px] font-medium tracking-[1.50px] text-blue_gray-800 lg:text-[21px] md:ml-0"
                   >
                     Software Consulting{" "}
                   </Heading>
@@ -355,7 +355,7 @@ export default function Home1Page() {
                       <Heading
                         size="text2xl"
                         as="p"
-                        className="ml-[34px] self-end text-[25px] font-medium tracking-[1.50px] text-blue_gray-800 lg:ml-0 lg:text-[21px] md:ml-0"
+                        className="self-end text-[25px] font-medium tracking-[1.50px] text-blue_gray-800 lg:ml-0 lg:text-[21px] md:ml-0"
                       >
                         Migrate
                       </Heading>
@@ -382,7 +382,7 @@ export default function Home1Page() {
                       <Heading
                         size="text2xl"
                         as="p"
-                        className="ml-8 text-[25px] font-medium tracking-[-0.47px] text-blue_gray-800 lg:text-[21px]"
+                        className="text-[25px] font-medium tracking-[-0.47px] text-blue_gray-800 lg:text-[21px]"
                       >
                         Resources
                       </Heading>
@@ -473,7 +473,7 @@ export default function Home1Page() {
                                 Destionation
                               </>
                             </Heading>
-                            <div className="h-[2px] w-[8%] bg-light_blue-900 md:ml-0 animate-leftToRight" />
+                            <div className="ml-80 h-[2px] w-[8%] bg-light_blue-900 md:ml-0 animate-leftToRight" />
                           </div>
                         </div>
                         {/* <div className="absolute bottom-[0.98px] right-[0.34px] m-auto h-[780px] w-[56%] bg-[url(/public/images/img_group_877.png)] bg-cover bg-no-repeat py-[18px]">
@@ -491,7 +491,7 @@ export default function Home1Page() {
                             className="absolute bottom-[18.66px] right-[-0.34px] m-auto h-[192px] w-[24%] object-contain"
                           />
                         </div> */}
-                        <div className="absolute  bottom-[18%] right-[15%] m-auto flex w-[40%] flex-col items-start bg-white-a700_01 px-[34px] py-[18px] shadow-xl sm:px-4 animate-zoomInOut">
+                        <div className="absolute  bottom-[18%] right-[20%] m-auto flex w-[38%] flex-col items-start bg-white-a700_01 px-[32px] py-[18px] shadow-xl sm:px-4 animate-zoomInOut">
                           <Heading
                             size="headinglg"
                             as="h3"
@@ -508,16 +508,16 @@ export default function Home1Page() {
                             The US Student Visa is a Non-Immigrant Visa that allows foreign nationals to pursue academic
                             studies, language training programs or other types of vocational or technical training. 
                           </Text>
-                          <div className="mb-2.5 ml-[18px] mr-[60px] mt-[84px] flex gap-4 self-stretch md:mx-0 md:flex-col">
+                          <div className="mb-2.5 mt-[74px] flex gap-8 self-stretch md:mx-0 md:flex-col">
                             <Img
                               src="images/img_rectangle_4178.png"
                               alt="Rectangle"
-                              className="h-[176px] w-[27%] md:w-full"
+                              className="h-[176px] w-[29%] md:w-full"
                             />
                             <Img
                               src="images/img_rectangle_4177.png"
                               alt="Rectangle"
-                              className="h-[176px] w-[27%]  md:w-full"
+                              className="h-[176px] w-[29%]  md:w-full"
                             />
                             <Img
                               src="images/Rectangle 4185.png"
@@ -526,6 +526,11 @@ export default function Home1Page() {
                             />
 
                           </div>
+                          <Img
+                              src="images/Dot.png"
+                              alt="Rectangle"
+                              className="ml-72 w-[7%]  md:w-full"
+                            />
                         </div>
                         <div className="absolute left-0 right-0 top-0 m-auto flex flex-1 items-start pl-[660px] pr-14 lg:pl-8 md:px-5 sm:relative sm:flex-col sm:px-4">
                           {/* <Img
@@ -609,7 +614,7 @@ export default function Home1Page() {
 
                       </div>
                     </div>
-                    <div className="relative z-[6] mt-[-6px] h-[984px] bg-[url(/public/images/img_mask_group_984x1918.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
+                    <div className="relative z-[6] mt-[-15px] h-[984px] bg-[url(/public/images/img_mask_group_984x1918.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
                       <div className="py-11 md:py-5 sm:py-4">
                         <Home1ColumnFour />
                       </div>
@@ -660,19 +665,10 @@ export default function Home1Page() {
                   <Img
                     src="images/img_rectangle_4190_1.png"
                     alt="Image Twelve"
-                    className="relative z-[19] h-[1004px] w-[42%] object-contain"
+                    className="relative z-[19] h-[1004px] mb-[405px] w-[42%] object-contain"
                   />
-                  <Img
-                    src="images/img_vector_blue_gray_100.svg"
-                    alt="Vector"
-                    className="relative mr-[188px] mt-[-4px] h-[118px] w-[12%] object-contain md:mr-0"
-                  />
+
                 </div>
-                <Img
-                  src="images/img_vector_blue_gray_100_402x266.svg"
-                  alt="Vector"
-                  className="relative mr-52 mt-[-104px] h-[402px] w-[18%] object-contain md:mr-0"
-                />
               </div>
               <Img
                 src="images/img_group_blue_gray_100_02_318x262.png"

@@ -205,7 +205,7 @@ export default function EnglishCoachingPage() {
               selectedTabPanelClassName="tab-panel--selected"
             >
               <TabList className="absolute z-50 left-0 right-0 top-[6%] mx-[118px] my-auto flex flex-1 flex-wrap gap-12 px-[30px] lg:mx-0 md:mx-0 sm:px-4">
-                <Tab className="px-[30px] py-4 text-[20px]font-semibold" onClick={() => handleTabChange("TOEFL")}>
+                <Tab className="px-[30px] py-4 text-[20px] font-semibold" onClick={() => handleTabChange("TOEFL")}>
                   TOEFL
                 </Tab>
                 <Tab className="px-[30px] py-4 text-[20px] font-semibold" onClick={() => handleTabChange("IELTS")}>

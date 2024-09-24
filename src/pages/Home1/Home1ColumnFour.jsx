@@ -30,12 +30,12 @@ export default function Home1ColumnFour() {
         }
 
         .twist-animation {
-          animation: twistSpin 0.6s ease-in-out forwards;
+          animation: twistSpin 1s ease-in-out forwards;
         }
       `}</style>
 
-      <div className="flex flex-col items-center">
-        <div className="container-xs flex flex-col items-center px-[54px] lg:px-5 md:px-5">
+      <div className=" flex flex-col items-center">
+        <div className="container-xs  flex flex-col items-center px-[54px] lg:px-5 md:px-5">
           <div className="relative h-[170px] w-[36%] content-center lg:h-auto md:h-auto">
             <Heading
               size="text6xl"
@@ -67,7 +67,7 @@ export default function Home1ColumnFour() {
                   <img
                     src={hoveredIndex === index ? item.hoverImage : item.defaultImage} // Show hoverImage if hovered
                     alt={`Image ${index + 1}`}
-                    className="w-full h-[392px] object-cover"
+                    className=" w-full h-[392px] object-cover"
                   />
                   <Heading
                     size="text4xl"

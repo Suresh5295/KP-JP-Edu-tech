@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Home1RowaboutusOne() {
   return (
-    <div className="relative mt-[-34px] h-[1028px] self-stretch bg-[url(/public/images/img_group_2380.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
+    <div className="relative mt-[-54px] h-[1028px] self-stretch bg-[url(/public/images/img_group_2380.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
       <div className="relative h-[1028px] bg-blue_gray-900_44">
         <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max w-[68%] flex-col items-start gap-[26px] bg-gray-50 py-[179px] pl-[412px] pr-14 lg:py-8 lg:pl-8 md:p-5 sm:p-4">
           <Heading
@@ -51,14 +51,9 @@ export default function Home1RowaboutusOne() {
 </Text>
 
         <Img
-          src="images/img_vector_blue_gray_100.svg"
+          src="images/img_vector_blue_gray_100_1.png"
           alt="Vector"
-          className="absolute right-[10%] top-[22.26px] m-auto h-[270px] w-[22%] object-contain"
-        />
-        <Img
-          src="images/img_vector_blue_gray_100.svg"
-          alt="Vector"
-          className="absolute right-[12%] top-[15%] m-auto h-[208px] w-[12%] object-contain"
+          className="absolute right-[12%] h-[450px] w-[25%] object-contain"
         />
       </div>
     </div>

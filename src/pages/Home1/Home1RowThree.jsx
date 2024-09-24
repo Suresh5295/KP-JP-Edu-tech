@@ -14,7 +14,7 @@ export default function Home1RowThree() {
             />
             <Heading
               as="p"
-              className="mr-[22px] mt-6 w-[70%] self-end font-playfairdisplay text-[64px] font-normal leading-[72px] tracking-[1.28px] text-black-900_02 lg:w-full lg:text-[48px] md:mr-0 md:w-full md:text-[48px]"
+              className="mr-[10px] mt-6 w-[70%] self-end font-playfairdisplay text-[64px] font-normal leading-[72px] tracking-[1.28px] text-black-900_02 lg:w-full lg:text-[48px] md:mr-0 md:w-full md:text-[48px]"
             >
               Get The Best Coaching From Us
             </Heading>
