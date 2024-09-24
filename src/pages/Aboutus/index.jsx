@@ -21,10 +21,10 @@ const data = [
 const data1 = [
   { userImage: "images/img_graduation_1.png", visaText: "visa & Immigration" },
   { userImage: "images/img_businessman_1.png", visaText: "Software Consulting" },
-  { userImage: "images/img_graduation_1.png", visaText: "Business Consulting" },
-  { userImage: "images/img_graduation_1.png", visaText: "Financial Consulting" },
-  { userImage: "images/img_graduation_1.png", visaText: "Career Counselling" },
-  { userImage: "images/img_graduation_1.png", visaText: "English Coaching" },
+  { userImage: "images/briefcase.png", visaText: "Business Consulting" },
+  { userImage: "images/finance.png", visaText: "Financial Consulting" },
+  { userImage: "images/criteria.png", visaText: "Career Counselling" },
+  { userImage: "images/EN.png", visaText: "English Coaching" },
 ];
 
 export default function AboutusPage() {
