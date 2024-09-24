@@ -1,13 +1,38 @@
+import React, { useState } from "react"; // This already imports React and useState together
 import { Helmet } from "react-helmet";
-import { Img, Heading, Text, Button, TextArea, Input } from "../../components";
+import { Img, Heading, Button, Text, Input, TextArea } from "../../components"; 
 import Header from "../../components/Header";
 import EnglishcoachingColumnFive from "./EnglishcoachingColumnFive";
 import EnglishcoachingRowFour from "./EnglishcoachingRowFour";
 import EnglishcoachingRowourclinet from "./EnglishcoachingRowourclinet";
-import React from "react";
 import { TabList, Tab, Tabs } from "react-tabs";
 
 export default function EnglishCoachingPage() {
+  // State to track the selected tab
+  const [selectedTab, setSelectedTab] = useState("TOEFL");
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'  // This makes the scrolling behavior smooth
+    });
+  };
+
+  // Function to handle tab change
+  const handleTabChange = (tab) => {
+    setSelectedTab(tab);
+  };
+
+  // Map selected tab to corresponding image source
+  const tabImages = {
+    TOEFL: "images/te1.png",
+    IELTS: "images/ielts.png",
+    PTE: "images/pte.png",
+    Duolingo: "images/duolingo.png",
+    GMAT: "images/gmat.png",
+  };
+
+  
   return (
     <>
       <Helmet>
@@ -174,38 +199,37 @@ export default function EnglishCoachingPage() {
             <div className="mt-[22px] h-[888px] flex-1 bg-gray-50_01" />
             
             <div className="absolute bottom-0 left-0 right-0 top-0 m-auto h-max w-full">
-  <Tabs
-    className="relative h-[1170px] content-end bg-gray-50_01 lg:h-auto md:h-auto"
-    selectedTabClassName="!text-white-a700_01 bg-light_blue-900 shadow-3xl"
-    selectedTabPanelClassName="tab-panel--selected"
-  >
-    <TabList className="absolute left-0 right-0 top-[6%] mx-[118px] my-auto flex flex-1 flex-wrap gap-12 px-[30px] lg:mx-0 md:mx-0 sm:px-4">
-      <Tab className="px-[30px] py-4 text-[20px] font-bold tracking-[-0.38px] text-light_blue-900 lg:text-[17px] sm:px-4 hover:bg-light_blue-900 hover:text-white">
-        TOEFL
-      </Tab>
-      <Tab className="self-end px-[30px] py-4 text-[20px] font-bold tracking-[-0.38px] text-light_blue-900 lg:text-[17px] sm:px-4 hover:bg-light_blue-900 hover:text-white">
-        IELTS
-      </Tab>
-      <Tab className="px-[30px] py-4 text-[20px] font-bold tracking-[-0.38px] text-light_blue-900 lg:text-[17px] sm:px-4 hover:bg-light_blue-900 hover:text-white">
-        PTE
-      </Tab>
-      <Tab className="px-[30px] py-4 text-[20px] font-bold tracking-[-0.38px] text-light_blue-900 lg:text-[17px] sm:px-4 hover:bg-light_blue-900 hover:text-white">
-        Duolingo
-      </Tab>
-      <Tab className="self-end px-[30px] py-4 text-[20px] font-bold tracking-[-0.38px] text-light_blue-900 lg:text-[17px] sm:px-4 hover:bg-light_blue-900 hover:text-white">
-        GMAT
-      </Tab>
-      <Tab className="px-[30px] py-4 text-[20px] font-semibold tracking-[-0.38px] text-light_blue-900 lg:text-[17px] sm:px-4 hover:bg-light_blue-900 hover:text-white">
-        View All
-      </Tab>
-    </TabList>
+            <Tabs
+              className="relative h-[1170px] content-end bg-gray-50_01 lg:h-auto md:h-auto"
+              selectedTabClassName="!text-white-a700_01 bg-light_blue-900 shadow-3xl text-[20px] font-semibold"
+              selectedTabPanelClassName="tab-panel--selected"
+            >
+              <TabList className="absolute z-50 left-0 right-0 top-[6%] mx-[118px] my-auto flex flex-1 flex-wrap gap-12 px-[30px] lg:mx-0 md:mx-0 sm:px-4">
+                <Tab className="px-[30px] py-4 text-[20px]font-semibold" onClick={() => handleTabChange("TOEFL")}>
+                  TOEFL
+                </Tab>
+                <Tab className="px-[30px] py-4 text-[20px] font-semibold" onClick={() => handleTabChange("IELTS")}>
+                  IELTS
+                </Tab>
+                <Tab className="px-[30px] py-4 text-[20px] font-semibold" onClick={() => handleTabChange("PTE")}>
+                  PTE
+                </Tab>
+                <Tab className="px-[30px] py-4 text-[20px] font-semibold" onClick={() => handleTabChange("Duolingo")}>
+                  Duolingo
+                </Tab>
+                <Tab className="px-[30px] py-4 text-[20px] font-semibold" onClick={() => handleTabChange("GMAT")}>
+                  GMAT
+                </Tab>
+                <Tab className="px-[30px] py-4 text-[20px] font-semibold">
+                  View All
+                </Tab>
+              </TabList>
 
+              {/* Conditionally render the image based on the selected tab */}
+              <div className="absolute ml-8 mb-10 bottom-0 left-0 right-0 m-auto h-[940px] flex-1 object-cover">
+                <Img src={tabImages[selectedTab]} alt={`${selectedTab} Image`} />
+              </div>
     {/* Images and additional components */}
-    <Img
-      src="images/te1.png"
-      alt="Image"
-      className="absolute ml-8 mb-10 bottom-0 left-0 right-0 m-auto h-[940px] flex-1 object-cover"
-    />
     <Img
       src="images/img_group_998.png"
       alt="Image"
@@ -344,8 +368,8 @@ export default function EnglishCoachingPage() {
           <EnglishcoachingRowFour />
           <div className="mt-[40px] flex flex-col items-center">
             <div className="container-xs relative z-[6] flex flex-col items-end lg:px-5 md:px-5">
-              <div className=" -mb-4 flex rotate-[0deg] flex-col items-center justify-center rounded-[22px] bg-light_blue-900 px-2.5 py-3.5">
-                <Img src="images/img_vector_white_a700_01_14x24.svg" alt="Vector" className="h-[14px]" />
+              <div className=" -mb-4 flex rotate-[0deg] flex-col items-center justify-center rounded-[22px] bg-light_blue-900 px-2.5 py-3.5" onClick={scrollToTop}>
+                <Img src="images/img_vector_white_a700_01_14x24.svg" alt="Vector" className="h-[14px]"   />
               </div>
             </div>
             <footer className="relative  flex flex-col self-stretch ">
