@@ -1,4 +1,4 @@
-import { Button, Heading } from "../../components";
+import { Img, Text, Heading, Button, TextArea, Input, Slider } from "../../components";
 import React from "react";
 
 export default function SoftwareColumn() {
@@ -12,9 +12,12 @@ export default function SoftwareColumn() {
         >
            Find a Perfect Solution Through our Software Consulting.
         </Heading>
-        <Button shape="square" className="min-w-[198px] pl-[22px] pr-[26px] font-bold tracking-[1.20px] sm:px-4">
-          Appointment
-        </Button>
+        <button
+          shape="square"
+            className="min-w-[198px] pl-7 pr-[34px] font-nunitosans font-bold tracking-[1.20px] sm:px-4"
+            >
+          <Img src="images/a_button.png" alt="Appointment Image" className="h-[60px] w-auto object-contain" />
+         </button>
       </div>
     </div>
   );

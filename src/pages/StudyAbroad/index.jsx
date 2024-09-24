@@ -142,7 +142,7 @@ export default function StudyAbroadPage() {
           }
 
           .hover-image:hover {
-            animation: spinFadeIn 0.6s ease-in-out forwards;
+            animation: spinFadeIn 1s ease-in-out forwards;
           }
 
       `}
@@ -165,12 +165,13 @@ export default function StudyAbroadPage() {
                             Want to Study <br /> Abroad
                           </>
                         </Heading>
-                        <Button
+                        <button
                           shape="square"
-                          className="min-w-[198px] pl-7 pr-[34px] font-nunitosans font-bold tracking-[1.20px] sm:px-4 "
+                          className="min-w-[198px] pl-7 pr-[34px] font-nunitosans font-bold tracking-[1.20px] sm:px-4"
                         >
-                          Appointment
-                        </Button>
+                          <Img src="images/a_button.png" alt="Appointment Image" className="h-[60px] w-auto object-contain" />
+                        </button>
+
                       </div>
                     </div>
                   </div>

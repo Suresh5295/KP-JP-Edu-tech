@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet";
-import { Heading, Img, Text } from "../../components";
+import { Img, Text, Heading, Button, TextArea, Input, Slider } from "../../components";
 import Header from "../../components/Header";
 import SoftwareColumn from "./SoftwareColumn";
 import SoftwareColumnTwo from "./SoftwareColumnTwo";

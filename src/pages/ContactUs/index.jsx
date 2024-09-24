@@ -151,7 +151,7 @@ export default function ContactUsPage() {
               {/* Message Section */}
               <div className="relative mt-[-16px] flex items-center justify-center bg-[url(/public/images/img_group_6_white_a700_01.png)] bg-cover bg-no-repeat py-10 lg:h-auto md:h-auto sm:py-4">
                 <div className="container-xs flex flex-col justify-center px-[38px] lg:px-5 md:px-5">
-                  <div className="w-full">
+                  <div className="w-full z-50">
                     <div className="flex flex-col items-start">
                       <div className="flex items-center justify-between gap-11 self-stretch sm:flex-col">
                         <Heading
@@ -165,11 +165,11 @@ export default function ContactUsPage() {
                         <Img
                           src="images/img_close_light_blue_900_8x84.svg"
                           alt="Close"
-                          className="mb-5 h-[8px] w-[5%] self-end object-contain sm:mb-0 sm:w-full sm:self-auto"
+                          className="mb-5 mr-[1130px] h-[8px] w-[5%] self-end object-contain sm:mb-0 sm:w-full sm:self-auto"
                         />
                       </div>
 
-                      <div className="mt-[50px] flex flex-wrap gap-[15px]">
+                      <div className="mt-[50px] flex flex-wrap gap-[15px] w-[61.5%]">
                         <Input
                           size="xl"
                           shape="square"

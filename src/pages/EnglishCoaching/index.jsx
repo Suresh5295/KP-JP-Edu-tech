@@ -134,9 +134,12 @@ export default function EnglishCoachingPage() {
                             Expert English Coaching!
                           </>
                         </Heading>
-                        <Button shape="square" className="min-w-[198px] px-6 font-bold tracking-[1.20px] sm:px-4">
-                          Appointment
-                        </Button>
+                        <button
+                        shape="square"
+                          className="min-w-[198px] pl-7 pr-[34px] font-nunitosans font-bold tracking-[1.20px] sm:px-4"
+                          >
+                        <Img src="images/a_button.png" alt="Appointment Image" className="h-[60px] w-auto object-contain" />
+                      </button>
                       </div>
                     </div>
                   </div>

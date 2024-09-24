@@ -1,15 +1,16 @@
 import { Img, Heading, Text } from "../../components";
 import UserProfile4 from "../../components/UserProfile4";
-import React, { Suspense } from "react";
+import React, { useState, Suspense } from "react";
 
 const data = [
-  { userImage: "images/img_view_3d_compute.png", userBrandIdentity: "Brand Identity Design" },
-  { userImage: "images/img_digital_art_sty.png", userBrandIdentity: "Educational Materials" },
-  { userImage: "images/img_clean_minimalis.png", userBrandIdentity: "UI/UX Design" },
-  { userImage: "images/img_video_files_con.png", userBrandIdentity: "Multimedia Content" },
+  { userImage: "images/img_view_3d_compute.png", hoverImage: "images/hover_image_1.png" },
+  { userImage: "images/img_digital_art_sty.png", hoverImage: "images/hover_image_2.png" },
+  { userImage: "images/img_clean_minimalis.png", hoverImage: "images/hover_image_3.png" },
+  { userImage: "images/img_video_files_con.png", hoverImage: "images/hover_image_4.png" },
 ];
 
 export default function SoftwareRowbrandidentit() {
+  const [hoverIndex, setHoverIndex] = useState(null);
   return (
     <div className="flex justify-end">
       <div className="flex w-[94%] flex-col gap-[38px] lg:w-full lg:px-5 md:w-full md:px-5">
@@ -116,9 +117,29 @@ export default function SoftwareRowbrandidentit() {
         </div>
         <div className="container-xs px-[50px] md:px-5 sm:px-4">
           <div className="ml-[22px] flex gap-3.5 md:ml-0 md:flex-col">
-            <Suspense fallback={<div>Loading feed...</div>}>
+          <Suspense fallback={<div>Loading feed...</div>}>
               {data.map((d, index) => (
-                <UserProfile4 {...d} key={"listbrandidenti" + index} />
+                <div
+                  key={"listbrandidenti" + index}
+                  onMouseEnter={() => setHoverIndex(index)}
+                  onMouseLeave={() => setHoverIndex(null)}
+                  className="relative flex flex-col items-center"
+                >
+                  {/* Image always remains the same size */}
+                  <Img
+                    src={hoverIndex === index ? d.hoverImage : d.userImage}
+                    alt={d.userBrandIdentity}
+                    className="h-[200px] w-[380px] object-cover transition-all duration-300 ease-in-out"
+                  />
+                  {/* Conditionally render the text based on hover */}
+                  <Text
+                    className={`mt-4 text-[16px] font-semibold text-light_blue-900 transition-opacity duration-300 ${
+                      hoverIndex === index ? "opacity-0" : "opacity-100"
+                    }`}
+                  >
+                    {d.userBrandIdentity}
+                  </Text>
+                </div>
               ))}
             </Suspense>
           </div>

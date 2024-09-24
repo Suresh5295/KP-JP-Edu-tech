@@ -65,10 +65,10 @@ export default function AboutusStackiconOne() {
                                     Karthik k
                                   </Heading>
                                   <RatingBar
-                                    value={1}
+                                    value={5}
                                     isEditable={true}
                                     size={16}
-                                    starCount={3}
+                                    starCount={5}
                                     className="mr-[132px] flex gap-2.5"
                                   />
                                 </div>
@@ -103,7 +103,7 @@ export default function AboutusStackiconOne() {
                       />
                     </div>
                   </div>
-                  <Img src="images/img_close.svg" alt="Close" className="h-[34px] w-[6%] object-contain" />
+                  <Img src="images/img_close_light_white_900_36x86.png" alt="Close" className="h-[34px] w-[6%] object-contain" />
                 </div>
               </div>
             </div>

@@ -58,10 +58,10 @@ export default function SoftwareRowourclinet() {
                               Priyanka{" "}
                             </Heading>
                             <RatingBar
-                              value={1}
+                              value={5}
                               isEditable={true}
                               size={16}
-                              starCount={3}
+                              starCount={5}
                               className="mr-[130px] flex gap-2.5"
                             />
                           </div>
@@ -104,7 +104,7 @@ export default function SoftwareRowourclinet() {
                 onClick={() => {
                   sliderRef?.current?.slidePrev();
                 }}
-                className="w-[34px] rounded-[16px] px-1.5"
+                className="w-[34px] rotate-180 rounded-[16px] px-1.5"
               >
                 <Img src="images/img_group_2396.svg" />
               </Button>
@@ -115,7 +115,7 @@ export default function SoftwareRowourclinet() {
                 onClick={() => {
                   sliderRef?.current?.slideNext();
                 }}
-                className="w-[34px] rounded-[16px] px-1.5"
+                className="w-[34px] rotate-180  rounded-[16px] px-1.5"
               >
                 <Img src="images/img_group_2397.svg" />
               </Button>

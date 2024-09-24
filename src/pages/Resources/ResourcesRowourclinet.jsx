@@ -57,7 +57,7 @@ export default function ResourcesRowourclinet() {
                             >
                               Lavanaya
                             </Heading>
-                            <RatingBar value={1} isEditable={true} size={16} starCount={3} className="flex gap-2.5" />
+                            <RatingBar value={5} isEditable={true} size={16} starCount={5} className="flex gap-2.5" />
                           </div>
                         </div>
                       </div>

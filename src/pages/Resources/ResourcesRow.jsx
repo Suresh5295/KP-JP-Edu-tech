@@ -30,12 +30,12 @@ export default function ResourcesRow() {
               and important changes. From helpful tips to exciting updates, find everything you need to stay ahead.
               Check back often to ensure you don’t miss out on the information that matters to you.
             </Text>
-            <Button
-              shape="square"
-              className="min-w-[198px] px-[34px] font-nunitosans font-bold tracking-[1.20px] sm:px-4"
-            >
-              Know More
-            </Button>
+            <button
+                        shape="square"
+                          className="min-w-[198px] pr-[34px] font-nunitosans font-bold tracking-[1.20px] sm:px-4"
+                          >
+                        <Img src="images/button_4.png" alt="Appointment Image" className="h-[60px] w-auto object-contain" />
+                      </button>
           </div>
         </div>
         <div className="flex w-[44%] justify-center self-center md:w-full md:flex-col">

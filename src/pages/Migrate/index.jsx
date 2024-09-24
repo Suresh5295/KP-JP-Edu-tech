@@ -133,12 +133,12 @@ export default function MigratePage() {
                       Connecting Dreams with <br /> New Destinations.
                     </span>
                   </Heading>
-                  <Button
-                    shape="square"
-                    className="min-w-[198px] pl-[22px] pr-[26px] font-bold tracking-[1.20px] sm:px-4"
-                  >
-                    Appointment
-                  </Button>
+                  <button
+                  shape="square"
+                    className="min-w-[198px] pl-7 pr-[34px] font-nunitosans font-bold tracking-[1.20px] sm:px-4"
+                    >
+                  <Img src="images/a_button.png" alt="Appointment Image" className="h-[60px] w-auto object-contain" />
+                </button>
                 </div>
               </div>
             </div>

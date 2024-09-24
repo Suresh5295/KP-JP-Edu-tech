@@ -77,7 +77,7 @@ export default function ResourcesRowOne() {
                       <div className="px-2.5" key="image2">
                         <div className="relative h-[454px] content-center lg:h-auto md:h-auto">
                           <Img
-                            src="images/img_rectangle_4254.png" // New image
+                            src="images/img_rectangle_4254_2.png" // New image
                             alt="Second Image"
                             className="mx-auto h-[454px] w-full flex-1 object-cover"
                           />
@@ -93,7 +93,7 @@ export default function ResourcesRowOne() {
                       <div className="px-2.5" key="image3">
                         <div className="relative h-[454px] content-center lg:h-auto md:h-auto">
                           <Img
-                            src="images/img_rectangle_4255.png" // Another new image
+                            src="images/img_rectangle_4255_2.png" // Another new image
                             alt="Third Image"
                             className="mx-auto h-[454px] w-full flex-1 object-cover"
                           />

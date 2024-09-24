@@ -118,7 +118,7 @@ export default function ResourcesPage() {
         <div className="flex flex-col items-center">
           <div className="relative h-[2466px] content-center self-stretch lg:h-auto md:h-auto">
             <div className="mx-auto flex-1">
-              <div className="h-[966px] bg-[url(/public/images/img_group_1465.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
+              <div className="h-[966px] bg-[url(/public/images/img_group_1465_1.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
                 <div className="flex flex-col items-center gap-[254px] lg:gap-[190px] md:gap-[190px] sm:gap-[127px] mb-80">
                   
                   <div className="container-xs mb-[480px] flex flex-col items-center px-14 lg:px-5 md:px-5">
@@ -129,12 +129,12 @@ export default function ResourcesPage() {
                     >
                       Resources
                     </Heading>
-                    <Button
-                      shape="square"
-                      className="mt-12 py-3 px-6 sm:px-4 min-w-[150px] lg:min-w-[198px] text-base font-bold tracking-wider"
-                    >
-                      Appointment
-                    </Button>
+                    <button
+                        shape="square"
+                          className="min-w-[198px] pl-7 pr-[34px] font-nunitosans font-bold tracking-[1.20px] sm:px-4"
+                          >
+                        <Img src="images/a_button.png" alt="Appointment Image" className="h-[60px] w-auto object-contain" />
+                      </button>
                   </div>
                 
                 </div>
@@ -239,7 +239,7 @@ export default function ResourcesPage() {
                   <div className="px-2.5" key="image2">
                     <div className="relative h-[454px] content-center lg:h-auto md:h-auto">
                       <Img
-                        src="images/img_rectangle_4254.png" // New image
+                        src="images/img_rectangle_4254_2.png" // New image
                         alt="Second Image"
                         className="mx-auto h-[454px] w-full flex-1 object-cover"
                       />
@@ -249,7 +249,7 @@ export default function ResourcesPage() {
                   <div className="px-2.5" key="image3">
                     <div className="relative h-[454px] content-center lg:h-auto md:h-auto">
                       <Img
-                        src="images/img_rectangle_4255.png" // Another new image
+                        src="images/img_rectangle_4255_2.png" // Another new image
                         alt="Third Image"
                         className="mx-auto h-[454px] w-full flex-1 object-cover"
                       />
@@ -263,10 +263,10 @@ export default function ResourcesPage() {
               </div>
             </div>
           </div>
-          <div className="relative h-[1934px] self-stretch lg:h-auto md:h-auto">
-            <div className="mx-[136px] mt-24 flex-1 lg:mx-0 md:mx-0">
-              <div className="flex flex-col items-start">
-                <div className="flex items-center gap-[46px] self-stretch">
+          <div className="relative h-[1934px] self-stretch lg:h-auto md:h-auto ">
+            <div className="mx-[136px] mt-24 flex-1 lg:mx-0 md:mx-0 ">
+              <div className="flex flex-col items-start  ">
+                <div className="flex items-center gap-[46px] self-stretch ">
                   <a
                     href="Career"
                     target="_blank"
@@ -301,7 +301,7 @@ export default function ResourcesPage() {
                     market.
                   </span>
                 </Text>
-                <div className="mx-2.5 mt-[18px] flex gap-[11px] self-stretch md:mx-0 md:flex-col">
+                <div className=" mx-2.5 mt-[18px] flex gap-[11px] self-stretch md:mx-0 md:flex-col z-50">
                   <Input
                     shape="square"
                     type="text"
@@ -325,7 +325,7 @@ export default function ResourcesPage() {
                   name="email"
                   placeholder={`Email address`}
                   style={{ border: 'none' }} 
-                  className="ml-2.5 mt-[50px] w-[42%] px-2.5 font-semibold tracking-[0.40px] md:ml-0"
+                  className="ml-2.5 mt-[50px] w-[42%] px-2.5 font-semibold tracking-[0.40px] md:ml-0 z-50"
                 />
                 <Input
                   shape="square"
@@ -333,34 +333,34 @@ export default function ResourcesPage() {
                   name="mobileNumber"
                   placeholder={`Mobile number`}
                   style={{ border: 'none' }} 
-                  className="ml-2.5 mt-[50px] w-[42%] px-2.5 font-semibold tracking-[0.40px] md:ml-0"
+                  className="ml-2.5 mt-[50px] w-[42%] px-2.5 font-semibold tracking-[0.40px] md:ml-0 z-50"
                 />
                 <Input
                   shape="square"
                   name="skills"
                   placeholder={`Skills`}
                   style={{ border: 'none' }} 
-                  className="ml-2.5 mt-[50px] w-[42%] px-2.5 font-semibold tracking-[0.40px] md:ml-0"
+                  className="ml-2.5 mt-[50px] w-[42%] px-2.5 font-semibold tracking-[0.40px] md:ml-0 z-50"
                 />
                 <TextArea
                   shape="square"
                   name="comments"
                   placeholder={`Comments...`}
                   style={{ border: 'none' }} 
-                  className="ml-2.5 mt-9 w-[42%] px-3.5 font-semibold tracking-[0.40px] text-light_blue-900 md:ml-0"
+                  className="ml-2.5 mt-9 w-[42%] px-3.5 font-semibold tracking-[0.40px] text-light_blue-900 md:ml-0 z-50"
                 />
                 <div className="mx-2.5 mt-[38px] flex gap-[31px] self-stretch md:mx-0">
                   <Button
                     color="gray_400"
                     size="xs"
-                    className="min-w-[162px] rounded border border-solid border-black-900_68 px-[21px] font-semibold tracking-[0.40px] sm:px-4"
+                    className="min-w-[162px] rounded border border-solid border-black-900_68 px-[21px] font-semibold tracking-[0.40px] sm:px-4 z-50"
                   >
                     Choose file
                   </Button>
                   <Heading
                     size="headinglg"
                     as="h4"
-                    className="text-[20px] font-semibold tracking-[0.40px] text-gray-500_01 lg:text-[17px]"
+                    className="text-[20px] font-semibold tracking-[0.40px] text-gray-500_01 lg:text-[17px] z-50"
                   >
                     No file Choosen{" "}
                   </Heading>
@@ -368,7 +368,7 @@ export default function ResourcesPage() {
                 <button
                   size="lg"
                   shape="square"
-                  className="min-w-[142px] font-nunitosans font-bold tracking-[0.96px] md:ml-0 sm:px-4"
+                  className="min-w-[142px] font-nunitosans font-bold tracking-[0.96px] md:ml-0 sm:px-4 z-50"
                 >
                   <Img src="images/button_3.png" alt="Image" className="px-2 h-[85px] w-[60%] object-contain" onClick={() => window.open("/enquirepage", "_self", "noopener,noreferrer")} />
                 </button>
