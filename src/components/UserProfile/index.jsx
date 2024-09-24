@@ -1,25 +1,48 @@
 import { Heading, Img } from "./..";
-import React from "react";
+import React, { useState } from "react";
 
 export default function UserProfile({
   userImage = "images/img_rectangle_4187.png",
-  userRole = "Software Consulting",
+  hoverImage = "images/hover_img_rectangle_4187.png",  // Added hoverImage prop,
   ...props
 }) {
+  const [isHovered, setIsHovered] = useState(false);  // Hover state
+
   return (
-    <div {...props} className={`${props.className} flex flex-col items-center justify-center w-[20%] md:w-full`}>
-      <div className="mb-1 self-stretch">
-        <Img src={userImage} alt="Image" className="h-[434px] w-full object-cover" />
-        <div className="relative mt-[-98px] flex justify-center border-b-[2.5px] border-solid border-light_blue-900 bg-white-a700_01 px-3.5 py-6 sm:py-5">
-          <Heading
-            size="headingxl"
-            as="h4"
-            className="mt-2 text-base font-semibold tracking-[-0.46px] text-light_blue-900"
-          >
-            {userRole}
-          </Heading>
+    <>
+      <style>{`
+        .user-profile {
+          text-align: center;
+          margin: 13px;
+        }
+
+        .user-image {
+          width: 300px;
+          height: 350px;
+          object-fit: cover;
+          transition: transform 0.3s ease-in-out;
+        }
+
+        .user-profile:hover .user-image {
+          transform: scale(1);
+        }
+      `}</style>
+
+      <div
+        {...props}
+        className={`${props.className} user-profile flex flex-col items-center justify-center w-[60%] md:w-full`}
+        onMouseEnter={() => setIsHovered(true)}   // Set isHovered to true on hover
+        onMouseLeave={() => setIsHovered(false)}  // Set isHovered to false on mouse leave
+      >
+        <div className=" self-baseline">
+          <Img
+            src={isHovered ? hoverImage : userImage}   // Toggle between userImage and hoverImage
+            alt="Image"
+            className=" ml-10 object-bottom user-image"
+          />
+
         </div>
       </div>
-    </div>
+    </>
   );
 }

@@ -23,13 +23,32 @@ const scrollToTop = () => {
 };
 
 const data = [
-  { userImage: "images/img_rectangle_4186.png", userRole: "Visa & Immigration" },
-  { userImage: "images/img_rectangle_4187.png", userRole: "Software Consulting" },
-  { userImage: "images/img_rectangle_4188.png", userRole: "Business Consulting" },
-  { userImage: "images/img_rectangle_4189.png", userRole: "Financial Consulting" },
-  { userImage: "images/img_rectangle_4190.png", userRole: "Career Counselling" },
-  { userImage: "images/img_rectangle_4191.png", userRole: "English Coaching Service" },
+  {
+    userImage: "images/img_rectangle_4186.png",
+    hoverImage: "images/hover_img_rectangle_4186.png",
+  },
+  {
+    userImage: "images/img_rectangle_4187.png",
+    hoverImage: "images/hover_img_rectangle_4187.png",
+  },
+  {
+    userImage: "images/img_rectangle_4188.png",
+    hoverImage: "images/hover_img_rectangle_4188.png",
+  },
+  {
+    userImage: "images/img_rectangle_4189.png",
+    hoverImage: "images/hover_img_rectangle_4189.png",
+  },
+  {
+    userImage: "images/img_rectangle_4190.png",
+    hoverImage: "images/hover_img_rectangle_4190.png",
+  },
+  {
+    userImage: "images/img_rectangle_4191.png",
+    hoverImage: "images/hover_img_rectangle_4191.png",
+  },
 ];
+
 
 export default function Home1Page() {
   const [searchBarValue, setSearchBarValue] = React.useState("");
@@ -573,12 +592,21 @@ export default function Home1Page() {
                           </div>
                         </div>
                       </div>
-                      <div className="relative z-[5] ml-[-244px] flex flex-1 gap-3.5 self-end md:ml-0 md:flex-col md:self-stretch md:px-5 sm:self-auto">
-                        <Suspense fallback={<div>Loading feed...</div>}>
+                      <div className="relative z-[5] mt-10 ml-[-244px] flex flex-1 self-end md:ml-0 md:flex-col md:self-stretch md:px-5 sm:self-auto">
+                      <Suspense fallback={<div>Loading feed...</div>}>
+                        <div className="mt-10 flex justify-center">
                           {data.map((d, index) => (
-                            <UserProfile {...d} key={"listsoftware" + index} />
+                            <UserProfile 
+                              userImage={d.userImage} 
+                              hoverImage={d.hoverImage} 
+                              userRole={d.userRole}
+                              key={"listsoftware" + index} 
+                              className="w-[30%] max-w-[220px]"  // Added width constraints
+                            />
                           ))}
-                        </Suspense>
+                        </div>
+                      </Suspense>
+
                       </div>
                     </div>
                     <div className="relative z-[6] mt-[-6px] h-[984px] bg-[url(/public/images/img_mask_group_984x1918.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
