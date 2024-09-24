@@ -8,13 +8,6 @@ export default function MigrateStackstudentvis() {
         <div className="container-xs px-1.5 lg:px-5 md:px-5">
           <div className="flex flex-col items-start">
             <Heading
-              size="headinglg"
-              as="h2"
-              className="ml-16 text-[20px] font-bold tracking-[-0.38px] text-white-a700_01 lg:text-[17px] md:ml-0"
-            >
-              Student Visa
-            </Heading>
-            <Heading
               size="heading6xl"
               as="h3"
               className="relative mb-20  mt-[-6px] text-[48px] font-bold tracking-[-0.91px] text-light_blue-900 lg:text-[40px] md:text-[32px] sm:text-[26px]"

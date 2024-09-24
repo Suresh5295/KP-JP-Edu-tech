@@ -267,7 +267,7 @@ export default function StudyAbroadPage() {
             </div>
             <div className="absolute bottom-0 left-0 top-0 my-auto h-[1080px] w-[50%] bg-[url(/public/images/img_group_2356.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
               <div className="flex flex-col items-center bg-black-900_bf p-[26px] sm:p-4">
-                <div className="mb-5 mr-7 flex w-[82%] flex-col items-start lg:w-full md:mr-0 md:w-full">
+                <div className="mb-8 mr-7 flex w-[82%] flex-col items-start lg:w-full md:mr-0 md:w-full">
                   <Heading
                     size="heading4xl"
                     as="h6"
@@ -335,13 +335,13 @@ export default function StudyAbroadPage() {
                     style={{ border: 'none' }} 
                     className="mt-9 w-[94%] px-3.5 font-semibold tracking-[0.40px] text-light_blue-900"
                   />
-                  <Button
-                    size="lg"
-                    shape="square"
-                    className="mt-[46px] min-w-[246px] px-[34px] font-nunitosans font-bold tracking-[0.96px] sm:px-4"
-                  >
-                    Get Experts Advice
-                  </Button>
+                      <button
+                        shape="square"
+                          className="min-w-[198px] mt-5 pr-[34px] font-nunitosans font-bold tracking-[1.20px] sm:px-4"
+                          >
+                        <Img src="images/export_b.png" alt="Appointment Image" className="h-[60px] w-auto object-contain" />
+                      </button>
+
                   <Heading
                     size="headinglg"
                     as="h5"

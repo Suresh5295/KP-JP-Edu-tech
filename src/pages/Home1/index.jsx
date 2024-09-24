@@ -323,7 +323,7 @@ export default function Home1Page() {
                   <button
                   className="mt-9 font-bold tracking-[1.20px] text-white md:ml-0 sm:px-4"
                 >
-                  <Img src="images/button_1.svg" alt="Image" className="ml-5 h-[98px] w-[60%] object-contain" onClick={() => window.open("/enquirepage", "_self", "noopener,noreferrer")} />
+                  <Img src="images/button_1.svg" alt="Image" className=" h-[98px] w-[60%] object-contain" onClick={() => window.open("/enquirepage", "_self", "noopener,noreferrer")} />
                 </button>
 
                 <div className="relative mt-4 h-[58px] w-[25%]" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
@@ -657,7 +657,7 @@ export default function Home1Page() {
                 style={{ width: 'auto', left: '45%', transform: 'translateX(-50%)' }}
                 onClick={() => window.open("/enquirepage", "_self")}
               >
-                <img src="images/button_1.svg" alt="Learn More" className=" z-[16] mt-4 object-contain" />
+                <img src="images/button_1.svg" alt="Learn More" className="ml-6 z-[16] mt-4 object-contain" />
               </button>
               </a>
               <div className="absolute bottom-[13%] left-0 right-0 z-[17] mx-[100px] my-auto flex flex-1 flex-col items-end lg:mx-0 md:mx-0">
