@@ -141,12 +141,14 @@ export default function AboutusPage() {
                     >
                       At JP EDU TECH, we understand that navigating the complexities of visa and<br/>immigration processes can be daunting. That's why we're here—to simplify your<br/>journey and ensure your dreams of global mobility become a reality.
                     </Text>
+                    <a href="/enquirepage">
                     <button
                         shape="square"
                           className="min-w-[198px] mt-10 pl-7 pr-[34px] font-nunitosans font-bold tracking-[1.20px] sm:px-4"
                           >
                         <Img src="images/a_button.png" alt="Appointment Image" className="h-[60px] w-auto object-contain" />
                       </button>
+                      </a>
                   </div>
                 </div>
               </div>

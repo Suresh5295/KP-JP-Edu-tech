@@ -129,12 +129,15 @@ export default function ResourcesPage() {
                     >
                       Resources
                     </Heading>
-                    <button
+                    <a href="/enquirepage">
+                      <button
                         shape="square"
-                          className="min-w-[198px] pl-7 pr-[34px] font-nunitosans font-bold tracking-[1.20px] sm:px-4"
-                          >
+                        className="min-w-[198px] mt-10 pl-7 pr-[34px] font-nunitosans font-bold tracking-[1.20px] sm:px-4"
+                      >
                         <Img src="images/a_button.png" alt="Appointment Image" className="h-[60px] w-auto object-contain" />
                       </button>
+                    </a>
+
                   </div>
                 
                 </div>
