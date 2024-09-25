@@ -55,7 +55,7 @@ export default function ResourcesRowourclinet() {
                               as="h3"
                               className="self-center text-[24px] font-bold tracking-[-0.46px] text-light_blue-900 lg:text-[20px]"
                             >
-                              Lavanaya
+                              Lavanya
                             </Heading>
                             <RatingBar value={5} isEditable={true} size={16} starCount={5} className="flex gap-2.5" />
                           </div>

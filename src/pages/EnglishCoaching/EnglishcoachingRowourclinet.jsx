@@ -64,7 +64,7 @@ export default function EnglishcoachingRowourclinet() {
                                   as="h6"
                                   className="ml-[118px] self-center text-[24px] font-bold tracking-[-0.46px] text-light_blue-900 lg:text-[20px]"
                                 >
-                                  Lavanaya
+                                  Lavanya
                                 </Heading>
                                 <RatingBar
                                   value={5}

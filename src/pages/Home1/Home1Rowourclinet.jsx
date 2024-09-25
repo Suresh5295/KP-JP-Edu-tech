@@ -57,7 +57,7 @@ export default function Home1Rowourclinet() {
                                   as="h4"
                                   className="self-center text-[24px] font-bold tracking-[-0.46px] text-light_blue-900 lg:text-[20px]"
                                 >
-                                  Lavanaya
+                                  Lavanya
                                 </Heading>
                                 <div className="flex flex-1 justify-end pl-14 pr-32 lg:pr-8 md:px-5 sm:px-4">
                                   <Img src="images/img_signal.svg" alt="Signal" className="h-[16px] w-[16px]" />
