@@ -25,7 +25,7 @@ export default function EnglishcoachingRowourclinet() {
         </Heading>
           </div>
           <div className="relative mt-[-18px] flex justify-center self-stretch bg-gradient pt-8 sm:py-4">
-            <div className="container-xs mt-60 flex justify-center px-14 lg:px-5 md:px-5">
+            <div className="container-xs mt-52 flex justify-center px-14 lg:px-5 md:px-5">
               <div className="flex w-[80%] flex-col items-center gap-5 lg:w-full md:w-full">
                 <div className="relative ml-3 h-[512px] content-center self-stretch lg:h-auto md:ml-0 md:h-auto">
                 <div className="absolute mt-14 bottom-0 left-0 right-0 top-0 m-auto w-full px-[46px] md:px-5 sm:px-4">

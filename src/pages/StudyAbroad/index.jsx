@@ -196,11 +196,11 @@ export default function StudyAbroadPage() {
                   <div className="relative h-[682px] self-stretch">
                     <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-[664px] flex-1 items-end justify-center bg-[url(/public/images/img_group_898.svg)] bg-cover bg-no-repeat py-[78px] lg:h-auto lg:py-8 md:h-auto md:py-5 sm:py-4">
                       <div className="container-xs mt-[468px] flex justify-center px-14 lg:px-5 md:px-5">
-                        <Img
+                        {/* <Img
                           src="images/img_close_light_blue_900_36x86.png"
                           alt="Close"
                           className="h-[36px] w-[6%] object-contain"
-                        />
+                        /> */}
                       </div>
                     </div>
                     <div className="container-xs absolute left-0 right-0 top-0 m-auto w-full px-[54px] lg:px-5 md:relative md:flex-col md:px-5">
@@ -425,8 +425,11 @@ export default function StudyAbroadPage() {
               </div>
               <Footer />
             </div>
-            <div className="absolute right-[8%] top-[3px] z-50 m-auto flex rotate-[0deg] flex-col items-center justify-center rounded-[22px] bg-light_blue-900 px-2.5 py-3.5">
-              <Img src="images/img_vector_white_a700_01_14x24.svg" alt="Vector" className="h-[14px]" onClick={scrollToTop} />
+            <div 
+            className="absolute right-[8%] top-[3px] z-50 m-auto flex rotate-[0deg] flex-col items-center justify-center rounded-[22px] bg-light_blue-900 px-2.5 py-3.5 cursor-pointer"
+            onClick={scrollToTop}
+          >
+            <Img src="images/img_vector_white_a700_01_14x24.svg" alt="Vector Eleven" className="h-[14px]" />
           </div>
         </div>
     </>

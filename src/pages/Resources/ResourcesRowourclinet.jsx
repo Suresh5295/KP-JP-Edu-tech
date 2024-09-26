@@ -1,4 +1,4 @@
-import { Heading, Img, RatingBar, Text, Slider } from "../../components";
+import { Heading, Img, RatingBar, Text, Slider, Button } from "../../components";
 import React from "react";
 
 export default function ResourcesRowourclinet() {
@@ -108,12 +108,31 @@ export default function ResourcesRowourclinet() {
                 />
               </div>
             </div>
-            <Img
-              src="images/img_close_light_white_900_36x86.png"
-              alt="Close"
-              className="absolute bottom-[4%] left-0 right-0 m-auto h-[34px] w-[6%] object-contain z-10"
-            />
           </div>
+          <div className="flex gap-[18px] -mt-12">
+                  <Button
+                    color="white_A700_01"
+                    size="sm"
+                    shape="round"
+                    onClick={() => {
+                      sliderRef?.current?.slidePrev();
+                    }}
+                    className="w-[34px] rounded-[16px] px-1.5 rotate-180"
+                  >
+                    <Img src="images/img_group_2396.svg" />
+                  </Button>
+                  <Button
+                    color="white_A700_01"
+                    size="sm"
+                    shape="round"
+                    onClick={() => {
+                      sliderRef?.current?.slideNext();
+                    }}
+                    className="w-[34px] rounded-[16px] px-1.5 rotate-180"
+                  >
+                    <Img src="images/img_group_2397.svg" />
+                  </Button>
+                </div>
         </div>
         <Heading
           size="heading10xl"

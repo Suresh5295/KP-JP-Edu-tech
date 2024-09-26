@@ -178,55 +178,56 @@ export default function MigratePage() {
 
             {/* Country Buttons */}
             <div className="container-xs absolute left-0 right-0 top-[1%] z-[5] my-auto flex flex-col gap-[90px] px-1.5 lg:gap-[90px] lg:px-5 md:gap-[67px] md:px-5 sm:gap-[45px]">
-              <div className="mt-10 ml-[142px] mr-32 flex gap-[18px] bg-black-900_e0 backdrop-opacity-[0.5] md:mx-0 md:flex-col z-50">
-                <button
-                  size="6xl"
-                  shape="square"
-                  className={`w-full px-[34px] font-bold tracking-[-0.46px] md:px-5 ${
-                    selectedCountry === 'Australia' ? 'text-[24px] bg-light_blue-900 text-white-a700_01' : 'text-[24px] bg-white-a700_01 text-blue_gray-800'
-                  }`}
-                  onClick={() => setSelectedCountry('Australia')}
-                >
-                  Australia
-                </button>
-                <button
-                  size="6xl"
-                  shape="square"
-                  className={`w-full px-[34px] font-bold tracking-[-0.46px] md:px-5 ${
-                    selectedCountry === 'Canada' ? 'text-[24px] bg-light_blue-900 text-white-a700_01' : 'text-[24px] bg-white-a700_01 text-blue_gray-800'
-                  }`}
-                  onClick={() => setSelectedCountry('Canada')}
-                >
-                  Canada
-                </button>
-                <button
-                  size="6xl"
-                  shape="square"
-                  className={`w-full px-[34px] font-bold tracking-[-0.46px] md:px-5 ${
-                    selectedCountry === 'UK' ? 'text-[24px] bg-light_blue-900 text-white-a700_01' : 'text-[24px] bg-white-a700_01 text-blue_gray-800'
-                  }`}
-                  onClick={() => setSelectedCountry('UK')}
-                >
-                  UK
-                </button>
-                <button
-                  size="6xl"
-                  shape="square"
-                  className={`w-full px-[34px] font-bold tracking-[-0.46px] md:px-5 ${
-                    selectedCountry === 'USA' ? 'text-[24px] bg-light_blue-900 text-white-a700_01' : 'text-[24px] bg-white-a700_01 text-blue_gray-800'
-                  }`}
-                  onClick={() => setSelectedCountry('USA')}
-                >
-                  USA
-                </button>
-                <Button
-                  size="6xl"
-                  shape="square"
-                  className="w-full px-[34px] font-bold tracking-[-0.46px] md:px-5"
-                >
-                  View All
-                </Button>
-              </div>
+            <div className="mt-10 ml-[142px] mr-32 flex gap-[18px] bg-black-900_e0 backdrop-opacity-[0.5] md:mx-0 md:flex-col z-50">
+            <button
+              size="6xl"
+              shape="square"
+              className={`w-full px-[34px] font-bold tracking-[-0.46px] md:px-5 cursor-pointer transition duration-300 ${
+                selectedCountry === 'Australia' ? 'text-[24px] bg-light_blue-900 text-white-a700_01' : 'text-[24px] bg-white-a700_01 text-blue_gray-800 hover:bg-light_blue-900 hover:text-white-a700_01'
+              }`}
+              onClick={() => setSelectedCountry('Australia')}
+            >
+              Australia
+            </button>
+            <button
+              size="6xl"
+              shape="square"
+              className={`w-full px-[34px] font-bold tracking-[-0.46px] md:px-5 cursor-pointer transition duration-300 ${
+                selectedCountry === 'Canada' ? 'text-[24px] bg-light_blue-900 text-white-a700_01' : 'text-[24px] bg-white-a700_01 text-blue_gray-800 hover:bg-light_blue-900 hover:text-white-a700_01'
+              }`}
+              onClick={() => setSelectedCountry('Canada')}
+            >
+              Canada
+            </button>
+            <button
+              size="6xl"
+              shape="square"
+              className={`w-full px-[34px] font-bold tracking-[-0.46px] md:px-5 cursor-pointer transition duration-300 ${
+                selectedCountry === 'UK' ? 'text-[24px] bg-light_blue-900 text-white-a700_01' : 'text-[24px] bg-white-a700_01 text-blue_gray-800 hover:bg-light_blue-900 hover:text-white-a700_01'
+              }`}
+              onClick={() => setSelectedCountry('UK')}
+            >
+              UK
+            </button>
+            <button
+              size="6xl"
+              shape="square"
+              className={`w-full px-[34px] font-bold tracking-[-0.46px] md:px-5 cursor-pointer transition duration-300 ${
+                selectedCountry === 'USA' ? 'text-[24px] bg-light_blue-900 text-white-a700_01' : 'text-[24px] bg-white-a700_01 text-blue_gray-800 hover:bg-light_blue-900 hover:text-white-a700_01'
+              }`}
+              onClick={() => setSelectedCountry('USA')}
+            >
+              USA
+            </button>
+            <Button
+              size="6xl"
+              shape="square"
+              className="w-full px-[34px] font-bold tracking-[-0.46px] md:px-5 cursor-pointer transition duration-300 hover:bg-light_blue-900 hover:text-white-a700_01"
+            >
+              View All
+            </Button>
+          </div>
+
               {/* Country Details Section */}
               <div className="flex items-start md:flex-col">
                 <div className="relative h-[500px] w-[48%] self-center md:w-full">
@@ -291,7 +292,7 @@ export default function MigratePage() {
                 <Footer />
               </div>
             </div>
-            <div className="absolute right-[7%] top-1 z-[14] m-auto flex rotate-[0deg] flex-col items-center justify-center rounded-[22px] bg-light_blue-900 px-2.5 py-3.5">
+            <div className="absolute right-[7%] top-1 z-[14] m-auto flex rotate-[0deg] flex-col items-center justify-center rounded-[22px] bg-light_blue-900 px-2.5 py-3.5 cursor-pointer">
               <Img src="images/img_vector_white_a700_01_14x24.svg" alt="Vector" className="h-[14px]" onClick={scrollToTop} />
             </div>
           </div>

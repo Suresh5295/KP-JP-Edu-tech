@@ -143,7 +143,7 @@ export default function ContactUsPage() {
                 </div>
 
                 {/* Contact Us Form Section */}
-                <div className="relative mt-[-22px] h-[980px] bg-[url(/public/images/img_group_236.svg)] bg-cover bg-no-repeat py-[138px] lg:h-auto lg:py-8 md:h-auto md:py-5 sm:py-4">
+                <div className="relative mt-[-50px] h-[980px] bg-[url(/public/images/img_group_236_1.png)] bg-cover bg-no-repeat py-[138px] lg:h-auto lg:py-8 md:h-auto md:py-5 sm:py-4">
                   <ContactusColumn />
                 </div>
               </div>
@@ -265,9 +265,9 @@ export default function ContactUsPage() {
 
           {/* Footer Copyright */}
           <div className=" h-[270px] self-stretch bg-[url(/public/images/img_group_2023.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
-            <ul className="flex h-[270px] items-center bg-[url(/public/images/img_group_2402.png)] bg-cover bg-no-repeat px-2 py-1.5 lg:h-auto md:h-auto">
+            <ul className="h-[270px] items-center bg-[url(/public/images/img_group_2402.png)] bg-cover bg-no-repeat px-2 py-1.5 lg:h-auto md:h-auto">
               <li>
-                  <div className="flex flex-col items-end lg:w-full md:w-full">
+                  <div className=" flex-col items-end lg:w-full md:w-full">
                     <div className="flex items-center justify-between  self-stretch md:flex-col">
                       <div className="flex w-full gap-20 self-stretch justify-center  ">
                         <Img
@@ -315,7 +315,7 @@ export default function ContactUsPage() {
                        
               
                       </div>
-                      <div className="ml-48 flex w-[22%] items-center justify-between gap-5 md:w-full" >
+                      <div className="ml-48 flex w-[15%] items-center justify-between gap-2 md:w-full" >
                       <a href="https://www.facebook.com/share/XL5X5UrAG4VuFYuy/?mibextid=qi2Omg" target="_blank">
                       <Img src="images/img_close_white_a700_01.svg" alt="Close" className="h-[40px] w-[40px]" />
                       </a>
@@ -331,9 +331,9 @@ export default function ContactUsPage() {
                     </div>
                     </div>
                     <div className="self-stretch ">
-                    <div className="flex gap-4 self-center ml-10" >
+                    <div className=" gap-4 self-center ml-10" >
                     <div className="h-px bg-white-a700_01" />
-                    <div className="flex justify-between  sm:flex-col">
+                    <div className="flex mt-5 justify-between  sm:flex-col">
                         <Heading
                           size="headingxs"
                           as="p"

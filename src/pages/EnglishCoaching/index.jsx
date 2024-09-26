@@ -210,26 +210,42 @@ export default function EnglishCoachingPage() {
               selectedTabPanelClassName="tab-panel--selected"
             >
               <TabList className="absolute z-50 left-0 right-0 top-[6%] mx-[118px] my-auto flex flex-1 flex-wrap gap-12 px-[30px] lg:mx-0 md:mx-0 sm:px-4">
-                <Tab className="px-[30px] py-4 text-[20px] font-semibold" onClick={() => handleTabChange("TOEFL")}>
-                  TOEFL
-                </Tab>
-                <Tab className="px-[30px] py-4 text-[20px] font-semibold" onClick={() => handleTabChange("IELTS")}>
-                  IELTS
-                </Tab>
-                <Tab className="px-[30px] py-4 text-[20px] font-semibold" onClick={() => handleTabChange("PTE")}>
-                  PTE
-                </Tab>
-                <Tab className="px-[30px] py-4 text-[20px] font-semibold" onClick={() => handleTabChange("Duolingo")}>
-                  Duolingo
-                </Tab>
-                <Tab className="px-[30px] py-4 text-[20px] font-semibold" onClick={() => handleTabChange("GMAT")}>
-                  GMAT
-                </Tab>
-                <Tab className="px-[30px] py-4 text-[20px] font-semibold">
-                  View All
-                </Tab>
-              </TabList>
-
+              <Tab
+                className="px-[30px] py-4 text-[20px] font-semibold cursor-pointer transition duration-300 hover:bg-light_blue-900 hover:text-white-a700_01 shadow-md hover:shadow-lg"
+                onClick={() => handleTabChange("TOEFL")}
+              >
+                TOEFL
+              </Tab>
+              <Tab
+                className="px-[30px] py-4 text-[20px] font-semibold cursor-pointer transition duration-300 hover:bg-light_blue-900 hover:text-white-a700_01 shadow-md hover:shadow-lg"
+                onClick={() => handleTabChange("IELTS")}
+              >
+                IELTS
+              </Tab>
+              <Tab
+                className="px-[30px] py-4 text-[20px] font-semibold cursor-pointer transition duration-300 hover:bg-light_blue-900 hover:text-white-a700_01 shadow-md hover:shadow-lg"
+                onClick={() => handleTabChange("PTE")}
+              >
+                PTE
+              </Tab>
+              <Tab
+                className="px-[30px] py-4 text-[20px] font-semibold cursor-pointer transition duration-300 hover:bg-light_blue-900 hover:text-white-a700_01 shadow-md hover:shadow-lg"
+                onClick={() => handleTabChange("Duolingo")}
+              >
+                Duolingo
+              </Tab>
+              <Tab
+                className="px-[30px] py-4 text-[20px] font-semibold cursor-pointer transition duration-300 hover:bg-light_blue-900 hover:text-white-a700_01 shadow-md hover:shadow-lg"
+                onClick={() => handleTabChange("GMAT")}
+              >
+                GMAT
+              </Tab>
+              <Tab
+                className="px-[30px] py-4 text-[20px] font-semibold cursor-pointer transition duration-300 hover:bg-light_blue-900 hover:text-white-a700_01 shadow-md hover:shadow-lg"
+              >
+                View All
+              </Tab>
+            </TabList>
               {/* Conditionally render the image based on the selected tab */}
               <div className="absolute ml-8 mb-10 bottom-0 left-0 right-0 m-auto h-[940px] flex-1 object-cover">
                 <Img src={tabImages[selectedTab]} alt={`${selectedTab} Image`} />
@@ -245,12 +261,8 @@ export default function EnglishCoachingPage() {
     <EnglishcoachingColumnFive />
 
     <div className="absolute bottom-0 left-0 right-0 top-0 m-auto h-[1164px] flex-1 content-center lg:h-auto md:h-auto">
-      <Img
-        src="images/img_rectangle_4303.png"
-        alt="Image"
-        className="ml-auto h-[1164px] w-[38%] object-contain"
-      />
-      <div className="absolute bottom-0 right-0 top-0 my-auto flex h-[1164px] w-[38%] flex-col items-center bg-[url(/public/images/img_group_469.png)] bg-cover bg-no-repeat p-10 lg:h-auto md:h-auto sm:p-4">
+
+      <div className="absolute bottom-0 right-0 top-0 my-auto flex h-[1172px] w-[38%] flex-col items-center bg-[url(/public/images/img_group_469_1.png)] bg-cover bg-no-repeat p-10 lg:h-auto md:h-auto sm:p-4">
         <div className="mb-2.5 flex w-[90%] flex-col items-start gap-[42px] lg:w-full md:w-full">
           <Heading
             size="heading5xl"
@@ -373,7 +385,7 @@ export default function EnglishCoachingPage() {
           <EnglishcoachingRowFour />
           <div className="mt-[40px] flex flex-col items-center">
             <div className="container-xs relative z-[6] flex flex-col items-end lg:px-5 md:px-5">
-              <div className=" -mb-4 flex rotate-[0deg] flex-col items-center justify-center rounded-[22px] bg-light_blue-900 px-2.5 py-3.5" onClick={scrollToTop}>
+              <div className=" -mb-4 flex rotate-[0deg] flex-col items-center justify-center rounded-[22px] bg-light_blue-900 px-2.5 py-3.5 cursor-pointer" onClick={scrollToTop}>
                 <Img src="images/img_vector_white_a700_01_14x24.svg" alt="Vector" className="h-[14px]"   />
               </div>
             </div>
@@ -470,33 +482,39 @@ export default function EnglishCoachingPage() {
                   className="absolute bottom-[-1px] left-0 right-0 z-[3] m-auto h-[278px] w-full flex-1 object-cover mt-10"
                 />
                 <div className="container-xs absolute bottom-[15px] left-0 right-0 z-[5] my-auto flex lg:px-5 md:px-5 ">
-                  <div className="flex w-full flex-col items-end gap-[78px] py-3.5 pl-14 pr-[118px] lg:gap-[78px] lg:pr-8 md:gap-[58px] md:px-5 sm:gap-[39px] sm:px-4">
+                  <div className="flex w-full flex-col items-end gap-[78px] py-3.5 lg:gap-[78px] lg:pr-8 md:gap-[58px] md:px-5 sm:gap-[39px] sm:px-4">
                     <div className="mr-5 mt-[104px] flex w-[72%] items-center justify-between gap-5 lg:w-full md:mr-0 md:w-full md:flex-col">
                       <div className="flex mr-16 w-[80%] flex-wrap justify-between gap-5 self-end md:w-full md:self-auto ">
+                      <a href="/home1" className="lg:text-[17px]">
                         <Text
                           as="p"
                           className="text-[20px] font-normal tracking-[1.20px] text-white-a700_01 lg:text-[17px]"
                         >
                           Home
                         </Text>
+                        </a>
+                        <a href="/studyabroad" className="lg:text-[17px]">
                         <Text
                           as="p"
                           className="self-end text-[20px] font-normal tracking-[1.20px] text-white-a700_01 lg:text-[17px]"
                         >
                           Study Abroad{" "}
                         </Text>
+                        </a>
+                        <a href="/software" className="lg:text-[17px]">
                         <Text
                           as="p"
                           className="self-end text-[20px] font-normal tracking-[1.20px] text-white-a700_01 lg:text-[17px]"
                         >
                           Software Consulting
                         </Text>
-                        <a href="#" className="lg:text-[17px]">
+                        </a>
+                        <a href="/aboutus" className="lg:text-[17px]">
                           <Text as="p" className="text-[20px] font-normal tracking-[1.20px] text-white-a700_01">
                             About Us{" "}
                           </Text>
                         </a>
-                        <a href="#" className="self-start lg:text-[17px]">
+                        <a href="/contactus" className="self-start lg:text-[17px]">
                           <Text as="p" className="text-[20px] font-normal tracking-[-0.38px] text-white-a700_01">
                             Contact Us
                           </Text>
@@ -509,11 +527,11 @@ export default function EnglishCoachingPage() {
                         <Img src="images/img_trash.svg" alt="Trash" className="h-[36px]" />
                       </div>
                     </div>
-                    <div className="mr-1.5 flex w-[96%] items-center justify-between gap-5 lg:w-full md:mr-0 md:w-full sm:flex-col">
+                    <div className=" flex w-[100%] items-center justify-between gap-5 lg:w-full md:mr-0 md:w-full sm:flex-col">
                       <Heading
                         size="headingxs"
                         as="p"
-                        className="mr-20 text-[14px] font-semibold tracking-[0.28px] text-white-a700_01"
+                        className="text-[14px] font-semibold tracking-[0.28px] text-white-a700_01"
                       >
                         @2024 JP EDU TECH Pvt Ltd. All rights reserved.
                       </Heading>

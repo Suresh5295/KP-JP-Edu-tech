@@ -220,114 +220,116 @@ export default function SoftwarePage() {
           <SoftwareRowSix />
           <div className="mt-[84px] flex flex-col items-center">
             <div className="container-xs relative z-[8] flex flex-col items-end px-1.5 lg:px-5 md:px-5">
-              <div className="flex rotate-[0deg] flex-col items-center justify-center rounded-[22px] bg-light_blue-900 px-2.5 py-3.5">
+              <div className="mt-5 flex rotate-[0deg] flex-col items-center justify-center rounded-[22px] bg-light_blue-900 px-2.5 py-3.5 cursor-pointer">
               <Img src="images/img_vector_white_a700_01_14x24.svg" alt="Vector" className="h-[14px]" onClick={scrollToTop} />
               </div>
             </div>
             <div className=" relative mt-[-44px] self-stretch">
-              <footer className="  flex">
-                <div className="  relative mt-8 h-[314px] w-full">
+            <div className="container-xs relative z-[4] flex flex-col items-center px-14 lg:px-5 md:px-5 ">
+                  <Img src="images/contact.png"></Img>
+                  </div>
+            <footer className={`flex self-stretch items-center mt-[-82px] relative`}>
+              <div className="w-full">
+                <div className="relative h-[278px] content-center bg-[url(/public/images/img_group_943.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
                   <Img
-                    src="images/img_rectangle_4266.png"
-                    alt="Image"
-                    className="absolute bottom-[-0.34px] left-0 right-0 m-auto h-[278px] w-full flex-1 object-cover"
+                    src="images/img_rectangle_4267.png"
+                    alt="Image Twentyone"
+                    className="mx-auto h-[278px] w-full flex-1 object-cover"
                   />
-                  <Img
-                    src="images/img_rectangle_4267_blue_gray_900_01_278x1916.png"
-                    alt="Image"
-                    className=" absolute bottom-[0.66px] left-0 right-0 m-auto h-[278px] flex-1 object-cover"
-                  />
-                  <div className="absolute  bottom-0 left-0 top-0 my-auto flex h-max flex-1 items-center lg:mr-0 md:relative md:flex-col">
-                    <Img
-                      src="images/img_logos_white_1.png"
-                      alt="Logoswhiteone"
-                      className="h-[212px] w-[20%] object-contain md:w-full"
-                    />
-                                        
-                    <div >
-                    <Img src="images/contact.png" className="mb-16"></Img>
-                      <div className="relative mt-[-38px]">
-                        <div className=" ml-48 flex flex-col items-end gap-[78px] lg:gap-[78px] md:gap-[58px] sm:gap-[39px]">
-                          <div className="  flex w-[100%] items-center justify-between gap-5 lg:w-full md:mr-0 md:w-full md:flex-col">
-                            
-                            <div className=" w-full flex flex-wrap items-end self-end md:self-auto">
-                              <a href="Home" target="_blank" rel="noreferrer" className="ml-1  lg:text-[17px]">
-                              <Text as="p" className=" text-[20px] font-normal tracking-[1.20px] text-white-a700_01">
-                                  Home
+                  <div className="container-xs absolute bottom-4 left-0 right-0 my-auto flex lg:px-5 md:px-5">
+                    <div className="flex w-full flex-col items-end gap-[78px] lg:gap-[78px] md:gap-[58px] sm:gap-[39px]">
+                      <div className="mr-3 flex w-[74%] items-center justify-between gap-5 lg:w-full md:mr-0 md:w-full md:flex-col">
+                        <ul className="flex w-[66%] flex-wrap justify-between gap-5 self-end md:w-full md:self-auto">
+                          <li>
+                          <a href="/home1" target="_self" rel="noreferrer" className="lg:text-[17px]">
+                              <Text as="p" className="text-[20px] font-normal tracking-[1.20px] text-white-a700_01">
+                                Home
                               </Text>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="/studyabroad" target="_self" className="self-end lg:text-[17px]">
+                              <Text as="p" className="text-[20px] font-normal tracking-[1.20px] text-white-a700_01">
+                                Study Abroad{" "}
+                              </Text>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="/software" target="_self" className="self-end lg:text-[17px]">
+                              <Text as="p" className="text-[20px] font-normal tracking-[1.20px] text-white-a700_01">
+                                Software Consulting
+                              </Text>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="/aboutus" target="_self" className="lg:text-[17px]">
+                              <Text as="p" className="text-[20px] font-normal tracking-[1.20px] text-white-a700_01">
+                                About Us{" "}
+                              </Text>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="/contactus" target="_self" className="self-start lg:text-[17px]">
+                              <Text as="p" className="text-[20px] font-normal tracking-[-0.38px] text-white-a700_01">
+                                Contact Us
+                              </Text>
+                            </a>
+                          </li>
+                        </ul>
+                        <div className="flex w-[22%] items-center justify-between gap-5 md:w-full">
+                        <a href="https://www.facebook.com/share/XL5X5UrAG4VuFYuy/?mibextid=qi2Omg" target="_blank">
+                              <Img src="images/img_close_white_a700_01.svg" alt="Close" className="h-[40px] w-[40px]" />
                               </a>
-                              <a href="#" className="ml-10 lg:text-[17px]">
-                                <Text as="p" className="text-[20px] font-normal tracking-[1.20px] text-white-a700_01">
-                                  Study Abroad{" "}
-                                </Text>
+                              <a href="https://wa.me/message/2I52EUSWYTQBG1" target="_blank">
+                              <Img src="images/img_volume_white_a700_01.svg" alt="Volume" className="h-[40px] w-[40px]"  />
                               </a>
-                              <a href="#" className="ml-10 lg:text-[17px]">
-                                <Text as="p" className="text-[20px] font-normal tracking-[1.20px] text-white-a700_01">
-                                  Software Consulting
-                                </Text>
+                              <a href="https://www.instagram.com/jpetcs?igsh=MW5xNjF3aDN5dTE3bw==" target="_blank">
+                              <Img src="images/img_info_white_a700_01.svg" alt="Info" className="h-[40px] w-[40px]" />
                               </a>
-                              <a href="#" className="ml-9 self-center lg:text-[17px]">
-                                <Text as="p" className="text-[20px] font-normal tracking-[1.20px] text-white-a700_01">
-                                  About Us{" "}
-                                </Text>
+                              <a href="https://x.com/jpedutech" target="_blank" >
+                              <Img src="images/img_trash.svg" alt="Trash" className="h-[36px]"  />
                               </a>
-                              <a href="#" className="ml-[52px] self-start lg:text-[17px]">
-                                <Text as="p" className="text-[20px] font-normal tracking-[-0.38px] text-white-a700_01">
-                                  Contact Us
-                                </Text>
-                              </a>
-                            </div>
-                            
-                            <div className="ml-44 flex w-[24%] items-center justify-between gap-5 md:w-full  ">
-                            <a href="https://www.facebook.com/share/XL5X5UrAG4VuFYuy/?mibextid=qi2Omg" target="_blank">
-                      <Img src="images/img_close_white_a700_01.svg" alt="Close" className="h-[40px] w-[40px]" />
-                      </a>
-                      <a href="https://wa.me/message/2I52EUSWYTQBG1" target="_blank">
-                      <Img src="images/img_volume_white_a700_01.svg" alt="Volume" className="h-[40px] w-[40px]"  />
-                      </a>
-                      <a href="https://www.instagram.com/jpetcs?igsh=MW5xNjF3aDN5dTE3bw==" target="_blank">
-                      <Img src="images/img_info_white_a700_01.svg" alt="Info" className="h-[40px] w-[40px]" />
-                      </a>
-                      <a href="https://x.com/jpedutech" target="_blank" >
-                      <Img src="images/img_trash.svg" alt="Trash" className="h-[36px]"  />
-                      </a>
-                            </div>
-                          </div>
-                          <div className=" flex items-center justify-between gap-5 self-stretch sm:flex-col">
+                        </div>
+                      </div>
+                      <div className="flex items-center justify-between gap-5 self-stretch sm:flex-col">
+                        <Heading
+                          size="headingxs"
+                          as="p"
+                          className="text-[14px] font-semibold tracking-[0.28px] text-white-a700_01"
+                        >
+                          @2024 JP EDU TECH Pvt Ltd. All rights reserved.
+                        </Heading>
+                        <div className="flex w-[12%] flex-wrap justify-between gap-5 sm:w-full">
+                          <a href="#">
                             <Heading
                               size="headingxs"
                               as="p"
-                              className=" -ml-96 text-[14px] font-semibold tracking-[0.28px] text-white-a700_01"
+                              className="text-[14px] font-semibold tracking-[0.28px] text-white-a700_01"
                             >
-                              @2024 JP EDU TECH Pvt Ltd. All rights reserved.
+                              Terms{" "}
                             </Heading>
-                            <div className=" flex w-[25%] flex-wrap justify-between  sm:w-full">
-                              <a href="#">
-                                <Heading
-                                  size="headingxs"
-                                  as="p"
-                                  className="  ml-36 text-[14px] font-semibold tracking-[0.28px] text-white-a700_01"
-                                >
-                                  Terms{" "}
-                                </Heading>
-                              </a>
-                              <a href="#">
-                                <Heading
-                                  size="headingxs"
-                                  as="p"
-                                  className="text-[14px] font-semibold tracking-[0.28px] text-white-a700_01"
-                                >
-                                  Privacy Policy{" "}
-                                </Heading>
-                              </a>
-                            </div>
-                          </div>
+                          </a>
+                          <a href="#">
+                            <Heading
+                              size="headingxs"
+                              as="p"
+                              className="text-[14px] font-semibold tracking-[0.28px] text-white-a700_01"
+                            >
+                              Privacy Policy{" "}
+                            </Heading>
+                          </a>
                         </div>
                       </div>
                     </div>
                   </div>
+                  <Img
+                    src="images/img_logos_white_1.png"
+                    alt="Logoswhiteone"
+                    className="absolute left-px top-2.5 m-auto h-[212px] w-[20%] object-contain"
+                  />
                 </div>
-              </footer>
+              </div>
+            </footer>
             </div>
           </div>
         </div>

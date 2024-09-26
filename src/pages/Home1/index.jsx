@@ -1,11 +1,11 @@
-import React, { useState, Suspense } from 'react';
+import React, { useState, useEffect, Suspense } from 'react'; // Import useEffect
 import { Helmet } from "react-helmet";
+import Slider from "react-slick";
 import { Text, Heading, Img, Button, Input } from "../../components";
 import Footer from "../../components/Footer";
-import ChatModal from "../../components/ChatModal"; // Correctly importing the default export
+import ChatModal from "../../components/ChatModal";
 import { CloseSVG } from "../../components/Input/close.jsx";
 import UserProfile from "../../components/UserProfile";
-import UserProfile3 from "../../components/UserProfile3";
 import Home1ColumnFour from "./Home1ColumnFour";
 import Home1RowFive from "./Home1RowFive";
 import Home1RowSeven from "./Home1RowSeven";
@@ -13,45 +13,82 @@ import Home1RowThree from "./Home1RowThree";
 import Home1RowaboutusOne from "./Home1RowaboutusOne";
 import Home1Rowourclinet from "./Home1Rowourclinet";
 
-
-
-const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth", // Smooth scroll effect
-  });
-};
-
-const data = [
-  {
-    userImage: "images/img_rectangle_4186.png",
-    hoverImage: "images/hover_img_rectangle_4186.png",
-  },
-  {
-    userImage: "images/img_rectangle_4187.png",
-    hoverImage: "images/hover_img_rectangle_4187.png",
-  },
-  {
-    userImage: "images/img_rectangle_4188.png",
-    hoverImage: "images/hover_img_rectangle_4188.png",
-  },
-  {
-    userImage: "images/img_rectangle_4189.png",
-    hoverImage: "images/hover_img_rectangle_4189.png",
-  },
-  {
-    userImage: "images/img_rectangle_4190.png",
-    hoverImage: "images/hover_img_rectangle_4190.png",
-  },
-  {
-    userImage: "images/img_rectangle_4191.png",
-    hoverImage: "images/hover_img_rectangle_4191.png",
-  },
-];
-
-
 export default function Home1Page() {
-  const [searchBarValue, setSearchBarValue] = React.useState("");
+  const [activeImageSet, setActiveImageSet] = useState(0); // State for image set
+  const [searchBarValue, setSearchBarValue] = useState(""); // State for search input
+  const [isChatOpen, setChatOpen] = useState(false); // State for chat modal
+
+  // useEffect hook for automatically changing the image sets every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveImageSet((prevIndex) => (prevIndex + 1) % imageSets.length); // Cycle through image sets
+    }, 3000);  // Change every 3 seconds
+
+    return () => clearInterval(interval); // Cleanup interval on component unmount
+  }, []); // Empty dependency array ensures it runs only once
+  
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Smooth scroll effect
+    });
+  };
+  
+
+  const data = [
+    {
+      userImage: "images/img_rectangle_4186.png",
+      hoverImage: "images/hover_img_rectangle_4186.png",
+    },
+    {
+      userImage: "images/img_rectangle_4187.png",
+      hoverImage: "images/hover_img_rectangle_4187.png",
+    },
+    {
+      userImage: "images/img_rectangle_4188.png",
+      hoverImage: "images/hover_img_rectangle_4188.png",
+    },
+    {
+      userImage: "images/img_rectangle_4189.png",
+      hoverImage: "images/hover_img_rectangle_4189.png",
+    },
+    {
+      userImage: "images/img_rectangle_4190.png",
+      hoverImage: "images/hover_img_rectangle_4190.png",
+    },
+    {
+      userImage: "images/img_rectangle_4191.png",
+      hoverImage: "images/hover_img_rectangle_4191.png",
+    },
+  ];
+  
+  // List of image sets
+  const imageSets = [
+    [
+      "images/img_rectangle_4178.png",
+      "images/img_rectangle_4177.png",
+      "images/img_rectangle_4179.png"
+    ],
+    [
+      "images/img_rectangle_4181.png",
+      "images/img_rectangle_4182.png",
+      "images/img_rectangle_4183.png"
+    ],
+    [
+      "images/img_rectangle_4178.png",
+      "images/img_rectangle_4179.png",
+      "images/Rectangle_4191.png"
+    ]
+  ];
+
+  const handleDotClick = (index) => {
+    setActiveImageSet(index); // Switch the image set when a dot is clicked
+  };
+
+  const toggleChat = () => {
+    setChatOpen(!isChatOpen); // Toggle chat modal visibility
+  };
+
   const handleMouseEnter = () => {
     const element = document.querySelector(".vector-animate");
     element.classList.add("vector-animate-right");
@@ -63,12 +100,6 @@ export default function Home1Page() {
     element.classList.add("vector-animate-left");
     element.classList.remove("vector-animate-right");
   };
-  const [isChatOpen, setChatOpen] = useState(false);
-
-  const toggleChat = () => {
-      setChatOpen(!isChatOpen); // Correctly toggles the visibility of the ChatModal
-  };
-  
 
   return (
     <>
@@ -399,15 +430,15 @@ export default function Home1Page() {
                   </div>
                 </div>
                 <div className="absolute bottom-5 left-0 right-0 m-auto flex w-11/12 flex-col items-end">
-                  <div className="rounded-full border-2 border-solid border-light_blue-900 lg:w-full md:w-full md:px-5">
+                  <div className="rounded-full border-2 border-solid border-light_blue-900  lg:w-full md:w-full md:px-5">
                     {/* Use a div or button here for non-navigation action */}
-                    <div className="relative h-15 lg:h-auto md:h-auto cursor-pointer" onClick={toggleChat}>
+                    <div className="relative h-15 lg:h-auto md:h-auto  cursor-pointer" onClick={toggleChat}>
                       <img
                         src="images/img_ellipse_67.png"
                         alt="Chatbot Trigger"
-                        className="mx-auto h-14 w-14 rounded-full object-cover" // Tailwind classes for round image
+                        className="mx-auto h-14 w-14 rounded-full  object-cover" // Tailwind classes for round image
                       />
-                      <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max w-max items-center justify-center rounded-full text-center text-lg font-bold tracking-wider text-white lg:text-sm z-20">
+                      <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max w-max items-center justify-center rounded-full text-center text-lg font-bold text-white-a700_01  tracking-wider lg:text-sm z-20">
                         JET
                       </div>
                     </div>
@@ -453,7 +484,7 @@ export default function Home1Page() {
                           <button
                             className="mt-9 font-bold tracking-[1.20px] text-white md:ml-0 sm:px-4"
                           >
-                            <Img src="images/button_1.svg" alt="Image" className="ml-5 mt-4 h-[98px] w-[60%] object-contain" onClick={() => window.open("/enquirepage", "_self", "noopener,noreferrer")} />
+                            <Img src="images/button_1.svg" alt="Image" className="mt-4 h-[98px] w-[60%] object-contain" onClick={() => window.open("/enquirepage", "_self", "noopener,noreferrer")} />
                           </button>
                           </a>
                         </div>
@@ -470,7 +501,7 @@ export default function Home1Page() {
                             >
                               <>
                                 Choose Your own <br />
-                                Destionation
+                                Destination
                               </>
                             </Heading>
                             <div className="ml-80 h-[2px] w-[8%] bg-light_blue-900 md:ml-0 animate-leftToRight" />
@@ -491,47 +522,34 @@ export default function Home1Page() {
                             className="absolute bottom-[18.66px] right-[-0.34px] m-auto h-[192px] w-[24%] object-contain"
                           />
                         </div> */}
-                        <div className="absolute  bottom-[18%] right-[20%] m-auto flex w-[38%] flex-col items-start bg-white-a700_01 px-[32px] py-[18px] shadow-xl sm:px-4 animate-zoomInOut">
-                          <Heading
-                            size="headinglg"
-                            as="h3"
-                            className="ml-[18px] text-[20px] font-extrabold tracking-[1.20px] text-blue_gray-900 lg:text-[17px] md:ml-0"
-                          >
-                            United States Of America
-                          </Heading>
-                          <Text
-                            as="p"
-                            className="ml-[18px] mt-2.5 w-full text-[20px] font-normal leading-[33px] tracking-[0.40px] text-gray-700 lg:text-[17px] md:ml-0"
-                          >
-                            The United States is the most popular destination for international students. It has a long
-                            history of welcoming foreign students and offers some of the best universities in the world.
-                            The US Student Visa is a Non-Immigrant Visa that allows foreign nationals to pursue academic
-                            studies, language training programs or other types of vocational or technical training. 
-                          </Text>
-                          <div className="mb-2.5 mt-[74px] flex gap-8 self-stretch md:mx-0 md:flex-col">
-                            <Img
-                              src="images/img_rectangle_4178.png"
-                              alt="Rectangle"
-                              className="h-[176px] w-[29%] md:w-full"
-                            />
-                            <Img
-                              src="images/img_rectangle_4177.png"
-                              alt="Rectangle"
-                              className="h-[176px] w-[29%]  md:w-full"
-                            />
-                            <Img
-                              src="images/Rectangle 4185.png"
-                              alt="Rectangle"
-                              className="h-[176px] w-[29%]  md:w-full"
-                            />
-
+                            <div className="absolute  bottom-[30%] right-[20%] m-auto flex w-[38%] flex-col items-start bg-white-a700_01 px-[32px] py-[18px] shadow-xl sm:px-4 animate-zoomInOut">
+                            <h3 className="text-xl font-bold text-gray-800 mb-4">
+                              United States Of America
+                            </h3>
+                            <p className="text-gray-600 mb-6 leading-relaxed">
+                              The United States is the most popular destination for international students. It has a long history of welcoming foreign students and offers some of the best universities in the world. The US Student Visa is a Non-Immigrant Visa that allows foreign nationals to pursue academic studies, language training programs, or other types of vocational or technical training.
+                            </p>
+                            <div className="flex justify-evenly gap-2 mb-4 w-full">
+                              {imageSets[activeImageSet].map((imgSrc, index) => (
+                                <img
+                                  key={index}
+                                  src={imgSrc}
+                                  alt={`Image ${index + 1}`}
+                                  className="w-48 h-48 object-cover  " // Fixed size: 96px x 96px
+                                />
+                              ))}
+                            </div>
+                            <div className="flex justify-center mt-5 gap-3 w-full">
+                              {imageSets.map((_, index) => (
+                                <button
+                                  key={index}
+                                  onClick={() => handleDotClick(index)}
+                                  className={`w-3 h-3 flex justify-center rounded-full ${activeImageSet === index ? 'bg-gray-900' : 'bg-gray-400'}`}
+                                />
+                              ))}
+                            </div>
                           </div>
-                          <Img
-                              src="images/Dot.png"
-                              alt="Rectangle"
-                              className="ml-72 w-[7%]  md:w-full"
-                            />
-                        </div>
+
                         <div className="absolute left-0 right-0 top-0 m-auto flex flex-1 items-start pl-[660px] pr-14 lg:pl-8 md:px-5 sm:relative sm:flex-col sm:px-4">
                           {/* <Img
                             src="images/img_group.png"

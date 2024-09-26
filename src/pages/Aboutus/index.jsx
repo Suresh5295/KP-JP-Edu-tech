@@ -231,7 +231,7 @@ export default function AboutusPage() {
           <AboutusStackiconOne />
           <AboutusRowTwo />
           <div className="mt-[30px] flex flex-col items-end">
-          <div className="mr-32  flex rotate-[0deg] flex-col items-center justify-center rounded-[22px] bg-light_blue-900 px-2.5 py-3.5">
+          <div className="mr-32  flex rotate-[0deg] flex-col items-center justify-center rounded-[22px] bg-light_blue-900 px-2.5 py-3.5 cursor-pointer">
               <Img src="images/img_vector_white_a700_01_14x24.svg" alt="Vector" className="h-[14px]" onClick={scrollToTop} />
               </div>
 

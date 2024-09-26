@@ -6,8 +6,8 @@ export default function SoftwareRowourclinet() {
   const sliderRef = React.useRef(null);
 
   return (
-    <div className="relative z-[18] mt-[-4px] h-[946px] bg-[url(/public/images/img_group_256.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
-      <div className="relative h-[814px] content-center lg:h-auto md:h-auto">
+    <div className="relative z-[18] mt-[-34px] h-[946px] bg-[url(/public/images/img_group_256.png)] bg-cover bg-no-repeat lg:h-auto md:h-auto">
+      <div className="relative h-[800px] content-center lg:h-auto md:h-auto">
         <div className="mx-auto flex w-full flex-col items-center">
           <div className="container-xs relative z-20 flex flex-col items-end pl-14 pr-[696px] lg:px-5 md:px-5">
             <Heading

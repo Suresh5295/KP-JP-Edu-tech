@@ -5,31 +5,25 @@ import React, { Suspense } from "react";
 const data = [
   {
     callIcon: "images/img_call.svg",
-    contactImage: "images/img_rectangle_4439.svg",
-    contactHeading: "Contact Details",
+    contactImage: "images/img_rectangle_4439_1.png",
+    contactHeading: "",
     contactNumbers: (
       <>
-        +91  8247510882
-        <br />
-        +91  9704428144
       </>
     ),
   },
   {
     callIcon: "images/img_lock.svg",
-    contactImage: "images/img_rectangle_4431.svg",
-    contactHeading: "Email Details",
-    contactNumbers: "jpedutechcs@gmail.com  ",
+    contactImage: "images/img_rectangle_4431_1.png",
+    contactHeading: "",
+    contactNumbers: "",
   },
   {
     callIcon: "images/img_linkedin_light_blue_900.svg",
-    contactImage: "images/img_rectangle_4433.svg",
-    contactHeading: "Our Branch’s",
+    contactImage: "images/img_rectangle_4433_1.png",
+    contactHeading: "",
     contactNumbers: (
       <>
-      Kurnool, Hyderabad, Guntur,
-      <br />  
-      Melbourne (Australia)
       </>
     ),
   },

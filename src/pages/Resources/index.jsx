@@ -129,20 +129,12 @@ export default function ResourcesPage() {
                     >
                       Resources
                     </Heading>
-                    <a href="/enquirepage">
-                      <button
-                        shape="square"
-                        className="min-w-[198px] mt-10 pl-7 pr-[34px] font-nunitosans font-bold tracking-[1.20px] sm:px-4"
-                      >
-                        <Img src="images/a_button.png" alt="Appointment Image" className="h-[60px] w-auto object-contain" />
-                      </button>
-                    </a>
 
                   </div>
                 
                 </div>
               </div>
-              <div className="relative mt-[-40px] bg-black-900_f4 py-[18px] ">
+              <div className="relative  bg-black-900_f4 py-[18px] ">
                 <div className="mt-[492px] flex flex-col items-center gap-[72px] lg:gap-[72px] md:gap-[54px] sm:gap-9">
                   <div className="container-xs flex flex-col items-center gap-[26px] px-[46px] lg:px-5 md:px-5 ">
                     <div className="ml-[18px] flex gap-5 self-stretch md:ml-0 md:flex-col animate-zoomInOut">
@@ -201,7 +193,7 @@ export default function ResourcesPage() {
                         </Heading>
                       </div>
                     </div>
-                    <div className="flex w-[5%] justify-center gap-[18px] lg:w-full md:w-full">
+                    <div className="flex w-[5%] justify-center gap-[18px] lg:w-full md:w-full -z-40">
                       <div className="rotate-180 flex w-full flex-col items-center justify-center rounded-[16px] bg-white-a700_01 p-1.5">
                         <Img src="images/img_group_2396.svg" alt="Vector" className="h-[18px]" />
                       </div>
@@ -216,7 +208,7 @@ export default function ResourcesPage() {
             </div>
             <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max w-full flex-col items-center">
               <div className="self-stretch bg-black-900_e0 blur-[24.00px] backdrop-opacity-[0.5]" />
-              <div className="container-xs relative mt-[-110px] px-[46px] lg:px-5 md:px-5">
+              <div className="container-xs relative mt-[-70px] px-[46px] lg:px-5 md:px-5">
               <div className=" mx-auto flex w-full gap-5 md:mx-0 md:flex-col ">
               <Slider
                 autoPlay
@@ -299,7 +291,7 @@ export default function ResourcesPage() {
                 >
                   <span>At&nbsp;</span>
                   <span className="uppercase">
-                    JP Edu Tech, we believe in helping you achieve your career goals. Our dedicated team of career
+                    JP Edu Tech, </span><span>we believe in helping you achieve your career goals. Our dedicated team of career
                     counselors offers personalized guidance and support to navigate the complexities of today&#39;s job
                     market.
                   </span>
@@ -377,7 +369,7 @@ export default function ResourcesPage() {
                 </button>
               </div>
             </div>
-            <div className="absolute bottom-0 left-0 right-0 top-8 m-auto flex h-max w-full flex-col items-end">
+            <div className="absolute mt-11 bottom-0 left-0 right-0 top-8 m-auto flex h-max w-full flex-col items-end">
               <div className="w-[40%] bg-light_blue-900 px-3.5 py-24 lg:w-full lg:py-8 md:w-full md:py-5 sm:py-4">
                 <Img
                   src="images/img_ellipse_53.png"
@@ -425,7 +417,7 @@ export default function ResourcesPage() {
           <ResourcesRowourclinet />
           <ResourcesRowTwo />
           <div className="mt-[76px] flex flex-col items-end self-stretch">
-            <div className="relative z-[6] mr-[114px] flex rotate-[0deg] flex-col items-center justify-center rounded-[22px] bg-light_blue-900 px-2.5 py-3.5 md:mr-0">
+            <div className="relative z-[6] mr-[114px] flex rotate-[0deg] flex-col items-center justify-center rounded-[22px] bg-light_blue-900 px-2.5 py-3.5 md:mr-0 cursor-pointer">
               <Img src="images/img_vector_white_a700_01_14x24.svg" alt="Vector" className="h-[14px]" onClick={scrollToTop} />
             </div>
             <div className="relative mt-[-44px] self-stretch">

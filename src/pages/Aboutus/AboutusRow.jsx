@@ -9,7 +9,7 @@ export default function AboutusRow() {
           <Img
             src="images/img_ellipse_53.png"
             alt="Image"
-            className="mt-[26px] h-[754px] w-[754px] rounded-[376px] object-cover"
+            className="mt-[26px] ml-8 h-[670px] w-[670px] rounded-[376px] object-cover animate-zoomInOut"
           />
         </div>
       </div>

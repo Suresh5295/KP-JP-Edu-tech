@@ -46,7 +46,7 @@ export default function ResourcesRowOne() {
               <TabPanel key={`tab-panel${index}`} className="absolute items-center px-12 lg:px-5 md:px-5">
                 <div className="container-xs w-full">
                   <div className="ml-3 flex flex-col items-center gap-14 md:ml-0 sm:gap-7">
-                  <div className="mx-auto flex w-full gap-5 self-stretch md:mx-0 md:flex-col">
+                  <div className="mx-auto flex w-full gap-5 self-stretch md:mx-0 md:flex-col z-10">
                   <Slider
                     autoPlay
                     autoPlayInterval={2000}
@@ -122,7 +122,7 @@ export default function ResourcesRowOne() {
             <Img
               src="images/img_group_gray_800.png"
               alt="Image"
-              className="absolute bottom-0 left-0 right-0 top-0 m-auto h-[624px] w-full flex-1 object-cover"
+              className="absolute bottom-0 left-0 right-0 top-0 m-auto h-[624px] w-full flex-1 object-cover "
             />
           </div>
         </Tabs>

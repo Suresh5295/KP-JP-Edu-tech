@@ -72,12 +72,19 @@ export default function StudyabroadRowarrowleft() {
                     >
                       Comprehensive Coverage
                     </Text>
-                    <Button
-                      shape="square"
-                      className="mt-[38px] min-w-[198px] px-[34px] font-nunitosans font-bold tracking-[1.20px] sm:px-4"
-                    >
-                      Know More
-                    </Button>
+                    <a href="/enquirepage" target="_self" rel="noopener noreferrer">
+                      <button
+                        className="mt-[38px] min-w-[198px] font-nunitosans font-bold tracking-[1.20px] sm:px-4"
+                      >
+                        <img
+                          className="mt-4 h-[98px] w-[60%] object-contain"
+                          src="images/button_4.png"
+                          alt="Image"
+                          loading="lazy"
+                        />
+                      </button>
+                    </a>
+
                   </div>
                   <Img
                     src="images/img_graduation_cap.png"
