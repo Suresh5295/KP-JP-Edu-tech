@@ -70,14 +70,19 @@ export default function Home1Page() {
       "images/img_rectangle_4179.png"
     ],
     [
-      "images/img_rectangle_4181.png",
-      "images/img_rectangle_4182.png",
-      "images/img_rectangle_4183.png"
+      "images/screen_0001.png",
+      "images/screen_0002.png",
+      "images/screen_0003.png"
     ],
     [
-      "images/img_rectangle_4178.png",
-      "images/img_rectangle_4179.png",
-      "images/Rectangle_4191.png"
+      "images/screen_0004.png",
+      "images/screen_0005.png",
+      "images/screen_0006.png"
+    ],
+    [
+      "images/screen_0007.png",
+      "images/screen_0008.png",
+      "images/screen_0009.png"
     ]
   ];
 
@@ -470,11 +475,11 @@ export default function Home1Page() {
                             
                           /> 
                       <div className="absolute bottom-0 left-0 right-0 top-0 m-auto h-[940px] flex-1">
-                        <div className="absolute bottom-[24%] left-0 right-0 mx-[126px] my-auto flex flex-1 flex-col items-start gap-[20px] lg:mx-0 md:mx-0" style={{top: '400px', marginTop: '60px'}}>
+                        <div className="absolute bottom-[24%] left-0 right-0 mx-[126px] my-auto flex flex-1 flex-col items-start lg:mx-0 md:mx-0" style={{top: '400px', marginTop: '10px'}}>
 
                           <Text
                             as="p"
-                            className="w-[34%] text-[20px] font-normal leading-[30px] tracking-[0.40px] text-black-900_02 lg:w-full lg:px-5 lg:text-[17px] md:w-full md:px-5 animate-leftToRight "
+                            className=" w-[34%] text-[20px] font-normal leading-[30px] tracking-[0.40px] text-black-900_02 lg:w-full lg:px-5 lg:text-[17px] md:w-full md:px-5 animate-leftToRight "
                           >
                             Studying abroad opens doors to new cultures, experiences, and opportunities. At Jp Edu Tech,
                             we are dedicated to helping you navigate the complexities of studying in a foreign country,
@@ -482,7 +487,7 @@ export default function Home1Page() {
                           </Text>
                           <a href="/studyabroad" target="_self">
                           <button
-                            className="mt-9 font-bold tracking-[1.20px] text-white md:ml-0 sm:px-4"
+                            className="mt-2 font-bold tracking-[1.20px] text-white md:ml-0 sm:px-4"
                           >
                             <Img src="images/button_1.svg" alt="Image" className="mt-4 h-[98px] w-[60%] object-contain" onClick={() => window.open("/enquirepage", "_self", "noopener,noreferrer")} />
                           </button>
@@ -494,7 +499,7 @@ export default function Home1Page() {
                             alt="Close"
                             className="ml-1.5 h-[40px] w-[40px] md:ml-0"
                           /> */}
-                          <div className="flex flex-col items-start gap-10 ">
+                          <div className="flex flex-col items-start gap-4 ">
                             <Heading
                               as="h2"
                               className="font-playfairdisplay text-[64px] font-medium leading-[85px] text-blue_gray-800_01 lg:text-[48px] md:text-[48px] animate-leftToRight "
