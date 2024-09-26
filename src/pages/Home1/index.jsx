@@ -282,14 +282,14 @@ export default function Home1Page() {
 
                   <div className="mr-20 flex w-[24%] items-center justify-center gap-[30px] self-end md:w-full md:self-auto z-10">
                     <div className="flex flex-1 items-center justify-between gap-5">
-                      <a href="https://www.facebook.com/share/XL5X5UrAG4VuFYuy/?mibextid=qi2Omg">
+                      <a href="https://www.facebook.com/share/XL5X5UrAG4VuFYuy/?mibextid=qi2Omg" target="_blank">
                         <Img
                           src="images/img_facebook.svg"
                           alt="Facebook"
                           className="h-[24px] w-[24px]"
                         />
                       </a>
-                      <a href="https://wa.me/message/2I52EUSWYTQBG1">
+                      <a href="https://wa.me/message/2I52EUSWYTQBG1" target="_blank">
                         <Img src="images/img_volume.svg" alt="Volume" className="h-[24px] w-[24px]" />
                       </a>
                       <a
@@ -369,7 +369,7 @@ export default function Home1Page() {
                 </div>
                 <div className=" container-xs absolute bottom-0 left-0.5 my-auto flex items-end justify-center px-14 lg:px-5 md:relative md:flex-col md:px-5">
                 <div className="flex flex-1 flex-wrap items-start justify-between gap-5 self-center px-8 md:self-stretch sm:px-4">
-                <a href="/studyabroad" target="_blank" className="hover:underline hover:text-blue_gray-800 focus:underline focus:text-blue_gray-800">
+                <a href="/studyabroad" target="_self" className="hover:underline hover:text-blue_gray-800 focus:underline focus:text-blue_gray-800">
                   <Heading
                     size="text2xl"
                     as="h5"
@@ -378,7 +378,7 @@ export default function Home1Page() {
                     Study Abroad
                   </Heading>
                 </a>
-                  <a href="/software" target="_blank" className="hover:underline hover:text-blue_gray-800 focus:underline focus:text-blue_gray-800">
+                  <a href="/software" target="_self" className="hover:underline hover:text-blue_gray-800 focus:underline focus:text-blue_gray-800">
                   <Heading
                     size="text2xl"
                     as="h6"
@@ -387,7 +387,7 @@ export default function Home1Page() {
                     Software Consulting{" "}
                   </Heading>
                   </a>
-                    <a href="/Migrate" target="_blank" className="hover:underline hover:text-blue_gray-800 focus:underline focus:text-blue_gray-800">
+                    <a href="/Migrate" target="_self" className="hover:underline hover:text-blue_gray-800 focus:underline focus:text-blue_gray-800">
                       <Heading
                         size="text2xl"
                         as="p"
@@ -396,7 +396,7 @@ export default function Home1Page() {
                         Migrate
                       </Heading>
                     </a>
-                    <a href="/EnglishCoaching" target="_blank" className="hover:underline hover:text-blue_gray-800 focus:underline focus:text-blue_gray-800">
+                    <a href="/EnglishCoaching" target="_self" className="hover:underline hover:text-blue_gray-800 focus:underline focus:text-blue_gray-800">
                       <Heading
                         size="text2xl"
                         as="p"
@@ -405,7 +405,7 @@ export default function Home1Page() {
                         English Coaching
                       </Heading>
                     </a>
-                    <a href="/Aboutus" target="_blank" className="hover:underline hover:text-blue_gray-800 focus:underline focus:text-blue_gray-800">
+                    <a href="/Aboutus" target="_self" className="hover:underline hover:text-blue_gray-800 focus:underline focus:text-blue_gray-800">
                       <Heading
                         size="text2xl"
                         as="p"
@@ -414,7 +414,7 @@ export default function Home1Page() {
                         About Us{" "}
                       </Heading>
                     </a>
-                    <a href="/Resources" target="_blank" className="hover:underline hover:text-blue_gray-800 focus:underline focus:text-blue_gray-800">
+                    <a href="/Resources" target="_self" className="hover:underline hover:text-blue_gray-800 focus:underline focus:text-blue_gray-800">
                       <Heading
                         size="text2xl"
                         as="p"
@@ -423,7 +423,7 @@ export default function Home1Page() {
                         Resources
                       </Heading>
                     </a>
-                    <a href="/ContactUs" target="_blank" className="hover:underline hover:text-blue_gray-800 focus:underline focus:text-blue_gray-800">
+                    <a href="/ContactUs" target="_self" className="hover:underline hover:text-blue_gray-800 focus:underline focus:text-blue_gray-800">
                       <Heading
                         size="text2xl"
                         as="p"
@@ -670,11 +670,13 @@ export default function Home1Page() {
               /> */}
               <Heading
                 as="p"
-                className="absolute left-0 right-0 top-[21%] z-[15] m-auto w-max font-playfairdisplay text-[64px] font-medium text-blue_gray-800_01 lg:text-[48px] md:text-[48px]"
+                className="absolute left-0 right-0 top-[21.5%] z-[15] m-auto w-max font-playfairdisplay text-[64px] font-medium text-blue_gray-800_01 lg:text-[48px] md:text-[48px]"
               >
                 Our Services
+                <div class="ml-80 h-[2px] w-[32%] bg-light_blue-900 md:ml-0 animate-leftToRight"></div>
               </Heading>
-              <a href="" target="_blank">
+              
+              <a href="" target="_self">
               <button
                 className="absolute top-[26%]  mt-14 mr-10 z-40"
                 style={{ width: 'auto', left: '45%', transform: 'translateX(-50%)' }}
@@ -683,8 +685,8 @@ export default function Home1Page() {
                 <img src="images/button_1.svg" alt="Learn More" className="ml-6 z-[16] mt-4 object-contain" />
               </button>
               </a>
-              <div className="absolute bottom-[13%] left-0 right-0 z-[17] mx-[100px] my-auto flex flex-1 flex-col items-end lg:mx-0 md:mx-0">
-                <div className="relative z-[18] flex flex-col items-end self-stretch">
+              <div className="absolute bottom-[13%] left-0 right-0 mx-[100px] my-auto flex flex-1 flex-col items-end lg:mx-0 md:mx-0">
+                <div className="relative flex flex-col items-end self-stretch">
                   <Img
                     src="images/img_rectangle_4190_1.png"
                     alt="Image Twelve"

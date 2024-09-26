@@ -1,8 +1,13 @@
 import { Button, Img } from "./..";
 import React, { useState } from "react";
+import { useLocation } from "react-router-dom";  // Importing the useLocation hook
 
 export default function Header(props) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation(); // Hook to get the current route
+
+  // Function to check if the current path matches the given route
+  const isActiveRoute = (route) => location.pathname === route;
 
   return (
     <header
@@ -30,64 +35,80 @@ export default function Header(props) {
             <ul className="flex items-center justify-center gap-10 lg:gap-6 md:gap-4 flex-wrap">
               <li>
                 <a
-                  href="/home" // Specific URL for "Home"
-                  className="text-[16px] font-semibold text-blue_gray-800 hover:text-teal-400"
+                  href="/home"
+                  className={`text-[16px] font-semibold ${
+                    isActiveRoute("/home") ? "text-teal-400 font-bold" : "text-blue_gray-800 hover:text-teal-400"
+                  }`}
                 >
                   Home
                 </a>
               </li>
               <li>
                 <a
-                  href="/studyabroad" // Specific URL for "Study Abroad"
-                  className="text-[16px] font-semibold text-blue_gray-800 hover:text-teal-400"
+                  href="/studyabroad"
+                  className={`text-[16px] font-semibold ${
+                    isActiveRoute("/studyabroad") ? "text-teal-400 font-bold" : "text-blue_gray-800 hover:text-teal-400"
+                  }`}
                 >
                   Study Abroad
                 </a>
               </li>
               <li>
                 <a
-                  href="/software" // Specific URL for "Software Consulting"
-                  className="text-[16px] font-semibold text-blue_gray-800 hover:text-teal-400"
+                  href="/software"
+                  className={`text-[16px] font-semibold ${
+                    isActiveRoute("/software") ? "text-teal-400 font-bold" : "text-blue_gray-800 hover:text-teal-400"
+                  }`}
                 >
                   Software Consulting
                 </a>
               </li>
               <li>
                 <a
-                  href="/migrate" // Specific URL for "Migrate"
-                  className="text-[16px] font-semibold text-blue_gray-800 hover:text-teal-400"
+                  href="/migrate"
+                  className={`text-[16px] font-semibold ${
+                    isActiveRoute("/migrate") ? "text-teal-400 font-bold" : "text-blue_gray-800 hover:text-teal-400"
+                  }`}
                 >
                   Migrate
                 </a>
               </li>
               <li>
                 <a
-                  href="/englishcoaching" // Specific URL for "English Coaching"
-                  className="text-[16px] font-semibold text-blue_gray-800 hover:text-teal-400"
+                  href="/englishcoaching"
+                  className={`text-[16px] font-semibold ${
+                    isActiveRoute("/englishcoaching") ? "text-teal-400 font-bold" : "text-blue_gray-800 hover:text-teal-400"
+                  }`}
                 >
                   English Coaching
                 </a>
               </li>
               <li>
                 <a
-                  href="/aboutus" // Specific URL for "About Us"
-                  className="text-[16px] font-semibold text-blue_gray-800 hover:text-teal-400"
+                  href="/aboutus"
+                  className={`text-[16px] font-semibold ${
+                    isActiveRoute("/aboutus") ? "text-teal-400 font-bold" : "text-blue_gray-800 hover:text-teal-400"
+                  }`}
                 >
                   About Us
                 </a>
               </li>
               <li>
                 <a
-                  href="/resources" // Specific URL for "Resources"
-                  className="text-[16px] font-semibold text-blue_gray-800 hover:text-teal-400"
+                  href="/resources"
+                  className={`text-[16px] font-semibold ${
+                    isActiveRoute("/resources") ? "text-teal-400 font-bold" : "text-blue_gray-800 hover:text-teal-400"
+                  }`}
                 >
                   Resources
                 </a>
               </li>
               <li>
                 <a
-                  href="/contactus" // Specific URL for "Contact Us"
-                  className="text-[16px] font-semibold text-blue_gray-800 hover:text-teal-400"
+                  href="/contactus"
+                  className={`text-[16px] font-semibold ${
+                    isActiveRoute("/contactus") ? "text-teal-400 font-bold" : "text-blue_gray-800 hover:text-teal-400"
+                  }`}
                 >
                   Contact Us
                 </a>

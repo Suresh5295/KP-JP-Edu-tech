@@ -168,12 +168,14 @@ export default function EnglishCoachingPage() {
                       <br />
                     </>
                   </Text>
+                  <a href="/enquirepage">
                    <button
                       shape="square"
                       className="mr-20 min-w-[198px] pl-7 pr-[34px] font-nunitosans font-bold tracking-[1.20px] md:mr-0 sm:px-4"
                     >
                       <Img src="images/button_4.png" alt="Image" className=" mt-4 h-[98px] w-[60%] object-contain" />
                     </button>
+                    </a>
                 </div>
               </div>
             </div>
@@ -520,12 +522,20 @@ export default function EnglishCoachingPage() {
                           </Text>
                         </a>
                       </div>
-                      <div className="flex w-[22%] items-center justify-between gap-5 md:w-full">
-                        <Img src="images/img_close_white_a700_01.svg" alt="Close" className="h-[40px] w-[40px]" />
-                        <Img src="images/img_volume_white_a700_01.svg" alt="Volume" className="h-[40px] w-[40px]" />
-                        <Img src="images/img_info_white_a700_01.svg" alt="Info" className="h-[40px] w-[40px]" />
-                        <Img src="images/img_trash.svg" alt="Trash" className="h-[36px]" />
-                      </div>
+                      <div className="flex w-[22%] items-center justify-between gap-5 md:w-full" >
+                      <a href="https://www.facebook.com/share/XL5X5UrAG4VuFYuy/?mibextid=qi2Omg" target="_blank">
+                      <Img src="images/img_close_white_a700_01.svg" alt="Close" className="h-[40px] w-[40px]" />
+                      </a>
+                      <a href="https://wa.me/message/2I52EUSWYTQBG1" target="_blank">
+                      <Img src="images/img_volume_white_a700_01.svg" alt="Volume" className="h-[40px] w-[40px]"  />
+                      </a>
+                      <a href="https://www.instagram.com/jpetcs?igsh=MW5xNjF3aDN5dTE3bw==" target="_blank">
+                      <Img src="images/img_info_white_a700_01.svg" alt="Info" className="h-[40px] w-[40px]" />
+                      </a>
+                      <a href="https://x.com/jpedutech" target="_blank" >
+                      <Img src="images/img_trash.svg" alt="Trash" className="h-[36px]"  />
+                      </a>
+                    </div>
                     </div>
                     <div className=" flex w-[100%] items-center justify-between gap-5 lg:w-full md:mr-0 md:w-full sm:flex-col">
                       <Heading
