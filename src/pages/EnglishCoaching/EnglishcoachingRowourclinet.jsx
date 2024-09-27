@@ -1,4 +1,4 @@
-import { Heading, Img, RatingBar, Text, Slider } from "../../components";
+import { Heading, Img, RatingBar, Text, Slider, Button } from "../../components";
 import React from "react";
 
 export default function EnglishcoachingRowourclinet() {
@@ -117,7 +117,30 @@ export default function EnglishcoachingRowourclinet() {
                     />
                   </div>
                 </div>
-                <Img src="images/img_close_light_white_900_36x86.png " alt="Close" className="h-[34px] w-[6%] object-contain mb-4" />
+                <div className="flex gap-[18px]">
+                  <Button
+                    color="white_A700_01"
+                    size="sm"
+                    shape="round"
+                    onClick={() => {
+                      sliderRef?.current?.slidePrev();
+                    }}
+                    className="w-[34px] rounded-[16px] px-1.5 rotate-180"
+                  >
+                    <Img src="images/img_group_2396.svg" />
+                  </Button>
+                  <Button
+                    color="white_A700_01"
+                    size="sm"
+                    shape="round"
+                    onClick={() => {
+                      sliderRef?.current?.slideNext();
+                    }}
+                    className="w-[34px] rounded-[16px] px-1.5 rotate-180"
+                  >
+                    <Img src="images/img_group_2397.svg" />
+                  </Button>
+                </div>
               </div>
             </div>
           </div>

@@ -26,10 +26,10 @@ export default function EnglishCoachingPage() {
   // Map selected tab to corresponding image source
   const tabImages = {
     TOEFL: "images/te1.png",
-    IELTS: "images/ielts.png",
-    PTE: "images/pte.png",
-    Duolingo: "images/duolingo.png",
-    GMAT: "images/gmat.png",
+    IELTS: "images/ielts.svg",
+    PTE: "images/pte.svg",
+    Duolingo: "images/duolingo.svg",
+    GMAT: "images/gmat.svg",
   };
 
   
