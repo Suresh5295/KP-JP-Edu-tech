@@ -63,14 +63,23 @@ export default function MigrateRowFive() {
                     style={{ border: 'none' }} 
                     className="relative mt-[-4px] w-[73%] px-2.5 font-semibold tracking-[0.40px]"
                   />
+                  <Input
+                shape="square"
+                type="email"
+                name="email"
+                placeholder={`Enter your mobile number..`}
+                style={{ border: 'none' }} 
+                className="relative mt-4 w-[73%] px-2.5 font-semibold tracking-[0.40px]"
+              />
                 </div>
+                
               </div>
               <TextArea
                 shape="square"
                 name="television_four"
                 placeholder={`Message..`}
                 style={{ border: 'none' }} 
-                className="ml-5 flex w-[72%] gap-4 pl-3.5 pr-0.5 font-semibold tracking-[0.40px] text-light_blue-900 md:ml-0 md:py-5 sm:py-4"
+                className="ml-5 mt-5 flex w-[72%] gap-4 pl-3.5 pr-0.5 font-semibold tracking-[0.40px] text-light_blue-900 md:ml-0 md:py-5 sm:py-4"
               />
               <button
                 size="9xl"

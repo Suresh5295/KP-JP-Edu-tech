@@ -495,7 +495,7 @@ export default function ResourcesPage() {
                             as="p"
                             className="text-[14px] font-semibold tracking-[0.28px] text-white-a700_01"
                           >
-                            @2024 JP EDU TECH Pvt Ltd. All rights reserved.
+                            @2024 JP Edu Tech Consulting Serivces Pvt Ltd. All rights reserved.
                           </Heading>
                           <div className="flex w-[12%] flex-wrap justify-between gap-5 sm:w-full">
                             <a href="#">

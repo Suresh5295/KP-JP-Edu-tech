@@ -46,6 +46,14 @@ export default function ResourcesRowTwo() {
                 style={{ border: 'none' }} 
                 className="relative mt-[-4px] w-[74%] px-2.5 font-semibold tracking-[0.40px]"
               />
+              <Input
+                shape="square"
+                type="email"
+                name="email"
+                placeholder={`Enter your mobile number..`}
+                style={{ border: 'none' }} 
+                className="relative mt-4 w-[74%] px-2.5 font-semibold tracking-[0.40px]"
+              />
             </div>
             <div className="absolute left-0 right-0 top-[8%] m-auto flex flex-1 flex-col gap-6">
               <Img src="images/img_close_light_blue_900.svg" alt="Close" className="h-[40px] w-[40px]" />
@@ -70,7 +78,7 @@ export default function ResourcesRowTwo() {
             name="television_four"
             placeholder={`Message..`}
             style={{ border: 'none' }} 
-            className="ml-14 flex w-[71%] gap-4 pl-3.5 pr-0.5 font-semibold tracking-[0.40px] text-light_blue-900 md:ml-0 md:py-5 sm:py-4"
+            className="ml-14 mt-6  flex w-[70%] gap-4 pl-3.5 pr-0.5 font-semibold tracking-[0.40px] text-light_blue-900 md:ml-0 md:py-5 sm:py-4"
           />
           <button
             size="9xl"

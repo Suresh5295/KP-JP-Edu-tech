@@ -67,12 +67,20 @@ export default function Home1RowSeven() {
             style={{ border: 'none' }} 
             className="ml-14 mt-[18px] w-[70%] px-2.5 font-nunitosans font-semibold tracking-[0.40px] md:ml-0 z-10"
           />
+          <Input
+                shape="square"
+                type="email"
+                name="email"
+                placeholder={`Enter your mobile number..`}
+                style={{ border: 'none' }} 
+                className="relative ml-14 mt-4 w-[70%] px-2.5 font-nunitosans font-semibold tracking-[0.40px]"
+              />
           <TextArea
             shape="square"
             name="television_four"
             placeholder={`Message..`}
             style={{ border: 'none' }} 
-            className="ml-14 mt-7 flex w-[70%] gap-4 pl-3.5 pr-0.5 font-nunitosans font-semibold tracking-[0.40px] text-light_blue-900 md:ml-0 md:py-5 sm:py-4"
+            className="ml-14 mt-7 flex w-[70%] gap-4 pl-3.5  px-2.5 font-nunitosans font-semibold tracking-[0.40px] "
           />
           <button
             size="9xl"

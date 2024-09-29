@@ -339,7 +339,7 @@ export default function ContactUsPage() {
                           as="p"
                           className="text-[14px] font-semibold tracking-[0.28px] text-white-a700_01"
                         >
-                          @2024 JP EDU TECH Pvt Ltd. All rights reserved.
+                          @2024 JP Edu Tech Consulting Serivces Pvt Ltd. All rights reserved.
                         </Heading>
                         <div className=" ml-[1000px] flex  justify-between gap-5 sm:w-full">
                         <a href="#">

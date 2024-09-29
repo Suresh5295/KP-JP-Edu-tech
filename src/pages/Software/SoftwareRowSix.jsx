@@ -41,37 +41,45 @@ export default function SoftwareRowSix() {
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 top-0 my-auto ml-5 mr-auto flex h-max flex-1 flex-col items-start lg:ml-0 md:ml-0">
                   <div className="flex items-center self-stretch md:flex-col">
-                    <Input
-                      shape="square"
-                      type="text"
-                      name="name"
-                      placeholder={`Enter your name..`}
-                      style={{ border: 'none' }} 
-                      className="relative z-[4] mb-[34px] flex-grow self-end px-2.5 font-semibold tracking-[0.40px] md:self-auto"
-                    />
-                    <Img
-                      src="images/img_group_blue_gray_100_02_444x328.png"
-                      alt="Image"
-                      className="relative ml-[-16px] h-[444px] w-[28%] object-contain md:ml-0 md:w-full"
-                    />
-                  </div>
                   <Input
-                    shape="square"
-                    type="email"
-                    name="email"
-                    placeholder={`Enter your email id..`}
-                    style={{ border: 'none' }} 
-                    className="relative mt-[-4px] w-[74%] px-2.5 font-semibold tracking-[0.40px]"
-                  />
-                </div>
+                  shape="square"
+                  type="text"
+                  name="name"
+                  placeholder={`Enter your name..`}
+                  style={{ border: 'none' }} 
+                  className="relative z-[8] mb-[34px] flex-grow self-end px-2.5 font-semibold tracking-[0.40px] md:self-auto"
+                />
+                <Img
+                  src="images/img_group_blue_gray_100_02_444x328.png"
+                  alt="Image"
+                  className="relative ml-[-16px] h-[444px] w-[28%] object-contain md:ml-0 md:w-full"
+                />
               </div>
-              <TextArea
+              <Input
                 shape="square"
-                name="television_four"
-                placeholder={`Message..`}
+                type="email"
+                name="email"
+                placeholder={`Enter your email id..`}
                 style={{ border: 'none' }} 
-                className="ml-5 flex w-[72%] gap-4 pl-3.5 pr-0.5 font-semibold tracking-[0.40px] text-light_blue-900 md:ml-0 md:py-5 sm:py-4"
+                className="relative mt-[-8px] w-[74%] px-2.5 font-semibold tracking-[0.40px]"
               />
+          <Input
+                shape="square"
+                type="email"
+                name="email"
+                placeholder={`Enter your mobile number..`}
+                style={{ border: 'none' }} 
+                className="relative mt-3 w-[74%] px-2.5 font-semibold tracking-[0.40px]"
+              />
+          </div>
+          </div>
+          <TextArea
+            shape="square"
+            name="television_four"
+            placeholder={`Message..`}
+            style={{ border: 'none' }} 
+            className="relative mt-5 ml-5 flex w-[73%] gap-4 pl-3.5 pr-0.5 font-semibold tracking-[0.40px] text-light_blue-900 md:ml-0 md:py-5 sm:py-4"
+          />
           <button
             size="9xl"
             shape="square"

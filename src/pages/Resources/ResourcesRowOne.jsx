@@ -20,14 +20,13 @@ export default function ResourcesRowOne() {
               as="h5"
               className="text-[48px] font-bold text-gray-700_01 lg:text-[40px] md:text-[32px] sm:text-[26px]"
             >
-              Semior videos
+              Seminar videos
             </Heading>
             <Text
               as="p"
               className="w-[44%] text-[20px] font-normal leading-[30px] tracking-[0.40px] text-gray-700_01 lg:w-full lg:text-[17px] md:w-full"
             >
-              laoreet maximus quis libero, odio nulla, elementum dui laoreet ipsum enim. felis, vehicula, urna.
-              tincidunt
+              
             </Text>
             <TabList className=" flex flex-wrap gap-[74px] self-stretch  pr-14 lg:gap-5 lg:pl-8 md:gap-5 md:px-5 sm:px-4">
               <Tab className="text-center w-64 px-[34px] py-4 text-[20px] font-bold tracking-[-0.38px] text-light_blue-900 lg:text-[17px] sm:px-4">

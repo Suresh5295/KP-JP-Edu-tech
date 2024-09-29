@@ -1,6 +1,5 @@
 import React, { useState, useEffect, Suspense } from 'react'; // Import useEffect
 import { Helmet } from "react-helmet";
-import Slider from "react-slick";
 import { Text, Heading, Img, Button, Input } from "../../components";
 import Footer from "../../components/Footer";
 import ChatModal from "../../components/ChatModal";
@@ -14,15 +13,17 @@ import Home1RowaboutusOne from "./Home1RowaboutusOne";
 import Home1Rowourclinet from "./Home1Rowourclinet";
 
 export default function Home1Page() {
-  const [activeImageSet, setActiveImageSet] = useState(0); // State for image set
+  const [activeImageSet, setActiveImageSet] = useState(0);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
   const [searchBarValue, setSearchBarValue] = useState(""); // State for search input
   const [isChatOpen, setChatOpen] = useState(false); // State for chat modal
+
 
   // useEffect hook for automatically changing the image sets every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveImageSet((prevIndex) => (prevIndex + 1) % imageSets.length); // Cycle through image sets
-    }, 3000);  // Change every 3 seconds
+    }, 30000);  // Change every 3 seconds
 
     return () => clearInterval(interval); // Cleanup interval on component unmount
   }, []); // Empty dependency array ensures it runs only once
@@ -65,26 +66,23 @@ export default function Home1Page() {
   // List of image sets
   const imageSets = [
     [
-      "images/img_rectangle_4178.png",
-      "images/img_rectangle_4177.png",
-      "images/img_rectangle_4179.png"
+      { src: "images/img_rect001.png", heading: "USA", description: "The United States is the most popular destination for international students. It has a long history of welcoming foreign students and offers some of the best universities in the world. The US Student Visa is a Non-Immigrant Visa that allows foreign nationals to pursue academic studies, language training programs or other types of vocational or technical training." },
+      { src: "images/img_rect002.jpg", heading: "Dubai", description: "Migrating to Dubai offers a high standard of living, tax-free income, and thriving job market, particularly in finance, technology, and hospitality .the city boats modern infrasturcture, luxury amenities, and a cosmopolitan lifestyle. Its strategic location and diverse expatriate community make it a dynamic and attractive destination for both work and leisure." },
+      { src: "images/img_rect003.jpg", heading: "China", description: "Migrating to Dubai offers dynamic economic opportunities and rapidly growing job market, especially in industries like technology and finance. The country’s rich cultural heritage and diverse landscapes provide a unique living experience. Additionally, China’s modern infrastructure and vibranr cities make it an exciting destination for both professional and personal growth." },
     ],
     [
-      "images/screen_0001.png",
-      "images/screen_0002.png",
-      "images/screen_0003.png"
+      { src: "images/img_rect004.jpg", heading: "Indonesia", description: "Migrating to Indonesia provides access to a rich cultural heritage, stunning landscapes, and a relatively low cost of living. The country's vibrant economy offers diverse opportunities, while its welcoming communities and warm climate enhance quality of life. Additionally, Indonesia's natural beauty and cultural diversity make it an attractive destination for those seeking adventure and a new lifestyle." },
+      { src: "images/img_rect005.jpg", heading: "Ireland", description: "Migrating to Ireland offers a high quality of life with stunning landscapes and a welcoming, friendly atmosphere. The country provides excellent healthcare, education, and a strong job market, particularly in tech and pharmaceuticals. Its rich cultural heritage and vibrant communities make it an appealing destination for both work and leisure." },
+      { src: "images/img_rect006.jpg", heading: "Malaysia", description: "Migrating to Malaysia offers a low cost of living, a diverse and vibrant culture, and beautiful natural landscapes. The country has a growing economy with abundant business opportunities and a welcoming environment for expatriates. Its warm climate and rich cultural heritage make it an appealing destination for those seeking a balanced lifestyle." },
     ],
     [
-      "images/screen_0004.png",
-      "images/screen_0005.png",
-      "images/screen_0006.png"
+      { src: "images/img_rect007.jpg", heading: "New Zealand", description: "Migrating to New Zealand offers a high quality of life with stunning natural landscapes and a safe, friendly environment. The country boasts excellent healthcare, education, and a strong emphasis on work-life balance. Its welcoming communities and outdoor lifestyle make it an appealing destination for both personal and professional growth." },
+      { src: "images/img_rect008.jpg", heading: "Poland", description: "Migrating to New Zealand offers a high quality of life with stunning natural beauty and a safe, friendly environment. The country boasts a strong healthcare system, excellent education, and a balanced lifestyle. It's also known for its cultural diversity and commitment to sustainability." },
+      { src: "images/img_rect009.jpg", heading: "Singapore", description: "Migrating to Singapore provides access to a thriving economy, excellent healthcare, and world-class education. The city-state offers a high standard of living and a vibrant, multicultural environment. Its strategic location and robust infrastructure also make it a key global business hub." },
     ],
-    [
-      "images/screen_0007.png",
-      "images/screen_0008.png",
-      "images/screen_0009.png"
-    ]
   ];
+
+  const { heading, description } = imageSets[activeImageSet]?.[selectedImageIndex] || {};
 
   const handleDotClick = (index) => {
     setActiveImageSet(index); // Switch the image set when a dot is clicked
@@ -527,33 +525,41 @@ export default function Home1Page() {
                             className="absolute bottom-[18.66px] right-[-0.34px] m-auto h-[192px] w-[24%] object-contain"
                           />
                         </div> */}
-                            <div className="absolute  bottom-[30%] right-[20%] m-auto flex w-[38%] flex-col items-start bg-white-a700_01 px-[32px] py-[18px] shadow-xl sm:px-4 animate-zoomInOut">
-                            <h3 className="text-xl font-bold text-gray-800 mb-4">
-                              United States Of America
-                            </h3>
-                            <p className="text-gray-600 mb-6 leading-relaxed">
-                              The United States is the most popular destination for international students. It has a long history of welcoming foreign students and offers some of the best universities in the world. The US Student Visa is a Non-Immigrant Visa that allows foreign nationals to pursue academic studies, language training programs, or other types of vocational or technical training.
-                            </p>
-                            <div className="flex justify-evenly gap-2 mb-4 w-full">
-                              {imageSets[activeImageSet].map((imgSrc, index) => (
-                                <img
-                                  key={index}
-                                  src={imgSrc}
-                                  alt={`Image ${index + 1}`}
-                                  className="w-48 h-48 object-cover  " // Fixed size: 96px x 96px
-                                />
-                              ))}
+                        <div className="absolute bottom-[30%] right-[20%] m-auto flex w-[38%] flex-col items-start bg-white-a700_01 px-[32px] py-[18px] shadow-xl sm:px-4 animate-zoomInOut">
+                              {/* Dynamic Heading */}
+                              <h3 className="text-xl font-bold text-gray-800 mb-4">{heading}</h3>
+
+                              {/* Dynamic Description */}
+                              <p className="text-gray-600 mb-6 leading-relaxed">{description}</p>
+
+                              {/* Display Images with Click Event */}
+                              <div className="flex justify-evenly gap-2 mb-4 w-full">
+                                {imageSets[activeImageSet].map((img, index) => (
+                                  <img
+                                    key={index}
+                                    src={img.src}
+                                    alt={`Image ${index + 1}`}
+                                    onClick={() => setSelectedImageIndex(index)}
+                                    className={`w-48 h-48 object-cover cursor-pointer ${
+                                      selectedImageIndex === index ? "border-4 border-blue-500 opacity-75" : ""
+                                    }`}
+                                  />
+                                ))}
+                              </div>
+
+                              {/* Navigation Dots to Change Image Set */}
+                              <div className="flex justify-center mt-5 gap-3 w-full">
+                                {imageSets.map((_, index) => (
+                                  <button
+                                    key={index}
+                                    onClick={() => setActiveImageSet(index)}
+                                    className={`w-3 h-3 flex justify-center rounded-full ${
+                                      activeImageSet === index ? "bg-gray-900" : "bg-gray-400"
+                                    }`}
+                                  />
+                                ))}
+                              </div>
                             </div>
-                            <div className="flex justify-center mt-5 gap-3 w-full">
-                              {imageSets.map((_, index) => (
-                                <button
-                                  key={index}
-                                  onClick={() => handleDotClick(index)}
-                                  className={`w-3 h-3 flex justify-center rounded-full ${activeImageSet === index ? 'bg-gray-900' : 'bg-gray-400'}`}
-                                />
-                              ))}
-                            </div>
-                          </div>
 
                         <div className="absolute left-0 right-0 top-0 m-auto flex flex-1 items-start pl-[660px] pr-14 lg:pl-8 md:px-5 sm:relative sm:flex-col sm:px-4">
                           {/* <Img

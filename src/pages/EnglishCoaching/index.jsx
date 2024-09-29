@@ -321,7 +321,7 @@ export default function EnglishCoachingPage() {
                 size="md"
                 shape="square"
                 name="group463"
-                placeholder="Your preferred study destination"
+                placeholder="Your preferred course"
                 style={{ border: 'none' }}
                 className="mt-14 w-[90%] px-2 font-semibold tracking-[0.40px]"
               />
@@ -329,7 +329,7 @@ export default function EnglishCoachingPage() {
                 size="md"
                 shape="square"
                 name="group462"
-                placeholder="When do you plan to study?"
+                placeholder="Where do you plan to study/course?"
                 style={{ border: 'none' }}
                 className="mt-14 w-[90%] px-2 font-semibold tracking-[0.40px]"
               />
@@ -543,7 +543,7 @@ export default function EnglishCoachingPage() {
                         as="p"
                         className="text-[14px] font-semibold tracking-[0.28px] text-white-a700_01"
                       >
-                        @2024 JP EDU TECH Pvt Ltd. All rights reserved.
+                        @2024 JP Edu Tech Consulting Serivces Pvt Ltd. All rights reserved.
                       </Heading>
                       <div className="flex w-[12%] flex-wrap justify-between gap-5 sm:w-full">
                         <a href="#">

@@ -63,10 +63,19 @@ export default function EnglishcoachingRowFour() {
                     name="email"
                     placeholder={`Enter your email id..`}
                     style={{ border: 'none' }} 
-                    className="relative mt-[-4px] w-[74%] px-2.5 font-semibold tracking-[0.40px]"
+                    className="relative mt-[-4px] w-[73%] px-2.5 font-semibold tracking-[0.40px]"
                   />
                 </div>
+                
               </div>
+              <Input
+                shape="square"
+                type="email"
+                name="email"
+                placeholder={`Enter your mobile number..`}
+                style={{ border: 'none' }} 
+                className="relative ml-5 mt-4 w-[72%] px-2.5 font-semibold tracking-[0.40px]"
+              />
               <TextArea
                 shape="square"
                 name="television_four"

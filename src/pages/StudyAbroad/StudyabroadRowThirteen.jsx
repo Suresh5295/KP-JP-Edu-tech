@@ -63,16 +63,24 @@ export default function StudyabroadRowThirteen() {
                 name="email"
                 placeholder={`Enter your email id..`}
                 style={{ border: 'none' }} 
-                className="relative mt-[-4px] w-[74%] px-2.5 font-semibold tracking-[0.40px]"
+                className="relative mt-[-8px] w-[74%] px-2.5 font-semibold tracking-[0.40px]"
               />
-            </div>
+          <Input
+                shape="square"
+                type="email"
+                name="email"
+                placeholder={`Enter your mobile number..`}
+                style={{ border: 'none' }} 
+                className="relative mt-3 w-[74%] px-2.5 font-semibold tracking-[0.40px]"
+              />
+          </div>
           </div>
           <TextArea
             shape="square"
             name="television_four"
             placeholder={`Message..`}
             style={{ border: 'none' }} 
-            className="ml-14 flex w-[70%] gap-4 pl-3.5 pr-0.5 font-semibold tracking-[0.40px] text-light_blue-900 md:ml-0 md:py-5 sm:py-4"
+            className="relative mt-5 ml-14 flex w-[70.5%] gap-4 pl-3.5 pr-0.5 font-semibold tracking-[0.40px] text-light_blue-900 md:ml-0 md:py-5 sm:py-4"
           />
           <button
             size="9xl"
