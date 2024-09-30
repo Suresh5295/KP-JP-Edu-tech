@@ -10,6 +10,15 @@ const data = [
 
 export default function EnglishcoachingRowFour() {
   return (
+    <>
+      <style>{`
+        input::placeholder,
+        textarea::placeholder {
+          font-size: 14px; /* Set the desired font size */
+          color: #a0aec0;  /* Optional: Adjust the color to match */
+        }
+      `}
+      </style>
     <div className="mt-5">
       <div className="flex items-center md:flex-col">
         <div className="relative h-[922px] w-[38%] self-end md:w-full md:self-auto md:px-5">
@@ -72,16 +81,16 @@ export default function EnglishcoachingRowFour() {
                 shape="square"
                 type="email"
                 name="email"
-                placeholder={`Enter your mobile number..`}
-                style={{ border: 'none' }} 
+                placeholder="Enter your mobile number.."
+                style={{ border: 'none', fontSize: '14px' }} // Specify a common font size
                 className="relative ml-5 mt-4 w-[72%] px-2.5 font-semibold tracking-[0.40px]"
               />
-              <TextArea
+              <Input
                 shape="square"
                 name="television_four"
-                placeholder={`Message..`}
-                style={{ border: 'none' }} 
-                className="ml-5 flex w-[72%] gap-4 pl-3.5 pr-0.5 font-semibold tracking-[0.40px] text-light_blue-900 md:ml-0 md:py-5 sm:py-4"
+                placeholder="Message.."
+                style={{ border: 'none', fontSize: '14px' }} // Use the same font size
+                className="ml-5 flex w-[72%] gap-4 pl-3.5 pr-0.5 font-semibold tracking-[0.40px]"
               />
             </div>
             <button
@@ -103,5 +112,6 @@ export default function EnglishcoachingRowFour() {
         </div>
       </div>
     </div>
+    </>
   );
 }

@@ -3,11 +3,11 @@ import { Heading } from "../../components";
 
 // Data array for default and hover images
 const data = [
-  { defaultImage: "images/img_rectangle_4219.svg", hoverImage: "images/hover_img_rectangle_4219.png" },
-  { defaultImage: "images/img_rectangle_4220.svg", hoverImage: "images/hover_img_rectangle_4220.png" },
-  { defaultImage: "images/img_rectangle_4221.svg", hoverImage: "images/hover_img_rectangle_4221.png" },
-  { defaultImage: "images/img_rectangle_4222.svg", hoverImage: "images/hover_img_rectangle_4222.png" },
-  { defaultImage: "images/img_rectangle_4223.svg", hoverImage: "images/hover_img_rectangle_4223.png" },
+  { defaultImage: "images/img_rectangle_4219.svg", hoverImage: "images/hover_img_rectangle_4219_1_1.png" },
+  { defaultImage: "images/img_rectangle_4220.svg", hoverImage: "images/hover_img_rectangle_4220_1_1.png" },
+  { defaultImage: "images/img_rectangle_4221.svg", hoverImage: "images/hover_img_rectangle_4221_1_1.png" },
+  { defaultImage: "images/img_rectangle_4222.svg", hoverImage: "images/hover_img_rectangle_4222_1_1.png" },
+  { defaultImage: "images/img_rectangle_4223.svg", hoverImage: "images/hover_img_rectangle_4223_1_1.png" },
 ];
 
 export default function Home1ColumnFour() {
