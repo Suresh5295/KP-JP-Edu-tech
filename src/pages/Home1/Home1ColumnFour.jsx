@@ -3,11 +3,11 @@ import { Heading } from "../../components";
 
 // Data array for default and hover images
 const data = [
-  { defaultImage: "images/img_rectangle_4219.svg", hoverImage: "images/hover_img_rectangle_4219_1_1.png" },
-  { defaultImage: "images/img_rectangle_4220.svg", hoverImage: "images/hover_img_rectangle_4220_1_1.png" },
-  { defaultImage: "images/img_rectangle_4221.svg", hoverImage: "images/hover_img_rectangle_4221_1_1.png" },
-  { defaultImage: "images/img_rectangle_4222.svg", hoverImage: "images/hover_img_rectangle_4222_1_1.png" },
-  { defaultImage: "images/img_rectangle_4223.svg", hoverImage: "images/hover_img_rectangle_4223_1_1.png" },
+  { defaultImage: "images/img_rectangle_4219.svg", hoverImage: "images/hover_img_rectangle_4219_1_2.png" },
+  { defaultImage: "images/img_rectangle_4220.svg", hoverImage: "images/hover_img_rectangle_4220_1_2.png" },
+  { defaultImage: "images/img_rectangle_4221.svg", hoverImage: "images/hover_img_rectangle_4221_1_2.png" },
+  { defaultImage: "images/img_rectangle_4222.svg", hoverImage: "images/hover_img_rectangle_4222_1_2.png" },
+  { defaultImage: "images/img_rectangle_4223.svg", hoverImage: "images/hover_img_rectangle_4223_1_2.png" },
 ];
 
 export default function Home1ColumnFour() {
@@ -48,12 +48,12 @@ export default function Home1ColumnFour() {
           <Heading
             size="headinglg"
             as="h5"
-            className="w-[42%] text-center font-poppins text-[20px] font-semibold leading-[30px] tracking-[0.40px] text-white-a700_01 lg:w-full lg:text-[17px] md:w-full"
+            className="w-[42%] mt-5 text-center font-poppins text-[20px] font-semibold leading-[30px] tracking-[0.40px] text-white-a700_01 lg:w-full lg:text-[17px] md:w-full"
           >
             We're here to help! Our expert team will guide you through every step of the Migration process. Start your journey today with confidence and support from JP Edu Tech!
           </Heading>
-          <div className="ml-3.5 mt-6 flex flex-col items-center gap-14 self-stretch md:ml-0 sm:gap-7">
-            <div className="flex gap-16 md:flex-col">
+          <div className="ml-3.5 mt-16 flex flex-col items-center gap-14 self-stretch md:ml-0 sm:gap-7">
+            <div className="flex gap-24 md:flex-col">
               {/* Map over the data array */}
               {data.map((item, index) => (
                 <div

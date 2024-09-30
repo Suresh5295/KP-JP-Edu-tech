@@ -43,8 +43,7 @@ export default function EnglishcoachingRowFour() {
                     </a>
                     <Text
                       as="p"
-                      className="w-[58%] text-[20px] font-normal leading-[33px] tracking-[0.40px] text-black-900_02 lg:w-full lg:text-[17px] md:w-full"
-                    >
+                      className="w-[58%] text-[20px] font-normal leading-[33px] tracking-[0.40px] text-black-900_02 lg:w-full lg:text-[17px] md:w-full">
                       Get in touch with us today! Our expert team will guide you through every step of the migration
                       process. Start your journey today with confidence and support from Jp Edu Tech!
                     </Text>
